@@ -2,6 +2,16 @@
 <html lang="pt-br">
 
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KLYE611VE7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-KLYE611VE7');
+  </script>
+
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -18,7 +28,10 @@
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" >
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" ></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" ></script>
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
 
@@ -28,14 +41,12 @@
 </head>
 
 <body>
-    <!-- VISA Tracking Code for https://ggtec.github.io/GGTECApps/ -->
-  <script>(function(v,i,s,a,t){v[t]=v[t]||function(){(v[t].v=v[t].v||[]).push(arguments)};if(!v._visaSettings){v._visaSettings={}}v._visaSettings[a]={v:'1.0',s:a,a:'1',t:t};var b=i.getElementsByTagName('body')[0];var p=i.createElement('script');p.defer=1;p.async=1;p.src=s+'?s='+a;b.appendChild(p)})(window,document,'//app-worker.visitor-analytics.io/main.js','5e9a9a7f-473d-11ed-b589-901b0edac50a','va')</script>
   <!-- VISA Tracking Code for https://ggtec.github.io/GGTECApps/ -->
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
+  <!--<script>(function(v,i,s,a,t){v[t]=v[t]||function(){(v[t].v=v[t].v||[]).push(arguments)};if(!v._visaSettings){v._visaSettings={}}v._visaSettings[a]={v:'1.0',s:a,a:'1',t:t};var b=i.getElementsByTagName('body')[0];var p=i.createElement('script');p.defer=1;p.async=1;p.src=s+'?s='+a;b.appendChild(p)})(window,document,'//app-worker.visitor-analytics.io/main.js','5e9a9a7f-473d-11ed-b589-901b0edac50a','va')</script>-->
+  <!-- VISA Tracking Code for https://ggtec.github.io/GGTECApps/ -->
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="index.html">GGTECApps</a></h1>
+      <h1 class="logo"><a href="https://ggtec.github.io/GGTECApps">GGTECApps</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -50,6 +61,7 @@
             </ul>
           </li>
         </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
     </div>
@@ -62,6 +74,10 @@
         <div class="col-xl-7 col-lg-9 text-center">
           <h1>GGTECApps</h1>
           <h2>Aplicativos Para Sua Stream</h2>
+        </div>
+        <div class="col-xl-7 col-lg-9 text-center">
+          <p><a href="https://ggtec.github.io/GGTECApps/apps/srbr.html" style="width: 50%;" class="btn-get-started">Detalhes SRBR</a></p>
+          <p><a href="https://ggtec.github.io/GGTECApps/apps/rewardevents.html" style="width: 50%;" class="btn-get-started">Detalhes RewardEvents</a></p>
         </div>
       </div>
 
@@ -138,6 +154,12 @@
                 </p>
               </div>
             </li>
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Como baixar ?. <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                <p>Clique nos botões acima 'Detalhes SRBR' ou 'Detalhes RewardEvents' Você será redirecionado para uma pagina download e guia de configuração.</p>
+              </div>
+            </li>
 
           </ul>
         </div>
@@ -162,7 +184,7 @@
               <div class="email">
                 <i class="bx bxl-discord-alt"></i>
                 <h4>Discord:</h4>
-                <p>GGTEC#8307</p>
+                <a href="https://discord.com/invite/utm5NZq">Servidor do canal GG TEC</a>
               </div>
 
             </div>
@@ -174,7 +196,7 @@
               <div class="email">
                 <i class="bx bxl-instagram-alt"></i>
                 <h4>Instagram:</h4>
-                <p>@gg_tec_ofc</p>
+                <a href="https://www.instagram.com/gg_tec_ofc/">@gg_tec_ofc</a>
               </div>
 
             </div>
@@ -187,6 +209,62 @@
 
       </div>
     </section><!-- End Contact Section -->
+
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content p-5">
+          <h1>Politica de cookies</h1>
+          Esta Política de Cookies foi atualizada pela última vez em 09 de outubro de 2022 e aplica-se aos cidadãos do Brasil de acordo com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018) e países que possuem leis sobre proteção de dados. A LGPD estabelece regras sobre coleta, armazenamento e compartilhamento de dados pessoais, atribuindo mais proteção aos titulares de tais dados.
+          O site do GGTECApps usa cookies e outras tecnologias relacionadas (por conveniência, todas as tecnologias são chamadas de "cookies"). No documento abaixo informamos sobre o uso de cookies em nosso site.
+
+          <h1>O que sã​​o cookies</h1>
+          Cookies são arquivos-texto gerados pelo site e transferidos para seu computador, sendo armazenados pelos Navegadores como Google Chrome, Firefox, Internet Explorer, etc. Em geral, os Cookies são utilizados para uma otimização de sua experiência de navegação junto ao nosso site, quando permitido pelo nível de segurança configurado por você junto ao seu navegador. Sempre que o seu navegador estiver assim configurado, utilizaremos cookies conforme explicado.
+          Os cookies utilizados no site têm como finalidade identificar as tendências de navegação do usuário, buscando aprimorar e personalizar seus acessos futuros, tais como, páginas navegadas ou links clicados. Quaisquer dos cookies utilizados não são usados para executar programas ou infectar seu computador com vírus ou programas maliciosos.
+          Ao acessar este site pela primeira vez, você foi informado através de um aviso em popup referente a prática de cookies. Mesmo quando seu programa de navegação estiver configurado para permitir a instalação de cookies, mas você desejar removê-los ou impedir o armazenamento de novos cookies, pode fazê-lo imediatamente e sem qualquer impedimento, desativando este recurso em seu navegador e excluindo todos os eventuais cookies já implementados.
+          Desta forma, recomendamos que você configure seu programa de navegação no nível de segurança desejado antes de navegar em nosso site, em todos os computadores e dispositivos que deseje utilizar.​
+          
+          
+          <h1>COMO OS COOKIES SÃO USADOS</h1>
+          Os cookies utilizados em nosso site atendem aos requisitos legais e são enquadrados nas seguintes categorias:
+          
+          Cookies Funcionais: Os Cookies Funcionais são usados para fornecer serviços ou para lembrar definições de navegações de forma a melhorar sua visita.
+          Para o que nós os usamos: Lembrar eventualmente das configurações que você aplicou, como idioma, layout, tamanho do texto, preferências e cores.
+          
+          Cookies Estritamente Necessários: São aqueles cookies que permitem a você navegar pelo site e usar recursos essenciais, como formulários ou áreas seguras, por exemplo. Esses cookies não guardam quaisquer informações sobre você que possam ser usadas em ações de comunicação de produto ou serviço ou para lembrar as páginas navegadas no site.
+          Para o que nós os usamos: Identificá-lo como um usuário conectado. Lembrar de informações que você digitou previamente em eventuais formulários de contato. Certificar-se de que você se conecta ao serviço correto em nosso site quando fizermos alguma mudança na forma como ele funciona.
+          
+          Cookies de Desempenho: Os cookies de "Desempenho" coletam informações sobre como você usa o nosso website, por exemplo, quais páginas você visita, se elas possuem erros, erros em formulários e etc. Esses cookies não coletam quaisquer informações que possam identificá-lo. Toda a informação coletada é realizada de forma codificada, anônima e somente usada para ajudar a melhorar a forma como o nosso site funciona, entender o que interessa aos nossos usuários e medir a eficácia da nossa comunicação.
+          Para o que nós os usamos: Fornecer estatísticas sobre como nosso site é utilizado. Verificar a eficiência da nossa comunicação, não nos utilizando dessa informação para direcionamento de anúncios quando em visita a outros sites. Ajudar na melhoria de nosso site pela medição de erros que eventualmente possam ocorrer. Realizar melhorias e aperfeiçoamentos em nosso site decorrentes do comportamento de navegação de nossos usuários.
+          
+          Cookies de Segmentação: Os Cookies de Segmentação estão ligados aos serviços prestados por terceiros, tais como, por exemplo, feed de mídias sociais, botões de "Like" e botões de "Compartilhar" contidos em outros sites que não o nosso site. O terceiro fornece esses serviços por reconhecer que você visitou nosso site, mas de maneira nenhuma se confunde com o nosso site.
+          Para o que nós os usamos: Para conectar-se as mídias sociais, que, por serem terceiros e pelos quais não termos controle, poderão, posteriormente, utilizar as informações sobre a sua visita para direcionar publicidade de seu interesse para você em outros sites. Em relação aos Cookies de Segmentação, você pode controlar se serão usados ou não (vide tópico abaixo "Como Desativar os Cookies"), mas seu bloqueio pode nos impedir de oferecer alguns serviços ou prejudicar a boa navegação junto ao nosso site.
+          
+          
+          <h1>COMO DESATIVAR OS COOKIES</h1>
+          Normalmente as configurações para desativar os cookies estão presentes nas "Opções" ou o menu "Preferências" do seu navegador. Para saber melhor consulte as opções de ajuda de seu navegador.
+          Você pode desabilitá-los alterando as configurações do seu navegador, mas saiba que isso pode afetar o funcionamento do site.
+
+          <a href="https://support.google.com/chrome/answer/95647?co=GENIE.Platform%3DDesktop&hl=pt-BR">Chrome</a>
+
+          <a href="https://support.mozilla.org/pt-BR/kb/desative-cookies-terceiros-impedir-rastreamento">Firefox</a>
+
+          <a href="https://support.microsoft.com/pt-br/microsoft-edge/excluir-cookies-no-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09">Microsoft Edge</a>
+
+          <a href="https://support.microsoft.com/pt-br/windows/excluir-e-gerenciar-cookies-168dab11-0753-043d-7c16-ede5947fc64d">Internet Explorer​</a>
+        </div>
+      </div>
+    </div>
+    
+    <section class="cookie">
+      <div class="txt">
+         <p class="">
+            Utilizando este site você concorda com a <a href="#" data-toggle="modal" data-target=".bd-example-modal-lg" >Politica de cookies.</a>
+         </p>
+      </div>
+      <div>
+         <a class="btn accept m-auto">Aceitar</a>
+      </div>
+   </section>
 
   </main><!-- End #main -->
 
@@ -223,6 +301,10 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>$(".accept").click(function(){
+    $(".cookie").hide();
+  //Enter your code hear...
+  });</script>
 
 </body>
 
