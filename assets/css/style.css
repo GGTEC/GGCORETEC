@@ -957,18 +957,16 @@ section {
 
 .cookie{
 	width: auto;
-  height: 13%;
+  height: auto;
+  margin: 5%;
   background-color: #3f1367;
   position: fixed;
   bottom: 88px;
   border-radius: 10px;
-	left: 5%;
 	padding: 20px;
+  border: #fff solid 2px;
 }
 
-.cookie .txt{
-	float: left;
-}
 .txt p{
 	color:#f8fbfe;
 }
@@ -978,7 +976,6 @@ section {
     color: #fff !important;
     border-radius: 32px;
     padding: 3px 23px;
-    /* align-self: center; */
     font-size: 19px;
 
 }
