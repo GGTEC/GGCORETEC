@@ -221,6 +221,7 @@
                 <p>Na aba superior em Eventos é possível configurar cada evento para uma recompensa. </p> 
                 <p>É possivel configurar apenas um evento por recompensa. É necessário criar a recompensa no seu canal da twitch antes de criar um evento. </p> 
                 <p>Selecione no menu de opções qual evento deverá ser criado</p> 
+                <p>Os prefix para resposta no chat suportados são = {user} {command} {prefix} {user_level} {user_id} {counter}</p>
               </div>
             </li>
 
@@ -352,6 +353,7 @@
                 <p><b>Comando : </b>Qual mensagem deverá ser enviada no chat para executar o comando, o comando só é executado se estiver em primeiro lugar na mensagem, se preferir não é necessário o uso de prefix ex = !comando, ?comando $comando, #comando</p>
                 <p><b>Somente moderador pode usar o comando ? : </b>Marcando essa opção faz com que somente moderador ou o próprio streamer utilize o comando;</p>
                 <p><b>Resposta no chat : </b>Envia a mensagem no chat do canal quando o comando for executado;</p>
+                <p><i>Nota: prefix suportados para repostas = {user} {command} {prefix} {user_level} {user_id} {counter}</i> </p>
                 <h2>Editar um comando</h2>
                 <p><b>Comando : </b>Selecione o comando para editar</p>
                 <p><b>Conteudo da resposta : </b>Envia a mensagem no chat do canal quando o comando for executado;</p>
@@ -421,6 +423,14 @@
                 <p><b>Verificar contador : </b>Comando para verificar o valor atual do contador (necessário '!')</p>
                 <p><b>Aplicar valor : </b>Comando para aplicar um valor inicial ou atual do contador, uso = !comando valor (necessário '!')</p>
                 <p><b>Limpar valor : </b>Comando para zerar o contador (necessário '!')</p>
+              </div>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-21" class="collapsed">Configurações : Editar respostas<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-22" class="collapse" data-bs-parent=".faq-list">
+                <h2>Configure as respostas padrão do programa</h2>
+                <p><b>Resposta : </b>Selecione o tipo de resposta para editar</p>
+                <p>Nota: Os prefix suportados já estão nas mensagens, nenhum prefix diferente dos quais já contem nas mensagens deve ser utilizado nas mensagens padrão.</p>
               </div>
             </li>
           </ul>
