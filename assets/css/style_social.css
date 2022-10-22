@@ -78,11 +78,15 @@ body {
 }
 
 .top-box-desktop {
-  background-color: #3b3148;
+  background: rgba( 83, 59, 108, 0.6 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 9px );
+  -webkit-backdrop-filter: blur( 9px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
   margin-bottom: 5%;
   color: #fff;
   border-radius: 5%;
-  box-shadow: 0 0 10px #000000;
   font-family: 'Press Start 2P';
 }
 
@@ -159,11 +163,15 @@ a:hover {
 
 .nav-link {
   background-color: transparent !important;
+  color: #937bac !important;
+}
+
+.nav-link:hover {
   color: #6b4a8c !important;
 }
 
 .active {
-  color: #937bac !important;
+  color: #6b4a8c !important;
 }
 
 .animated-button {
