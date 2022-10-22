@@ -111,6 +111,15 @@ a:hover {
   color: #927aac;
 }
 
+.iframe-donate {
+  height: fit-content;
+  width: 100%;
+}
+
+.nav-link {
+  background-color: transparent !important;
+}
+
 .animated-button {
   width: 100%;
   font-family: 'Press Start 2P';
