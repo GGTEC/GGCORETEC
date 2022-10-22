@@ -32,6 +32,33 @@ body {
   border: 0px none #ffffff;
 }
 
+
+
+@media only screen and (min-width: 600px) {
+  .mobile {
+    display: none;
+  } 
+}
+
+@media only screen and (max-width: 600px) {
+  .mobile {
+    display: inline-block;
+  } 
+}
+
+@media only screen and (min-width: 600px) {
+  .desktop {
+    display: inline-block;
+  } 
+}
+
+@media only screen and (max-width: 600px) {
+  .desktop {
+    display: none;
+  } 
+}
+
+
 .container {
     width: auto;
     margin: 5%;
@@ -48,6 +75,14 @@ body {
 .top-box {
   margin-bottom: 5%;
   color: #fff;
+}
+
+.top-box-desktop {
+  background-color: #3b3148;
+  margin-bottom: 5%;
+  color: #fff;
+  border-radius: 5%;
+  box-shadow: 0 0 10px #000000;
 }
 
 .top-box h1 {
@@ -69,7 +104,7 @@ body {
 .footer-box p {
   margin-top: 55px;
   font-family: 'Press Start 2P';
-  font-size: 15px;
+  font-size: 55%;
 }
 
 a:hover {
