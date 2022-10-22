@@ -37,6 +37,14 @@ body {
     margin: 5%;
 }
 
+.links-list {
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5);
+  margin-top: var(--bs-gutter-y);
+}
+
 .top-box {
   margin-bottom: 5%;
   color: #fff;
@@ -48,13 +56,13 @@ body {
   text-shadow: 0 0 3px #7e6894;
   font-size: 36px;
 }
+
 .top-box p {
   margin-top: 25px;
   font-family: 'Press Start 2P';
 }
 
 .footer-box {
-  
   color: #fff;
 }
 
@@ -67,11 +75,12 @@ body {
 a:hover {
   color: #927aac;
 }
+
 .animated-button {
+  width: 100%;
   font-family: 'Press Start 2P';
   background: linear-gradient(-30deg, #010205 50%, #08142b 50%);
   padding: 20px 40px;
-  margin: 12px;
   display: inline-block;
   -webkit-transform: translate(0%, 0%);
           transform: translate(0%, 0%);
