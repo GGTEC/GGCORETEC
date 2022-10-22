@@ -83,6 +83,11 @@ body {
   color: #fff;
   border-radius: 5%;
   box-shadow: 0 0 10px #000000;
+  font-family: 'Press Start 2P';
+}
+
+.top-box-desktop p{
+  margin-top: 5%;
 }
 
 .top-box h1 {
@@ -128,6 +133,7 @@ a:hover {
 
 .text-box p{
   margin-top: 5%;
+  line-height: 1.6;
 }
 
 .iframe-live {
@@ -142,6 +148,11 @@ a:hover {
 
 .nav-link {
   background-color: transparent !important;
+  color: #6b4a8c !important;
+}
+
+.active {
+  color: #937bac !important;
 }
 
 .animated-button {
