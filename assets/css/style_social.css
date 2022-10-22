@@ -32,21 +32,16 @@ body {
   border: 0px none #ffffff;
 }
 
-
-
 .container {
     width: auto;
     margin: 5%;
-}
-
-.links-list {
-    padding: 5%;
 }
 
 .top-box {
   margin-bottom: 5%;
   color: #fff;
 }
+
 .top-box h1 {
   margin-top: 5%;
   font-family: 'Press Start 2P';
