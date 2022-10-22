@@ -131,7 +131,7 @@ a:hover {
 }
 
 .iframe-live {
-  height: fit-content;
+  height: 100%;
   width: 100%;
 }
 
