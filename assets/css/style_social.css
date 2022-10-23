@@ -48,7 +48,7 @@ body {
 
 @media only screen and (min-width: 600px) {
   .desktop {
-    display: inline-block;
+    display: flex;
   } 
 }
 
@@ -73,8 +73,16 @@ body {
 }
 
 .top-box {
+  background: rgba( 83, 59, 108, 0.6 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 9px );
+  -webkit-backdrop-filter: blur( 9px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
   margin-bottom: 5%;
   color: #fff;
+  border-radius: 5%;
+  font-family: 'Kanit';
 }
 
 .top-box-desktop {
@@ -87,23 +95,28 @@ body {
   margin-bottom: 5%;
   color: #fff;
   border-radius: 5%;
-  font-family: 'Press Start 2P';
+  font-family: 'Kanit';
 }
 
-.top-box-desktop p{
+.top-box-desktop p {
   margin-top: 5%;
 }
+
+.top-box-desktop h1 {
+  font-size: 65px;
+}
+
 
 .top-box h1 {
   margin-top: 5%;
-  font-family: 'Press Start 2P';
+  font-family: 'Kanit';
   text-shadow: 0 0 3px #7e6894;
   font-size: 36px;
 }
 
 .top-box p {
   margin-top: 25px;
-  font-family: 'Press Start 2P';
+  font-family: 'Kanit';
 }
 
 .footer-box {
@@ -112,8 +125,8 @@ body {
 
 .footer-box p {
   margin-top: 55px;
-  font-family: 'Press Start 2P';
-  font-size: 55%;
+  font-family: 'Kanit';
+  font-size: 15px;
 }
 
 a:hover {
@@ -122,22 +135,26 @@ a:hover {
 
 .tab-content h1 {
   color: #fff;
-  font-family: 'Press Start 2P';
+  font-family: 'Kanit';
 }
 
 .tab-content p {
   font-size: 12px;
   color: #fff;
-  font-family: 'Press Start 2P';
+  font-family: 'Kanit';
 }
 
 .text-box {
   padding: 5%;
 }
 
-.text-box p{
+.text-box p {
   margin-top: 5%;
-  line-height: 1.6;
+  font-size: 20px;
+}
+
+.text-box h1 {
+  font-size: 55px;
 }
 
 .iframe-live {
@@ -146,13 +163,14 @@ a:hover {
 }
 
 .img-donate {
+  margin-top: 15%;
   max-width:100%;
   width: auto;
   height: auto;
 }
 
 .nicks-list {
-  font-family: 'Press Start 2P';
+  font-family: 'Kanit';
   text-align: left;
   color: #fff;
 }
@@ -176,7 +194,7 @@ a:hover {
 
 .animated-button {
   width: 100%;
-  font-family: 'Press Start 2P';
+  font-family: 'Kanit';
   background: linear-gradient(-30deg, #010205 50%, #08142b 50%);
   padding: 20px 40px;
   display: inline-block;
@@ -184,13 +202,21 @@ a:hover {
           transform: translate(0%, 0%);
   overflow: hidden;
   color: #927aac;
-  font-size: 20px;
+  font-size: 25px;
+  font-weight: 600;
   letter-spacing: 2.5px;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
           box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.animated-button p {
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 0%;
+  margin-bottom: 0%;
 }
 
 .animated-button::before {
