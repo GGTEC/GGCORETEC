@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GGTECApps</title>
+    <meta content="Processe pedidos de musica com as recompensas do canal" name="description">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="assets/css/new_style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.css" rel="stylesheet" >
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.js" ></script>
+    
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
+    <script src="assets/js/main.js"></script>
+
+</head>
+<body>
+    <div class="desktop">
+        <div class="header">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-md-3">
+                <!-- Container wrapper -->
+                <div class="container-fluid">
+            
+                    <!-- Navbar brand -->
+                    <a class="navbar-brand" href="https://ggtec.github.io/GGTECApps/">GGTECApps</a>
+                
+                    <!-- Collapsible wrapper -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                
+                            <!-- Link -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://ggtec.github.io/GGTECApps/">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://ggtec.github.io/GGTECApps/social">Contato</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://github.com/GGTEC/SRBR/releases">Download</a>
+                            </li>       
+                        </ul>
+                
+                    </div>
+                </div>
+                <!-- Container wrapper -->
+            </nav>
+            <!-- Navbar -->
+        </div>
+        <div class="container">
+            <div class="top-box w-100 p-4 mt-5 text-center">
+                <h1>SongRequesByRedeem</h1>
+                <p>Processe pedidos de musica com as recompensas do canal.</p>
+                <p>Para download e guia de configuração clique no botão abaixo.</p>
+                <button type="button" href="https://ggtec.github.io/GGTECApps/apps/srbr" class="button-topbox">Wiki e Download</button>
+            </div>
+            <div class="top-box w-100 p-4 mt-5 text-center">
+                <h1>RewardEvents</h1>
+                <p>Execute eventos com as recompensas do canal, crie comandos, envie mensagens automaticas entre outros.</p>
+                <p>Para download e guia de configuração clique no botão abaixo.</p>
+                <button type="button" href="https://ggtec.github.io/GGTECApps/apps/re" class="btn button-topbox">Wiki e Download</button>
+            </div>
+            <div class="top-box w-100 p-4 mt-5 text-center">
+                <h1>Dúvidas e contato</h1>
+                <p>Para dúvidas sobre o funcionamento, desenvolvimento, sugestões ou qualquer ajuda com a configuração entre em contato utilizando uma de minhas redes sociais clicando no botão abaixo.</p>
+                <button type="button" href="https://ggtec.github.io/GGTECApps/social" class="btn button-topbox">CONTATO</button>
+            </div>            
+        </div>
+
+        <div class="fixed-bottom p-4">
+            <div class="toast bg-dark text-white w-100 mw-100" role="alert" data-autohide="false">
+                <div class="toast-body p-4 d-flex flex-column">
+                    <h4>Cookie Warning</h4>
+                    <p>
+                    This website stores data such as cookies to enable site functionality including analytics and personalization. By using this website, you automatically accept that we use cookies. 
+                    </p>
+                    <div class="ml-auto">
+                        <button type="button" class="btn btn-outline-light mr-3" id="btnDeny">
+                            Deny
+                        </button>
+                        <button type="button" class="btn btn-light" id="btnAccept">
+                            Accept
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="footer">
+            <div class="row">
+                <div class="col-4">
+                    <p>Copyright GGTEC</p> 
+                    <p>Page Dev By GGTEC</p>
+                </div>
+                <div class="col-8 social-links d-flex justify-content-end align-content-end">
+                    <a href="https://discord.com/invite/utm5NZq" class="twitter"><i class="bx bxl-discord-alt"></i></a>
+                    <a href="https://github.com/GGTEC/" class="facebook"><i class="bx bxl-github"></i></a>
+                    <a href="https://www.twitch.tv/gg_tec" class="instagram"><i class="bx bxl-twitch"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile">
+        <div class="container d-flex align-self-center">
+            <div class="text-center top-box p-5 align-self-center ">
+                <h1>Desculpe!</h1>
+                <h3>Pagina não compativel para dispositivos móveis, por favor abra o link em um navegador desktop.</h3>
+                <h3>Para quaquer duvida entre em contato utilizando qualquer rede social no link abaixo.</h3>
+                <button href="https://ggtec.github.io/GGTECApps/social/">CONTATO</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('.toast').toast('show')
+    </script>
+    
+
+</body>
+</html>

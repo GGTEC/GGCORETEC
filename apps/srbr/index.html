@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRBR Wiki</title>
+    <meta content="Processe pedidos de musica com as recompensas do canal" name="description">
+
+    <!-- Favicons -->
+    <link href="../../assets/img/favicon.png" rel="icon">
+    <link href="../../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="../../assets/css/new_style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" ></script>
+    <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
+
+</head>
+<body>
+    <div class="desktop">
+        <div class="header">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-md-3">
+                <!-- Container wrapper -->
+                <div class="container-fluid">
+            
+                    <!-- Navbar brand -->
+                    <a class="navbar-brand" href="https://ggtec.github.io/GGTECApps/">GGTECApps</a>
+                
+                    <!-- Collapsible wrapper -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                
+                            <!-- Link -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://ggtec.github.io/GGTECApps/">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://ggtec.github.io/GGTECApps/social">Contato</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://github.com/GGTEC/SRBR/releases">Download</a>
+                            </li>       
+                        </ul>
+                
+                    </div>
+                </div>
+                <!-- Container wrapper -->
+            </nav>
+            <!-- Navbar -->
+        </div>
+        <div class="container">
+            <div class="top-box w-100 p-4 mt-5">
+                <h1>SongRequesByRedeem</h1>
+                <p>Processe pedidos de musica com as recompensas do canal.</p>
+                <p>Siga o guia de configuração abaixo para configurar todas as funções do programa corretamente.</p>
+                <p>Caso prefira, assita o tutorial em video clicando no botão abaixo :</p>
+                <button type="button" href="https://youtu.be/0I4zVqqQ01U" class="btn button-topbox">Tutorial</button>
+            </div>
+            <div class="row wiki-box w-100">
+                <div class="col-3 p-0 nav-buttons">
+                    <ul class="nav flex-column nav-pills" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active w-100 " id="pills-download-tab" data-bs-toggle="pill" data-bs-target="#pills-download" type="button" role="tab" aria-controls="pills-download" aria-selected="true">Download</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="pills-authstreamer-tab" data-bs-toggle="pill" data-bs-target="#pills-authstreamer" type="button" role="tab" aria-controls="pills-authstreamer" aria-selected="false">Autenticar Conta</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="pills-authbot-tab" data-bs-toggle="pill" data-bs-target="#pills-authbot" type="button" role="tab" aria-controls="pills-authbot" aria-selected="false">Autenticar Bot</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="pills-connobs-tab" data-bs-toggle="pill" data-bs-target="#pills-connobs" type="button" role="tab" aria-controls="pills-connobs" aria-selected="false">Conexão obs</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="pills-notobs-tab" data-bs-toggle="pill" data-bs-target="#pills-notobs" type="button" role="tab" aria-controls="pills-notobs" aria-selected="false">Notificações OBS</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="pills-configchatmessage-tab" data-bs-toggle="pill" data-bs-target="#pills-configchatmessage" type="button" role="tab" aria-controls="pills-configchatmessage" aria-selected="false">Configurar mensagens</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="pills-configredeem-tab" data-bs-toggle="pill" data-bs-target="#pills-configredeem" type="button" role="tab" aria-controls="pills-configredeem" aria-selected="false">Configurar Recompensa</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="pills-playlist-tab" data-bs-toggle="pill" data-bs-target="#pills-playlist" type="button" role="tab" aria-controls="pills-playlist" aria-selected="false">Playlists</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="pills-configcommands-tab" data-bs-toggle="pill" data-bs-target="#pills-configcommands" type="button" role="tab" aria-controls="pills-configcommands" aria-selected="false">Configurar Comandos</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="pills-configresponses-tab" data-bs-toggle="pill" data-bs-target="#pills-configresponses" type="button" role="tab" aria-controls="pills-configresponses" aria-selected="false">Editar respostas</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col p-5">
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-download" role="tabpanel" aria-labelledby="pills-download-tab">
+                            <h1 class="mb-5">Download</h1>
+                            <p>Para efetuar o Download do programa acesse este <a href="https://github.com/GGTEC/SRBR/releases">Link</a> </p>
+                            <p>e baixe o srbr.exe</p>
+                            <p>Não é necessario instalação, somente deixe o programa em uma pasta separada das demais para melhor organização</p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-authstreamer" role="tabpanel" aria-labelledby="pills-authstreamer-tab">
+                            <h1 class="mb-5">Autenticar conta streamer</h1>
+                            <p>1. Depois de clicar em login o aplicativo deve ficar com a tela principal congelada e somente a tela de navegador funcionando.</p>
+                            <p>2. Digite o nome da sua conta de streamer no campo requisitado. (deve ser igual o da url ex. https://www.twitch.tv/gg_tec = gg_tec )</p>
+                            <p>3. Clique em login</p>
+                            <p>4. Logue na sua conta e autorize o aplicativo para comunicar com a sua conta e coletar as informações necessárias 
+                                para o funcionamento do aplicativo, as permissões coletadas são exibidas no momento em que é requisitada a autorização.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-authbot" role="tabpanel" aria-labelledby="pills-authbot-tab">
+                            <h1 class="mb-5">Autenticar conta Bot</h1>
+                            <p>1. Caso não queira usar a uma conta Bot clique no botão indicado.</p>
+                            <p>2. Digite o nome de login da sua conta bot no campo requisitado. (deve ser igual o da url ex. https://www.twitch.tv/gg_tec = gg_tec )</p>
+                            <p>3. Clique em login</p>
+                            <p>4. Logue na sua conta e autorize o aplicativo para comunicar com a sua conta e coletar as informações necessárias para o funcionamento do aplicativo, as permissões coletadas são exibidas no momento em que é requisitada a autorização.</p>
+                          
+                        </div>
+                        <div class="tab-pane fade" id="pills-connobs" role="tabpanel" aria-labelledby="pills-connobs-tab">
+                            <h1 class="mb-5">Conexão OBS Studio</h1>
+                            <p>1. Para comunicarmos com o OBS e modificar as informações para isso precisamos instalar a ferramenta <a href="https://github.com/obsproject/obs-websocket/releases">OBS-WEBSOCKET Compat</a></p>
+                            <p>2. Baixe e Instale o <a href="https://github.com/obsproject/obs-websocket/releases">OBS-WEBSOCKET Compat</a></p>
+                            <p>3. Abra o OBS studio, vá até a aba ferramentas e clique em WebSockets Server Settings</p>
+                            <p>4. Marque a caixa Enable WebSockets server;</p>
+                            <p>5. Em serve port teste alguma que funcionar ex. 4444;</p>
+                            <p>6. Marque a caixa enable authentication;</p>
+                            <p>7. Em password use a senha que preferir ex. 1234;</p>
+                            <p>8. Utilize os mesmos valores no campo port e password no programa;</p>
+                            <p>9. Em Host utilize localhost;</p>
+                            <p>10. Clique em OK e a configuração inicial estará salva;</p>
+                            <p>Se preferir que o programa conecte automaticamente com o OBS Studio (se estiver sendo executado) na inicialização marque a opção correspondente</p>
+                            <p><b>Na aba perfil é possivel conectar manualmente o OBS Studio</b></p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-notobs" role="tabpanel" aria-labelledby="pills-notobs-tab">
+                            <h1 class="mb-5">Notificações OBS Studio</h1>
+                            <p>1. Marque a opção 'Ativar notificalções HTML';</p>
+                            <p>2. Em 'Fonte HTML OBS' selecione a fonte de navegador que foi configurado o HTML para notificações que está na pasta src/html;</p>
+                            <p>3. Em 'tempo exibindo a notificação' coloque o tempo em segundos que a notificação deveria ficar visivel na tela;</p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-configchatmessage" role="tabpanel" aria-labelledby="pills-configchatmessage-tab">
+                            <h1 class="mb-5">Configure quais mensagens/modulos devem ser habilitados</h1>
+                            <p><b>Habilitar comando !tts : </b>Ativa o uso do comando para o evento 'Texto falado google' no chat</p>
+                            <p><b>Habilitar comando : </b>Ativa o uso de todos os comandos no chat</p>
+                            <p><b>Ativar respostas de comandos : </b>Ativa a resposta dos comandos simples e comandos de eventos</p>
+                            <p><b>Exibir delay para comandos : </b>Ativa a resposta do delay para usar comandos se um comando for utilizado antes do tempo</p>
+                            <p><b>Exibir confirmações/erros de clipes : </b>Ativa a resposta quando um clipe for criado ou ocorrer um erro</p>
+                            <p><b>Exibir erro de permissão para comandos : </b>Ativa a resposta de erro quando um usuário tentar utilizar um comando que é só para moderadores</p>
+                            <p><b>Ativar timer : </b>Ativa o modulo de mensagens automaticas</p>
+                            <p><b>Status de conexão no chat : </b>Ativa o envio de status de conexão dos sistemas para receber e enviar mensagens no chat</p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-configredeem" role="tabpanel" aria-labelledby="pills-configredeem-tab">
+                            <h1 class="mb-5">Configure a recompensa de pedidos</h1>
+                            <p><b>Recompensa : </b>Selecione a recompensa que receberá pedidos de musica, a recompensa deve ter a opção 'Exigir que um usuário insira um texto' ativada
+                                 para receber o nome ou link da musica;</p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-playlist" role="tabpanel" aria-labelledby="pills-playlist-tab">
+                            <h1 class="mb-5">Adicionar uma playlist inteira para ser reproduzida</h1>
+                            <p><b>Url da playlist : </b>Insira a URL da playlist do youtube, o formato do link deve ser esse = https://www.youtube.com/watch?v=U0CGsw6h60k&list=PLMC9KNkIncKtPzgY-5rmhvj7fax8fdxoj</p>
+                            <p><b>Executar playlist : </b>Executa a playlist se estiver musicas na fila</p>
+                            <p><b>Limpar playlist : </b>Limpa as musicas restantes na fila de playlist</p>
+                            <p><b>Musicas na playlist : </b>Exibe uma lista das musicas na playlist</p>
+                            <h2>Lista de pedidos</h2>
+                            <p>É possível visualizar uma lista com as musicas solicitadas via chat ou resgate da recompensa configurada</p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-configcommands" role="tabpanel" aria-labelledby="pills-configcommands-tab">
+                            <h1 class="mb-5">Configurar comandos</h1>
+                            <p><b>Prefixo : </b>Qual prefixo vai vir antes do comando ex= !, ?, $, # ex = !comando, ?comando $comando, #comando;</p>
+                            <p><b>Pedido de musica : </b>Qual será o comando para pedidos de musica (somente moderador) uso = !sr musica;</p>
+                            <p><b>Musica atual : </b>Qual será o comando para o usuário saber qual é a musica que está tocando no momento;</p>
+                            <p><b>Próxima musica : </b>Qual será o comando para saber qual será a próxima musica na fila;</p>
+                            <p><b>Volume : </b>Qual comando será utilizado para ajustar o volume da musica (somente moderador) uso = !volume 50;</p>
+                            <p><b>Pular musica ? :</b>Qual comando será utilizado para pular a musica (somente moderador);</p>
+                            <p><b>Delay entre comandos: </b> Quanto tempo o usuário deverá esperar antes de usar qualquer comando.</p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-configresponses" role="tabpanel" aria-labelledby="pills-configresponses-tab">
+                            <h1 class="mb-5">Configure as respostas padrão do programa</h1>
+                            <p><b>Resposta : </b>Selecione o tipo de resposta para editar</p>
+                            <p>Nota: Os prefix suportados já estão nas mensagens, nenhum prefix diferente dos quais já contem nas mensagens deve ser utilizado nas mensagens padrão.</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            
+        </div>
+
+
+        <div class="footer">
+            <div class="row">
+                <div class="col-4">
+                    <p>Copyright GGTEC</p> 
+                    <p>Page Dev By GGTEC</p>
+                </div>
+                <div class="col-8 social-links d-flex justify-content-end align-content-end">
+                    <a href="https://discord.com/invite/utm5NZq" class="twitter"><i class="bx bxl-discord-alt"></i></a>
+                    <a href="https://github.com/GGTEC/" class="facebook"><i class="bx bxl-github"></i></a>
+                    <a href="https://www.twitch.tv/gg_tec" class="instagram"><i class="bx bxl-twitch"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile">
+        <div class="container d-flex align-self-center">
+            <div class="text-center top-box p-5 align-self-center ">
+                <h1>Desculpe!</h1>
+                <h3>Pagina não compativel para dispositivos móveis, por favor abra o link em um navegador desktop.</h3>
+                <h3>Para quaquer duvida entre em contato utilizando qualquer rede social no link abaixo.</h3>
+                <button href="https://ggtec.github.io/GGTECApps/social/">CONTATO</button>
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+</html>
