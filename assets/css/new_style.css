@@ -1,0 +1,182 @@
+body {
+    font-family: 'Kanit';
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(170deg, 
+    rgba(107, 74, 140, 0.8) 20%, 
+    rgba(63, 20, 102, 0.5) 20%, 
+    rgba(4, 4, 5, 0.5) 35%, 
+    rgba(49, 57, 73, 0.5) 75%), 
+    linear-gradient(45deg, 
+    rgba(4, 4, 5, 0.8) 0%, 
+    rgba(55, 1, 67, 0.8) 50%, 
+    rgba(36, 8, 47, 0.8) 50%, 
+    rgba(48, 2, 59, 0.8) 100%) #260137;
+}
+
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #594270;
+    border: 0px none transparent;
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #524267;
+}
+::-webkit-scrollbar-thumb:active {
+    background: #623f80;
+}
+::-webkit-scrollbar-track {
+    background: #000000;
+    border: 0px none #ffffff;
+}
+
+.navbar-brand {
+    font-size: 25px !important;
+    font-weight: 600;
+}
+
+.navbar-brand img {
+    width: 10%;
+
+}
+.container {
+    height: 100%;
+}
+
+.container h1 {
+    color: #ffffff;
+}
+
+@media only screen and (min-width: 600px) {
+
+    .desktop {
+        display: block;
+    } 
+
+    .mobile {
+        display: none;
+    } 
+}
+
+@media only screen and (max-width: 600px) {
+    .desktop {
+        display: none;
+    } 
+    .mobile {
+        display: block;
+        height: 100vh;
+    } 
+}
+
+.mobile button {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 10%;
+    background: #623f80;
+    border-radius: 10px;
+}
+  
+
+.top-box {
+    background: rgba( 63, 19, 103, 0.6 );
+    box-shadow: 0 8px 32px 0 rgba(38, 38, 43, 0.37);
+    margin-bottom: 5%;
+    padding-right: 0% !important;
+    padding-left: 0% !important;
+    color: #fff;
+    border-radius: 5%;
+    font-family: 'Kanit';
+}
+
+.top-box .button-topbox {
+    display: block;
+    width: 25%;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 3%;
+    background: #623f80;
+    border-radius: 10px;
+}
+
+.wiki-box {
+    background: rgba( 63, 19, 103, 0.6 );
+    box-shadow: 0 8px 32px 0 rgba(38, 38, 43, 0.37);
+    margin-bottom: 5%;
+    border-radius: 5px;
+    padding-right: 0% !important;
+    padding-left: 0% !important;
+    margin-left: 0% !important;
+    color: #fff;
+    font-family: 'Kanit';
+}
+
+.nav-buttons {
+    border-right: 3px solid #927aac;
+}
+
+.nav-pills button{
+    color: rgb(177, 175, 175);
+    font-size: 16px !important;
+    text-align: left !important;
+    border-radius: 0% !important;
+    transition: 0.3s;
+}
+
+.nav-pills button:hover{
+    color: #927aac;
+}
+
+.nav-pills .active {
+    background-color: #927aac!important;
+}
+
+.footer {
+    background: rgba( 63, 19, 103, 0.6 );
+    box-shadow: 0 8px 32px 0 rgba(38, 38, 43, 0.37);
+    padding: 2%;
+}
+
+.footer p {
+    color: #fff;
+    margin: 0%;
+}
+
+.footer .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #e3f0fa;
+    color: #3f1367;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 5px;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+  }
+  
+.footer .social-links a:hover {
+    background: #3f1367;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer .row {
+    padding-right: 0% !important;
+    padding-left: 0% !important;
+    margin-left: 0% !important;
+    margin-right: 0% !important;
+}

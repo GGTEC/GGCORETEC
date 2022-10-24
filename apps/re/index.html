@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RewardEvents</title>
+    <meta content="Exexcute eventos personalizados utilizando as recom do canal" name="description">
+
+    <!-- Favicons -->
+    <link href="../../assets/img/favicon.png" rel="icon">
+    <link href="../../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="../../assets/css/new_style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" ></script>
+    <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
+
+</head>
+<body>
+    <div class="desktop">
+        <div class="header">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-md-3">
+                <!-- Container wrapper -->
+                <div class="container-fluid">
+            
+                    <!-- Navbar brand -->
+                    <a class="navbar-brand" href="https://ggtec.github.io/GGTECApps/">GGTECApps</a>
+                
+                    <!-- Collapsible wrapper -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                
+                            <!-- Link -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://ggtec.github.io/GGTECApps/">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://ggtec.github.io/GGTECApps/social">Contato</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://github.com/GGTEC/RewardEvents/releases">Download</a>
+                            </li>       
+                        </ul>
+                
+                    </div>
+                </div>
+                <!-- Container wrapper -->
+            </nav>
+            <!-- Navbar -->
+        </div>
+        <div class="container">
+            <div class="top-box w-100 p-4 mt-5">
+                <h1>RewardEvents</h1>
+                <p>Execute eventos com as recompensas do canal, execute comandos, envie mensagens automaticas entre outros.</p>
+                <p>Siga o guia de configuração abaixo para configurar todas as funções do programa corretamente.</p>
+                <p>Caso prefira, assita o tutorial em video clicando no botão abaixo :</p>
+                <button type="button" class="btn button-topbox">Tutorial</button>
+            </div>
+            <div class="row wiki-box w-100">
+                <div class="col-3 p-0 nav-buttons">
+                    <ul class="nav flex-column nav-pills" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active w-100 " id="pills-download-tab" data-bs-toggle="pill" data-bs-target="#pills-download" type="button" role="tab" aria-controls="pills-download" aria-selected="true">Download</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="pills-authstreamer-tab" data-bs-toggle="pill" data-bs-target="#pills-authstreamer" type="button" role="tab" aria-controls="pills-authstreamer" aria-selected="false">Autenticar Conta</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="pills-authbot-tab" data-bs-toggle="pill" data-bs-target="#pills-authbot" type="button" role="tab" aria-controls="pills-authbot" aria-selected="false">Autenticar Bot</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="pills-connobs-tab" data-bs-toggle="pill" data-bs-target="#pills-connobs" type="button" role="tab" aria-controls="pills-connobs" aria-selected="false">Conexão obs</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="pills-notobs-tab" data-bs-toggle="pill" data-bs-target="#pills-notobs" type="button" role="tab" aria-controls="pills-notobs" aria-selected="false">Notificações OBS</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="pills-events-tab" data-bs-toggle="pill" data-bs-target="#pills-events" type="button" role="tab" aria-controls="pills-events" aria-selected="false">Eventos</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="pills-eventaudio-tab" data-bs-toggle="pill" data-bs-target="#pills-eventaudio" type="button" role="tab" aria-controls="pills-eventaudio" aria-selected="false">Evento : Reproduzir som</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="pills-eventtts-tab" data-bs-toggle="pill" data-bs-target="#pills-eventtts" type="button" role="tab" aria-controls="pills-eventtts" aria-selected="false">Evento : tts</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="pills-eventscene-tab" data-bs-toggle="pill" data-bs-target="#pills-eventscene" type="button" role="tab" aria-controls="pills-eventscene" aria-selected="false">Evento : Mudar cena OBS </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="pills-eventfilter-tab" data-bs-toggle="pill" data-bs-target="#pills-eventfilter" type="button" role="tab" aria-controls="pills-eventfilter" aria-selected="false">Evento : Exibir/ocultar filtro OBS</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="pills-eventsource-tab" data-bs-toggle="pill" data-bs-target="#pills-eventsource" type="button" role="tab" aria-controls="pills-eventsource" aria-selected="false">Evento : Exibir/ocultar Fonte OBS</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="pills-eventkey-tab" data-bs-toggle="pill" data-bs-target="#pills-eventkey" type="button" role="tab" aria-controls="pills-eventkey" aria-selected="false">Evento : Atalhos do teclado</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="pills-eventclip-tab" data-bs-toggle="pill" data-bs-target="#pills-eventclip" type="button" role="tab" aria-controls="pills-eventclip" aria-selected="false">Evento : Clipe</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="pills-eventgiveway-tab" data-bs-toggle="pill" data-bs-target="#pills-eventgiveway" type="button" role="tab" aria-controls="pills-eventgiveway" aria-selected="false">Evento : Sorteio</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="pills-eventcounter-tab" data-bs-toggle="pill" data-bs-target="#pills-eventcounter" type="button" role="tab" aria-controls="pills-eventcounter" aria-selected="false">Evento : Contador</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="pills-eventdel-tab" data-bs-toggle="pill" data-bs-target="#pills-eventdel" type="button" role="tab" aria-controls="pills-eventdel" aria-selected="false">Excluir Evento</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="pills-commands-tab" data-bs-toggle="pill" data-bs-target="#pills-commands" type="button" role="tab" aria-controls="pills-commands" aria-selected="false">Comandos</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="pills-timers-tab" data-bs-toggle="pill" data-bs-target="#pills-timers" type="button" role="tab" aria-controls="pills-timers" aria-selected="false">Timers</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="pills-configchatmessage-tab" data-bs-toggle="pill" data-bs-target="#pills-configchatmessage" type="button" role="tab" aria-controls="pills-configchatmessage" aria-selected="false">Configurar mensagens</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="pills-configgiveway-tab" data-bs-toggle="pill" data-bs-target="#pills-configgiveway" type="button" role="tab" aria-controls="pills-configgiveway" aria-selected="false">Configurar sorteio</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="pills-configcounter-tab" data-bs-toggle="pill" data-bs-target="#pills-configcounter" type="button" role="tab" aria-controls="pills-configcounter" aria-selected="false">Configurar contador</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="pills-configresponses-tab" data-bs-toggle="pill" data-bs-target="#pills-configresponses" type="button" role="tab" aria-controls="pills-configresponses" aria-selected="false">Editar respostas</button>
+                        </li>
+    
+                    </ul>
+                </div>
+                <div class="col p-5">
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-download" role="tabpanel" aria-labelledby="pills-download-tab">
+                            <h1 class="mb-5">Download</h1>
+                            <p>Para efetuar o Download do programa acesse este <a href="https://github.com/GGTEC/RewardEvents/releases">Link</a> </p>
+                            <p>e baixe o rewardevents.exe</p>
+                            <p>Não é necessario instalação, somente deixe o programa em uma pasta separada das demais para melhor organização</p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-authstreamer" role="tabpanel" aria-labelledby="pills-authstreamer-tab">
+                            <h1 class="mb-5">Autenticar conta streamer</h1>
+                            <p>1. Depois de clicar em login o aplicativo deve ficar com a tela principal congelada e somente a tela de navegador funcionando.</p>
+                            <p>2. Digite o nome da sua conta de streamer no campo requisitado. (deve ser igual o da url ex. https://www.twitch.tv/gg_tec = gg_tec )</p>
+                            <p>3. Clique em login</p>
+                            <p>4. Logue na sua conta e autorize o aplicativo para comunicar com a sua conta e coletar as informações necessárias 
+                                para o funcionamento do aplicativo, as permissões coletadas são exibidas no momento em que é requisitada a autorização.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-authbot" role="tabpanel" aria-labelledby="pills-authbot-tab">
+                            <h1 class="mb-5">Autenticar conta Bot</h1>
+                            <p>1. Caso não queira usar a uma conta Bot clique no botão indicado.</p>
+                            <p>2. Digite o nome de login da sua conta bot no campo requisitado. (deve ser igual o da url ex. https://www.twitch.tv/gg_tec = gg_tec )</p>
+                            <p>3. Clique em login</p>
+                            <p>4. Logue na sua conta e autorize o aplicativo para comunicar com a sua conta e coletar as informações necessárias para o funcionamento do aplicativo, as permissões coletadas são exibidas no momento em que é requisitada a autorização.</p>
+                          
+                        </div>
+                        <div class="tab-pane fade" id="pills-connobs" role="tabpanel" aria-labelledby="pills-connobs-tab">
+                            <h1 class="mb-5">Conexão OBS Studio</h1>
+                            <p>1. Para comunicarmos com o OBS e modificar as informações para isso precisamos instalar a ferramenta <a href="https://github.com/obsproject/obs-websocket/releases">OBS-WEBSOCKET Compat</a></p>
+                            <p>2. Baixe e Instale o <a href="https://github.com/obsproject/obs-websocket/releases">OBS-WEBSOCKET Compat</a></p>
+                            <p>3. Abra o OBS studio, vá até a aba ferramentas e clique em WebSockets Server Settings</p>
+                            <p>4. Marque a caixa Enable WebSockets server;</p>
+                            <p>5. Em serve port teste alguma que funcionar ex. 4444;</p>
+                            <p>6. Marque a caixa enable authentication;</p>
+                            <p>7. Em password use a senha que preferir ex. 1234;</p>
+                            <p>8. Utilize os mesmos valores no campo port e password no programa;</p>
+                            <p>9. Em Host utilize localhost;</p>
+                            <p>10. Clique em OK e a configuração inicial estará salva;</p>
+                            <p>Se preferir que o programa conecte automaticamente com o OBS Studio (se estiver sendo executado) na inicialização marque a opção correspondente</p>
+                            <p><b>Na aba perfil é possivel conectar manualmente o OBS Studio</b></p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-notobs" role="tabpanel" aria-labelledby="pills-notobs-tab">
+                            <h1 class="mb-5">Notificações OBS Studio</h1>
+                            <p>1. Marque a opção 'Ativar notificalções HTML';</p>
+                            <p>2. Em 'Fonte HTML OBS' selecione a fonte de navegador que foi configurado o HTML para notificações que está na pasta src/html;</p>
+                            <p>3. Em 'tempo exibindo a notificação' coloque o tempo em segundos que a notificação deveria ficar visivel na tela;</p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-events" role="tabpanel" aria-labelledby="pills-events-tab">
+                            <h1 class="mb-5">Configurar eventos</h1>
+                            <p>Na aba superior em Eventos é possível configurar cada evento para uma recompensa. </p> 
+                            <p>É possivel configurar apenas um evento por recompensa. É necessário criar a recompensa no seu canal da twitch antes de criar um evento. </p> 
+                            <p>Selecione no menu de opções qual evento deverá ser criado</p> 
+                            <p>Os prefix para resposta no chat suportados são = {user} {command} {prefix} {user_level} {user_id} {counter}</p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-eventaudio" role="tabpanel" aria-labelledby="pills-eventaudio-tab">
+                            <h1 class="mb-5">Evento : Reproduzir audio</h1>
+                            <p><b>Recompensa : </b>Selecione a recompensa do canal na twitch;</p>
+                            <p><b>Comando para o chat : </b>Esse campo é opcional, use se quiser que seja possivel executar o evento com um comando;</p>
+                            <p><b>Somente moderador pode usar o comando ? : </b>Marcando essa opção faz com que somente moderador ou o próprio streamer utilize o comando;</p>
+                            <p><b>Arquivo de audio : </b>Selecione o arquivo de audio para ser reproduzido quando a recompensa for resgatada;</p>
+                            <p><b>Tempo da notificação no OBS : </b>Quanto tempo a notificação ficará visivel na tela;</p>
+                            <p><b>Resposta no chat : </b>Envia a mensagem no chat do canal quando a recompensa for resgatada;</p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-eventtts" role="tabpanel" aria-labelledby="pills-eventtts-tab">
+                            <h1 class="mb-5">Evento : Texto falado google</h1>
+                            <p><b>Recompensa : </b>Selecione a recompensa do canal na twitch;</p>
+                            <p><b>Comando para o chat : </b> Esse campo é opcional, use se quiser que seja possivel executar o evento com um comando;</p>
+                            <p><b>Somente moderador pode usar o comando ? : </b>Marcando essa opção faz com que somente moderador ou o próprio streamer utilize o comando;</p>
+                            <p><b>Limite de letras : </b>Limite de letras para evitar flood;</p>
+                            <p><b>Tempo da notificação no obs : </b>Quanto tempo a notificação ficará visivel na tela;</p>
+                            <p><b>Resposta no chat : </b>Envia a mensagem no chat do canal quando a recompensa for resgatada ou o comando executado;</p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-eventscene" role="tabpanel" aria-labelledby="pills-eventscene-tab">
+                            <h1 class="mb-5">Evento : Mudar cena OBS</h1>
+                            <p><b>Recompensa : </b>Selecione a recompensa do canal na twitch;</p>
+                            <p><b>Comando para o chat : </b>Esse campo é opcional, use se quiser que seja possivel executar o evento com um comando;</p>
+                            <p><b>Somente moderador pode usar o comando ? : </b>Marcando essa opção faz com que somente moderador ou o próprio streamer utilize o comando;</p>
+                            <p><b>Cena Atual : </b>Deve ser a cena que está ativa no OBS studio</p>
+                            <p><b>Mudar para a cena : </b>Deve ser a cena que será ativa no momento do resgate</p>
+                            <p><b>Retornar para a cena anterior : </b>Defina se o programa deve retornar para a Cena Atual selecionada;</p>
+                            <p><b>Tempo para voltar para a cena anterior : </b>O tempo deve ser em segundos ex.:15;</p>
+                            <p><b>Resposta no chat : </b>Envia a mensagem no chat do canal quando a recompensa for resgatada;</p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-eventfilter" role="tabpanel" aria-labelledby="pills-eventfilter-tab">
+                            <h1 class="mb-5">Evento : Exibir/ocultar um filtro do OBS</h1>
+                            <p><b>Recompensa : </b>Selecione a recompensa do canal na twitch;</p>
+                            <p><b>Comando para o chat : </b>Esse campo é opcional, use se quiser que seja possivel executar o evento com um comando;</p>
+                            <p><b>Somente moderador pode usar o comando ? : </b>Marcando essa opção faz com que somente moderador ou o próprio streamer utilize o comando;</p>
+                            <p><b>Nome da fonte do OBS : </b>Seleciona a fonte que deve ter o filtro alterado;</p>
+                            <p><b>Nome do filtro presente na fonte : </b>Selecione o nome do filtro que está configurado na fonte do OBS;</p>
+                            <p><b>Tempo com o filtro ativo : </b>Quanto tempo o filtro deverá ficar ativo no OBS;</p>
+                            <p><b>Resposta no chat  : </b>Envia a mensagem no chat do canal quando a recompensa for resgatada;</p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-eventsource" role="tabpanel" aria-labelledby="pills-eventsource-tab">
+                            <h1 class="mb-5">Evento : Exibir/Ocultar uma fonte do OBS</h1>
+                            <p><b>Recompensa : </b>Selecione a recompensa do canal na twitch;</p>
+                            <p><b>Comando para o chat : </b>Esse campo é opcional, use se quiser que seja possivel executar o evento com um comando;</p>
+                            <p><b>Somente moderador pode usar o comando ? : </b>Marcando essa opção faz com que somente moderador ou o próprio streamer utilize o comando;</p>
+                            <p><b>Nome da fonte no OBS : </b>Selecione a fonte que deverá ser Exbida/Oculta;</p>
+                            <p><b>Tempo exibindo :</b>É o tempo que a fonte ficará visível na tela;</p>
+                            <p><b>Resposta no chat : </b>Envia a mensagem no chat do canal quando a recompensa for resgatada;</p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-eventkey" role="tabpanel" aria-labelledby="pills-eventkey-tab">
+                            <h1 class="mb-5">Evento : Atalhos/Teclas </h1>
+                            <p><b>Recompensa : </b>Selecione a recompensa do canal na twitch;</p>
+                            <p><b>Comando para o chat : </b>Esse campo é opcional, use se quiser que seja possivel executar o evento com um comando;</p>
+                            <p><b>Somente moderador pode usar o comando ? : </b>Marcando essa opção faz com que somente moderador ou o próprio streamer utilize o comando;</p>
+                            <p><b>Pressionar novamente depois do tempo ? : </b>Marcando essa opção faz com que a tecla ou atalho seja pressionado uma vez depois do tempo especificado, essa opção desmarca "Pressionar varias vezes ?" e "Manter pressionado ?";</p>
+                            <p><b>Tempo para pressionar novamente : </b>Espefique em segundos em quanto tempo a tecla ou atalho deverá ser pressionado novamente</p>
+                            <p><b>Pressionar varias vezes ? :</b>Marcando essa opção faz com que a tecla ou atalho seja pressionado várias vezes, essa opção desmarca "Pressionar novamente depois do tempo ?" e "Manter pressionado ?";</p>
+                            <p><b>Pressionar quantas vezes : </b>Espeficique em numeros quantas vezes a tecla ou atalho deve ser pressionado;</p>
+                            <p><b>Intervalo para pressionar : </b>Espefique em segundos o intervalo entre cada vez que a tecla ou atalho sera pressionado;</p>
+                            <p><b>Manter pressionado ? : </b>Marcando essa opção faz com que a tecla ou atalho continue sendo pressionado (recomendado apenas para tecla unica), essa opção desmarca "Pressionar novamente depois do tempo ?" e "Pressionar varias vezes ?";</p>
+                            <p><b>Tempo mantendo pressionado : </b>Espeficique em segundos quanto tempo a tecla ou atalho deverá continuar pressionado;</p>
+                            <p><b>Resposta no chat : </b>Envia a mensagem no chat do canal quando a recompensa for resgatada;</p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-eventclip" role="tabpanel" aria-labelledby="pills-eventclip-tab">
+                            <h1 class="mb-5">Evento : Criar um clip</h1>
+                            <p><b>Recompensa : </b>Selecione a recompensa do canal na twitch;</p>
+                            <p><b>Comando para o chat : </b>Esse campo é opcional, use se quiser que seja possivel executar o evento com um comando;</p>
+                            <p><b>Somente moderador pode usar o comando ? : </b>Marcando essa opção faz com que somente moderador ou o próprio streamer utilize o comando;</p>
+                            <p><b>Resposta no chat : </b>Envia a mensagem no chat do canal quando a recompensa for resgatada;</p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-eventgiveway" role="tabpanel" aria-labelledby="pills-eventgiveway-tab">
+                            <h1 class="mb-5">Evento : Sorteio</h1>
+                            <p><b>Recompensa : </b>Selecione a recompensa do canal na twitch;</p>
+                            <p><b>Comando para o chat : </b>Esse campo é opcional, use se quiser que seja possivel executar o evento com um comando;</p>
+                            <p><b>Somente moderador pode usar o comando ? : </b>Marcando essa opção faz com que somente moderador ou o próprio streamer utilize o comando;</p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-eventcounter" role="tabpanel" aria-labelledby="pills-eventcounter-tab">
+                            <h1 class="mb-5">Evento : Contador</h1>
+                            <p><b>Recompensa : </b>Selecione a recompensa do canal na twitch;</p>
+                            <p><b>Comando para o chat : </b>Esse campo é opcional, use se quiser que seja possivel executar o evento com um comando;</p>
+                            <p><b>Somente moderador pode usar o comando ? : </b>Marcando essa opção faz com que somente moderador ou o próprio streamer utilize o comando;</p>
+                            <p><b>Resposta no chat : </b>Envia a mensagem no chat do canal quando a recompensa for resgatada;</p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-eventdel" role="tabpanel" aria-labelledby="pills-eventdel-tab">
+                            <h1 class="mb-5">Excluir um evento</h1>
+                            <p>Exclui um evento criado ou exibe informações sobre ele.</p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-commands" role="tabpanel" aria-labelledby="pills-commands-tab">
+                            <h1 class="mb-5">Criar um comando</h1>
+                            <p><b>Comando : </b>Qual mensagem deverá ser enviada no chat para executar o comando, o comando só é executado se estiver em primeiro lugar na mensagem, se preferir não é necessário o uso de prefix ex = !comando, ?comando $comando, #comando</p>
+                            <p><b>Somente moderador pode usar o comando ? : </b>Marcando essa opção faz com que somente moderador ou o próprio streamer utilize o comando;</p>
+                            <p><b>Resposta no chat : </b>Envia a mensagem no chat do canal quando o comando for executado;</p>
+                            <p><i>Nota: prefix suportados para repostas = {user} {command} {prefix} {user_level} {user_id} {counter}</i> </p>
+                            <h2>Editar um comando</h2>
+                            <p><b>Comando : </b>Selecione o comando para editar</p>
+                            <p><b>Conteudo da resposta : </b>Envia a mensagem no chat do canal quando o comando for executado;</p>
+                            <p><b>Somente moderador pode usar o comando ? :</b>Marcando essa opção faz com que somente moderador ou o próprio streamer utilize o comando;</p>
+                            <h2>Excluir um comando</h2>
+                            <p><b>Comando : </b>Selecione o comando para Excluir</p>
+                            <h2>Editar delay para comandos</h2>
+                            <p><b>Editar delay para comandos gerais : </b> Edita o delay para os comandos de eventos e comandos simples.</p>
+                            <p><b>Editar delay para comandos !tts : </b> Edita o delay para o comando do evento 'Texto falado google'.</p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-timers" role="tabpanel" aria-labelledby="pills-timers-tab">
+                            <h1 class="mb-5">Adicionar um timer</h1>
+                            <p><b>Mensagem : </b>Insira a mensagem que deverá ser enviada no chat:</p>
+                            <h2> Editar um timer</h2>
+                            <p><b>Selecione uma mensagem : </b>Qual mensagem deverá ser editada;</p>
+                            <h2>Remover um timer</h2>
+                            <p><b>Selecione uma mensagem : </b>Qual mensagem deverá ser excluida</p>
+                            <h2>Alterar intervalo entre as mensagens</h2>
+                            <p><b>Minimo : </b>Qual é o menor intervalo para ser calculado no programa</p>
+                            <p><b>Maximo : </b>QUal é o maior intervalo para ser calculado no programa</p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-configchatmessage" role="tabpanel" aria-labelledby="pills-configchatmessage-tab">
+                            <h1 class="mb-5">Configure quais mensagens/modulos devem ser habilitados</h1>
+                            <p><b>Habilitar comando !tts : </b>Ativa o uso do comando para o evento 'Texto falado google' no chat</p>
+                            <p><b>Habilitar comando : </b>Ativa o uso de todos os comandos no chat</p>
+                            <p><b>Ativar respostas de comandos : </b>Ativa a resposta dos comandos simples e comandos de eventos</p>
+                            <p><b>Exibir delay para comandos : </b>Ativa a resposta do delay para usar comandos se um comando for utilizado antes do tempo</p>
+                            <p><b>Exibir confirmações/erros de clipes : </b>Ativa a resposta quando um clipe for criado ou ocorrer um erro</p>
+                            <p><b>Exibir erro de permissão para comandos : </b>Ativa a resposta de erro quando um usuário tentar utilizar um comando que é só para moderadores</p>
+                            <p><b>Ativar timer : </b>Ativa o modulo de mensagens automaticas</p>
+                            <p><b>Status de conexão no chat : </b>Ativa o envio de status de conexão dos sistemas para receber e enviar mensagens no chat</p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-configgiveway" role="tabpanel" aria-labelledby="pills-configgiveway-tab">
+                            <h1 class="mb-5">Configure os comandos e o sistema de sorteios</h1>
+                            <h3>Criar um novo sorteio</h3>
+                            <p><b>Nome do sorteio : </b>Insira o nome que será anunciado no chat quando o sorteio for habilitado</p>
+                            <h3>Adicionar usuário no sorteio</h3>
+                            <p><b>Nome do usuário : </b>Insira o nome do usuário que será adicionado manualmente no sorteio (não é necessário ser um nickname da twitch)</p>
+                            <p><b>Ativar sorteio : </b>Permite a entrada de usuários no sorteio e envia uma mensagem no chat anunciando que o sorteio foi habilitado</p>
+                            <p><b>Limpar os nomes quando sortear : </b>Quando o sorteio for executado os nomes da lista são limpos, manter essa opção for desmarcada é util para mostrar os participantes caso tenha alguma objeção ou reclamação sobre o sorteio, também é guardado um arquivo de backup dos nomes sorteados na pasta src/sorteio/</p>
+                            <p><b>Limpar nomes : </b>Limpa os nomes da lista do sorteio antes de executar.</p>
+                            <p><b>Exibir nomes : </b>Exibe uma lista com os nomes dos participantes do sorteio</p>
+                            <p><b>Executar o sorteio : </b>Executa o sorteio</p>
+                            <h2>Configurar comandos</h2>
+                            <p><b>Executar sorteio</b>Qual comando deve ser enviado para executar o sorteio (necessário '!')</p>
+                            <p><b>Limpar nomes</b>Qual comando deve ser enviado para limpar nomes da lista do sorteio (necessário '!')</p>
+                            <p><b>Verificar usuário</b>Qual comando deve ser enviado para verificar se o usuário está no sorteio (necessário '!')</p>
+                            <p><b>Usuário verificar participação</b>Qual comando deve ser enviado para o usuário verificar a própria participação no sorteio (necessário '!')</p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-configcounter" role="tabpanel" aria-labelledby="pills-configcounter-tab">
+                            <h1 class="mb-5">Configure os comandos e o sistema do contador</h1>
+                            <p><b>Valor atual : </b>Exibe o valor atual do contador</p>
+                            <p><b>Valor inicial : </b>Em qual valor o contador deve inicar</p>
+                            <h3>Comandos</h3>
+                            <p><b>Verificar contador : </b>Comando para verificar o valor atual do contador (necessário '!')</p>
+                            <p><b>Aplicar valor : </b>Comando para aplicar um valor inicial ou atual do contador, uso = !comando valor (necessário '!')</p>
+                            <p><b>Limpar valor : </b>Comando para zerar o contador (necessário '!')</p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-configresponses" role="tabpanel" aria-labelledby="pills-configresponses-tab">
+                            <h1 class="mb-5">Configure as respostas padrão do programa</h1>
+                            <p><b>Resposta : </b>Selecione o tipo de resposta para editar</p>
+                            <p>Nota: Os prefix suportados já estão nas mensagens, nenhum prefix diferente dos quais já contem nas mensagens deve ser utilizado nas mensagens padrão.</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            
+        </div>
+
+
+        <div class="footer">
+            <div class="row">
+                <div class="col-4">
+                    <p>Copyright GGTEC</p> 
+                    <p>Page Dev By GGTEC</p>
+                </div>
+                <div class="col-8 social-links d-flex justify-content-end align-content-end">
+                    <a href="https://discord.com/invite/utm5NZq" class="twitter"><i class="bx bxl-discord-alt"></i></a>
+                    <a href="https://github.com/GGTEC/" class="facebook"><i class="bx bxl-github"></i></a>
+                    <a href="https://www.twitch.tv/gg_tec" class="instagram"><i class="bx bxl-twitch"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile">
+        <div class="container d-flex align-self-center">
+            <div class="text-center top-box p-5 align-self-center ">
+                <h1>Desculpe!</h1>
+                <h3>Pagina não compativel para dispositivos móveis, por favor abra o link em um navegador desktop.</h3>
+                <h3>Para quaquer duvida entre em contato utilizando qualquer rede social no link abaixo.</h3>
+                <button href="https://ggtec.github.io/GGTECApps/social/">CONTATO</button>
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+</html>
