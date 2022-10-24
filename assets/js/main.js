@@ -23,8 +23,11 @@ function eraseCookie(name) {
 }
 
 function cookieConsent() {
+  const toastLiveExample = document.getElementById('liveToast')
   if (!getCookie('allowCookies')) {
-      $('.toast').toast('show')
+
+    const toast = new bootstrap.Toast(toastLiveExample)
+    toast.show()
   }
 }
 
