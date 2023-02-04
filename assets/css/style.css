@@ -88,7 +88,7 @@ body {
 
 
 .top-box {
-  background: rgba( 63, 19, 103, 0.6 );
+  background: #3f136799;
   box-shadow: 0 8px 32px 0 rgba(38, 38, 43, 0.37);
   margin-bottom: 5%;
   padding-right: 0% !important;
@@ -98,16 +98,26 @@ body {
   font-family: 'Kanit';
 }
 
-.top-box .button-topbox {
+.button-topbox {
+  text-decoration: none;
+  text-align: center;
   width: 25%;
   padding: 5px;
   font-size: 20px;
   font-weight: 500;
   color: #fff;
   margin-top: 3%;
-  background: #623f80;
+  background: #3f136799 ;
   border-radius: 10px;
+  border: #623f80 2px solid;
 }
+
+.button-topbox:hover {
+  color: #fff;
+  background: #623f80 ;
+  border: #623f80 2px solid;
+}
+
 
 .wiki-box {
   background: rgba( 63, 19, 103, 0.6 );
