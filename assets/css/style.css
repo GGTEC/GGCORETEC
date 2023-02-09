@@ -3,13 +3,13 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background: linear-gradient(170deg, 
-  rgba(107, 74, 140, 0.8) 20%, 
-  rgba(63, 20, 102, 0.5) 20%, 
-  rgba(4, 4, 5, 0.5) 35%, 
-  rgba(49, 57, 73, 0.5) 75%), 
+  rgba(63, 45, 80, 0.8) 20%, 
+  rgba(30, 11, 48, 0.5) 20%, 
+  rgba(0, 0, 0, 0.5) 35%, 
+  rgba(27, 30, 38, 0.5) 75%), 
   linear-gradient(45deg, 
   rgba(4, 4, 5, 0.8) 0%, 
-  rgba(55, 1, 67, 0.8) 50%, 
+  rgba(34, 1, 41, 0.8) 50%, 
   rgba(36, 8, 47, 0.8) 50%, 
   rgba(48, 2, 59, 0.8) 100%) #260137;
 }
@@ -45,18 +45,19 @@ body {
   width: 10%;
 
 }
+
 .container {
-  height: 100%;
+  max-width: 100% !important;
+  padding-left: 2% !important;
+  padding-right: 2% !important;
 }
 
-.container h1 {
-  color: #ffffff;
-}
 
 @media only screen and (min-width: 600px) {
 
   .desktop {
       display: block;
+      max-width: 100%;
   } 
 
   .mobile {
@@ -88,7 +89,7 @@ body {
 
 
 .top-box {
-  background: #3f136799;
+  background: #00000099;
   box-shadow: 0 8px 32px 0 rgba(38, 38, 43, 0.37);
   margin-bottom: 5%;
   padding-right: 0% !important;
@@ -98,18 +99,20 @@ body {
   font-family: 'Kanit';
 }
 
+
+.main-box {
+  background: #00000099;
+  box-shadow: 0 8px 32px 0 rgba(38, 38, 43, 0.37);
+  margin-bottom: 3%;
+  text-align: justify;
+  color: #fff;
+  font-family: 'Kanit';
+}
+
 .button-topbox {
-  text-decoration: none;
-  text-align: center;
-  width: 25%;
-  padding: 5px;
   font-size: 20px;
   font-weight: 500;
-  color: #fff;
-  margin-top: 3%;
-  background: #3f136799 ;
-  border-radius: 10px;
-  border: #623f80 2px solid;
+  border: #6e6e6e 2px solid;
 }
 
 .button-topbox:hover {
@@ -118,9 +121,21 @@ body {
   border: #623f80 2px solid;
 }
 
+.version_block:hover {
+  cursor: pointer;
+}
+
+.version_block .version_text {
+  color: rgb(199, 199, 199);
+}
+
+.version_block .version_text:hover {
+  color: rgb(228, 227, 227);
+}
+
 
 .wiki-box {
-  background: rgba( 63, 19, 103, 0.6 );
+  background: rgba(0, 0, 0, 0.6);
   box-shadow: 0 8px 32px 0 rgba(38, 38, 43, 0.37);
   margin-bottom: 5%;
   border-radius: 5px;
@@ -152,8 +167,8 @@ body {
 }
 
 .footer {
-  background: rgba( 63, 19, 103, 0.6 );
-  box-shadow: 0 8px 32px 0 rgba(38, 38, 43, 0.37);
+  max-width: 100%;
+  background: #00000099;
   padding: 2%;
 }
 
@@ -192,13 +207,17 @@ body {
 
 
 .modal-background {
-  background: rgb( 63, 19, 103) !important;
+  background: rgb(0, 0, 0) !important;
   color: #fff !important;
 }
 
 .modal-background-header {
-  background: #3f1367 !important;
+  background: #000000 !important;
   border-bottom: none !important;
+}
+
+.modal-border {
+  border: solid 1px #878787;
 }
 
 .accept-button {

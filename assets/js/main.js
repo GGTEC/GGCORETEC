@@ -50,3 +50,40 @@ $('#btnReset').click(()=>{
   eraseCookie('allowCookies')
   $('.toast').toast('show')
 })
+
+
+$(window).on("load", function(){
+  var repoOwner = 'GGTEC'
+  var repoName = 'RewardEvents'
+  fetch(`https://api.github.com/repos/${repoOwner}/${repoName}/releases`)
+  .then(response => response.json())
+  .then(data => {
+    let releasesList = document.querySelector("#releases-list");
+    let counter = 0;
+    data.forEach(release => {
+      if (counter === 7) {
+        return;
+      }
+      let releaseEl = document.createElement("div");
+      let truncatedBody = truncateText(release.body, 100);
+      releaseEl.classList.add('version_block')
+      releaseEl.setAttribute('title',`Abrir pagina da versão`)
+      releaseEl.setAttribute('onclick',`window.open("${release.html_url}")`)
+      releaseEl.innerHTML = `
+        <p>Versão: ${release.tag_name}</p>
+        <p class='version_text'>${truncatedBody}</p>
+      `;
+      releasesList.appendChild(releaseEl);
+      counter++;
+    });
+  })
+  .catch(error => console.error(error));
+
+  function truncateText(text, limit) {
+    if (text.length > limit) {
+      return text.substring(0, limit) + "...";
+    }
+    return text;
+  }
+
+});

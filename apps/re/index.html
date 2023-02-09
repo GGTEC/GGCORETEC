@@ -57,7 +57,7 @@
                 <h1>RewardEvents</h1>
                 <p>Siga o guia de configuração abaixo para configurar todas as funções do programa corretamente.</p>
                 <p>Caso prefira, assista o tutorial em video clicando no botão abaixo :</p>
-                <a type="button" href="https://youtu.be/OMp9WWIJbcY" class="button-topbox">Tutorial</a>
+                <a type="button" href="https://youtu.be/OMp9WWIJbcY" class="btn btn-dark btn-outline-light button-topbox button-topbox">Tutorial</a>
             </div>
             <div class="row wiki-box w-100">
                 <div class="col-3 p-0 nav-buttons">
@@ -111,7 +111,7 @@
                             <button class="nav-link w-100" id="pills-commands-tab" data-bs-toggle="pill" data-bs-target="#pills-commands" type="button" role="tab" aria-controls="pills-commands" aria-selected="false">Comandos</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link w-100" id="pills-timers-tab" data-bs-toggle="pill" data-bs-target="#pills-timers" type="button" role="tab" aria-controls="pills-timers" aria-selected="false">Timers</button>
+                            <button class="nav-link w-100" id="pills-timers-tab" data-bs-toggle="pill" data-bs-target="#pills-timers" type="button" role="tab" aria-controls="pills-timers" aria-selected="false">Timers (Mensagens automáticas)</button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link w-100" id="pills-configgiveway-tab" data-bs-toggle="pill" data-bs-target="#pills-configgiveway" type="button" role="tab" aria-controls="pills-configgiveway" aria-selected="false">Sorteio</button>
@@ -132,6 +132,12 @@
                             <button class="nav-link w-100" id="pills-configmusicmodule-tab" data-bs-toggle="pill" data-bs-target="#pills-configmusicmodule" type="button" role="tab" aria-controls="pills-configmusicmodule" aria-selected="false">Configurar Player</button>
                         </li>
                         <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="pills-configchat-tab" data-bs-toggle="pill" data-bs-target="#pills-configchat" type="button" role="tab" aria-controls="pills-configmusicmodule" aria-selected="false">Configurar chat</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="pills-confignotifc-tab" data-bs-toggle="pill" data-bs-target="#pills-confignotifc" type="button" role="tab" aria-controls="pills-configmusicmodule" aria-selected="false">Configurar alertas</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
                             <button class="nav-link w-100" id="pills-configresponses-tab" data-bs-toggle="pill" data-bs-target="#pills-configresponses" type="button" role="tab" aria-controls="pills-configresponses" aria-selected="false">Editar respostas</button>
                         </li>
     
@@ -140,106 +146,158 @@
                 <div class="col p-5">
                     <div class="tab-content" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-download" role="tabpanel" aria-labelledby="pills-download-tab">
-                            <h1 class="mb-5">Download</h1>
-                            <p>Para efetuar o Download do programa acesse este <a href="https://github.com/GGTEC/RewardEvents/releases">Link</a> </p>
-                            <p>e baixe o RewardEvents.exe</p>
-                            <p>Não é necessário instalação, somente deixe o programa em uma pasta separada das demais para melhor organização</p>
+                            <h2 class="mb-5">Instruções de Download</h2>
+                            <h4>Passo 1: Acesse o Link</h4>
+                            <p>Acesse o seguinte link para efetuar o download do programa: <a href="https://github.com/GGTEC/RewardEvents/releases">https://github.com/GGTEC/RewardEvents/releases</a></p>
+                            
+                            <h4>Passo 2: Baixe o Arquivo</h4>
+                            <p>Baixe o arquivo "RewardEvents.zip".</p>
+                            
+                            <h4>Passo 3: Efetue uma Atualização (opcional)</h4>
+                            <p>Se estiver efetuando uma atualização, na maioria dos casos, é necessário apenas baixar o arquivo "RewardEvents.exe".</p>
+                            
+                            <h4>Passo 4: Armazenamento</h4>
+                            <p>Não é necessário instalação. Armazene o programa em uma pasta separada para melhor organização.</p>
                         </div>
                         <div class="tab-pane fade" id="pills-authstreamer" role="tabpanel" aria-labelledby="pills-authstreamer-tab">
-                            <h1 class="mb-5">Autenticar conta streamer</h1>
-                            <p>1. Depois de clicar em login o aplicativo deve ficar com a tela principal congelada e somente a tela de navegador funcionando.</p>
-                            <p>2. Digite o nome da sua conta de streamer no campo requisitado. (deve ser igual o da url ex. https://www.twitch.tv/gg_tec = gg_tec )</p>
-                            <p>3. Clique em login</p>
-                            <p>4. Logue na sua conta e autorize o aplicativo para comunicar com a sua conta e coletar as informações necessárias 
-                                para o funcionamento do aplicativo, as permissões coletadas são exibidas no momento em que é requisitada a autorização.
-                            </p>
+                            <h2 class="mb-5">Autenticação de Conta Streamer</h2>
+                            <ol>
+                                <li>Após clicar em "Login", a tela principal do aplicativo ficará congelada e somente a tela do navegador estará funcionando.</li>
+                                <li>Digite o nome da sua conta de streamer no campo especificado. Ele deve ser o mesmo que o usado na URL, por exemplo, https://www.twitch.tv/gg_tec = gg_tec.</li>
+                                <li>Clique em "Login".</li>
+                                <li>Faça login na sua conta e autorize o aplicativo a se comunicar com sua conta e obter as informações necessárias para o funcionamento. As permissões requeridas serão exibidas no momento em que a autorização for solicitada.</li>
+                            </ol>
                         </div>
                         <div class="tab-pane fade" id="pills-authbot" role="tabpanel" aria-labelledby="pills-authbot-tab">
-                            <h1 class="mb-5">Autenticar conta Bot</h1>
-                            <p>1. Caso não queira usar a uma conta Bot clique no botão indicado.</p>
-                            <p>2. Digite o nome de login da sua conta bot no campo requisitado. (deve ser igual o da url ex. https://www.twitch.tv/gg_tec = gg_tec )</p>
-                            <p>3. Clique em login</p>
-                            <p>4. Logue na sua conta e autorize o aplicativo para comunicar com a sua conta e coletar as informações necessárias para o funcionamento do aplicativo, as permissões coletadas são exibidas no momento em que é requisitada a autorização.</p>
-                          
+                            <h2 class="mb-5">Autenticação de Conta Bot</h2>
+                            <h5>Aviso Importante: É altamente recomendado o uso de uma conta Bot para evitar problemas de conexão com o chat durante a inicialização do programa.</h5>
+                            <ol>
+                              <li>Se você não deseja usar uma conta Bot, clique no botão indicado.</li>
+                              <li>Digite o nome de usuário da sua conta Bot no campo correspondente. Deve ser o mesmo que a URL, por exemplo, https://www.twitch.tv/gg_tec = gg_tec.</li>
+                              <li>Clique em "Login".</li>
+                              <li>Faça login na sua conta e autorize o aplicativo a se comunicar com sua conta e coletar as informações necessárias para o funcionamento correto. As permissões requeridas serão exibidas na tela quando a autorização for solicitada.</li>
+                            </ol>
                         </div>
                         <div class="tab-pane fade" id="pills-connobs" role="tabpanel" aria-labelledby="pills-connobs-tab">
                             <h1 class="mb-5">Conexão OBS Studio</h1>
-                            <p>1. Para comunicarmos com o OBS e modificar as informações é necessário ter o Obs Studio v28 instalado, a versão 27 não é compatível. </p>
-                            <p>2. Abra o OBS studio, vá até a aba ferramentas e clique em Configurações OBS-WebSocket</p>
-                            <p>3. Marque a caixa Ativar servidor WebSockets;</p>
-                            <p>4. Em <b>Porta de Servidor </b> teste alguma que funcionar ex. 4444;</p>
-                            <p>5. Marque a caixa Habilitar Autenticação;</p>
-                            <p>6. Em <b>Senha de Servidor</b>  use a senha que preferir ex. 1234;</p>
-                            <p>7. Aplique e salve as configurações</p>
-                            <p>8. No RewardEvents vá até as Configurações e clique em <b>Conexão com o OBS Studio</b> </p>
-                            <p>9. Utilize os mesmos valores configurados no Obs Studio nos campos Porta e Senha no RewardEvents;</p>
-                            <p>10. Em Host utilize 'localhost';</p>
-                            <p>11. Clique em OK e a configuração inicial estará salva.</p>
+                            <p>Para estabelecer a comunicação com o OBS Studio e modificar as informações, é necessário ter a versão 28+ do OBS Studio instalada, versões anteriores não são compatíveis.</p>
+                            <ol>
+                              <li>Abra o OBS Studio.</li>
+                              <li>Vá até a aba "Ferramentas" e clique em "Configurações OBS-WebSocket".</li>
+                              <li>Marque a caixa "Ativar Servidor WebSockets".</li>
+                              <li>Em "Porta de Servidor", teste uma porta que funcione, por exemplo, 4444.</li>
+                              <li>Marque a caixa "Habilitar Autenticação".</li>
+                              <li>Em "Senha de Servidor", escolha uma senha de sua escolha, por exemplo, 1234.</li>
+                              <li>Aplique e salve as configurações.</li>
+                              <li>No RewardEvents, vá até as Configurações e clique em "Conexão com o OBS Studio".</li>
+                              <li>Utilize os mesmos valores configurados no OBS Studio nos campos Porta e Senha no RewardEvents.</li>
+                              <li>Em "Host", utilize "localhost".</li>
+                              <li>Clique em "OK" e a configuração inicial estará salva.</li>
+                            </ol>
                         </div>
                         <div class="tab-pane fade" id="pills-notobs" role="tabpanel" aria-labelledby="pills-notobs-tab">
-                            <h1 class="mb-5">Notificações OBS Studio</h1>
-                            <p>1. Ainda na area de configurações vá até Notificações OBS Studio</p>
-                            <p>2. Para exibir uma notificação no Obs Studio quando uma recompensa for resgatada marque a opção 'Ativar notificações para resgate de recompensas no OBS Studio';</p>
-                            <p>3. Para exibir uma notificação no Obs Studio quando uma musica for reproduzida marque a opção 'Ativar notificações para pedidos de musica no OBS Studio';</p>
-                            <p>4. Selecione a fonte no Obs Studio que está configurado o arquivo HTML de notificações que está na pasta web/src/html do RewardEvents (Crie uma fonte de navegador e marque a opção arquivo local e navegue até a pasta onde está o arquivo, configure a altura como 1360 e largura 768 e redimensione como preferir);</p>
-                            <p>4. Em 'tempo exibindo a notificação' coloque o tempo em segundos que a notificação deverá ficar visível na tela;</p>
+                            <h1 class="mb-5">Configurações de Notificações no OBS Studio</h1>
+                            <p>Siga estes passos para configurar as notificações no OBS Studio:</p>
+                            <ol>
+                               <li>Vá até a seção "Configurações" e selecione "Notificações OBS Studio".</li>
+                               <li>Marque a opção "Ativar notificações para resgate de recompensas no OBS Studio" para exibir uma notificação no OBS Studio quando uma recompensa for resgatada.</li>
+                               <li>Marque a opção "Ativar notificações para pedidos de música no OBS Studio" para exibir uma notificação no OBS Studio quando uma música for reproduzida.</li>
+                               <li>Crie uma fonte de navegador no OBS Studio e configure-a para usar o arquivo HTML de notificações na pasta "web/src/html" do RewardEvents. Selecione a opção "Arquivo local" e navegue até a pasta onde o arquivo HTML está localizado. Configure a largura como 768 pixels e a altura como 1360 pixels. Redimensione a fonte conforme sua preferência.</li>
+                               <li>Em "Tempo de exibição da notificação", coloque o tempo em segundos que a notificação deve ficar visível na tela.</li>
+                            </ol>
+                         </div>
+                         <div class="tab-pane fade" id="pills-events" role="tabpanel" aria-labelledby="pills-events-tab">
+                            <h2 class="mb-5">Configuração de Ações</h2>
+                            <h4>Aba de Ações</h4>
+                            <p>Na aba de Ações, você pode configurar cada ação para uma recompensa específica.</p>
+                            <h4>Apenas uma ação por recompensa</h4>
+                            <p>Apenas uma ação por recompensa pode ser configurada. É necessário criar a recompensa no seu canal da Twitch antes de criar um evento.</p>
+                            <h4>Seleção do Tipo de Ação</h4>
+                            <p>Selecione o tipo de ação a ser criada clicando no botão correspondente.</p>
+                            <h4>Variáveis para Resposta no Chat</h4>
+                            <p>As variáveis para resposta no chat são: {user}, {command}, {prefix}, {user_level}, {user_id}, {counter}.</p>
+                            <h4>Edição de Comandos</h4>
+                            <p>Ao clicar no botão de edição, você pode alterar o status dos comandos configurados para cada ação para ativado ou desativado.</p>
                         </div>
-                        <div class="tab-pane fade" id="pills-events" role="tabpanel" aria-labelledby="pills-events-tab">
-                            <h1 class="mb-5">Configurar ações</h1>
-                            <p>Na aba Ações é possível configurar cada ação para uma recompensa especifica. </p> 
-                            <p>É possível configurar apenas um ação por recompensa. É necessário criar a recompensa no seu canal da twitch antes de criar um evento. </p> 
-                            <p>Selecione clicando no botão correspondente qual tipo de ação será criado;</p> 
-                            <p>As variáveis para resposta no chat são = {user} {command} {prefix} {user_level} {user_id} {counter};</p>
-                            <p>Clicando no botão editar é possivel alterar o status dos comandos configurados de cada ação para ativado ou desativado.</p>
-                        </div>
-                        <div class="tab-pane fade" id="pills-eventaudio" role="tabpanel" aria-labelledby="pills-eventaudio-tab">
-                            <h1 class="mb-5">Ação : Reproduzir audio</h1>
-                            <p><b>Recompensa : </b>Selecione a recompensa do canal na twitch;</p>
-                            <p><b>Comando para o chat : </b>Esse campo é opcional, use se quiser que seja possível executar o evento com um comando;</p>
-                            <p><b>Tempo de regarga do comando :</b>Quanto tempo em segundos será necessário esperar antes de utilizar o comando novamente</p>
-                            <p><b>Selecione o nivel de usuário para utilizar o comando : </b>Selecione o nível de permissão que o usuário deve ter para utilizar o comando;</p>
-                            <p><b>Arquivo de audio : </b>Selecione o arquivo de audio para ser reproduzido quando a recompensa for resgatada;</p>
-                            <p><b>Tempo da notificação no OBS : </b>Quanto tempo a notificação ficará visível na tela;</p>
-                            <p><b>Resposta no chat : </b>Envia a mensagem no chat do canal quando a recompensa for resgatada;</p>
+                          <div class="tab-pane fade" id="pills-eventaudio" role="tabpanel" aria-labelledby="pills-eventaudio-tab">
+                            <h2 class="mb-5">Ação: Reproduzir Áudio</h2>
+                                <h4>Recompensa:</h4>
+                                <p>Selecione a recompensa do canal na Twitch.</p>
+                                <h4>Comando para o Chat:</h4>
+                                <p>Esse campo é opcional. Use se quiser que seja possível executar o evento com um comando.</p>
+                                <h4>Tempo de Recarga do Comando:</h4>
+                                <p>Indique quanto tempo em segundos será necessário esperar antes de utilizar o comando novamente.</p>
+                                <h4>Selecione o Nível de Usuário para Utilizar o Comando:</h4>
+                                <p>Selecione o nível de permissão que o usuário deve ter para utilizar o comando.</p>
+                                <h4>Arquivo de Áudio:</h4>
+                                <p>Selecione o arquivo de áudio para ser reproduzido quando a recompensa for resgatada.</p>
+                                <h4>Tempo da Notificação no OBS:</h4>
+                                <p>Indique quanto tempo a notificação ficará visível na tela.</p>
+                                <h4>Resposta no Chat:</h4>
+                                <p>Envie a mensagem no chat do canal quando a recompensa for resgatada.</p>
                         </div>
                         <div class="tab-pane fade" id="pills-eventtts" role="tabpanel" aria-labelledby="pills-eventtts-tab">
-                            <h1 class="mb-5">Ação : Texto falado google</h1>
-                            <p><b>Recompensa : </b>Selecione a recompensa do canal na twitch;</p>
-                            <p><b>Comando para o chat : </b> Esse campo é opcional, use se quiser que seja possível executar o evento com um comando;</p>
-                            <p><b>Tempo de regarga do comando :</b>Quanto tempo em segundos será necessário esperar antes de utilizar o comando novamente</p>
-                            <p><b>Selecione o nivel de usuário para utilizar o comando : </b>Selecione o nível de permissão que o usuário deve ter para utilizar o comando;</p>
-                            <p><b>Limite de letras : </b>Limite de letras para evitar flood;</p>
-                            <p><b>Tempo da notificação no obs : </b>Quanto tempo a notificação ficará visível na tela;</p>
-                            <p><b>Resposta no chat : </b>Envia a mensagem no chat do canal quando a recompensa for resgatada ou o comando executado;</p>
+                            <h2 class="mb-5">Ação: Texto Falado Google</h2>
+                                <h4>Recompensa:</h4> 
+                                <p>Selecione a recompensa do canal na Twitch.</p>
+                                <h4>Comando para o chat:</h4>
+                                <p> Este campo é opcional. Use se quiser que seja possível executar o evento com um comando.</p>
+                                <h4>Tempo de recarga do comando:</h4>
+                                <p> Quanto tempo, em segundos, será necessário esperar antes de utilizar o comando novamente.</p>
+                                <h4>Selecione o nível de usuário para utilizar o comando:</h4>
+                                <p> Selecione o nível de permissão que o usuário deve ter para utilizar o comando.</p>
+                                <h4>Limite de letras:</h4>
+                                <p> Limite de letras para evitar o flood.</p>
+                                <h4>Tempo da notificação no OBS:</h4>
+                                <p> Quanto tempo a notificação ficará visível na tela.</p>
+                                <h4>Resposta no chat:</h4>
+                                <p> Envia a mensagem no chat do canal quando a recompensa for resgatada ou o comando executado.</p>
                         </div>
                         <div class="tab-pane fade" id="pills-eventscene" role="tabpanel" aria-labelledby="pills-eventscene-tab">
-                            <h1 class="mb-5">Ação : Mudar cena OBS</h1>
-                            <p><b>Recompensa : </b>Selecione a recompensa do canal na twitch;</p>
-                            <p><b>Comando para o chat : </b>Esse campo é opcional, use se quiser que seja possível executar o evento com um comando;</p>
-                            <p><b>Tempo de regarga do comando :</b>Quanto tempo em segundos será necessário esperar antes de utilizar o comando novamente</p>
-                            <p><b>Selecione o nivel de usuário para utilizar o comando : </b>Selecione o nível de permissão que o usuário deve ter para utilizar o comando;</p>
-                            <p><b>Cena Atual : </b>Deve ser a cena que está ativa no OBS studio</p>
-                            <p><b>Mudar para a cena : </b>Deve ser a cena que será ativa no momento do resgate</p>
-                            <p><b>Retornar para a cena anterior : </b>Defina se o programa deve retornar para a Cena Atual selecionada;</p>
-                            <p><b>Tempo para voltar para a cena anterior : </b>O tempo deve ser em segundos ex.:15;</p>
-                            <p><b>Resposta no chat : </b>Envia a mensagem no chat do canal quando a recompensa for resgatada;</p>
+                            <h1 class="mb-5">Ação: Mudar Cena OBS</h1>
+                            <h4>Recompensa:</h4>
+                            <p>Selecione a recompensa do canal na Twitch.</p>
+                            <h4>Comando para o Chat:</h4>
+                            <p>Esse campo é opcional. Use se quiser que seja possível executar o evento com um comando.</p>
+                            <h4>Tempo de Recarga do Comando:</h4>
+                            <p>Indique quanto tempo em segundos será necessário esperar antes de utilizar o comando novamente.</p>
+                            <h4>Selecione o Nível de Usuário para Utilizar o Comando:</h4>
+                            <p>Selecione o nível de permissão que o usuário deve ter para utilizar o comando.</p>
+                            <h4>Cena Atual:</h4>
+                            <p>Deve ser a cena que está ativa no OBS Studio.</p>
+                            <h4>Mudar para a Cena:</h4>
+                            <p>Deve ser a cena que será ativa no momento do resgate.</p>
+                            <h4>Retornar para a Cena Anterior:</h4>
+                            <p>Defina se o programa deve retornar para a Cena Atual selecionada.</p>
+                            <h4>Tempo para voltar para a Cena Anterior:</h4>
+                            <p>O tempo deve ser em segundos (ex.: 15).</p>
+                            <h4>Resposta no Chat:</h4>
+                            <p>Envie a mensagem no chat do canal quando a recompensa for resgatada.</p>
                         </div>
                         <div class="tab-pane fade" id="pills-eventfilter" role="tabpanel" aria-labelledby="pills-eventfilter-tab">
                             <h1 class="mb-5">Ação : Exibir/ocultar um filtro do OBS</h1>
-                            <p><b>Recompensa : </b>Selecione a recompensa do canal na twitch;</p>
-                            <p><b>Comando para o chat : </b>Esse campo é opcional, use se quiser que seja possível executar o evento com um comando;</p>
-                            <p><b>Tempo de regarga do comando :</b>Quanto tempo em segundos será necessário esperar antes de utilizar o comando novamente</p>
-                            <p><b>Selecione o nivel de usuário para utilizar o comando : </b>Selecione o nível de permissão que o usuário deve ter para utilizar o comando;</p>
-                            <p><b>Nome da fonte do OBS : </b>Seleciona a fonte que deve ter o filtro alterado;</p>
-                            <p><b>Nome do filtro presente na fonte : </b>Selecione o nome do filtro que está configurado na fonte do OBS;</p>
-                            <p><b>Tempo com o filtro ativo : </b>Quanto tempo o filtro deverá ficar ativo no OBS;</p>
-                            <p><b>Resposta no chat  : </b>Envia a mensagem no chat do canal quando a recompensa for resgatada;</p>
+                            <h4>Recompensa : </h4>
+                            <p>Selecione a recompensa do canal na twitch;</p>
+                            <h4>Comando para o chat : </h4>
+                            <p>Esse campo é opcional, use se quiser que seja possível executar o evento com um comando;</p>
+                            <h4>Tempo de recarga do comando :</h4>
+                            <p>Quanto tempo em segundos será necessário esperar antes de utilizar o comando novamente</p>
+                            <h4>Selecione o nivel de usuário para utilizar o comando : </h4>
+                            <p>Selecione o nível de permissão que o usuário deve ter para utilizar o comando;</p>
+                            <h4>Nome da fonte do OBS : </h4>
+                            <p>Seleciona a fonte que deve ter o filtro alterado;</p>
+                            <h4>Nome do filtro presente na fonte : </h4>
+                            <p>Selecione o nome do filtro que está configurado na fonte do OBS;</p>
+                            <h4>Tempo com o filtro ativo : </h4>
+                            <p>Quanto tempo o filtro deverá ficar ativo no OBS;</p>
+                            <h4>Resposta no chat  : </h4>
+                            <p>Envia a mensagem no chat do canal quando a recompensa for resgatada;</p>
                         </div>
                         <div class="tab-pane fade" id="pills-eventsource" role="tabpanel" aria-labelledby="pills-eventsource-tab">
                             <h1 class="mb-5">Ação : Exibir/Ocultar uma fonte do OBS</h1>
                             <p><b>Recompensa : </b>Selecione a recompensa do canal na twitch;</p>
                             <p><b>Comando para o chat : </b>Esse campo é opcional, use se quiser que seja possível executar o evento com um comando;</p>
-                            <p><b>Tempo de regarga do comando :</b>Quanto tempo em segundos será necessário esperar antes de utilizar o comando novamente</p>
+                            <p><b>Tempo de recarga do comando :</b>Quanto tempo em segundos será necessário esperar antes de utilizar o comando novamente</p>
                             <p><b>Selecione o nivel de usuário para utilizar o comando : </b>Selecione o nível de permissão que o usuário deve ter para utilizar o comando;</p>
                             <p><b>Nome da fonte no OBS : </b>Selecione a fonte que deverá ser Exibida/Oculta;</p>
                             <p><b>Tempo exibindo :</b>É o tempo que a fonte ficará visível na tela;</p>
@@ -258,13 +316,13 @@
                             <p><b>Manter pressionado ? : </b>Marcando essa opção faz com que a tecla ou atalho continue sendo pressionado (recomendado apenas para tecla unica), essa opção desmarca "Pressionar novamente depois do tempo ?" e "Pressionar varias vezes ?";</p>
                             <p><b>Tempo mantendo pressionado : </b>Especifique em segundos quanto tempo a tecla ou atalho deverá continuar pressionado;</p>
                             <p><b>Resposta no chat : </b>Envia a mensagem no chat do canal quando a recompensa for resgatada;</p>
-                            <p><b>Tempo de regarga do comando :</b>Quanto tempo em segundos será necessário esperar antes de utilizar o comando novamente</p>
+                            <p><b>Tempo de recarga do comando :</b>Quanto tempo em segundos será necessário esperar antes de utilizar o comando novamente</p>
                         </div>
                         <div class="tab-pane fade" id="pills-eventclip" role="tabpanel" aria-labelledby="pills-eventclip-tab">
                             <h1 class="mb-5">Ação : Criar um clip</h1>
                             <p><b>Recompensa : </b>Selecione a recompensa do canal na twitch;</p>
                             <p><b>Comando para o chat : </b>Esse campo é opcional, use se quiser que seja possível executar o evento com um comando;</p>
-                            <p><b>Tempo de regarga do comando :</b>Quanto tempo em segundos será necessário esperar antes de utilizar o comando novamente</p>
+                            <p><b>Tempo de recarga do comando :</b>Quanto tempo em segundos será necessário esperar antes de utilizar o comando novamente</p>
                             <p><b>Selecione o nivel de usuário para utilizar o comando : </b>Selecione o nível de permissão que o usuário deve ter para utilizar o comando;</p>
                             <p><b>Resposta no chat : </b>Envia a mensagem no chat do canal quando a recompensa for resgatada;</p>
                         </div>
@@ -282,7 +340,7 @@
                             <p><b>Comando : </b>Qual mensagem deverá ser enviada no chat para executar o comando, o comando só é executado se estiver em primeiro lugar na mensagem, se preferir não é necessário o uso de prefix ex = !comando, ?comando $comando, #comando</p>
                             <p><b>Selecione o nivel de usuário para utilizar o comando : </b>Selecione o nível de permissão que o usuário deve ter para utilizar o comando;</p>
                             <p><b>Resposta no chat : </b>Envia a mensagem no chat do canal quando o comando for executado;</p>
-                            <p><b>Tempo de regarga do comando :</b>Quanto tempo em segundos será necessário esperar antes de utilizar o comando novamente</p>
+                            <p><b>Tempo de recarga do comando :</b>Quanto tempo em segundos será necessário esperar antes de utilizar o comando novamente</p>
                             <p><i>Nota: prefix suportados para repostas = {user} {command} {prefix} {user_level} {user_id} {counter}</i> </p>
                             <h2 class="mt-5">Editar um comando</h2>
                             <p><b>Comando : </b>Selecione o comando para editar</p>
@@ -328,7 +386,7 @@
                             <p><b>Limpar nomes</b>Qual comando deve ser enviado para limpar nomes da lista do sorteio (necessário '!')</p>
                             <p><b>Verificar usuário</b>Qual comando deve ser enviado para verificar se o usuário está no sorteio (necessário '!')</p>
                             <p><b>Usuário verificar participação</b>Qual comando deve ser enviado para o usuário verificar a própria participação no sorteio (necessário '!')</p>
-                            <p><b>Tempo de recarga para utilizar o comando :</b>Todos os comandos citados acima tem um tempo de regarga em segundos configurável</p>
+                            <p><b>Tempo de recarga para utilizar o comando :</b>Todos os comandos citados acima tem um tempo de recarga em segundos configurável</p>
                         </div>
                         <div class="tab-pane fade" id="pills-configcounter" role="tabpanel" aria-labelledby="pills-configcounter-tab">
                             <h1 class="mt-5">Configure os comandos e o sistema do contador</h1>
@@ -378,24 +436,152 @@
                             <p><b>Enviar erros de pedido de musica no chat: </b>Permite o envio da mensagem de qualquer erro que possa ocorrer durante o processamento da musica.</p>
                             <p><b>Status de conexão no chat : </b>Ativa o envio de status de conexão dos sistemas para receber e enviar mensagens no chat</p>
                         </div>
-                        <div class="tab-pane fade" id="pills-configmusicmodule" role="tabpanel" aria-labelledby="pills-configmusicmodule-tab">
-                            <h1 class="mb-5">Configurar modulo de pedido de musica</h1>
-                            <p><b>Permitir pedidos de musica :</b>Ativa/desativa o módulo para pedidos</p>
-                            <p><b>Ativar notificações para pedidos de musica : </b>Ativa/desativa as notificações no OBS Studio para pedidos de musica</p>
-                            <p><b>Recompensa para pedidos de musica : </b>Selecione qual recompensa deve ser resgatada para receber pedidos de musica (a recompensa deve exigir que o usuário insira um texto)</p>
-                            <p><b>Comando para pedidos de musica (moderador) : </b>Comando para o moderador enviar pedidos de musica</p>
-                            <p><b>Comando para ajustar volume da musica (moderador) : </b>Comando para o moderador ajustar o volume da musica</p>
-                            <p><b>Comando para pular a musica (moderador) : </b>Comando para o moderador pular a musica caso seja necessário</p>
-                            <p><b>Comando para saber a próxima musica : </b>Comando para saber qual é a proxima musica na fila</p>
-                            <p><b>Comando para saber a musica atual : </b>Comando para saber qual é o nome da musica atual</p>
-                            <p><b>Status do comando : </b>Ativa ou desativa o comando correspondente</p>
-                            <p><b>Tempo de regarga do comando :</b>Quanto tempo em segundos deve ser aguardado para utilizar o comando correspondente novamente.</p>
-                            <p><b>Selecione o nível de usuário necessairo para utilizar o comando :</b>Seleciona o nível que o usuário deve ter para utilizar o comando correspondente</p>
-                        </div>
+                            <div class="tab-pane fade" id="pills-configmusicmodule" role="tabpanel" aria-labelledby="pills-configmusicmodule-tab">
+                                <h1 class="mb-5">Configurar modulo de pedido de musica</h1>
+                                <p><b>Permitir pedidos de musica :</b>Ativa/desativa o módulo para pedidos</p>
+                                <p><b>Ativar notificações para pedidos de musica : </b>Ativa/desativa as notificações no OBS Studio para pedidos de musica</p>
+                                <p><b>Recompensa para pedidos de musica : </b>Selecione qual recompensa deve ser resgatada para receber pedidos de musica (a recompensa deve exigir que o usuário insira um texto)</p>
+                                <p><b>Comando para pedidos de musica (moderador) : </b>Comando para o moderador enviar pedidos de musica</p>
+                                <p><b>Comando para ajustar volume da musica (moderador) : </b>Comando para o moderador ajustar o volume da musica</p>
+                                <p><b>Comando para pular a musica (moderador) : </b>Comando para o moderador pular a musica caso seja necessário</p>
+                                <p><b>Comando para saber a próxima musica : </b>Comando para saber qual é a proxima musica na fila</p>
+                                <p><b>Comando para saber a musica atual : </b>Comando para saber qual é o nome da musica atual</p>
+                                <p><b>Status do comando : </b>Ativa ou desativa o comando correspondente</p>
+                                <p><b>Tempo de recarga do comando :</b>Quanto tempo em segundos deve ser aguardado para utilizar o comando correspondente novamente.</p>
+                                <p><b>Selecione o nível de usuário necessário para utilizar o comando :</b>Seleciona o nível que o usuário deve ter para utilizar o comando correspondente</p>
+                            </div>
                         <div class="tab-pane fade" id="pills-configresponses" role="tabpanel" aria-labelledby="pills-configresponses-tab">
                             <h1 class="mb-5">Configure as respostas padrão do programa</h1>
                             <p><b>Resposta : </b>Selecione o tipo de resposta para editar</p>
                             <p>Nota: Os prefix suportados já estão nas mensagens, nenhum prefix diferente dos quais já contem nas mensagens deve ser utilizado nas mensagens padrão.</p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-configchat" role="tabpanel" aria-labelledby="pills-configchat-tab">
+                            <h1 class="mb-5">Configure exibição do chat e cargos</h1>
+                            <h4>Tamanho da letra no chat</h4>
+                            <p>Configure o tamanho da fonte que será exibida nas mensagens do chat.</p>
+                            <h4>Aplicar cor aos nomes no chat</h4>
+                            <p>Altere se deseja aplicar as cores da twitch aos nomes ou manter os nomes em branco.</p>
+                            <h4>Exibir data e hora das mensagens no chat</h4>
+                            <p>Ative se deseja exibir a data e hora que uma mensagem foi enviada.</p>
+                            <h4>Selecione o modo de tempo</h4>
+                            <p>Altere o tipo de exibição de hora da mensagem</p>
+                            <h4>Formato de data/hora na mensagem</h4>
+                            <p>Altere o formato de exibição da hora na mensagem, para dia utilize %d,mês %m, ano %Y, hora %H, minuto %M, segundo %S.</p>
+                            <h4>Aplicar cor fixa aos nomes no chat que de não definiram uma cor</h4>
+                            <p>Ative se deseja exibir uma cor fixa para os usuários no chat que não definiram uma cor nas configurações.</p>
+                            <h4>Aplicar cor á borda do bloco de mensagem de acordo com a cor definida pelo usuário</h4>
+                            <p>Ative se deseja exibir uma borda personalizada com a cor do usuário no bloco de mensagem.</p>
+                            <h4>Selecione uma cor</h4>
+                            <p>Escolha a cor que sera exibida para um usuário que não escolheu uma cor.</p>
+                            <h4>Exibir distintivos</h4>
+                            <p>Ative para exibir os distintivos do chat da twitch no chat do bot.</p>
+                            <h4>Exibir as mensagens em uma linha separada do nome</h4>
+                            <p>Ative se desejar que os nomes e as mensagens sejam exibidas em uma linha diferente para facilitar a leitura.</p>
+                            <h4>Exibir uma notificação quando um usuário entrar no chat</h4>
+                            <p>Ative se deseja que seja exibida uma notificação quando o usuário entrar no chat, a mensagem não será exibida se o usuário enviar uma mensagem rapidamente,
+                                por se tratar de uma mensagem enviada pela twitch essa mensagem pode ter atrasos de até 5 minutos.
+                            </p>
+                            <h4>Exibir uma notificação quando um usuário sair do chat</h4>
+                            <p>É a mesma configuração anterior com o mesmo propósito, mas para saída de usuário</p>
+                            <h4>Cor da mensagem de notificação de entrada</h4>
+                            <p>Selecione a cor da mensagem que será enviada no chat quando o usuário entrar no chat.</p>
+                            <h4>Cor da mensagem de notificação de saida</h4>
+                            <p>Selecione a cor da mensagem que será enviada no chat quando o usuário sair do chat.</p>
+                            <h4>Cor da mensagem de notificação geral</h4>
+                            <p>Selecione a cor para notificações de resgate de recompensas do canal.</p>
+                            <h4>Reproduzir um audio para notificação de novo usuário no chat</h4>
+                            <p>Ative se deseja ouvir uma notificação sonora quando um usuário entrar no chat.</p>
+                            <h4>Arquivo de audio .mp3</h4>
+                            <p>Selecione o audio para ser reproduzido.</p>
+                            <h4>Adicionar/Remover usuário para não ser notificado ao entrar/sair do chat</h4>
+                            <p>Adicione um usuário na lista para não ser notificado, é util para contas bot não listadas na configuração abaixo.</p>
+                            <h4>Adicionar/remover usuário da lista de bots</h4>
+                            <p>O bot conta com uma lista de bots prdefinida e constantemente atualizada via API externa, mas é possível adicionar contas nessa lista para serem ignoradas.</p>
+                            <h4>Enviar saudação quando um usuário entrar no chat</h4>
+                            <p>Ative se deseja que uma saúdação/mensagem seja enviada quando um NOVO usuário entrar no chat, essa notificação diferente da notificação acima é enviada no chat de forma publica,
+                                essa notificação é recomendada apenas em chats que são muito movimentados e o streamer não consegue ver todas as mensagens.
+                            </p>
+                            <h4>Saudação para ser enviada quando um novo usuário entrar no chat</h4>
+                            <p>Digite a mensagem que será enviada, uma mensagem de boas vindas é util para fazer que o usuário seja acolhido.</p>
+                            <h4>Mininmo de mensagens que o usuário deve enviar antes de se tornar um Top Chatter</h4>
+                            <p>O cargo TopChatter é utilizado no sistema de permissões do bot, no qual é possivel limitar alguns comandos somente para esses usuários, digite quantas mensagens o usuário deve enviar antes de 
+                                receber o cargo.
+                            </p>
+                            <h4>Minimo de tempo em minutos que o usuário deve passar no chat antes de se tornar um espectador Regular</h4>
+                            <p>A mesma ideia da configuração acima, mas é para o tempo que o usuário passou no chat, só é válido apenas para usuários que enviaram pelo menos uma mensagem no chat.</p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-confignotifc" role="tabpanel" aria-labelledby="pills-confignotifc-tab">
+                            <h1 class="mb-5">Configure exibição de alertas</h1>
+                            <h3>Os alertas são apenas para Inscrições(Sub), Re-inscrições (Resub), Inscrições de presente (Gift-sub) e Raid</h3>
+                            <p>Infelizmente para notificações de follow nós teriamos que alugar uma host paga hospedando um script mais avançado que recebe e envia essas notificações, e ainda não temos 
+                                monetização para esse sistema, se quiser auxiliar/apoiar o nosso projeto considere efetuar uma doação (link para doação se encontra no topo da pagina em "Contato").
+                            </p>
+                            <h4>Selecione o tipo de notificação para editar</h4>
+                            <p>Selecione qual alerta deseja editar ou configurar o HTML para alertas</p>
+                            <h3 class="mt-5 mb-3">Inscrições (Sub)</h3>
+                            <h4>Ativar notificações para Sub</h4>
+                            <p>Ative para receber um alerta quando um usuário se inscrever no canal</p>
+                            <h4>Ativar texto-falado para mensagens Sub</h4>
+                            <p>Ative para um TTS com a mensagem que o usuário digitou</p>
+                            <h4>Som para notificações de novo Sub</h4>
+                            <p>Selecione o arquivo .mp3 para ser reproduzido</p>
+                            <h4>Volume do audio</h4>
+                            <p>Altere o volume do audio</p>
+                            <h4>Imagem para notificações de novo Sub</h4>
+                            <p>Selecione a imagem para ser exbida na notificação do OBS studio</p>
+                            <h4>Tamanho da imagem em pixels</h4>
+                            <p>Digite qual deve ser o tamanho da imagem em pixels, não é necessário utilizar "PX" no final</p>
+                            <h4>Mensagem para novo Sub</h4>
+                            <p>Digite a mensagem que deverá ser exibida na notificação quando um usuário se inscrever, a mensagem também será enviada no chat</p>
+                            <p>Aliases : {username} {months} {type} {plan} {cumulative}</p>
+                            <h4>Tamanho do texto em pixels</h4>
+                            <p>Altere qual será o tamanho do texto da mensagem exibida no alerta do OBS studio</p>
+                            <h3 class="mt-5 mb-3">Re-Inscrições (ReSub)</h3>
+                            <h4>Ativar notificações para ReSub</h4>
+                            <p>Ative para receber um alerta quando um usuário se re-inscrever no canal</p>
+                            <h4>Ativar texto-falado para mensagens ReSub</h4>
+                            <p>Ative para um TTS com a mensagem que o usuário digitou</p>
+                            <h4>Som para notificações de novo ReSub</h4>
+                            <p>Selecione o arquivo .mp3 para ser reproduzido</p>
+                            <h4>Volume do audio</h4>
+                            <p>Altere o volume do audio</p>
+                            <h4>Imagem para notificações de ReSub</h4>
+                            <p>Selecione a imagem para ser exbida na notificação do OBS studio</p>
+                            <h4>Tamanho da imagem em pixels</h4>
+                            <p>Digite qual deve ser o tamanho da imagem em pixels, não é necessário utilizar "PX" no final</p>
+                            <h4>Mensagem para novo ReSub</h4>
+                            <p>Digite a mensagem que deverá ser exibida na notificação quando um usuário se re-inscrever, a mensagem também será enviada no chat</p>
+                            <h4>Tamanho do texto em pixels</h4>
+                            <p>Altere qual será o tamanho do texto da mensagem exibida no alerta do OBS studio</p>
+                            <h3 class="mt-5 mb-3">Inscrições de presente(Gift-sub)</h3>
+                            <h4>Ativar notificações para Gift-sub</h4>
+                            <p>Ative para receber um alerta quando um usuário enviar Inscrições de presente para o canal</p>
+                            <h4>Som para notificações de novo Gift-sub</h4>
+                            <p>Selecione o arquivo .mp3 para ser reproduzido</p>
+                            <h4>Volume do audio</h4>
+                            <p>Altere o volume do audio</p>
+                            <h4>Imagem para notificações de novo Gift-sub</h4>
+                            <p>Selecione a imagem para ser exbida na notificação do OBS studio</p>
+                            <h4>Tamanho da imagem em pixels</h4>
+                            <p>Digite qual deve ser o tamanho da imagem em pixels, não é necessário utilizar "PX" no final</p>
+                            <h4>Mensagem para Gift-sub</h4>
+                            <p>Digite a mensagem que deverá ser exibida na notificação quando um usuário enviar um Gift-sub, a mensagem também será enviada no chat</p>
+                            <h4>Tamanho do texto em pixels</h4>
+                            <p>Altere qual será o tamanho do texto da mensagem exibida no alerta do OBS studio</p>
+                            <h4>Mensagem para Gift-sub oculto</h4>
+                            <p>Digite a mensagem que deverá ser exibida na notificação quando um usuário enviar um Gift-sub oculto, a mensagem também será enviada no chat</p>
+                            <h4>Tamanho do texto em pixels</h4>
+                            <p>Altere qual será o tamanho do texto da mensagem exibida no alerta do OBS studio</p>
+                            <h4>Mensagem para renovação de Gift-sub oculto</h4>
+                            <p>Digite a mensagem que deverá ser exibida na notificação quando um usuário renovar o Gift-sub oculto que recebeu, a mensagem também será enviada no chat</p>
+                            <h4>Tamanho do texto em pixels</h4>
+                            <p>Altere qual será o tamanho do texto da mensagem exibida no alerta do OBS studio</p>
+                            <h3 class="mt-5 mb-3">HTML para notificações</h3>
+                            <h4>Ativar notificações via HTML</h4>
+                            <p>Ative se deseja exibir os alertas no OBS Studio</p>
+                            <p>Configure uma nova fonte de navegador no OBS Studio, ative a opção "Arquivo local", a localização do arquivo é "web/src/html/event.html" localizada na pasta web do RewardEvents</p>
+                            <h4>Selecione a fonte que está configurada o arquvio HTML de Notificações</h4>
+                            <p>Clique no botão carregar, no seletor estará listada todas as fontes de cena atual no OBS studio, selecione a fonte de navegador criada anteriormente que foi configurada com o arquivo HTML para alertas.</p>
                         </div>
                     </div>
                 </div>
