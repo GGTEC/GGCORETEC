@@ -60,7 +60,11 @@ $(window).on("load", function(){
   .then(data => {
     let releasesList = document.querySelector("#releases-list");
     let counter = 0;
+    let totalDownloads = 0;
     data.forEach(release => {
+      release.assets.forEach(asset => {
+        totalDownloads += asset.download_count;
+      });
       if (counter === 7) {
         return;
       }
@@ -76,6 +80,10 @@ $(window).on("load", function(){
       releasesList.appendChild(releaseEl);
       counter++;
     });
+    let totalDownloadsEl = document.getElementById("total-downloads");
+    totalDownloadsEl.innerHTML = `
+      <p>Total de Downloads: ${totalDownloads}</p>
+    `;
   })
   .catch(error => console.error(error));
 

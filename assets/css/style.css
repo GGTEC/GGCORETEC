@@ -256,3 +256,11 @@ body {
   box-shadow: 1px 1px 39px 12px rgba(0,0,0,0.75);
   background-color: #00000072;
 }
+
+.total-downloads {
+  font-size: 30px;
+}
+
+.resourses-list li{
+  font-size: 22px !important;
+}
