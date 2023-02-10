@@ -248,3 +248,11 @@ body {
   background: #623f80 !important;
 }
 
+.carousel-item img {
+  width: 50%;
+}
+
+.carousel-caption {
+  box-shadow: 1px 1px 39px 12px rgba(0,0,0,0.75);
+  background-color: #00000072;
+}
