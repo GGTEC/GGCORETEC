@@ -1,0 +1,13 @@
+{
+      "redeem": "None",
+      "request": "!sr",
+      "atual": "!atual",
+      "next": "!next",
+      "skip": "!skip",
+      "volume": "!volume",
+      "request-perm": "subs",
+      "atual-perm": "subs",
+      "next-perm": "subs",
+      "skip-perm": "subs",
+      "volume-perm": "mod"
+}

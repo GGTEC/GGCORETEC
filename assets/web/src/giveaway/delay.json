@@ -1,0 +1,12 @@
+{
+      "execute_delay": "10",
+      "execute_last_use": 0,
+      "clear_delay": "10",
+      "clear_last_use": 0,
+      "check_delay": "10",
+      "check_last_use": 0,
+      "check_self_delay": "10",
+      "check_self_last_use": 0,
+      "add_user_delay": "10",
+      "add_user_last_use": 0
+}

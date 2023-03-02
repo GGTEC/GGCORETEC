@@ -1,0 +1,23 @@
+[
+    "channel.follow",
+    "channel.channel_points_custom_reward_redemption.add",
+    "channel.subscription.end",
+    "channel.subscription.message",
+    "channel.raid",
+    "channel.cheer",
+    "channel.ban",
+    "channel.unban",
+    "channel.poll.begin",
+    "channel.poll.progress",
+    "channel.poll.end",
+    "channel.prediction.begin",
+    "channel.prediction.progress",
+    "channel.prediction.lock",
+    "channel.prediction.end",
+    "channel.goal.begin",
+    "channel.goal.progress",
+    "channel.goal.end",
+    "stream.online",
+    "stream.offline",
+    "channel.update"
+  ]

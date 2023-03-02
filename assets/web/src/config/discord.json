@@ -1,0 +1,114 @@
+{
+      "live_start": {
+            "url": "",
+            "status": 1,
+            "color": "03b2f8",
+            "content": "",
+            "title": "O streamer iniciou uma live",
+            "description": "{url}"
+      },
+      "live_cat": {
+            "url": "",
+            "status": 1,
+            "color": "03b2f8",
+            "content": "",
+            "title": "O streamer alterou a categoria e/ou titulo da live",
+            "description": "{url}"
+      },
+      "live_end": {
+            "url": "",
+            "status": 1,
+            "color": "03b2f8",
+            "content": "",
+            "title": "O streamer finalizou a live",
+            "description": "{url}"
+      },
+      "follow": {
+            "url": "",
+            "status": 1,
+            "color": "03b2f8",
+            "content": "",
+            "title": "O usuário {user} deu follow no canal",
+            "description": "O usuário {user} deu follow no canal"
+      },
+      "sub": {
+            "status": 1,
+            "url": "",
+            "color": "03b2f8",
+            "content": "",
+            "title": "O usuário {username} virou sub no canal",
+            "description": ""
+      },
+      "resub": {
+            "url": "",
+            "status": 1,
+            "color": "03b2f8",
+            "content": "",
+            "title": "O usuário {username} se re-inscreveu no canal",
+            "description": "{url}"
+      },
+      "clips_create": {
+            "url": "",
+            "status": 1,
+            "color": "03b2f8",
+            "content": "",
+            "title": "Um novo clip foi criado, confira {url}",
+            "description": "{url}"
+      },
+      "clips_edit": {
+            "url": "",
+            "status": 1,
+            "color": "03b2f8",
+            "content": "",
+            "title": "Um novo clip foi criado, confira {url}",
+            "description": "{url}"
+      },
+      "poll_start": {
+            "url": "",
+            "status": 0,
+            "color": "03b2f8",
+            "content": "",
+            "title": "Uma nova enquete foi iniciada",
+            "description": "Vá até o canal e vote o quanto antes"
+      },
+      "poll_status": {
+            "url": "",
+            "status": 0,
+            "color": "03b2f8",
+            "content": "",
+            "title": "O status da enquete foi atualizado",
+            "description": "Vá até o canal e vote o quanto antes"
+      },
+      "poll_end": {
+            "url": "",
+            "status": 0,
+            "color": "03b2f8",
+            "content": "",
+            "title": "Uma enquete foi finalizada",
+            "description": "Vá até o canal e vote o quanto antes"
+      },
+      "prediction_start": {
+            "url": "",
+            "status": 1,
+            "color": "03b2f8",
+            "content": "",
+            "title": "Um novo palpite foi iniciado",
+            "description": "Vá até o canal e vote o quanto antes"
+      },
+      "prediction_progress": {
+            "url": "",
+            "status": 1,
+            "color": "03b2f8",
+            "content": "",
+            "title": "O status do palpite foi atualizado",
+            "description": "Vá até o canal e vote o quanto antes"
+      },
+      "prediction_end": {
+            "url": "",
+            "status": 1,
+            "color": "03b2f8",
+            "content": "",
+            "title": "Um palpite foi finalizado",
+            "description": "Vá até o canal e vote o quanto antes"
+      }
+}
