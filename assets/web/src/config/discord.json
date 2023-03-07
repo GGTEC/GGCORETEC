@@ -31,6 +31,14 @@
             "title": "O usuário {user} deu follow no canal",
             "description": "O usuário {user} deu follow no canal"
       },
+      "bits": {
+            "status": 1,
+            "url": "",
+            "color": "03b2f8",
+            "content": "",
+            "title": "O usuário {username} enviou {amount} bits",
+            "description": ""
+      },
       "sub": {
             "status": 1,
             "url": "",

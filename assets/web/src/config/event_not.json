@@ -36,11 +36,25 @@
             "response_px": "{username} Presenteou {rec_username} com uma inscrição {plan} por {months} mes(es)"
       },
       "mysterygift": {
+            "status": 1,
+            "text_over_image": 1,
+            "image": "",
+            "image_px": "300",
+            "audio": "",
+            "audio_volume": "6",
+            "tts": 1,
             "response": "{username} Presenteou a comunidade com {count} inscrição(ões) Nível {plan} ",
             "response_chat": "{username} Presenteou a comunidade com {count} inscrição(ões",
             "response_px": "20"
       },
       "re-mysterygift": {
+            "status": 1,
+            "text_over_image": 1,
+            "image": "",
+            "image_px": "300",
+            "audio": "",
+            "audio_volume": "6",
+            "tts": 1,
             "response": "{username} Renovou o sub que recebeu de presente !! ",
             "response_chat": "{username} Renovou o sub que recebeu de presente !! ",
             "response_px": "20"
