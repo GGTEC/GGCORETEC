@@ -1,6 +1,7 @@
 {
       "response_reset_counter": "/me Contador de mortes reiniciado.",
-      "response_counter": "/me O contador de mortes está em {value}",
+      "response_counter": "/me O contador de está em {value}",
+      "response_set_counter": "/me O valor do contador foi aplicado para {value}",
       "response_delay_error": "/me Recarregando, aguarde {seconds} segundos...",
       "response_not_digit_counter": "/me {username} --> O valor inserido no comando não é um digito",
       "response_null_set_counter": "/me {username} --> É necessário inserir um valor para adicionar ao contador",

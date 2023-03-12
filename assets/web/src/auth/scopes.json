@@ -5,6 +5,7 @@
     "response_type" : "token",
     "redirect" : "http://localhost:5555",
     "url": "https://api.twitch.tv/kraken/",
+    "debug" : 0,
     "scopes" :[
         "moderator:read:followers",
         "analytics:read:extensions",
