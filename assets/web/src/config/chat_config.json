@@ -2,14 +2,10 @@
       "appply-colors": 1,
       "appply-no-colors": 0,
       "color-apply": "Blue",
-      "color-not-join": "gray",
-      "color-not-leave": "Blue",
       "block-color": 1,
       "font-size": "18",
       "show-badges": 1,
       "wrapp-message": 1,
-      "not-user-join": 1,
-      "not-user-leave": 1,
       "not-user-sound": 0,
       "not-sound-path": "",
       "user_not_display": [],
@@ -19,6 +15,5 @@
       "type-data": "current",
       "time-format": "%H:%M",
       "top_chatter_min": "1000000",
-      "regular_min": "10000",
-      "color-not": "gray"
+      "regular_min": "10000"
 }

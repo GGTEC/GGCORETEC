@@ -4,7 +4,7 @@
     "force_verify" : "true",
     "response_type" : "token",
     "redirect" : "http://localhost:5555",
-    "url": "https://api.twitch.tv/kraken/",
+    "url": "https://id.twitch.tv/",
     "debug" : 0,
     "scopes" :[
         "moderator:read:followers",
