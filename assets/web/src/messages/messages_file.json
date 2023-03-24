@@ -93,7 +93,7 @@
       "event_prediction_start" : "Palpite iniciado : {title}",
       "event_prediction_end" : "Palpite finalizado : {title}",
       "event_goal_begin" : "Meta de {type} iniciada",
-      "event_goal_end" : "Meta de {type} finalziada",
+      "event_goal_end" : "Meta de {type} finalizada",
       "event_join" : "O usuário {username} entrou no chat",
       "event_leave" : "O usuário {username} saiu do chat"
 }
