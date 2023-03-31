@@ -9,7 +9,5 @@
       "STATUS_BOT": 1,
       "STATUS_MUSIC": 1,
       "STATUS_MUSIC_CONFIRM": 1,
-      "STATUS_MUSIC_ERROR": 1,
-      "delay_date": "31/12/2022 17:21:37",
-      "delay_config": 6
+      "STATUS_MUSIC_ERROR": 1
 }

@@ -9,7 +9,9 @@
             "tts": 1,
             "response": "{username} se inscreveu no canal por {months} meses <br> com {type} no nível {plan}, ele já é inscrito á {cumulative} mes(es) <br>",
             "response_chat": "{username} se inscreveu no canal com {type} ",
-            "response_px": "20"
+            "response_px": "20",
+            "response_weight" : "100",
+            "response_color" : "white"
       },
       "resub": {
             "status": 1,
@@ -21,7 +23,9 @@
             "tts": 1,
             "response": "{username} se re-inscreveu no canal no nível {tier}, ele já é inscrito á {total_months} mes(es)",
             "response_chat": "{username} se re-inscreveu no canal {user_mesage}",
-            "response_px": "20"
+            "response_px": "20",
+            "response_weight" : "100",
+            "response_color" : "white"
       },
       "giftsub": {
             "status": 1,
@@ -33,7 +37,9 @@
             "tts": 1,
             "response": "{username} Presenteou {rec_username} com uma inscrição {plan} por {months} mes(es)",
             "response_chat": "{username} Presenteou {rec_username} com sub",
-            "response_px": "{username} Presenteou {rec_username} com uma inscrição {plan} por {months} mes(es)"
+            "response_px": "20px",
+            "response_weight" : "100",
+            "response_color" : "white"
       },
       "mysterygift": {
             "status": 1,
@@ -45,7 +51,9 @@
             "tts": 1,
             "response": "{username} Presenteou a comunidade com {count} inscrição(ões) Nível {plan} ",
             "response_chat": "{username} Presenteou a comunidade com {count} inscrição(ões",
-            "response_px": "20"
+            "response_px": "20",
+            "response_weight" : "100",
+            "response_color" : "white"
       },
       "re-mysterygift": {
             "status": 1,
@@ -57,7 +65,9 @@
             "tts": 1,
             "response": "{username} Renovou o sub que recebeu de presente !! ",
             "response_chat": "{username} Renovou o sub que recebeu de presente !! ",
-            "response_px": "20"
+            "response_px": "20",
+            "response_weight" : "100",
+            "response_color" : "white"
       },
       "raid": {
             "status": 1,
@@ -69,7 +79,9 @@
             "tts": 1,
             "response": "{username} Invadiu o canal e trouxe {specs} com ele!",
             "response_chat": "",
-            "response_px": "20"
+            "response_px": "20",
+            "response_weight" : "100",
+            "response_color" : "white"
       },
       "follow": {
             "status": 1,
@@ -81,7 +93,9 @@
             "tts": 0,
             "response": "{username} deu follow no canal !!!",
             "response_chat": "{username} deu follow no canal !!!",
-            "response_px": "20"
+            "response_px": "20",
+            "response_weight" : "100",
+            "response_color" : "white"
       },
       "bits1": {
             "status": 1,
@@ -93,7 +107,9 @@
             "tts": 1,
             "response": "{username} Doou {amount} Bits",
             "response_chat": "",
-            "response_px": "40"
+            "response_px": "40",
+            "response_weight" : "100",
+            "response_color" : "white"
       },
       "bits100": {
             "status": 1,
@@ -105,7 +121,9 @@
             "tts": 1,
             "response": "{username} Doou {amount} Bits",
             "response_chat": "",
-            "response_px": "40"
+            "response_px": "40",
+            "response_weight" : "100",
+            "response_color" : "white"
       },
       "bits1000": {
             "status": 1,
@@ -117,7 +135,9 @@
             "tts": 1,
             "response": "{username} Doou {amount} Bits",
             "response_chat": "",
-            "response_px": "40"
+            "response_px": "40",
+            "response_weight" : "100",
+            "response_color" : "white"
       },
       "bits5000": {
             "status": 1,
@@ -129,6 +149,8 @@
             "tts": 1,
             "response": "{username} Doou {amount} Bits",
             "response_chat": "",
-            "response_px": "40"
+            "response_px": "40",
+            "response_weight" : "100",
+            "response_color" : "white"
       }
 }
