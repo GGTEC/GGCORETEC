@@ -130,6 +130,9 @@
                             <button class="nav-link w-100" id="pills-configcounter-tab" data-bs-toggle="pill" data-bs-target="#pills-configcounter" type="button" role="tab" aria-controls="pills-configcounter" aria-selected="false">Contador</button>
                         </li>
                         <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="pills-configqueue-tab" data-bs-toggle="pill" data-bs-target="#pills-configqueue" type="button" role="tab" aria-controls="pills-configqueue" aria-selected="false">Fila de espera</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
                             <button class="nav-link w-100" id="pills-player-tab" data-bs-toggle="pill" data-bs-target="#pills-timers" type="button" role="tab" aria-controls="pills-player" aria-selected="false">Player</button>
                         </li>
                         <li class="nav-item" role="presentation">
@@ -143,6 +146,9 @@
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link w-100" id="pills-configchat-tab" data-bs-toggle="pill" data-bs-target="#pills-configchat" type="button" role="tab" aria-controls="pills-configmusicmodule" aria-selected="false">Configurar chat</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="pills-confighigh-tab" data-bs-toggle="pill" data-bs-target="#pills-confighigh" type="button" role="tab" aria-controls="pills-confighigh" aria-selected="false">Configurar mensagem destacada</button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link w-100" id="pills-confignotifc-tab" data-bs-toggle="pill" data-bs-target="#pills-confignotifc" type="button" role="tab" aria-controls="pills-configmusicmodule" aria-selected="false">Configurar alertas</button>
@@ -207,14 +213,27 @@
                         </div>
                         <div class="tab-pane fade" id="pills-notobs" role="tabpanel" aria-labelledby="pills-notobs-tab">
                             <h1 class="mb-5">Configurações de Notificações no OBS Studio</h1>
-                            <p>Siga estes passos para configurar as notificações no OBS Studio:</p>
-                            <ol>
-                               <li>Vá até a seção "Configurações" e selecione "Notificações OBS Studio".</li>
-                               <li>Marque a opção "Ativar notificações para resgate de recompensas no OBS Studio" para exibir uma notificação no OBS Studio quando uma recompensa for resgatada.</li>
-                               <li>Marque a opção "Ativar notificações para pedidos de música no OBS Studio" para exibir uma notificação no OBS Studio quando uma música for reproduzida.</li>
-                               <li>Crie uma fonte de navegador no OBS Studio e configure-a para usar o arquivo HTML de notificações na pasta "web/src/html" do RewardEvents. Selecione a opção "Arquivo local" e navegue até a pasta onde o arquivo HTML está localizado. Configure a largura como 768 pixels e a altura como 1360 pixels. Redimensione a fonte conforme sua preferência.</li>
-                               <li>Em "Tempo de exibição da notificação", coloque o tempo em segundos que a notificação deve ficar visível na tela.</li>
-                            </ol>
+                            <h3>Status</h3>
+                            <h4>Ativar notificações para resgates de recompensas:</h4>
+                            <p>Ativa/Desativa o envio de notificações para resgates de recompensa no OBS studio</p>
+                            <h4>Ativar notificações para pedidos de musica:</h4>
+                            <p>Ativa/Desativa o envio de pedidos de musica no OBS studio</p>
+                            <h4>Ativar notificações para eventos (follow, sub e etc):</h4>
+                            <p>Ativa/Desativa o envio de eventos (follow, sub e etc)</p>
+                            <h4>Ativar emote rain:</h4>
+                            <p>Ativa/Desativa a exibição de emotes no OBS Studio a partir do comando !emote</p>
+                            <h3>Configurar HTML</h3>
+                            <h4>Selecione a fonte que está configurada o arquivo HTML de notificações para resgates de recompensa</h4>
+                            <p>No OBS Studio crie uma fonte de navegador, marque a caixa 'Arquivo local' e navegue até o diretório onde se encontra o arquivo 'notifications.html',
+                                 para auxiliar á encontrar o arquivo clique no botão 'Abrir diretório do HTML' no RewardEvents, feito isso salve a fonte e carregue as fontes salvas no OBS Studio com o botão 
+                                'Carregar' no RewardEvents e selecione a fonte criada anteriormente.</p>
+                            <p class="small">O processo será o mesmo para os outros arquivos.</p>
+                            <h4>Tamanho dos emotes do emote rain (pixels)</h4>
+                            <p>Tamanho em numeros dos emotes que vão aparecer no OBS Studio</p>
+                            <h4>Tempo exibindo a notificação para eventos (segundos)</h4>
+                            <p>Quanto tempo a fonte no OBS Studio exibirá a notificação antes de ser oculta.</p>
+                            <h4>Tempo exibindo a notificação para resgates de musicas e recompensas (segundos)</h4>
+                            <p>Quanto tempo a fonte no OBS Studio exibirá a notificação antes de ser oculta.</p>
                          </div>
                          <div class="tab-pane fade" id="pills-events" role="tabpanel" aria-labelledby="pills-events-tab">
                             <h2 class="mb-5">Configuração de Ações</h2>
@@ -229,7 +248,7 @@
                             <h4>Edição de Comandos</h4>
                             <p>Ao clicar no botão de edição, você pode alterar o status dos comandos configurados para cada ação para ativado ou desativado.</p>
                         </div>
-                          <div class="tab-pane fade" id="pills-eventaudio" role="tabpanel" aria-labelledby="pills-eventaudio-tab">
+                        <div class="tab-pane fade" id="pills-eventaudio" role="tabpanel" aria-labelledby="pills-eventaudio-tab">
                             <h2 class="mb-5">Ação: Reproduzir Áudio</h2>
                             <h4>Recompensa:</h4>
                             <p>Selecione a recompensa do canal na Twitch.</p>
@@ -389,6 +408,83 @@
                             <h2 class="mt-5">Excluir um comando</h2>
                             <h4>Comando:</h4>
                             <p>Selecione o comando para Excluir</p>
+
+                            <h2 class="mt-5">Comandos padrão</h2>
+                            <h4>Selecione o comando para configurar:</h4>
+                            <p>Selecione o comando para exibir a sessão de edição do comando, comandos padrão não podem ser excluidos, somente desativados.</p>
+                        
+                            <h4>Comando:</h4>
+                            <p>Qual mensagem deverá ser enviada no chat para executar o comando, não é necessário o uso de prefix ex = !comando, ?comando $comando, #comando</p>
+                            <h4>Status do comando:</h4>
+                            <p>Altere o status do comando se deseja desativa-lo ou ativa-lo:</p>
+                            <h4>Resposta do comanod:</h4>
+                            <p>Envia a mensagem no chat do canal quando o comando for executado;</p>
+                            <h4>Aliases (Placeholders) do comando (Não editável)</h4>
+                            <p>Exibe quais variáveis podem ser utilizadas na resposta do comando, essas variáveis fazem parte do código interno e não podem ser editadas.</p>
+                            <h4>Tempo de recarga do comando:</h4>
+                            <p>Quanto tempo em segundos será necessário esperar antes de utilizar o comando novamente</p>
+                            <h4>Selecione o nível de usuário para utilizar o comando:</h4>
+                            <p>Selecione o nível de permissão que o usuário deve ter para utilizar o comando;</p>
+
+                            <h2 class="mt-5">Comandos de música</h2>
+                            <h4>Selecione o comando para configurar:</h4>
+                            <p>Selecione o comando para exibir a sessão de edição do comando, comandos de música não podem ser excluidos, somente desativados.</p>
+                            
+                            <h4>Comando:</h4>
+                            <p>Qual mensagem deverá ser enviada no chat para executar o comando, não é necessário o uso de prefix ex = !comando, ?comando $comando, #comando</p>
+                            <h4>Status do comando:</h4>
+                            <p>Altere o status do comando se deseja desativa-lo ou ativa-lo:</p>
+                            <h4>Tempo de recarga do comando:</h4>
+                            <p>Quanto tempo em segundos será necessário esperar antes de utilizar o comando novamente</p>
+                            <h4>Selecione o nível de usuário para utilizar o comando:</h4>
+                            <p>Selecione o nível de permissão que o usuário deve ter para utilizar o comando;</p> 
+                            <p><i>Nota: As respostas para comandos de música podem ser configuradas a partir da aba configuraçõe/respostas</i></p>
+
+                            <h2 class="mt-5">Comandos do contador</h2>
+                            <h4>Selecione o comando para configurar:</h4>
+                            <p>Selecione o comando para exibir a sessão de edição do comando, comandos do contador não podem ser excluidos, somente desativados.</p>
+                            
+                            <h4>Comando:</h4>
+                            <p>Qual mensagem deverá ser enviada no chat para executar o comando, não é necessário o uso de prefix ex = !comando, ?comando $comando, #comando</p>
+                            <h4>Status do comando:</h4>
+                            <p>Altere o status do comando se deseja desativa-lo ou ativa-lo:</p>
+                            <h4>Tempo de recarga do comando:</h4>
+                            <p>Quanto tempo em segundos será necessário esperar antes de utilizar o comando novamente</p>
+                            <h4>Selecione o nível de usuário para utilizar o comando:</h4>
+                            <p>Selecione o nível de permissão que o usuário deve ter para utilizar o comando;</p> 
+                            <p><i>Nota: As respostas para comandos do contador podem ser configuradas a partir da aba configuraçõe/respostas</i></p>
+
+                            <h2 class="mt-5">Comandos da fila de espera</h2>
+                            <h4>Selecione o comando para configurar:</h4>
+                            <p>Selecione o comando para exibir a sessão de edição do comando, comandos da fila de espera não podem ser excluidos, somente desativados.</p>
+                            
+                            <h4>Comando:</h4>
+                            <p>Qual mensagem deverá ser enviada no chat para executar o comando, não é necessário o uso de prefix ex = !comando, ?comando $comando, #comando</p>
+                            <h4>Status do comando:</h4>
+                            <p>Altere o status do comando se deseja desativa-lo ou ativa-lo:</p>
+                            <h4>Tempo de recarga do comando:</h4>
+                            <p>Quanto tempo em segundos será necessário esperar antes de utilizar o comando novamente</p>
+                            <h4>Selecione o nível de usuário para utilizar o comando:</h4>
+                            <p>Selecione o nível de permissão que o usuário deve ter para utilizar o comando;</p> 
+                            <p><i>Nota: As respostas para comandos da fila de espera podem ser configuradas a partir da aba configuraçõe/respostas</i></p>
+ 
+                            <h2 class="mt-5">Comandos de sorteio</h2>
+                            <h4>Selecione o comando para configurar:</h4>
+                            <p>Selecione o comando para exibir a sessão de edição do comando, comandos de sorteio não podem ser excluidos, somente desativados.</p>
+                            
+                            <h4>Comando:</h4>
+                            <p>Qual mensagem deverá ser enviada no chat para executar o comando, não é necessário o uso de prefix ex = !comando, ?comando $comando, #comando</p>
+                            <h4>Status do comando:</h4>
+                            <p>Altere o status do comando se deseja desativa-lo ou ativa-lo:</p>
+                            <h4>Tempo de recarga do comando:</h4>
+                            <p>Quanto tempo em segundos será necessário esperar antes de utilizar o comando novamente</p>
+                            <h4>Selecione o nível de usuário para utilizar o comando:</h4>
+                            <p>Selecione o nível de permissão que o usuário deve ter para utilizar o comando;</p> 
+                            <p><i>Nota: As respostas para comandos da fila de espera podem ser configuradas a partir da aba configuraçõe/respostas</i></p>
+ 
+                            <h2 class="mt-5">Lista de comandos</h2>
+                            <p>Exibe uma tabela com todos os comandos configurados no RewardEvents, seja um comando padrão ou um comando criado.</p>
+                                                 
                         </div>
                         <div class="tab-pane fade" id="pills-timers" role="tabpanel" aria-labelledby="pills-timers-tab">
                             <h2 class="mt-5">Habilitar/desabilitar Modulo timer</h2>
@@ -440,20 +536,9 @@
                             <p>Exibe uma lista com os nomes dos participantes do sorteio.</p>
                             <h4>Limpar Lista de Participantes:</h4>
                             <p>Limpa os nomes da lista do sorteio antes de executar.</p>
-                            <h2 class="mt-5">Comandos de Sorteio</h2>
-                            <h4>Executar sorteio</h4>
-                            <p>Qual comando deve ser enviado para executar o sorteio (necessário '!')</p>
-                            <h4>Limpar nomes</h4>
-                            <p>Qual comando deve ser enviado para limpar nomes da lista do sorteio (necessário '!')</p>
-                            <h4>Verificar usuário</h4>
-                            <p>Qual comando deve ser enviado para verificar se o usuário está no sorteio (necessário '!')</p>
-                            <h4>Usuário verificar participação</h4>
-                            <p>Qual comando deve ser enviado para o usuário verificar a própria participação no sorteio (necessário '!')</p>
-                            <h4>Tempo de recarga para utilizar o comando :</h4>
-                            <p>Todos os comandos citados acima tem um tempo de recarga em segundos configurável. Observe que todos os comandos serão necessários nível moderador para utilizar, exceto o comando "Usuário verificar participação".</p>
                         </div>
                         <div class="tab-pane fade" id="pills-configcounter" role="tabpanel" aria-labelledby="pills-configcounter-tab">
-                            <h1 class="mt-5">Configure os comandos e o sistema do contador</h1>
+                            <h1 class="mt-5">Configure o sistema do contador</h1>
                             <h4>Valor atual : </h4>
                             <p>Exibe o valor atual do contador</p>
                             <h4>Aplicar valor ao contador : </h4>
@@ -461,18 +546,30 @@
                             <h2 class="mt-5">Configurar contador</h2>
                             <h4>Recompensa para adicionar +1 no contador : </h4>
                             <p>Selecione a recompensa que deve ser resgatada para adicionar +1 no contador</p>
-                            <h2 class="mt-5">Comandos do contador</h2>
-                            <p>Os comandos para <b>Aplicar contador</b> e <b>limpar valor</b> são necessários nível moderador para utilizar</p>
-                            <h4>Verificar contador : </h4>
-                            <p>Comando para verificar o valor atual do contador (necessário '!')</p>
-                            <h4>Aplicar valor : </h4>
-                            <p>Comando para aplicar um valor inicial ou atual do contador, uso = !comando valor (necessário '!')</p>
-                            <h4>Limpar valor : </h4>
-                            <p>Comando para zerar o contador (necessário '!')</p>
-                            <h4>Status do comando :</h4>
-                            <p>Ativa ou desativa o comando</p>
-                            <h4>Tempo de recarga :</h4>
-                            <p>Intervalo que deve ser aguardado para utilizar o comando novamente</p>
+                            <h4>Enviar resposta no chat quando o usuário resgatar a recompensa:</h4>
+                            <p>Ativa o envio da mensagem configurada.</p>
+                            <h4>Resposta no chat:</h4>
+                            <p>Mensagem que deverá ser enviada ao resgatar a recompensa</p>
+                            <h4>Resposta no chat quando aplicar um valor via comando ou manualmente nesta página.</h4>
+                            <p>Mensagem que deverá ser enviada ao aplicar um valor de forma manual. </p>
+                            <p><i>Nota: Outras respostas podem ser configuradas a partir da aba configuraçõe/respostas</i></p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-configqueue" role="tabpanel" aria-labelledby="pills-configqueue-tab">
+                            <h2 class="mt-5">Configurar fila de espera</h2>
+                            <h4>Recompensa para entrar na fila de espera:</h4>
+                            <p>Selecione a recompensa que deverá ser resgatada pelo espectador para entrar na fila de espera</p>
+                            <h4>Enviar resposta no chat quando o usuário resgatar a recompensa</h4>
+                            <p>Ativa/desativa o envio de resposta para o resgate da recompensa para entrar na fila de epsera.</p>
+                            <h4>Resposta no chat:</h4>
+                            <p>Mnesagem que deverá ser enviada quando um usuário resgatar a recompnesa para entrar na fila de espera.</p>
+                            <h4>Reposta no chat quando adicionar um usuário ou valor via comando ou manualmente nesta pagina. </h4>
+                            <p>Mnesagem que deverá ser enviada quando um usuário/nome/valor for adicionado na fila de espera de forma manual, via comando ou interface.</p>
+                            <p><i>Nota: Outras respostas da fila de espera podem ser configuradas a partir da aba configuraçõe/respostas</i></p>
+                            <h2 class="mt-5">Adicionar/Remover usuário da lista de espera</h2>
+                            <h4>Nome do usuário:</h4>
+                            <p>Insira o nome do usuário/valor que deverá ser adicionado.</p>
+                            <h4>Fila de espera:</h4>
+                            <p>Tabela com os nomes/valores adicionados na fila.</p>
                         </div>
                         <div class="tab-pane fade" id="pills-player" role="tabpanel" aria-labelledby="pills-player-tab">
                             <h1 class="mt-5">Player para Pedidos de Música</h1>
@@ -487,22 +584,24 @@
                             <h4>Limpar Playlist:</h4> Limpa as músicas na playlist
                         </div>
                         <div class="tab-pane fade" id="pills-configdiscord" role="tabpanel" aria-labelledby="pills-configdiscord-tab">
-                            <h1 class="mt-5">Configurar Discord para Clipes</h1>
-                            <h4>Url Webhook Discord:</h4>
-                            <p>Insira a URL do Webhook do seu canal do Discord que deverá receber uma notificação quando um clipe for criado usando o RewardEvents.</p>
-                            <h4>Url Webhook Discord para Edição:</h4>
-                            <p>Insira a URL do Webhook do seu canal do Discord que deverá receber uma notificação com o link para editar o clipe quando ele for criado usando o RewardEvents.</p>
-                            <h4>Cor do Bloco:</h4>
+                            <h2 class="mt-5">Configurar notificações no Discord</h2>
+                            <h4>Selecione o tipo de notificação Webhook para editar</h4>
+                            <p>As notificações não podem ser adicionadas nem excluidas, somente ativadas ou desativadas .</p>
+                            <h4>Url Webhook:</h4>
+                            <p>Insira a URL do Webhook do seu canal do Discord que deverá receber a notificação.</p>
+                            <h4>Cor:</h4>
                             <p>Insira a cor do bloco da mensagem embed que será enviada no Discord (Código HEX, não é necessário '#').</p>
-                            <h4>Título do Bloco:</h4>
-                            <p>Texto principal que deve aparecer no bloco embed (para receber o link corretamente, a mensagem deve conter a variável {clip_id}).</p>
-                            <h4>Título do Bloco para Edição:</h4>
-                            <p>Texto principal que deve aparecer no bloco embed para o clipe ser editado (para receber o link corretamente, a mensagem deve conter a variável {clip_url}).</p>
+                            <h4>Pseudonimos (aliases) úteis:</h4>
+                            <p>Pseudonimos ou aliáses que podem ser utilizados no Webhook.</p>
+                            <h4>Conteúdo</h4>
+                            <p>Conteúdo em formato simples que será exibido antes do bloco Embed</p>
+                            <h4>Título:</h4>
+                            <p>Texto principal que deve aparecer no bloco embed.</p>
+                            <h4>Descrição:</h4>
+                            <p>Texto que deve aparecer na descrição do bloco embed.</p>
                             <h4>Ativar Webhook:</h4>
-                            <p>Status do módulo Webhook Discord.</p>
-                            <h4>Ativar Webhook para Edição do Clipe:</h4>
-                            <p>Status do módulo Webhook Discord para editar o clipe.</p>
-                          </div>
+                            <p>Status do Webhook.</p>
+                        </div>
                         <div class="tab-pane fade" id="pills-configchatmessage" role="tabpanel" aria-labelledby="pills-configchatmessage-tab">
                             <h1 class="mb-5">Configurar Mensagens/Módulos Habilitados</h1>
                             <h4>Habilitar Comando : </h4>
@@ -532,27 +631,12 @@
                             <p> Ativa ou desativa as notificações no OBS Studio para os pedidos de música.</p>
                             <h4>Recompensa para Pedidos de Música:</h4>
                             <p> Selecione a recompensa que deve ser concedida ao receber um pedido de música (a recompensa deve exigir que o usuário insira um texto).</p>
-                            <h4>Comando para Pedidos de Música (Moderador):</h4>
-                            <p> Comando para o moderador enviar pedidos de música.</p>
-                            <h4>Comando para Ajustar o Volume da Música (Moderador):</h4>
-                            <p> Comando para o moderador ajustar o volume da música.</p>
-                            <h4>Comando para Pular a Música (Moderador):</h4>
-                            <p> Comando para o moderador pular a música, caso necessário.</p>
-                            <h4>Comando para Saber a Próxima Música:</h4>
-                            <p> Comando para saber qual será a próxima música na fila.</p>
-                            <h4>Comando para Saber a Música Atual:</h4>
-                            <p> Comando para saber o nome da música atual.</p>
-                            <h4>Status do Comando:</h4>
-                            <p> Ativa ou desativa o comando correspondente.</p>
-                            <h4>Tempo de Recarga do Comando:</h4>
-                            <p> Tempo em segundos que deve ser aguardado para utilizar o comando correspondente novamente.</p>
-                            <h4>Selecionar o Nível de Usuário Necessário para Utilizar o Comando:</h4>
-                            <p> Selecione o nível de usuário necessário para utilizar o comando correspondente.</p>
                           </div>
                         <div class="tab-pane fade" id="pills-configresponses" role="tabpanel" aria-labelledby="pills-configresponses-tab">
                             <h1 class="mb-5">Configure as respostas padrão do programa</h1>
                             <p><b>Resposta : </b>Selecione o tipo de resposta para editar</p>
-                            <p>Nota: Os prefix suportados já estão nas mensagens, nenhum prefix diferente dos quais já contem nas mensagens deve ser utilizado nas mensagens padrão.</p>
+                            <h4>Pseudonimos (aliases) úteis:</h4>
+                            <p>Pseudonimos ou aliáses que podem ser utilizados na mensagem selecionada.</p>
                         </div>
                         <div class="tab-pane fade" id="pills-configchat" role="tabpanel" aria-labelledby="pills-configchat-tab">
                             <h1 class="mb-5">Configure exibição do chat e cargos</h1>
@@ -609,78 +693,60 @@
                             <h4>Minimo de tempo em minutos que o usuário deve passar no chat antes de se tornar um espectador Regular</h4>
                             <p>A mesma ideia da configuração acima, mas é para o tempo que o usuário passou no chat, só é válido apenas para usuários que enviaram pelo menos uma mensagem no chat.</p>
                         </div>
+                        <div class="tab-pane fade" id="pills-confighigh" role="tabpanel" aria-labelledby="pills-confighigh-tab">
+                            <h1 class="mb-5">Configurar mensagem destacada</h1>
+                            <h4>Ativar mensagens destacadas</h4>
+                            <p>Ativa/desativa a exibição da mensagem na tela do OBS Studio</p>
+                            <h4>Fonte de navegador do OBS Studio configurada com o arquivo HTML highlight.html</h4>
+                            <p>No OBS Studio crie uma fonte de navegador, marque a caixa 'Arquivo local' e navegue até o diretório onde se encontra o arquivo 'highlight.html',
+                                 para auxiliar á encontrar o arquivo clique no botão 'Abrir diretório do HTML' no RewardEvents, feito isso salve a fonte e carregue as fontes salvas no OBS Studio com o botão 
+                                'Carregar' no RewardEvents e selecione a fonte criada anteriormente.</p>
+                            <h4>Tempo exibindo a mensagem na tela</h4>
+                            <p>Quanto tempo a fonte do OBS Studio deverá ficar ativa com a mensagem sendo exibida</p>
+                            <h4>Cor do nome do usuário na mensagem destacada</h4>
+                            <p>Selecione a cor do nome do usuário que será exibido na mensagem destacada.</p>
+                            <h4>Cor da mensagem destacada</h4>
+                            <p>Selecione a cor da mensagem que será exibido na mensagem destacada.</p>
+                            <h4>Peso da fonte na mensagem destacada</h4>
+                            <p>Valor em numeros que terá a expessura da fonte na mensagem destacada.</p>
+                            <h4>Tamanho da fonta na mensagem destacada</h4>
+                            <p>Qual será o tamanho da fonte na mensagem destacada</p>
+                            <h4>DUração da animação CSS</h4>
+                            <p>Digite a duração em segundos que irá durar a animação de fade de entrada/saida.</p>
+                        </div>
                         <div class="tab-pane fade" id="pills-confignotifc" role="tabpanel" aria-labelledby="pills-confignotifc-tab">
                             <h1 class="mb-5">Configure exibição de alertas</h1>
-                            <h3>Os alertas são apenas para Inscrições(Sub), Re-inscrições (Resub), Inscrições de presente (Gift-sub) e Raid</h3>
-                            <p>Infelizmente para notificações de follow nós teriamos que alugar uma host paga hospedando um script mais avançado que recebe e envia essas notificações, e ainda não temos 
-                                monetização para esse sistema, se quiser auxiliar/apoiar o nosso projeto considere efetuar uma doação (link para doação se encontra no topo da pagina em "Contato").
-                            </p>
+
                             <h4>Selecione o tipo de notificação para editar</h4>
                             <p>Selecione qual alerta deseja editar ou configurar o HTML para alertas</p>
-                            <h3 class="mt-5 mb-3">Inscrições (Sub)</h3>
-                            <h4>Ativar notificações para Sub</h4>
-                            <p>Ative para receber um alerta quando um usuário se inscrever no canal</p>
-                            <h4>Ativar texto-falado para mensagens Sub</h4>
-                            <p>Ative para um TTS com a mensagem que o usuário digitou</p>
-                            <h4>Som para notificações de novo Sub</h4>
+
+                            <h4>Ativar notificações:</h4>
+                            <p>Ative/desative o status para receber a notificação</p>
+                            <h4>Ativar texto-falado para mensagens:</h4>
+                            <p>Ative para um TTS com a mensagem que o usuário digitou ou que será enviada no chat dependendo do tipo de notificação.</p>
+                            <h4>Som para notificações:</h4>
                             <p>Selecione o arquivo .mp3 para ser reproduzido</p>
-                            <h4>Volume do audio</h4>
+                            <h4>Volume do audio:</h4>
                             <p>Altere o volume do audio</p>
-                            <h4>Imagem para notificações de novo Sub</h4>
+                            <h4>Imagem para notificações:</h4>
                             <p>Selecione a imagem para ser exbida na notificação do OBS studio</p>
-                            <h4>Tamanho da imagem em pixels</h4>
+                            <h4>Exibir texto sobre imagem:</h4>
+                            <p>Ativado = exibe o texto da notificação sobre a imagem</p>
+                            <p>Desativado = exibe o texto da notificação abaixo da imagem</p>
+                            <h4>Tamanho da imagem em pixels:</h4>
                             <p>Digite qual deve ser o tamanho da imagem em pixels, não é necessário utilizar "PX" no final</p>
-                            <h4>Mensagem para novo Sub</h4>
-                            <p>Digite a mensagem que deverá ser exibida na notificação quando um usuário se inscrever, a mensagem também será enviada no chat</p>
-                            <p>Aliases : {username} {months} {type} {plan} {cumulative}</p>
+                            <h4>Mensagem no HTML</h4>
+                            <p>Digite a mensagem que deverá ser exibida somente na notificação do OBS Studio</p>
+                            <h4>Pseudonimos (Aliases) uteis</h4>
+                            <p>Aliases que podem ser utilizadas nas notificações</p>
+                            <h4>Mensagem no chat</h4>
+                            <p>Digite a mensagem que deverá ser enviada no chat quando o evento for notificado</p>
                             <h4>Tamanho do texto em pixels</h4>
                             <p>Altere qual será o tamanho do texto da mensagem exibida no alerta do OBS studio</p>
-                            <h3 class="mt-5 mb-3">Re-Inscrições (ReSub)</h3>
-                            <h4>Ativar notificações para ReSub</h4>
-                            <p>Ative para receber um alerta quando um usuário se re-inscrever no canal</p>
-                            <h4>Ativar texto-falado para mensagens ReSub</h4>
-                            <p>Ative para um TTS com a mensagem que o usuário digitou</p>
-                            <h4>Som para notificações de novo ReSub</h4>
-                            <p>Selecione o arquivo .mp3 para ser reproduzido</p>
-                            <h4>Volume do audio</h4>
-                            <p>Altere o volume do audio</p>
-                            <h4>Imagem para notificações de ReSub</h4>
-                            <p>Selecione a imagem para ser exbida na notificação do OBS studio</p>
-                            <h4>Tamanho da imagem em pixels</h4>
-                            <p>Digite qual deve ser o tamanho da imagem em pixels, não é necessário utilizar "PX" no final</p>
-                            <h4>Mensagem para novo ReSub</h4>
-                            <p>Digite a mensagem que deverá ser exibida na notificação quando um usuário se re-inscrever, a mensagem também será enviada no chat</p>
-                            <h4>Tamanho do texto em pixels</h4>
-                            <p>Altere qual será o tamanho do texto da mensagem exibida no alerta do OBS studio</p>
-                            <h3 class="mt-5 mb-3">Inscrições de presente(Gift-sub)</h3>
-                            <h4>Ativar notificações para Gift-sub</h4>
-                            <p>Ative para receber um alerta quando um usuário enviar Inscrições de presente para o canal</p>
-                            <h4>Som para notificações de novo Gift-sub</h4>
-                            <p>Selecione o arquivo .mp3 para ser reproduzido</p>
-                            <h4>Volume do audio</h4>
-                            <p>Altere o volume do audio</p>
-                            <h4>Imagem para notificações de novo Gift-sub</h4>
-                            <p>Selecione a imagem para ser exbida na notificação do OBS studio</p>
-                            <h4>Tamanho da imagem em pixels</h4>
-                            <p>Digite qual deve ser o tamanho da imagem em pixels, não é necessário utilizar "PX" no final</p>
-                            <h4>Mensagem para Gift-sub</h4>
-                            <p>Digite a mensagem que deverá ser exibida na notificação quando um usuário enviar um Gift-sub, a mensagem também será enviada no chat</p>
-                            <h4>Tamanho do texto em pixels</h4>
-                            <p>Altere qual será o tamanho do texto da mensagem exibida no alerta do OBS studio</p>
-                            <h4>Mensagem para Gift-sub oculto</h4>
-                            <p>Digite a mensagem que deverá ser exibida na notificação quando um usuário enviar um Gift-sub oculto, a mensagem também será enviada no chat</p>
-                            <h4>Tamanho do texto em pixels</h4>
-                            <p>Altere qual será o tamanho do texto da mensagem exibida no alerta do OBS studio</p>
-                            <h4>Mensagem para renovação de Gift-sub oculto</h4>
-                            <p>Digite a mensagem que deverá ser exibida na notificação quando um usuário renovar o Gift-sub oculto que recebeu, a mensagem também será enviada no chat</p>
-                            <h4>Tamanho do texto em pixels</h4>
-                            <p>Altere qual será o tamanho do texto da mensagem exibida no alerta do OBS studio</p>
-                            <h3 class="mt-5 mb-3">HTML para notificações</h3>
-                            <h4>Ativar notificações via HTML</h4>
-                            <p>Ative se deseja exibir os alertas no OBS Studio</p>
-                            <p>Configure uma nova fonte de navegador no OBS Studio, ative a opção "Arquivo local", a localização do arquivo é "web/src/html/event.html" localizada na pasta web do RewardEvents</p>
-                            <h4>Selecione a fonte que está configurada o arquvio HTML de Notificações</h4>
-                            <p>Clique no botão carregar, no seletor estará listada todas as fontes de cena atual no OBS studio, selecione a fonte de navegador criada anteriormente que foi configurada com o arquivo HTML para alertas.</p>
+                            <h4>Peso (Expessura) da fonte do texto destacado (nome de usuário)</h4>
+                            <p>Altere qual será a expessura do texto do nome de usuário exibido no alerta do OBS studio</p>
+                            <h4>Cor do do texto destacado (nome de usuário)</h4>
+                            <p>Altere qual será a cor do texto do nome de usuário exibido no alerta do OBS studio</p>
                         </div>
                     </div>
                 </div>
