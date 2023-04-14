@@ -15,8 +15,7 @@
     <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <link href="../../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5312302938088623"
-    crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5312302938088623" crossorigin="anonymous"></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-6T1WP18QKQ"></script>
     <script>
@@ -38,7 +37,10 @@
                 <div class="container-fluid">
             
                     <!-- Navbar brand -->
-                    <a class="navbar-brand" href=".">GGTECApps</a>
+                    <a class="navbar-brand" href=".">
+                        <img src="../../assets/img/about.png" alt="..." style="width: 40px;">
+                        <span>GGTECApps</span>
+                    </a>
                 
                     <!-- Collapsible wrapper -->
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -64,11 +66,16 @@
         </div>
         <div class="container">
             <div class="top-box w-100 p-5 mt-5">
-                <h1>RewardEvents</h1>
-                <p>Siga o guia de configuração abaixo para configurar todas as funções do programa corretamente.</p>
-                <p>Caso prefira, assista o tutorial em video clicando no botão abaixo :</p>
-                <a type="button" href="https://youtu.be/OMp9WWIJbcY" class="btn btn-dark btn-outline-light button-topbox button-topbox">Tutorial</a>
-            </div>
+                <div class="row">
+                    <div class="col-1">
+                        <img src="../../assets/img/about.png" alt="..." style="width: 120px;">
+                    </div>
+                    <div class="col-10">
+                        <h1>RewardEvents</h1>
+                        <h4>Siga o guia de configuração abaixo para configurar todas as funções do programa corretamente.</h4>
+                    </div>
+                </div>
+                </div>
             <div class="row wiki-box w-100">
                 <div class="col-3 p-0 nav-buttons">
                     <ul class="nav flex-column nav-pills" id="pills-tab" role="tablist">
@@ -239,7 +246,7 @@
                             <h3 class="mt-3">Configurar HTML</h3>
                             <h4>Selecione a fonte que está configurada o arquivo HTML de notificações para resgates de recompensa</h4>
                             <p>No OBS Studio crie uma fonte de navegador, marque a caixa 'Arquivo local' e navegue até o diretório onde se encontra o arquivo 'notifications.html',
-                                 para auxiliar á encontrar o arquivo clique no botão 'Abrir diretório do HTML' no RewardEvents, feito isso salve a fonte e carregue as fontes salvas no OBS Studio com o botão 
+                                para auxiliar á encontrar o arquivo clique no botão 'Abrir diretório do HTML' no RewardEvents, feito isso salve a fonte e carregue as fontes salvas no OBS Studio com o botão 
                                 'Carregar' no RewardEvents e selecione a fonte criada anteriormente.</p>
                             <p class="small">O processo será o mesmo para os outros arquivos.</p>
                             <h4>Tamanho dos emotes do emote rain (pixels)</h4>
@@ -248,8 +255,8 @@
                             <p>Quanto tempo a fonte no OBS Studio exibirá a notificação antes de ser oculta.</p>
                             <h4>Tempo exibindo a notificação para resgates de musicas e recompensas (segundos)</h4>
                             <p>Quanto tempo a fonte no OBS Studio exibirá a notificação antes de ser oculta.</p>
-                         </div>
-                         <div class="tab-pane fade" id="pills-events" role="tabpanel" aria-labelledby="pills-events-tab">
+                        </div>
+                        <div class="tab-pane fade" id="pills-events" role="tabpanel" aria-labelledby="pills-events-tab">
                             <h2 class="mb-5">Configuração de Ações</h2>
                             <h4>Aba de Ações</h4>
                             <p>Na aba de Ações, você pode configurar cada ação para uma recompensa específica.</p>
@@ -352,7 +359,7 @@
                             <p>É o tempo que a fonte ficará visível na tela.</p>
                             <h4>Resposta no chat:</h4>
                             <p>Envia a mensagem no chat do canal quando a recompensa for resgatada.</p>
-                         </div>
+                        </div>
                         <div class="tab-pane fade" id="pills-eventkey" role="tabpanel" aria-labelledby="pills-eventkey-tab">
                             <h2 class="mb-5">Ação: Atalhos/Teclas</h2>
                             <h4>Recompensa:</h4>
@@ -481,7 +488,7 @@
                             <h4>Selecione o nível de usuário para utilizar o comando:</h4>
                             <p>Selecione o nível de permissão que o usuário deve ter para utilizar o comando;</p> 
                             <p><i>Nota: As respostas para comandos da fila de espera podem ser configuradas a partir da aba configurações/respostas</i></p>
- 
+
                             <h2 class="mt-5">Comandos de sorteio</h2>
                             <h4>Selecione o comando para configurar:</h4>
                             <p>Selecione o comando para exibir a sessão de edição do comando, comandos de sorteio não podem ser excluidos, somente desativados.</p>
@@ -495,10 +502,10 @@
                             <h4>Selecione o nível de usuário para utilizar o comando:</h4>
                             <p>Selecione o nível de permissão que o usuário deve ter para utilizar o comando;</p> 
                             <p><i>Nota: As respostas para comandos da fila de espera podem ser configuradas a partir da aba configurações/respostas</i></p>
- 
+
                             <h2 class="mt-5">Lista de comandos</h2>
                             <p>Exibe uma tabela com todos os comandos configurados no RewardEvents, seja um comando padrão ou um comando criado.</p>
-                                                 
+                                                
                         </div>
                         <div class="tab-pane fade" id="pills-timers" role="tabpanel" aria-labelledby="pills-timers-tab">
                             <h2 class="mt-5">Habilitar/desabilitar Modulo timer</h2>
@@ -573,11 +580,11 @@
                             <h4>Recompensa para entrar na fila de espera:</h4>
                             <p>Selecione a recompensa que deverá ser resgatada pelo espectador para entrar na fila de espera</p>
                             <h4>Enviar resposta no chat quando o usuário resgatar a recompensa</h4>
-                            <p>Ativa/desativa o envio de resposta para o resgate da recompensa para entrar na fila de epsera.</p>
+                            <p>Ativa/desativa o envio de resposta para o resgate da recompensa para entrar na fila de espera.</p>
                             <h4>Resposta no chat:</h4>
-                            <p>Mnesagem que deverá ser enviada quando um usuário resgatar a recompnesa para entrar na fila de espera.</p>
+                            <p>Mensagem que deverá ser enviada quando um usuário resgatar a recompensa para entrar na fila de espera.</p>
                             <h4>Reposta no chat quando adicionar um usuário ou valor via comando ou manualmente nesta pagina. </h4>
-                            <p>Mnesagem que deverá ser enviada quando um usuário/nome/valor for adicionado na fila de espera de forma manual, via comando ou interface.</p>
+                            <p>Mensagem que deverá ser enviada quando um usuário/nome/valor for adicionado na fila de espera de forma manual, via comando ou interface.</p>
                             <p><i>Nota: Outras respostas da fila de espera podem ser configuradas a partir da aba configurações/respostas</i></p>
                             <h2 class="mt-5">Adicionar/Remover usuário da lista de espera</h2>
                             <h4>Nome do usuário:</h4>
@@ -645,7 +652,7 @@
                             <p> Ativa ou desativa as notificações no OBS Studio para os pedidos de música.</p>
                             <h4>Recompensa para Pedidos de Música:</h4>
                             <p> Selecione a recompensa que deve ser concedida ao receber um pedido de música (a recompensa deve exigir que o usuário insira um texto).</p>
-                          </div>
+                        </div>
                         <div class="tab-pane fade" id="pills-configresponses" role="tabpanel" aria-labelledby="pills-configresponses-tab">
                             <h2 class="mb-5">Configure as respostas padrão do programa</h2>
                             <p><b>Resposta : </b>Selecione o tipo de resposta para editar</p>
@@ -700,7 +707,7 @@
                             </p>
                             <h4>Saudação para ser enviada quando um novo usuário entrar no chat</h4>
                             <p>Digite a mensagem que será enviada, uma mensagem de boas vindas é util para fazer que o usuário seja acolhido.</p>
-                            <h4>Mininmo de mensagens que o usuário deve enviar antes de se tornar um Top Chatter</h4>
+                            <h4>Minimo de mensagens que o usuário deve enviar antes de se tornar um Top Chatter</h4>
                             <p>O cargo TopChatter é utilizado no sistema de permissões do bot, no qual é possivel limitar alguns comandos somente para esses usuários, digite quantas mensagens o usuário deve enviar antes de 
                                 receber o cargo.
                             </p>
@@ -713,7 +720,7 @@
                             <p>Ativa/desativa a exibição da mensagem na tela do OBS Studio</p>
                             <h4>Fonte de navegador do OBS Studio configurada com o arquivo HTML highlight.html</h4>
                             <p>No OBS Studio crie uma fonte de navegador, marque a caixa 'Arquivo local' e navegue até o diretório onde se encontra o arquivo 'highlight.html',
-                                 para auxiliar á encontrar o arquivo clique no botão 'Abrir diretório do HTML' no RewardEvents, feito isso salve a fonte e carregue as fontes salvas no OBS Studio com o botão 
+                                para auxiliar á encontrar o arquivo clique no botão 'Abrir diretório do HTML' no RewardEvents, feito isso salve a fonte e carregue as fontes salvas no OBS Studio com o botão 
                                 'Carregar' no RewardEvents e selecione a fonte criada anteriormente.</p>
                             <h4>Tempo exibindo a mensagem na tela</h4>
                             <p>Quanto tempo a fonte do OBS Studio deverá ficar ativa com a mensagem sendo exibida</p>
@@ -725,7 +732,7 @@
                             <p>Valor em numeros que terá a expessura da fonte na mensagem destacada.</p>
                             <h4>Tamanho da fonta na mensagem destacada</h4>
                             <p>Qual será o tamanho da fonte na mensagem destacada</p>
-                            <h4>DUração da animação CSS</h4>
+                            <h4>Duração da animação CSS</h4>
                             <p>Digite a duração em segundos que irá durar a animação de fade de entrada/saida.</p>
                         </div>
                         <div class="tab-pane fade" id="pills-confignotifc" role="tabpanel" aria-labelledby="pills-confignotifc-tab">
@@ -765,10 +772,14 @@
                     </div>
                 </div>
             </div> 
-            
+            <div class="top-box w-100 p-5 mt-5">
+
+                <h4>Dúvidas e contato</h4>
+                <p>Para tirar dúvidas sobre o funcionamento, desenvolvimento, sugestões ou qualquer pedido de ajuda com a configuração entre em contato utilizando uma de minhas redes sociais clicando no botão abaixo.</p>
+                <button type="button" class="btn btn-lg btn-dark btn-outline-light button-topbox mt-2" onclick="location.href='social'">CONTATO</button>
+            </div>
         </div>
-            
-        </div>
+
 
 
         <div class="footer">
@@ -795,7 +806,5 @@
             </div>
         </div>
     </div>
-    
-    <script data-cfasync="false" type="text/javascript" data-adel="atag" src="//achcdn.com/script/atg.js" czid="qwp4gsyhha"></script>
 </body>
 </html>
