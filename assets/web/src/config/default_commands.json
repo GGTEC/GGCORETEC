@@ -126,5 +126,13 @@
           "last_use": 0,
           "response": "/me {username} --> O jogo da live foi alterado para = {game_name}",
           "user_level": "mod"
+      },
+      "emote": {
+        "command": "!emote",
+        "status": 1,
+        "delay": "10",
+        "last_use": 0,
+        "response": "/me {username} --> Exibindo emotes na tela",
+        "user_level": "mod"
       }
   }

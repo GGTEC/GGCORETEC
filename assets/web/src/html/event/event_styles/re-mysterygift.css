@@ -1,0 +1,76 @@
+body {
+        background-color: transparent;
+}
+
+p {
+        color: #fff;
+        text-align: left;
+        margin: 0%;
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+}
+
+
+#img_div_over {
+        position: relative;
+}
+
+
+.centered_over {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+}
+
+.fade-in {
+        animation: fade-in 5s ease-in both;
+}
+ 
+@keyframes fade-in {
+        0% {
+                opacity: 0;
+        }
+        10% {
+                opacity: 1;
+        }
+        25% {
+                opacity: 1;
+        }
+        50% {
+                opacity: 1;
+        }
+        75% {
+                opacity: 1;
+        }
+        90% {
+                opacity: 1;
+        }
+        100% {
+                opacity: 0;
+        }
+
+}
+
+
+@-webkit-keyframes fade-out {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+      @keyframes fade-out {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+}
+      
+      
