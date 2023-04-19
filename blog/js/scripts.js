@@ -4,6 +4,7 @@ const firstArticle = document.getElementById('first-article');
 const othersArticles = document.getElementById('others-articles');
 const articleContainer = document.getElementById('article');
 const backButton = document.getElementById('back-button');
+const blogheader = document.getElementById('blog-header');
 
 // fetch posts.json
 fetch('https://ggtec.github.io/GGTECApps/blog/posts/posts_json/posts.json')
@@ -19,7 +20,7 @@ fetch('https://ggtec.github.io/GGTECApps/blog/posts/posts_json/posts.json')
           <div class="small text-muted">${firstPost.post_date}</div>
           <h2 class="card-title">${firstPost.post_title}</h2>
           <p class="card-text">${firstPost.post_content_preview}</p>
-          <a class="btn btn-purple" href="#" data-post-index="${0}">Leia mais →</a>
+          <a class="btn btn-purple" href="#" data-post-index="${0}">Leia mais <i class="fa-solid fa-right-long"></i></a>
         </div>
       </div>
     `;
@@ -35,7 +36,7 @@ fetch('https://ggtec.github.io/GGTECApps/blog/posts/posts_json/posts.json')
             <div class="small text-muted">${post.post_date}</div>
             <h2 class="card-title">${post.post_title}</h2>
             <p class="card-text">${post.post_content_preview}</p>
-            <a class="btn btn-purple" href="#" data-post-index="${i}">Leia mais →</a>
+            <a class="btn btn-purple" href="#" data-post-index="${i}">Leia mais <i class="fa-solid fa-right-long"></i></a>
           </div>
         </div>
       `;
@@ -76,15 +77,30 @@ fetch('https://ggtec.github.io/GGTECApps/blog/posts/posts_json/posts.json')
         document.getElementById('post-content').innerHTML = post.post_content;
       
         // Exibe o post completo
-        articleContainer.style.display = 'block';
+        articleContainer.classList.remove("d-none");
+        articleContainer.classList.add("d-block");
+
+        articlesContainer.classList.add("d-none");
+        articlesContainer.classList.remove("d-block");
+
+        blogheader.classList.add("d-none");
+        blogheader.classList.remove("d-block");
+
+        
+
       }
       
       function hideArticle() {
-        // Oculta o post completo
-        articleContainer.style.display = 'none';
-      
-        // Exibe a seção com as prévias dos artigos
-        articlesContainer.style.display = 'block';
+
+        articleContainer.classList.remove("d-block");
+        articleContainer.classList.add("d-none");
+        
+        articlesContainer.classList.remove("d-none");
+        articlesContainer.classList.add("d-block");
+
+        blogheader.classList.remove("d-none");
+        blogheader.classList.add("d-block");
+
       }
       
       

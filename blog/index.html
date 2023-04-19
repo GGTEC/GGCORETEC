@@ -4,13 +4,12 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
-        <meta name="author" content="" />
+        <meta name="author" content="GGTEC" />
         <title>GGTECApps - O seu blog de tecnologia</title>
-        <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="../assets/img/favicon.png" />
-        <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
     </head>
     <body>
@@ -30,7 +29,7 @@
             </div>
         </nav>
         <!-- Page header with logo and tagline-->
-        <header class="py-5 bg-black border-bottom mb-4">
+        <header class="py-5 bg-black border-bottom mb-4" id="blog-header">
             <div class="container">
                 <div class="text-center my-5 text-white">
                     <h1 class="fw-bolder">Bem vindo ao Blog GGTECApps !</h1>
@@ -56,24 +55,22 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-none" id="article">
-                    <button class="btn btn-primary" id="back-button" type="button"> Voltar</button>
-                    <div class="card-header">                
-                        <header class="mb-4">
-                            <h1 class="fw-bolder mb-1" id="header-post-title">RewardEvents: o bot que vai transformar a sua stream</h1>
-                            <div class="text-muted fst-italic mb-2" id="header-post-date">17/04/2023</div>
-                            <div id="header-post-categories">
-
-                            </div>
-                            <a class="badge bg-secondary text-decoration-none link-light" href="#!">Stream</a>
-                            <a class="badge bg-secondary text-decoration-none link-light" href="#!">Bot</a>
-                            <a class="badge bg-secondary text-decoration-none link-light" href="#!">Lives</a>
-                        </header>
-                    </div>
-                    <div class="card-body">
-                        <section class="mb-5" id="post-content">
-                            <!-- Post session-->
-                        </section>
+                <div class="col-lg-8 d-none" id="article">
+                    
+                    <div class="card mb-4">
+                        <div class="card-header">                
+                            <header class="mb-4">
+                                <button class="btn btn-purple" id="back-button" type="button"><i class="fa-solid fa-left-long"></i> Voltar</button>
+                                <h1 class="fw-bolder mb-1" id="header-post-title"></h1>
+                                <div class="text-muted fst-italic mb-2" id="header-post-date"></div>
+                                <div id="header-post-categories"></div>
+                            </header>
+                        </div>
+                        <div class="card-body">
+                            <section class="mb-5" id="post-content">
+                                <!-- Post session-->
+                            </section>
+                        </div>
                     </div>
                 </div>
                 <!-- Side widgets-->
