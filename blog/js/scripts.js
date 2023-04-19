@@ -2,6 +2,8 @@
 const articlesContainer = document.getElementById('articles-container');
 const firstArticle = document.getElementById('first-article');
 const othersArticles = document.getElementById('others-articles');
+const articleContainer = document.getElementById('article');
+const backButton = document.getElementById('back-button');
 
 // fetch posts.json
 fetch('https://ggtec.github.io/GGTECApps/blog/posts/posts_json/posts.json')
@@ -12,14 +14,12 @@ fetch('https://ggtec.github.io/GGTECApps/blog/posts/posts_json/posts.json')
     const firstPost = posts[0];
     firstArticle.innerHTML = `
       <div class="card mb-4">
-        <a href="${firstPost.post_url}">
-          <img class="card-img-top card-img-isset-shadow" src="${firstPost.post_thumb_url}" alt="..." />
-        </a>
+        <img class="card-img-top card-img-isset-shadow" src="${firstPost.post_thumb_url}" alt="..." />
         <div class="card-body">
           <div class="small text-muted">${firstPost.post_date}</div>
           <h2 class="card-title">${firstPost.post_title}</h2>
           <p class="card-text">${firstPost.post_content_preview}</p>
-          <a class="btn btn-purple" href="${firstPost.post_url}">Leia mais →</a>
+          <a class="btn btn-purple" href="#" data-post-index="${0}">Leia mais →</a>
         </div>
       </div>
     `;
@@ -30,14 +30,12 @@ fetch('https://ggtec.github.io/GGTECApps/blog/posts/posts_json/posts.json')
       const post = posts[i];
       otherPosts += `
         <div class="card mb-4">
-          <a href="${post.post_url}">
-            <img class="card-img-top card-img-isset-shadow" src="${post.post_thumb_url}" alt="..." />
-          </a>
+        <img class="card-img-top card-img-isset-shadow" src="${post.post_thumb_url}" alt="..." />
           <div class="card-body">
             <div class="small text-muted">${post.post_date}</div>
             <h2 class="card-title">${post.post_title}</h2>
             <p class="card-text">${post.post_content_preview}</p>
-            <a class="btn btn-purple" href="${post.post_url}">Leia mais →</a>
+            <a class="btn btn-purple" href="#" data-post-index="${i}">Leia mais →</a>
           </div>
         </div>
       `;
@@ -49,5 +47,50 @@ fetch('https://ggtec.github.io/GGTECApps/blog/posts/posts_json/posts.json')
       </div>
     `;
     
+    const readMoreButtons = document.querySelectorAll("[data-post-index]");
+    for (const button of readMoreButtons) {
+    button.addEventListener("click", function(event) {
+      event.preventDefault();
+      const postIndex = this.dataset.postIndex;
+      showArticle(postIndex);
+    });
+    }
+    function showArticle(postIndex) {
+        // Oculta a seção com as prévias dos artigos
+        articlesContainer.style.display = 'none';
+      
+        // Preenche o post completo
+        const post = posts[postIndex];
+        document.getElementById('header-post-title').textContent = post.post_title;
+        document.getElementById('header-post-date').textContent = post.post_date;
+        const categoriesContainer = document.getElementById('header-post-categories');
+        categoriesContainer.innerHTML = '';
+        post.post_tags.forEach(tag => {
+          const category = document.createElement('a');
+          category.classList.add('badge', 'bg-secondary', 'text-decoration-none', 'link-light');
+          category.href = '#!';
+          category.textContent = tag;
+          categoriesContainer.appendChild(category);
+          categoriesContainer.appendChild(document.createTextNode(' '));
+        });
+        document.getElementById('post-content').innerHTML = post.post_content;
+      
+        // Exibe o post completo
+        articleContainer.style.display = 'block';
+      }
+      
+      function hideArticle() {
+        // Oculta o post completo
+        articleContainer.style.display = 'none';
+      
+        // Exibe a seção com as prévias dos artigos
+        articlesContainer.style.display = 'block';
+      }
+      
+      
+      // Adiciona o evento de click para o botão "Voltar"
+      backButton.addEventListener('click', () => {
+        hideArticle();
+      });
   })
   .catch(error => console.error(error));
