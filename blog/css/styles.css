@@ -674,6 +674,12 @@ progress {
   margin-left: auto;
 }
 
+.container-full {
+  position: relative;
+  min-height: 100vh;
+}
+
+
 @media (min-width: 576px) {
   .container-sm, .container {
     max-width: 540px;
@@ -10887,4 +10893,29 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+
+
+.fade-in-out {
+  animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.content-wrap {
+  padding-bottom: 5.5rem;    /* Footer height */
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5.5rem;            /* Footer height */
 }

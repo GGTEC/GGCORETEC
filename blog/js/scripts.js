@@ -7,7 +7,7 @@ const backButton = document.getElementById('back-button');
 const blogheader = document.getElementById('blog-header');
 
 // fetch posts.json
-fetch('https://ggtec.github.io/GGTECApps/blog/posts/posts_json/posts.json')
+fetch('https://ggtec.github.io/GGTECApps/blog/posts/posts.json')
   .then(response => response.json())
   .then(posts => {
 
@@ -74,17 +74,18 @@ fetch('https://ggtec.github.io/GGTECApps/blog/posts/posts_json/posts.json')
           categoriesContainer.appendChild(category);
           categoriesContainer.appendChild(document.createTextNode(' '));
         });
+        
         document.getElementById('post-content').innerHTML = post.post_content;
       
-        // Exibe o post completo
+
         articleContainer.classList.remove("d-none");
-        articleContainer.classList.add("d-block");
-
+        articleContainer.classList.add("d-block", "fade-in-out");
+        
+        articlesContainer.classList.remove("d-block","fade-in-out");
         articlesContainer.classList.add("d-none");
-        articlesContainer.classList.remove("d-block");
-
-        blogheader.classList.add("d-none");
+      
         blogheader.classList.remove("d-block");
+        blogheader.classList.add("d-none");
 
         
 
@@ -93,14 +94,15 @@ fetch('https://ggtec.github.io/GGTECApps/blog/posts/posts_json/posts.json')
       function hideArticle() {
 
         articleContainer.classList.remove("d-block");
-        articleContainer.classList.add("d-none");
+        articleContainer.classList.add("d-none", "fade-in-out");
         
         articlesContainer.classList.remove("d-none");
-        articlesContainer.classList.add("d-block");
-
+        articlesContainer.classList.add("d-block","fade-in-out");
+      
         blogheader.classList.remove("d-none");
         blogheader.classList.add("d-block");
 
+        articleContainer.classList.remove("fade-in-out");
       }
       
       
