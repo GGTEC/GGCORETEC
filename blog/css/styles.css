@@ -10919,3 +10919,37 @@ textarea.form-control-lg {
   width: 100%;
   height: 5.5rem;            /* Footer height */
 }
+
+html, body, ul {      /* aqui o que importa é o UL, o resto é pra estética do demo.          */
+  position:relative;  /* reset do position, não relacionado ao demo, mas bom pra uso geral.  */
+  margin:0;           /* Zeramos as margens e o padding do UL para as células.encostarem     */
+  padding:0;
+  width:100%;         /* por default, os blocos são 100%, mas vamos garantir isso.           */
+  height:100%;        /* aqui foi feito pra fins de demonstração apenas.                     */
+}
+
+
+li {
+  
+  display:block;             /* primeiro passo, transformar o LI em bloco.                   */ 
+  list-style-type: none;     /* depois, remoção dos bullets.                                 */
+  margin:0;                  /* nao queremos espaços ente os blocos.                         */
+  background-color: transparent;     /* cor de fundo principal, o "grid" fazemos depois              */
+  box-sizing: border-box;    /* medidas são de borda à borda, o padding não é acrescentado.  */
+  height:25%;                /* esta linha é pela estética do demo                           */
+}
+
+li:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+li:nth-child(odd) {          /* este css será aplicato nos LI impares (1, 3, 5... ).         */
+  clear:both;                /* forçamos a quebra de linha por segurança...                  */
+  float:left;                /* ... e o alinhamos à esquerda.                                */
+  width:50%;                 /* Aplicamos 50% na esquerda, os da direita "herdam" o resto.   */
+}
+
+li:nth-child(4n+2),          /* aqui pulamos de 4 em 4 itens começando do 2 ( 2, 6, ...).    */
+li:nth-child(4n+3) {         /* aqui de 4 em 4 começando do 3 ( 3, 7, ... )                  */
+  background-color:transparent;     /* e mudamos a cor, dando efeito de quadriculado                */
+}

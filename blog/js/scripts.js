@@ -56,6 +56,61 @@ fetch('https://ggtec.github.io/GGTECApps/blog/posts/posts.json')
       showArticle(postIndex);
     });
     }
+
+    const categoriesContainer = document.createElement('ul');
+    categoriesContainer.setAttribute('id', 'categories-widget');
+
+    // collect all tags
+    const tags = [];
+    posts.forEach(post => {
+      post.post_tags.forEach(tag => {
+        if (!tags.includes(tag)) {
+          tags.push(tag);
+        }
+      });
+    });
+
+    // create categories HTML
+    tags.forEach(tag => {
+      const category = document.createElement('li');
+      category.classList.add('category');
+      category.textContent = tag;
+      category.addEventListener('click', () => {
+        FilterByTag(tag);
+      });
+      categoriesContainer.appendChild(category);
+    });
+
+    // append categories to widget
+    document.getElementById('categories-widget').appendChild(categoriesContainer);
+
+    function FilterByTag(tag) {
+        // Obtém todos os elementos com a classe "badge" dentro do elemento com id "categories-widget"
+        const tagElements = document.querySelectorAll('#categories-widget .badge');
+        
+        // Percorre todos os elementos e adiciona ou remove a classe "active" dependendo se é a tag selecionada ou não
+        tagElements.forEach(element => {
+            if (element.textContent === tag) {
+                element.classList.add('active');
+            } else {
+                element.classList.remove('active');
+            }
+        });
+        
+        // Obtém todos os elementos com a classe "post-card"
+        const postCards = document.querySelectorAll('.post-card');
+        
+        // Percorre todos os elementos e exibe ou oculta dependendo se contém a tag selecionada ou não
+        postCards.forEach(postCard => {
+        const postTags = postCard.dataset.tags.split(',');
+            if (postTags.includes(tag)) {
+                postCard.style.display = 'block';
+            } else {
+                postCard.style.display = 'none';
+            }
+        });
+    }
+
     function showArticle(postIndex) {
         // Oculta a seção com as prévias dos artigos
         articlesContainer.style.display = 'none';
@@ -90,6 +145,25 @@ fetch('https://ggtec.github.io/GGTECApps/blog/posts/posts.json')
         
 
       }
+
+    const categoryLinks = categoriesContainer.querySelectorAll('a');
+    for (const link of categoryLinks) {
+    link.addEventListener('click', function(event) {
+        event.preventDefault();
+        const tag = this.textContent;
+        const matchingPosts = posts.filter(post => post.post_tags.includes(tag));
+        const matchingPostIndexes = matchingPosts.map(post => posts.indexOf(post));
+        showArticle(matchingPostIndexes[0]);
+        const otherPostCards = document.querySelectorAll('[data-post-index]');
+        for (const card of otherPostCards) {
+        if (!matchingPostIndexes.includes(Number(card.dataset.postIndex))) {
+            card.parentElement.parentElement.style.display = 'none';
+        } else {
+            card.parentElement.parentElement.style.display = '';
+        }
+        }
+    });
+    }
       
       function hideArticle() {
 
