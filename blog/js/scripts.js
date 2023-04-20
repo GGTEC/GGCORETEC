@@ -5,6 +5,8 @@ const othersArticles = document.getElementById('others-articles');
 const articleContainer = document.getElementById('article');
 const backButton = document.getElementById('back-button');
 const blogheader = document.getElementById('blog-header');
+const searchInput = document.getElementById('search-input');
+const searchButton = document.getElementById('search-button');
 
 // fetch posts.json
 fetch('https://ggtec.github.io/GGTECApps/blog/posts/posts.json')
@@ -13,12 +15,17 @@ fetch('https://ggtec.github.io/GGTECApps/blog/posts/posts.json')
 
     // create first article HTML
     const firstPost = posts[0];
+
+    var tagElements = firstPost.post_tags.map(tag => `<p class="badge bg-secondary text-decoration-none link-light post-tags" >${tag}</p>`);
+    var tagString = tagElements.join('');
+
     firstArticle.innerHTML = `
-      <div class="card mb-4">
+      <div class="card mb-4 post-card" data-tags="${firstPost.post_tags.join(', ')}" >
         <img class="card-img-top card-img-isset-shadow" src="${firstPost.post_thumb_url}" alt="..." />
         <div class="card-body">
           <div class="small text-muted">${firstPost.post_date}</div>
           <h2 class="card-title">${firstPost.post_title}</h2>
+          <div class="post-tags">${tagString}</div>
           <p class="card-text">${firstPost.post_content_preview}</p>
           <a class="btn btn-purple" href="#" data-post-index="${0}">Leia mais <i class="fa-solid fa-right-long"></i></a>
         </div>
@@ -26,25 +33,36 @@ fetch('https://ggtec.github.io/GGTECApps/blog/posts/posts.json')
     `;
 
     // create other articles HTML
-    let otherPosts = '';
+    let otherPostsColumn1 = '';
+    let otherPostsColumn2 = '';
     for (let i = 1; i < posts.length; i++) {
       const post = posts[i];
-      otherPosts += `
-        <div class="card mb-4">
-        <img class="card-img-top card-img-isset-shadow" src="${post.post_thumb_url}" alt="..." />
+
+      var tagElements = post.post_tags.map(tag => `<p class="badge bg-secondary text-decoration-none link-light post-tags">${tag}</p>`);
+      var tagString = tagElements.join('');
+
+      const postHTML = `
+        <div class="card mb-4 post-card" data-tags="${post.post_tags.join(', ')}" >
+          <img class="card-img-top card-img-isset-shadow" src="${post.post_thumb_url}" alt="..." />
           <div class="card-body">
             <div class="small text-muted">${post.post_date}</div>
             <h2 class="card-title">${post.post_title}</h2>
+            <div class="post-tags">${tagString}</div>
             <p class="card-text">${post.post_content_preview}</p>
             <a class="btn btn-purple" href="#" data-post-index="${i}">Leia mais <i class="fa-solid fa-right-long"></i></a>
           </div>
         </div>
       `;
+      if (i % 2 === 0) {
+        otherPostsColumn2 += postHTML;
+      } else {
+        otherPostsColumn1 += postHTML;
+      }
     }
     othersArticles.innerHTML = `
       <div class="row">
-        <div class="col-lg-6">${otherPosts.slice(0, Math.ceil(posts.length / 2))}</div>
-        <div class="col-lg-6">${otherPosts.slice(Math.ceil(posts.length / 2))}</div>
+        <div class="col-lg-6">${otherPostsColumn1}</div>
+        <div class="col-lg-6">${otherPostsColumn2}</div>
       </div>
     `;
     
@@ -86,7 +104,7 @@ fetch('https://ggtec.github.io/GGTECApps/blog/posts/posts.json')
 
     function FilterByTag(tag) {
         // Obtém todos os elementos com a classe "badge" dentro do elemento com id "categories-widget"
-        const tagElements = document.querySelectorAll('#categories-widget .badge');
+        const tagElements = document.querySelectorAll('#categories-widget');
         
         // Percorre todos os elementos e adiciona ou remove a classe "active" dependendo se é a tag selecionada ou não
         tagElements.forEach(element => {
@@ -102,13 +120,15 @@ fetch('https://ggtec.github.io/GGTECApps/blog/posts/posts.json')
         
         // Percorre todos os elementos e exibe ou oculta dependendo se contém a tag selecionada ou não
         postCards.forEach(postCard => {
-        const postTags = postCard.dataset.tags.split(',');
-            if (postTags.includes(tag)) {
-                postCard.style.display = 'block';
-            } else {
-                postCard.style.display = 'none';
-            }
+          const postTags = postCard.dataset.tags.split(',');
+        
+          if (postTags.some(item => item.trim() === tag)) {
+            postCard.style.display = 'block';
+          } else {
+            postCard.style.display = 'none';
+          }
         });
+        
     }
 
     function showArticle(postIndex) {
@@ -142,9 +162,69 @@ fetch('https://ggtec.github.io/GGTECApps/blog/posts/posts.json')
         blogheader.classList.remove("d-block");
         blogheader.classList.add("d-none");
 
-        
-
       }
+
+      var visiblePosts = [];
+
+      function searchPosts() {
+        var input = document.getElementById("search-input");
+        var filter = input.value.toLowerCase();
+        var posts = document.getElementsByClassName("post-card");
+        var sidebar = document.getElementById("sidebar");
+        var maxChars = Math.floor(sidebar.offsetWidth / 8);
+  
+      
+        visiblePosts = [];
+      
+        for (var i = 0; i < posts.length; i++) {
+          var title = posts[i].getElementsByClassName("card-title")[0].textContent.toLowerCase();
+          var body = posts[i].getElementsByClassName("card-text")[0].textContent.toLowerCase();
+          var tags = posts[i].getElementsByClassName("post-tags")[0].textContent.toLowerCase();
+      
+          if (title.indexOf(filter) > -1 || body.indexOf(filter) > -1 || tags.indexOf(filter) > -1) {
+            posts[i].style.display = "";
+            visiblePosts.push(posts[i]);
+          } else {
+            posts[i].style.display = "none";
+          }
+        }
+      
+      var resultsSection = document.getElementById("search-results");
+      resultsSection.innerHTML = "";
+
+      var results = document.createElement('div');
+      results.innerHTML = "<p class='text-muted mt-1'>Resultados : </p>"
+
+      resultsSection.appendChild(results);
+    
+      for (var i = 0; i < visiblePosts.length; i++) {
+
+        var title = visiblePosts[i].getElementsByClassName("card-title")[0].textContent;
+
+        if (title.length > maxChars) {
+          title = title.substring(0, maxChars) + "...";
+        }
+
+        var result = document.createElement("div");
+
+        result.classList.add('search-result')
+        result.innerHTML = title;
+    
+        result.addEventListener('click', function() {
+          for (var j = 0; j < visiblePosts.length; j++) {
+            if (visiblePosts[j] !== this.post) {
+              visiblePosts[j].style.display = "none";
+            } else {
+              visiblePosts[j].style.display = "";
+            }
+          }
+        }.bind({post: visiblePosts[i]}));
+    
+        resultsSection.appendChild(result);
+      }
+    }
+    
+    searchInput.addEventListener('input', searchPosts);
 
     const categoryLinks = categoriesContainer.querySelectorAll('a');
     for (const link of categoryLinks) {

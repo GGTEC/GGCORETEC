@@ -8160,7 +8160,7 @@ textarea.form-control-lg {
 
 .text-muted {
   --bs-text-opacity: 1;
-  color: #6c757d !important;
+  color: #CECECE !important;
 }
 
 .text-black-50 {
@@ -10952,4 +10952,12 @@ li:nth-child(odd) {          /* este css será aplicato nos LI impares (1, 3, 5.
 li:nth-child(4n+2),          /* aqui pulamos de 4 em 4 itens começando do 2 ( 2, 6, ...).    */
 li:nth-child(4n+3) {         /* aqui de 4 em 4 começando do 3 ( 3, 7, ... )                  */
   background-color:transparent;     /* e mudamos a cor, dando efeito de quadriculado                */
+}
+
+
+.search-result {
+  margin: 5px;
+  padding: 5px;
+  border: #623f80 1px solid;
+
 }

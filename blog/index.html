@@ -82,8 +82,11 @@
                                 <div class="card-header">Procurar</div>
                                 <div class="card-body">
                                     <div class="input-group">
-                                        <input class="form-control" type="text" placeholder="Digite um termo de pesquisa..." />
-                                        <button class="btn btn-purple" id="button-search" type="button">Pesquisar!</button>
+                                        <input class="form-control" type="text" id="search-input" placeholder="Digite um termo de pesquisa..." />
+                                        <button class="btn btn-purple" id="search-button" type="button">Pesquisar!</button>
+                                    </div>
+                                    <div id="search-results">
+                                        <!-- Aqui é onde os resultados da pesquisa serão exibidos -->
                                     </div>
                                 </div>
                             </div>
@@ -107,7 +110,7 @@
                             </div>
                             <!-- Side widget-->
                             <div class="card mb-4">
-                                <div class="card-header">Sidebar</div>
+                                <div class="card-header" id="sidebar">Sidebar</div>
                                 <div class="card-body">Ads</div>
                             </div>
                         </div>
