@@ -10983,3 +10983,19 @@ textarea.form-control-lg {
   padding: 2%;
   text-align: center;
 }
+
+
+.avatar img{
+  transform: rotate(-22deg);
+  border-radius: 100%;
+  border: 4px solid white;
+}
+
+.profile-card{
+  background: url("../img/profile_bg.png") repeat center center;
+  padding: 5%;
+}
+
+.profile-name a{
+  color: #0d6efd ;
+}
