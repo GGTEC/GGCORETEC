@@ -76,7 +76,6 @@ fetch('https://ggtec.github.io/GGTECApps/blog/posts/posts.json')
     }
 
     const categoriesContainer = document.createElement('ul');
-    categoriesContainer.setAttribute('id', 'categories-widget');
 
     // collect all tags
     const tags = [];
