@@ -16,16 +16,13 @@ fetch('https://ggtec.github.io/GGTECApps/blog/posts/posts.json')
     // create first article HTML
     const firstPost = posts[0];
 
-    var tagElements = firstPost.post_tags.map(tag => `<p class="badge bg-secondary text-decoration-none link-light post-tags" >${tag}</p>`);
-    var tagString = tagElements.join('');
-
     firstArticle.innerHTML = `
       <div class="card mb-4 post-card" data-tags="${firstPost.post_tags.join(', ')}" >
+        <div class="overlay">${firstPost.post_tags.join(', ')}</div>
         <img class="card-img-top card-img-isset-shadow" src="${firstPost.post_thumb_url}" alt="..." />
         <div class="card-body">
           <div class="small text-muted">${firstPost.post_date}</div>
           <h2 class="card-title">${firstPost.post_title}</h2>
-          <div class="post-tags">${tagString}</div>
           <p class="card-text">${firstPost.post_content_preview}</p>
           <a class="btn btn-purple" href="#" data-post-index="${0}">Leia mais <i class="fa-solid fa-right-long"></i></a>
         </div>
@@ -38,16 +35,13 @@ fetch('https://ggtec.github.io/GGTECApps/blog/posts/posts.json')
     for (let i = 1; i < posts.length; i++) {
       const post = posts[i];
 
-      var tagElements = post.post_tags.map(tag => `<p class="badge bg-secondary text-decoration-none link-light post-tags">${tag}</p>`);
-      var tagString = tagElements.join('');
-
       const postHTML = `
         <div class="card mb-4 post-card" data-tags="${post.post_tags.join(', ')}" >
+          <div class="overlay-small">${post.post_tags.join(', ')}</div>
           <img class="card-img-top card-img-isset-shadow" src="${post.post_thumb_url}" alt="..." />
           <div class="card-body">
             <div class="small text-muted">${post.post_date}</div>
-            <h2 class="card-title">${post.post_title}</h2>
-            <div class="post-tags">${tagString}</div>
+            <h2 class="card-title">${post.post_title}</h2>  
             <p class="card-text">${post.post_content_preview}</p>
             <a class="btn btn-purple" href="#" data-post-index="${i}">Leia mais <i class="fa-solid fa-right-long"></i></a>
           </div>

@@ -10953,3 +10953,33 @@ textarea.form-control-lg {
   border: #623f80 1px solid;
 
 }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  margin-top: 5%;
+  height: auto;
+  border-radius: 0px 0px 25px 0px;
+  background-color: #510087;
+  color: #fff;
+  box-shadow: 10px 10px 13px 0px rgba(0,0,0,0.76);
+  padding: 1%;
+  text-align: center;
+}
+
+.overlay-small {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  margin-top: 5%;
+  height: auto;
+  border-radius: 0px 0px 25px 0px;
+  background-color: #510087;
+  color: #fff;
+  box-shadow: 10px 10px 13px 0px rgba(0,0,0,0.76);
+  padding: 2%;
+  text-align: center;
+}
