@@ -11276,3 +11276,10 @@ textarea.form-control-lg {
 .text-box h1 {
   font-size: 55px;
 }
+
+.iframe-live {
+  margin-top: 5%;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+
+}
