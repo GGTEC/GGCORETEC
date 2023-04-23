@@ -8,8 +8,11 @@
         <title>GGTECApps - O seu blog de tecnologia</title>
         <link rel="icon" type="image/x-icon" href="../assets/img/favicon.png" />
         <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <link href="assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+        <link href="assets/boxicons/css/boxicons.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
     </head>
     <body>
@@ -19,112 +22,551 @@
                 <a class="navbar-brand" href="#!">GGTECApps</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Sobre</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Cointato</a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Blog</a></li>
-                    </ul>
+                    <div class="nav nav-tabs ms-auto mb-2 mb-lg-0" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="nav-blog-tab" data-bs-toggle="tab" data-bs-target="#nav-blog" type="button" role="tab" aria-controls="nav-blog" aria-selected="true">Blog</button>
+                        <button class="nav-link" id="nav-rewardevents-tab" data-bs-toggle="tab" data-bs-target="#nav-rewardevents" type="button" role="tab" aria-controls="nav-rewardevents" aria-selected="false">RewardEvents</button>
+                        <button class="nav-link" id="nav-social-tab" data-bs-toggle="tab" data-bs-target="#nav-social" type="button" role="tab" aria-controls="nav-social" aria-selected="false">Social/Contato</button>
+                    </div>
                 </div>
             </div>
         </nav>
         <div class="container-full">
-            <div class="content-wrap">
-                <!-- Page header with logo and tagline-->
-                <header class="py-5 bg-black border-bottom mb-4" id="blog-header">
-                    <div class="container">
-                        <div class="text-center my-5 text-white">
-                            <h1 class="fw-bolder">Bem vindo ao Blog GGTECApps !</h1>
-                            <p class="lead mb-0">O seu blog para gamers!</p>
-                        </div>
-                    </div>
-                </header>
-                <!-- Page content-->
-                <div class="container" >
-                    <div class="row">
-                        <!-- Blog entries-->
-                        <div class="col-lg-8" id="articles-container">
-                            <div id="first-article">
-                            </div>
-                            <div class="row" id="others-articles">
-                                <div class="col-lg-6">
-                                    <!-- Blog post-->
-                                    <!-- Blog post-->
-                                </div>
-                                <div class="col-lg-6">
-                                    <!-- Blog post-->
-                                    <!-- Blog post-->
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-blog" role="tabpanel" aria-labelledby="blog-tab">
+                    <div id="blog-posts" class="content-wrap">
+                        <!-- Page header with logo and tagline-->
+                        <header class="py-5 bg-black border-bottom mb-4" id="blog-header">
+                            <div class="container">
+                                <div class="text-center my-5 text-white">
+                                    <h1 class="fw-bolder">Bem vindo ao Blog GGTECApps !</h1>
+                                    <p class="lead mb-0">O seu blog para gamers!</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-8 d-none" id="article">
-                            
-                            <div class="card mb-4">
-                                <div class="card-header">                
-                                    <header class="mb-4">
-                                        <button class="btn btn-purple" id="back-button" type="button"><i class="fa-solid fa-left-long"></i> Voltar</button>
-                                        <h1 class="fw-bolder mb-1" id="header-post-title"></h1>
-                                        <div class="text-muted fst-italic mb-2" id="header-post-date"></div>
-                                        <div id="header-post-categories"></div>
-                                    </header>
-                                </div>
-                                <div class="card-body">
-                                    <section class="mb-5" id="post-content">
-                                        <!-- Post session-->
-                                    </section>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Side widgets-->
-                        <div class="col-lg-4">
-                            <!-- Search widget-->
-                            <div class="card mb-4">
-                                <div class="card-header">Procurar</div>
-                                <div class="card-body">
-                                    <div class="input-group">
-                                        <input class="form-control" type="text" id="search-input" placeholder="Digite um termo de pesquisa..." />
-                                        <button class="btn btn-purple" id="search-button" type="button">Pesquisar!</button>
+                        </header>
+                        <!-- Page content-->
+                        <div class="container" >
+                            <div class="row">
+                                <!-- Blog entries-->
+                                <div class="col-lg-8" id="articles-container">
+                                    <div id="first-article">
                                     </div>
-                                    <div id="search-results">
-                                        <!-- Aqui é onde os resultados da pesquisa serão exibidos -->
+                                    <div class="row" id="others-articles">
+                                        <div class="col-lg-6">
+                                            <!-- Blog post-->
+                                            <!-- Blog post-->
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <!-- Blog post-->
+                                            <!-- Blog post-->
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- Categories widget-->
-                            <div class="card mb-4">
-                                <div class="card-header">Categorias</div>
-                                <div class="card-body">
-                                    <div class="row category" id="categories-widget">
+                                <div class="col-lg-8 d-none" id="article">
+                                    
+                                    <div class="card mb-4">
+                                        <div class="card-header">                
+                                            <header class="mb-4">
+                                                <button class="btn btn-purple" id="back-button" type="button"><i class="fa-solid fa-left-long"></i> Voltar</button>
+                                                <h1 class="fw-bolder mb-1" id="header-post-title"></h1>
+                                                <div class="text-muted fst-italic mb-2" id="header-post-date"></div>
+                                                <div id="header-post-categories"></div>
+                                            </header>
+                                        </div>
+                                        <div class="card-body">
+                                            <section class="mb-5" id="post-content">
+                                                <!-- Post session-->
+                                            </section>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- Side widget-->
-                            <div class="card mb-4">
-                                <div class="card-body">
-                                    <div class="row d-flex profile-card" >
-                                        <div class="col-4 d-flex">
-                                            <div class="avatar h-100 w-100 align-content-center">
-                                                <img src="./img/profile-image.jpg" width="100%" alt="Avatar"/>
+                                <!-- Side widgets-->
+                                <div class="col-lg-4">
+                                    <!-- Search widget-->
+                                    <div class="card mb-4">
+                                        <div class="card-header">Procurar</div>
+                                        <div class="card-body">
+                                            <div class="input-group">
+                                                <input class="form-control" type="text" id="search-input" placeholder="Digite um termo de pesquisa..." />
+                                                <button class="btn btn-purple" id="search-button" type="button">Pesquisar!</button>
+                                            </div>
+                                            <div id="search-results">
+                                                <!-- Aqui é onde os resultados da pesquisa serão exibidos -->
                                             </div>
                                         </div>
-                                        <div class="col-8 text-center align-self-center profile-name">
-                                            <h3>Jheferson Gambet</h3>
-                                            <h5>Stremer,Dev & This/Web-Designer</h5>
-                                            <a href="https://ggtec.netlify.app/social">Página de perfis sociais</a>
-                                        </div>  
+                                    </div>
+                                    <!-- Categories widget-->
+                                    <div class="card mb-4">
+                                        <div class="card-header">Categorias</div>
+                                        <div class="card-body">
+                                            <div class="row category" id="categories-widget">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Side widget-->
+                                    <div class="card mb-4">
+                                        <div class="card-body">
+                                            <div class="row d-flex profile-card" >
+                                                <div class="col-4 d-flex">
+                                                    <div class="avatar h-100 w-100 align-content-center">
+                                                        <img src="./img/profile-image.jpg" width="100%" alt="Avatar"/>
+                                                    </div>
+                                                </div>
+                                                <div class="col-8 text-center align-self-center profile-name">
+                                                    <h3>Jheferson Gambet</h3>
+                                                    <h5>Stremer,Dev & This/Web-Designer</h5>
+                                                    <a href="https://ggtec.netlify.app/social">Página de perfis sociais</a>
+                                                </div>  
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <iframe src="https://player.twitch.tv/?channel=gg_tec&parent=ggtec.netlify.app" width="100%" class="iframe-live" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="card-body">
-                                    <iframe src="https://player.twitch.tv/?channel=gg_tec&parent=ggtec.netlify.app" width="100%" class="iframe-live" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-rewardevents" role="tabpanel" aria-labelledby="rewardevents-tab">
+                    <div id="reward-event" class="content-wrap">
+                        <header class="py-5 bg-black border-bottom mb-4">
+                            <div class="container">
+                                <div class="text-center my-5 text-white">
+                                    <h1 class="fw-bolder">Transforme sua transmissão em uma experiência única com o RewardEvents !</h1>
+                                    <p class="lead mb-0">Mais do que apenas um bot, é uma ferramenta fundamental para qualquer streamer da twitch !</p>
                                 </div>
                             </div>
+                        </header>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-8" >
+                                    <div class="card mb-4">
+                                        <div class="card-body">
+                                            <div class="slider d-flex justify-content-center">
+                                                <div class="w-100">
+                                                    <div id="slider-app" class="carousel slide" data-bs-ride="carousel">
+                                                        <div class="carousel-inner d-flex align-content-center">
+                                                        <div class="carousel-item active">
+                                                            <img src="./img/RewardEvents/1.png" class="d-block w-100" alt="inicio">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="./img/RewardEvents/2.png" class="d-block w-100" alt="chat">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="./img/RewardEvents/3.png" class="d-block w-100" alt="acoes-1">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="./img/RewardEvents/4.png" class="d-block w-100" alt="acoes-2">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="./img/RewardEvents/5.png" class="d-block w-100" alt="comandos">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="./img/RewardEvents/6.png" class="d-block w-100" alt="timer">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="./img/RewardEvents/7.png" class="d-block w-100" alt="Sorteio">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="./img/RewardEvents/8.png" class="d-block w-100" alt="contador">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="./img/RewardEvents/9.png" class="d-block w-100" alt="player">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="./img/RewardEvents/10.png" class="d-block w-100" alt="player-1">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="./img/RewardEvents/11.png" class="d-block w-100" alt="config">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="./img/RewardEvents/12.png" class="d-block w-100" alt="config-chat">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="./img/RewardEvents/13.png" class="d-block w-100" alt="alertas">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="./img/RewardEvents/14.png" class="d-block w-100" alt="userdata">
+                                                        </div>
+                                                        </div>
+                                                        <button class="carousel-control-prev" type="button" data-bs-target="#slider-app" data-bs-slide="prev">
+                                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Anterior</span>
+                                                        </button>
+                                                        <button class="carousel-control-next" type="button" data-bs-target="#slider-app" data-bs-slide="next">
+                                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Próximo</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                    
+                                            </div>
+                                            <div class="content w-100">
+                                                <h4 class="p-4 text-center">O RewardEvents permite executar as mais diversas funções na sua stream, entre elas:</h4>
+                                                <ul class="resourses-list p-4 ms-3">
+                                                    <li>Um bot com nome personalizado (Necessário ter a sua própria conta configurada)</li>
+                                                    <li>Reproduzir audios com resgates de recompensas;</li>
+                                                    <li>Reproduzir notificações no OBS Studio para eventos de follow, inscrições, raids e muito mais;</li>
+                                                    <li>Enviar notificações no discord via WebHook</li>
+                                                    <li>Processar pedidos de musica com um player interno ou adicionar playlists inteiras;</li>
+                                                    <li>Texto falado do google;</li>
+                                                    <li>Enviar mensagens no chat como resposta de recompensa;</li>
+                                                    <li>Alterar a cena ativa do obs studio;</li>
+                                                    <li>Exibir ou ocultar um filtro no obs studio;</li>
+                                                    <li>Exibir ou ocultar uma fonte no obs studio;</li>
+                                                    <li>Pressionar teclas de atalho ou uma unica tecla com 3 diferentes modos;</li>
+                                                    <li>Executar sorteios utilizando uma recompensa como bilhete de entrada;</li>
+                                                    <li>Criar clipes utilizando uma recompensa, comando e um botão na própria interface;</li>
+                                                    <li>Criar enquetes e palpites diretamente na interface;</li>
+                                                    <li>Alterar informaçoes da stream com comandos ou utilizando a interface;</li>
+                                                    <li>E todas as outras funções de um bot simples</li>
+                                                </ul>
+                                                <div class="text-center">
+                                                    <h3>Para download e documentação, clique no botão abaixo.</h3>
+                                                    <a type="button" href="apps/re" class="btn btn-purple mt-4 mb-5">Wiki e Download</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-4" id="reward-events-widget">
+                                    <div class="card mb-4">
+                                        <div class="card-body">
+                                            <div class="main-box w-100 p-4 m-0">
+                                                <div class="total-downloads text-center p-4" id="total-downloads">
+                        
+                                                </div>
+                                                <h5>Registro de versões</h5> 
+                                                <div id="releases-list">
+                        
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Side widget-->
+                                    <div class="card mb-4">
+                                        
+                                        <div class="card-body">
+                                            <div class="row d-flex profile-card" >
+                                                <div class="col-4 d-flex">
+                                                    <div class="avatar h-100 w-100 align-content-center">
+                                                        <img src="./img/profile-image.jpg" width="100%" alt="Avatar"/>
+                                                    </div>
+                                                </div>
+                                                <div class="col-8 text-center align-self-center profile-name">
+                                                    <h3>Jheferson Gambet</h3>
+                                                    <h5>Stremer,Dev & This/Web-Designer</h5>
+                                                    <a href="https://ggtec.netlify.app/social">Página de perfis sociais</a>
+                                                </div>  
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-social" role="tabpanel" aria-labelledby="social-tab">
+                    <header class="py-5 bg-black border-bottom mb-4">
+                        <div class="container">
+                            <div class="text-center my-5 text-white">
+                                <h1 class="fw-bolder">GGTEC !</h1>
+                                <p class="lead mb-0">Olá, seja muito bem vindo, sou o GGTEC, faço lives na twitch e meu objetivo é crescer no ramo e me tornar um grande streamer, gosto de muitos jogos e já joguei vários titulos, também 
+                                    gosto de programação e desenvolvo algumas coisas para me auxiliar nas transmissões e nos meus perfis sociais, dá uma olhada nos meus perfis e projetos e se curtir o meu conteúdo
+                                    vem fazer parte da minha comunidade e vamos evoluir jutos!!
+                                </p>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8" >
+                                <div class="card mb-4">
+                                    <div class="card-body">
+                                        <div class="wrapper-nav">
+                                            <nav class="nav nav-pills flex-column flex-sm-row">
+                                                <a class="flex-sm-fill text-sm-center nav-link active " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                                                    LIVE
+                                                </a>
+                                                <a class="flex-sm-fill text-sm-center nav-link " id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                                                    DONATE
+                                                </a>
+                                                <a class="flex-sm-fill text-sm-center nav-link " id="pills-nicks-tab" data-bs-toggle="pill" data-bs-target="#pills-nicks" type="button" role="tab" aria-controls="pills-nicks" aria-selected="false">
+                                                    NICKS
+                                                </a>
+                                                <a class="flex-sm-fill text-sm-center nav-link " id="pills-commands-tab" data-bs-toggle="pill" data-bs-target="#pills-commands" type="button" role="tab" aria-controls="pills-commands" aria-selected="false">
+                                                    COMANDOS 
+                                                </a>
+                                            </nav>
+                                        </div>
+                                        <div class="tab-content" id="myTabContent">
+                                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                                <iframe src="https://player.twitch.tv/?channel=gg_tec&parent=ggtec.netlify.app" class="iframe-live" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>
+                                            </div>
+                                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <a  href="https://livepix.gg/ggtec" target="_blank"><img src="../assets/img/DONATE.png" class="img-donate"></a>
+                                                        <p>*O QRcode na imagem direciona para o LIVEPIX</p>
+                                                    </div>
+                                                    <div class="col-8 text-center text-box">
+                                                       <p>Caso queira enviar um SUB na twitch, recomendo utilizar a plataforma da própria livepix porque irá me ajudar muito mais e recebo muito mais rápido a graninha</p>
+                                                        <p>Links</p>
+                                                        <ul class="text-white">
+                                                            <li>Donate livepix padrão = <a href="https://livepix.gg/ggtec" target="_blank">https://livepix.gg/ggtec</a></li>
+                                                            <li>Assinatura livepix (Melhor que SUB na twitch) = <a href="https://livepix.gg/ggtec/sub" target="_blank">https://livepix.gg/ggtec/sub</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="pills-nicks" role="tabpanel" aria-labelledby="pills-nicks-tab">
+                                                <div class="text-box">
+                                                    <h1>JOGUE COMIGO !</h1>
+                                                    <p>Aqui estão os nicks, uuid e tags dos principais jogos multiplayer do canal, me adicione e bora jogar!</p>
+                    
+                                                </div>
+                                                <ul class="nicks-list" >
+                                                    <li><b>VALORANT :</b> GGTEC#GG1</li>
+                                                    <li><b>LEAGUE OF LEGENDS :</b> Gambet</li>
+                                                    <li><b>Genshin Impact :</b> GGTEC</li>
+                                                    <li><b>EPIC GAMES :</b> GGTECTW</li>
+                                                    <li><b>STEAM :</b> GGTEC</li>
+                                                    <li><b>Battle.net (OvW) :</b> GGTEC#1871</li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-pane fade" id="pills-commands" role="tabpanel" aria-labelledby="pills-commands-tab">
+                                                <div class="text-box">
+                                                    <h1>Comandos !</h1>
+                                                    <p>Esses são os comandos atualmente ativos no canal.</p>
+                                                </div>
+                                                <div style="max-height: 35vh;overflow-y: scroll;">
+                                                    <h4>Comandos publicos ou que são necessários niveis de permissão superiores (vip/sub)</h4>
+                                                    <ul class="nicks-list">
+                                                        <li><b>!nick:</b> Exibe os nicks dos principais jogos do canal</li>
+                                                        <li><b>!discord !dc :</b> Envia um link de convite para o discord do canal</li>
+                                                        <li><b>!lurk :</b> Envia uma mensagem avisando que vai deixar no lurk.</li>
+                                                        <li><b>!meta :</b> Exibe a meta atual do canal na tela</li>
+                                                        <li><b>!elo :</b> Exibe o elo e outras informações do league of legends</li>
+                                                        <li><b>!kdr :</b>Exibe o kdr do valorant</li>
+                                                        <li><b>!sub :</b>Exibe o site da livepix para enviar um sub</li>
+                                                        <li><b>!pix :</b>Exibe os links para o livepix</li>
+                                                        <li><b>!comandos : </b>Exibeo link para esta pagina</li>
+                                                        <li><b>!social : </b>Exibe o link para esta pagina</li>
+                                                        <li><b>!bot :</b>Exibe o link para o site do bot</li>
+                                                        <li><b>!smurf</b>Exibe o nickname da conta smurft do valorant</li>
+                                                        <li><b>!rabo (user) : </b>Brincadeira que mostra quanto de fogo no rabo o usuário está</li>
+                                                        <li><b>!atual :</b>Exibe a musica tocando (se tiver tocando uma)</li>
+                                                        <li><b>!proxima :</b>Exibe a proxima musica para ser tocada (se tiver tocando uma)</li>
+                                                        <li><b>!skip : </b>Pula para a proxima musica</li>
+                                                        <li><b>!clip :</b>Exibe a proxima musica para ser tocada (se tiver tocando uma)</li>
+                                                        <li><b>!dado :</b>Escolhe um número entre 1 e 6</li>
+                                                        <li><b>!random (numero):</b>Escolhe um numero a partir do valor digitado</li>
+                                                        <li><b>!followage :</b>Exibe o tempo que você segue o canal</li>
+                                                        <li><b>!game :</b>Exibe o nome do game</li>
+                                                        <li><b>!selfcheck : </b>Verifica se o usuário está no sorteio</li>
+                                                        <li><b>!uptime :</b>Exibe a duração atual da live</li>
+                                                        <li><b>!msgcount : </b>Exibe a quantidade de mensagens recebida pelo bot vindas do usuário</li>
+                                                        <li><b>!tempo :</b>Exibe o tempo que o bot detectou que o usuário assitiu a live</li>
+                                                        <li><b>!tapa (user) :</b>Mensagem interativa para tapa em um usuário</li>
+                                                        <li><b>!beijo (user) :</b>Mensagem interativa para beijo em um usuário</li>
+                                                        <li><b>!abraço (user) :</b>Mensagem interativa para abraço em um usuário</li>
+                                                        <li><b>!voadora (user) :</b>Mensagem interativa para voadora em um usuário</li>
+                                                        <li><b>!socão (user) :</b>Mensagem interativa para socão em um usuário</li>
+                                                        <li><b>!duelo (user) :</b>Envia uma solicitação de duelo para um usuário</li>
+                                                        <li><b>!duelo aceitar :</b>Aceita uma solicitação de duelo de um usuário</li>
+                                                    </ul>
+                                                    <h4>Comandos para moderadores</h4>
+                                                    <ul class="nicks-list">
+                                                        <li><b>!cmd create (comando) (resposta) :</b>Cria um comando no chat com uma resposta simples, (necessário utilizar parenteses e prefix "!,@,#..")</li>
+                                                        <li><b>!cmd edit (comando) (resposta) :</b>Edita o comando, devem ser seguidas as mesmas regras anteriores</li>
+                                                        <li><b>!cmd remove (comando) :</b>Remove o comando</li>
+                                                        <li><b>!accountage (user):</b>Exibe o tempo que a conta foi criada</li>
+                                                        <li><b>!sortear :</b>Executa um sorteio em andamento</li>
+                                                        <li><b>!limpar_sorteio :</b>Limpa a lista de usuáros no sorteio</li>
+                                                        <li><b>!check_user  (user) :</b>Verifica se o usuário está no sorteio</li>
+                                                        <li><b>!adduser : </b>Adiciona usuário na lista de sorteio</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-4" id="social-widget">
+                                <div class="card mb-4">
+                                    <div class="card-body">
+                                        <div>
+                                            <a href="https://www.instagram.com/gg_tec_ofc/" target="_blank" class="animated-button">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                INSTAGRAM
+                                            </a>
+                                            <a href="https://www.tiktok.com/@gg_tec" target="_blank" class="animated-button">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                TIKTOK
+                                            </a>
+                                            <a href="https://www.facebook.com/gaming/GGTECOFC"  target="_blank"  class="animated-button">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                FACEBOOK
+                                            </a>
+                                            <a href="https://www.facebook.com/gaming/GGTECOFC"  target="_blank"  class="animated-button">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                TWITCH
+                                            </a>
+                                            <a href="https://discord.com/invite/utm5NZq"  target="_blank"  class="animated-button">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                DISCORD
+                                            </a>
+                                            <a href="https://www.youtube.com/@GGTEC"  target="_blank"  class="animated-button">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                YOUTUBE
+                                            </a>
+                                            <a href="https://twitter.com/gg_tec_ofc"  target="_blank"  class="animated-button">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                TWITTER
+                                            </a>
+                                            <a href="https://github.com/GGTEC"  target="_blank"  class="animated-button">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                GITHUB
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Side widget-->
+                                <div class="card mb-4">
+                                    <div class="card-body">
+                                        <div class="row d-flex profile-card" >
+                                            <div class="col-4 d-flex">
+                                                <div class="avatar h-100 w-100 align-content-center">
+                                                    <img src="./img/profile-image.jpg" width="100%" alt="Avatar"/>
+                                                </div>
+                                            </div>
+                                            <div class="col-8 text-center align-self-center profile-name">
+                                                <h3>Jheferson Gambet</h3>
+                                                <h5>Stremer,Dev & This/Web-Designer</h5>
+                                                <a href="https://ggtec.netlify.app/social">Página de perfis sociais</a>
+                                            </div>  
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-dialog-scrollable  modal-border">
+                  <div class="modal-content modal-background">
+                    <div class="modal-header modal-background-header">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body p-5">
+                        <h1>Politica de cookies</h1>
+                        Esta Política de Cookies foi atualizada pela última vez em 09 de outubro de 2022 e aplica-se aos cidadãos do Brasil de acordo com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018) e países que possuem leis sobre proteção de dados. A LGPD estabelece regras sobre coleta, armazenamento e compartilhamento de dados pessoais, atribuindo mais proteção aos titulares de tais dados.
+                        O site do GGTECApps usa cookies e outras tecnologias relacionadas (por conveniência, todas as tecnologias são chamadas de "cookies"). No documento abaixo informamos sobre o uso de cookies em nosso site.
+            
+                        <h1>O que sã​​o cookies</h1>
+                        Cookies são arquivos-texto gerados pelo site e transferidos para seu computador, sendo armazenados pelos Navegadores como Google Chrome, Firefox, Internet Explorer, etc. Em geral, os Cookies são utilizados para uma otimização de sua experiência de navegação junto ao nosso site, quando permitido pelo nível de segurança configurado por você junto ao seu navegador. Sempre que o seu navegador estiver assim configurado, utilizaremos cookies conforme explicado.
+                        Os cookies utilizados no site têm como finalidade identificar as tendências de navegação do usuário, buscando aprimorar e personalizar seus acessos futuros, tais como, páginas navegadas ou links clicados. Quaisquer dos cookies utilizados não são usados para executar programas ou infectar seu computador com vírus ou programas maliciosos.
+                        Ao acessar este site pela primeira vez, você foi informado através de um aviso em popup referente a prática de cookies. Mesmo quando seu programa de navegação estiver configurado para permitir a instalação de cookies, mas você desejar removê-los ou impedir o armazenamento de novos cookies, pode fazê-lo imediatamente e sem qualquer impedimento, desativando este recurso em seu navegador e excluindo todos os eventuais cookies já implementados.
+                        Desta forma, recomendamos que você configure seu programa de navegação no nível de segurança desejado antes de navegar em nosso site, em todos os computadores e dispositivos que deseje utilizar.​
+                        
+                        
+                        <h1>COMO OS COOKIES SÃO USADOS</h1>
+                        Os cookies utilizados em nosso site atendem aos requisitos legais e são enquadrados nas seguintes categorias:
+                        
+                        Cookies Funcionais: Os Cookies Funcionais são usados para fornecer serviços ou para lembrar definições de navegações de forma a melhorar sua visita.
+                        Para o que nós os usamos: Lembrar eventualmente das configurações que você aplicou, como idioma, layout, tamanho do texto, preferências e cores.
+                        
+                        Cookies Estritamente Necessários: São aqueles cookies que permitem a você navegar pelo site e usar recursos essenciais, como formulários ou áreas seguras, por exemplo. Esses cookies não guardam quaisquer informações sobre você que possam ser usadas em ações de comunicação de produto ou serviço ou para lembrar as páginas navegadas no site.
+                        Para o que nós os usamos: Identificá-lo como um usuário conectado. Lembrar de informações que você digitou previamente em eventuais formulários de contato. Certificar-se de que você se conecta ao serviço correto em nosso site quando fizermos alguma mudança na forma como ele funciona.
+                        
+                        Cookies de Desempenho: Os cookies de "Desempenho" coletam informações sobre como você usa o nosso website, por exemplo, quais páginas você visita, se elas possuem erros, erros em formulários e etc. Esses cookies não coletam quaisquer informações que possam identificá-lo. Toda a informação coletada é realizada de forma codificada, anônima e somente usada para ajudar a melhorar a forma como o nosso site funciona, entender o que interessa aos nossos usuários e medir a eficácia da nossa comunicação.
+                        Para o que nós os usamos: Fornecer estatísticas sobre como nosso site é utilizado. Verificar a eficiência da nossa comunicação, não nos utilizando dessa informação para direcionamento de anúncios quando em visita a outros sites. Ajudar na melhoria de nosso site pela medição de erros que eventualmente possam ocorrer. Realizar melhorias e aperfeiçoamentos em nosso site decorrentes do comportamento de navegação de nossos usuários.
+                        
+                        Cookies de Segmentação: Os Cookies de Segmentação estão ligados aos serviços prestados por terceiros, tais como, por exemplo, feed de mídias sociais, botões de "Like" e botões de "Compartilhar" contidos em outros sites que não o nosso site. O terceiro fornece esses serviços por reconhecer que você visitou nosso site, mas de maneira nenhuma se confunde com o nosso site.
+                        Para o que nós os usamos: Para conectar-se as mídias sociais, que, por serem terceiros e pelos quais não termos controle, poderão, posteriormente, utilizar as informações sobre a sua visita para direcionar publicidade de seu interesse para você em outros sites. Em relação aos Cookies de Segmentação, você pode controlar se serão usados ou não (vide tópico abaixo "Como Desativar os Cookies"), mas seu bloqueio pode nos impedir de oferecer alguns serviços ou prejudicar a boa navegação junto ao nosso site.
+                        
+                        
+                        <h1>COMO DESATIVAR OS COOKIES</h1>
+                        Normalmente as configurações para desativar os cookies estão presentes nas "Opções" ou o menu "Preferências" do seu navegador. Para saber melhor consulte as opções de ajuda de seu navegador.
+                        Você pode desabilitá-los alterando as configurações do seu navegador, mas saiba que isso pode afetar o funcionamento do site.
+            
+                        <a href="https://support.google.com/chrome/answer/95647?co=GENIE.Platform%3DDesktop&hl=pt-BR">Chrome</a>
+            
+                        <a href="https://support.mozilla.org/pt-BR/kb/desative-cookies-terceiros-impedir-rastreamento">Firefox</a>
+            
+                        <a href="https://support.microsoft.com/pt-br/microsoft-edge/excluir-cookies-no-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09">Microsoft Edge</a>
+            
+                        <a href="https://support.microsoft.com/pt-br/windows/excluir-e-gerenciar-cookies-168dab11-0753-043d-7c16-ede5947fc64d">Internet Explorer​</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+    
+    
+            <div class="fixed-bottom p-4">
+                <div class="toast modal-background text-white w-25" id="liveToast" role="alert" data-bs-autohide="false">
+                    <div class="toast-header modal-background-header d-flex justify-content-end">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">
+                        
+                        <h4>Cookies</h4>
+                        <p>Utilizando este site você concorda com a <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" >Politica de cookies.</a></p>
+                        <div class="ml-auto d-flex justify-content-end">
+                            <button type="button" class="btn m-1" id="btnDeny">
+                                Negar
+                            </button>
+                            <button type="button" class="btn m-1" id="btnAccept">
+                                Aceitar
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Footer-->
-            <footer class="py-5 bg-black" id="footer">
-                <div class="container" ><p class="m-0 text-center text-white">Copyright &copy; GGTECApps 2023</p></div>
+            <footer class="py-5 bg-black footer" id="footer">
+                <div class="container">
+
+
+                    <div class="row">
+                        <div class="col-10">
+                            <p>Copyright &copy; GGTEC 2023</p> 
+                            <p>Page Dev By GGTEC</p>
+                        </div>
+                        <div class="col-2 social-links d-flex flex-column justify-content-end align-content-end">
+                            <button class="btn btn-light m-1" onclick="location.href='https://discord.com/invite/utm5NZq'" title="discord" class="discord"><i class="bx bxl-discord-alt m-1"></i>Discord</button>
+                            <button class="btn btn-light m-1" onclick="location.href='https://github.com/GGTEC/'"  title="github" class="github"><i class="bx bxl-github m-1"></i>Github</button>
+                            <button class="btn btn-light m-1" onclick="location.href='https://www.twitch.tv/gg_tec'"  title="twitch" class="twitch"><i class="bx bxl-twitch m-1"></i>Twitch</button>
+                        </div>
+                    </div>
+                </div>
             </footer>
             <!-- Bootstrap core JS-->
         </div>
