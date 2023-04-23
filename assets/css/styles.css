@@ -11283,3 +11283,8 @@ textarea.form-control-lg {
   aspect-ratio: 16 / 9;
 
 }
+
+.blog-header {
+  background: url('../img/banner.png') no-repeat center center;
+  background-size: cover;
+}
