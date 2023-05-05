@@ -10,6 +10,11 @@
         <link href="./assets/css/styles.css" rel="stylesheet" />
         <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/dataTables.bootstrap5.min.css">
+        <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.js"></script>
+        <script src="https://cdn.datatables.net/1.13.1/js/dataTables.bootstrap5.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.4.0/css/responsive.dataTables.min.css">
+        <script src="https://cdn.datatables.net/responsive/2.4.0/js/dataTables.responsive.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
         <link href="./assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
         <link href="./assets/boxicons/css/boxicons.min.css" rel="stylesheet">
@@ -307,7 +312,7 @@
                                                 <a class="flex-sm-fill text-sm-center nav-link " id="pills-nicks-tab" data-bs-toggle="pill" data-bs-target="#pills-nicks" type="button" role="tab" aria-controls="pills-nicks" aria-selected="false">
                                                     NICKS
                                                 </a>
-                                                <a class="flex-sm-fill text-sm-center nav-link " id="pills-commands-tab" data-bs-toggle="pill" data-bs-target="#pills-commands" type="button" role="tab" aria-controls="pills-commands" aria-selected="false">
+                                                <a class="flex-sm-fill text-sm-center nav-link " onclick="start_table()" id="pills-commands-tab" data-bs-toggle="pill" data-bs-target="#pills-commands" type="button" role="tab" aria-controls="pills-commands" aria-selected="false">
                                                     COMANDOS 
                                                 </a>
                                             </nav>
@@ -319,7 +324,7 @@
                                             <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                                                 <div class="row">
                                                     <div class="col-4">
-                                                        <a  href="https://livepix.gg/ggtec" target="_blank"><img src="assets/img/DONATE.png" class="img-donate"></a>
+                                                        <a  href="https://livepix.gg/ggtec" target="_blank"><img src="assets/img/DONATE.png" class="img-donate" title="Donate livepix"></a>
                                                         <p>*O QRcode na imagem direciona para o LIVEPIX</p>
                                                     </div>
                                                     <div class="col-8 text-center text-box">
@@ -349,56 +354,180 @@
                                             </div>
                                             <div class="tab-pane fade" id="pills-commands" role="tabpanel" aria-labelledby="pills-commands-tab">
                                                 <div class="text-box">
-                                                    <h1>Comandos !</h1>
+                                                    <h4>Comandos !</h4>
                                                     <p>Esses são os comandos atualmente ativos no canal.</p>
                                                 </div>
-                                                <div style="max-height: 35vh;overflow-y: scroll;">
+                                                <div class="w-100" style="max-height: 35vh;overflow-y: scroll;">
                                                     <h4>Comandos publicos ou que são necessários niveis de permissão superiores (vip/sub)</h4>
-                                                    <ul class="nicks-list">
-                                                        <li><b>!nick:</b> Exibe os nicks dos principais jogos do canal</li>
-                                                        <li><b>!discord !dc :</b> Envia um link de convite para o discord do canal</li>
-                                                        <li><b>!lurk :</b> Envia uma mensagem avisando que vai deixar no lurk.</li>
-                                                        <li><b>!meta :</b> Exibe a meta atual do canal na tela</li>
-                                                        <li><b>!elo :</b> Exibe o elo e outras informações do league of legends</li>
-                                                        <li><b>!kdr :</b>Exibe o kdr do valorant</li>
-                                                        <li><b>!sub :</b>Exibe o site da livepix para enviar um sub</li>
-                                                        <li><b>!pix :</b>Exibe os links para o livepix</li>
-                                                        <li><b>!comandos : </b>Exibeo link para esta pagina</li>
-                                                        <li><b>!social : </b>Exibe o link para esta pagina</li>
-                                                        <li><b>!bot :</b>Exibe o link para o site do bot</li>
-                                                        <li><b>!smurf</b>Exibe o nickname da conta smurft do valorant</li>
-                                                        <li><b>!rabo (user) : </b>Brincadeira que mostra quanto de fogo no rabo o usuário está</li>
-                                                        <li><b>!atual :</b>Exibe a musica tocando (se tiver tocando uma)</li>
-                                                        <li><b>!proxima :</b>Exibe a proxima musica para ser tocada (se tiver tocando uma)</li>
-                                                        <li><b>!skip : </b>Pula para a proxima musica</li>
-                                                        <li><b>!clip :</b>Exibe a proxima musica para ser tocada (se tiver tocando uma)</li>
-                                                        <li><b>!dado :</b>Escolhe um número entre 1 e 6</li>
-                                                        <li><b>!random (numero):</b>Escolhe um numero a partir do valor digitado</li>
-                                                        <li><b>!followage :</b>Exibe o tempo que você segue o canal</li>
-                                                        <li><b>!game :</b>Exibe o nome do game</li>
-                                                        <li><b>!selfcheck : </b>Verifica se o usuário está no sorteio</li>
-                                                        <li><b>!uptime :</b>Exibe a duração atual da live</li>
-                                                        <li><b>!msgcount : </b>Exibe a quantidade de mensagens recebida pelo bot vindas do usuário</li>
-                                                        <li><b>!tempo :</b>Exibe o tempo que o bot detectou que o usuário assitiu a live</li>
-                                                        <li><b>!tapa (user) :</b>Mensagem interativa para tapa em um usuário</li>
-                                                        <li><b>!beijo (user) :</b>Mensagem interativa para beijo em um usuário</li>
-                                                        <li><b>!abraço (user) :</b>Mensagem interativa para abraço em um usuário</li>
-                                                        <li><b>!voadora (user) :</b>Mensagem interativa para voadora em um usuário</li>
-                                                        <li><b>!socão (user) :</b>Mensagem interativa para socão em um usuário</li>
-                                                        <li><b>!duelo (user) :</b>Envia uma solicitação de duelo para um usuário</li>
-                                                        <li><b>!duelo aceitar :</b>Aceita uma solicitação de duelo de um usuário</li>
-                                                    </ul>
-                                                    <h4>Comandos para moderadores</h4>
-                                                    <ul class="nicks-list">
-                                                        <li><b>!cmd create (comando) (resposta) :</b>Cria um comando no chat com uma resposta simples, (necessário utilizar parenteses e prefix "!,@,#..")</li>
-                                                        <li><b>!cmd edit (comando) (resposta) :</b>Edita o comando, devem ser seguidas as mesmas regras anteriores</li>
-                                                        <li><b>!cmd remove (comando) :</b>Remove o comando</li>
-                                                        <li><b>!accountage (user):</b>Exibe o tempo que a conta foi criada</li>
-                                                        <li><b>!sortear :</b>Executa um sorteio em andamento</li>
-                                                        <li><b>!limpar_sorteio :</b>Limpa a lista de usuáros no sorteio</li>
-                                                        <li><b>!check_user  (user) :</b>Verifica se o usuário está no sorteio</li>
-                                                        <li><b>!adduser : </b>Adiciona usuário na lista de sorteio</li>
-                                                    </ul>
+                                                    <table class="table table-dark table-striped" id="table">
+                                                        <thead>
+                                                            <th>Comando</th>
+                                                            <th>Descrição</th>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>!nick</td>
+                                                                <td>Exibe os nicks dos principais jogos do canal</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>!discord !dc</td>
+                                                                <td>Envia um link de convite para o discord do canal</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>!lurk</td>
+                                                                <td>Envia uma mensagem avisando que vai deixar no lurk.</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>!meta</td>
+                                                                <td>Exibe a meta atual do canal na tela</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>!elo</td>
+                                                                <td>Exibe o elo e outras informações do league of legends</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>!kdr</td>
+                                                                <td>Exibe o kdr do valorant</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>!sub</td>
+                                                                <td>Exibe o site da livepix para enviar um sub</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>!pix</td>
+                                                                <td>Exibe os links para o livepix</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>!comandos</td>
+                                                                <td>Exibe o link para esta pagina</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>!social</td>
+                                                                <td>Exibe o link para esta pagina</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>!bot</td>
+                                                                <td>Exibe o link para o site do bot</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>!smurf</td>
+                                                                <td>Exibe o nickname da conta smurf do valorant</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>!rabo (user)</td>
+                                                                <td>Brincadeira que mostra quanto de fogo no rabo o usuário está</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>!atual</td>
+                                                                <td>Exibe a musica tocando (se tiver tocando uma)</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>!proxima</td>
+                                                                <td>Exibe a proxima musica para ser tocada (se tiver tocando uma)</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>!skip</td>
+                                                                <td>Pula para a proxima musica</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>!clip</td>
+                                                                <td>Exibe a proxima musica para ser tocada (se tiver tocando uma)</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>!dado</td>
+                                                                <td>Escolhe um número entre 1 e 6</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>!random (numero)</td>
+                                                                <td>Escolhe um numero a partir do valor digitado</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>!followage</td>
+                                                                <td>Exibe o tempo que você segue o canal</td>
+                                                            </tr>
+                                                            <tr>
+                                                            <td>!game</td>
+                                                                <td>Exibe o nome do game</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>!selfcheck</td>
+                                                                <td>Verifica se o usuário está no sorteio</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>!uptime</td>
+                                                                <td>Exibe a duração atual da live</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>!msgcount</td>
+                                                                <td>Exibe a quantidade de mensagens recebida pelo bot vindas do usuário</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>!tempo</td>
+                                                                <td>Exibe o tempo que o bot detectou que o usuário assitiu a live</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>!tapa (user)</td>
+                                                                <td>Mensagem interativa para tapa em um usuário</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>!beijo (user)</td>
+                                                                <td>Mensagem interativa para beijo em um usuário</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>!abraço (user)</td>
+                                                                <td>Mensagem interativa para abraço em um usuário</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>!voadora (user)</td>
+                                                                <td>Mensagem interativa para voadora em um usuário</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>!socão (user)</td>
+                                                                <td>Mensagem interativa para socão em um usuário</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>!duelo (user)</td>
+                                                                <td>Envia uma solicitação de duelo para um usuário</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>!duelo aceitar</td>
+                                                                <td>Aceita uma solicitação de duelo de um usuário</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>!cmd create (comando) (resposta)</td>
+                                                                <td>Cria um comando no chat com uma resposta simples, (necessário utilizar parenteses e prefix "!,@,#..")</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>!cmd edit (comando) (resposta)</td>
+                                                                <td>Edita o comando, devem ser seguidas as mesmas regras anteriores</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>!cmd remove (comando)</td>
+                                                                <td>Remove o comando</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>!accountage (user)</td>
+                                                                <td>Exibe o tempo que a conta foi criada</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>!sortear</td>
+                                                                <td>Executa um sorteio em andamento</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>!limpar_sorteio</td>
+                                                                <td>Limpa a lista de usuários no sorteio</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>!check_user (user)</td>
+                                                                <td>Verifica se o usuário está no sorteio</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>!adduser : </td>
+                                                                <td> Adiciona usuário na lista de sorteio</td>
+                                                            </tr>
+                                                        </tbody>
+                                                        
+                                                    </table>
                                                 </div>
                                             </div>
                                         </div>

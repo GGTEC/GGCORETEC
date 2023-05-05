@@ -4570,18 +4570,18 @@ textarea.form-control-lg {
   --bs-pagination-padding-x: 0.75rem;
   --bs-pagination-padding-y: 0.375rem;
   --bs-pagination-font-size: 1rem;
-  --bs-pagination-color: var(--bs-link-color);
-  --bs-pagination-bg: #623f80;
-  --bs-pagination-border-width: 1px;
+  --bs-pagination-color: white;
+  --bs-pagination-bg: #000;
+  --bs-pagination-border-width: 0px;
   --bs-pagination-border-color: #623f80;
-  --bs-pagination-border-radius: 0.375rem;
+  --bs-pagination-border-radius: 0.175rem;
   --bs-pagination-hover-color: var(--bs-link-hover-color);
   --bs-pagination-hover-bg: #e9ecef;
   --bs-pagination-hover-border-color: #623f80;
   --bs-pagination-focus-color: var(--bs-link-hover-color);
   --bs-pagination-focus-bg: #e9ecef;
   --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(59, 1, 82, 0.25);
-  --bs-pagination-active-color: #fff;
+  --bs-pagination-active-color: #7f52a7;
   --bs-pagination-active-bg: #623f80;
   --bs-pagination-active-border-color: #623f80;
   --bs-pagination-disabled-color: #6c757d;
@@ -4592,15 +4592,16 @@ textarea.form-control-lg {
   list-style: none;
 }
 
+
 .page-link {
   position: relative;
   display: block;
   padding: var(--bs-pagination-padding-y) var(--bs-pagination-padding-x);
   font-size: var(--bs-pagination-font-size);
-  color: var(--bs-pagination-color);
+  color: white;
   text-decoration: none;
-  background-color: var(--bs-pagination-bg);
-  border: var(--bs-pagination-border-width) solid var(--bs-pagination-border-color);
+  background-color: #000 !important;
+  border: #754b99 2px solid !important;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -11275,4 +11276,64 @@ textarea.form-control-lg {
 
 .text-box h1 {
   font-size: 55px;
+}
+
+
+table{
+  width: 100%;
+  color: #fff;
+  background-color: #000;
+}
+
+table td {
+  white-space: nowrap;
+}
+
+
+.dataTables_scrollHeadInner,.dataTables_scrollHeadInner table,.dataTables_scrollFootInner,.dataTables_scrollFootInner table{
+  width: 100% !important;
+}
+
+table thead {
+  width: 100% !important;
+}
+
+table tbody {
+  width: 100%;
+}
+
+
+table tr:hover {
+  cursor: pointer;
+}
+
+#table_filter input, #table_length select {
+  background: #000;
+  color: #fff;
+}
+
+select ,input {
+  color: white;
+  border-color: #710299 !important;
+}
+
+
+select:active,
+select:focus,
+input[type="text"]:active ,
+input[type="text"]:focus,
+button:active,
+button:focus {
+    border-color: #5f0181 !important;
+    outline: none !important;
+    box-shadow: inset 0 2px 2px rgba(148, 0, 194, 0.729),0 0 8px rgba(118, 0, 154, 0.781) !important;
+}
+  
+select {
+  height: 40px !important;
+}
+
+option {
+  background: #000; 
+  color: #fff
 }

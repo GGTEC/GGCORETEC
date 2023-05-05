@@ -1,15 +1,15 @@
 [
     {
-        "post_date": "17/04/2023",
-        "post_content_preview": "Se você é um streamer e está procurando uma maneira de tornar a sua transmissão mais interativa e engajadora, o RewardEvents é a solução perfeita para você",
-        "post_thumb_url": "https://ggtec.netlify.app/assets/img/rew1.png",
-        "post_image_url": "https://ggtec.netlify.app/assets/img/rew1.png",
-        "post_title": "RewardEvents: o bot que vai transformar a sua stream",
-        "post_content": "<p>Se você é um streamer e está procurando uma maneira de tornar a sua transmissão mais interativa e engajadora, o RewardEvents é a solução perfeita para você. Com ele, você pode executar as mais diversas funções na sua stream, como reproduzir áudios com resgates de recompensas, enviar notificações no Discord via WebHook e processar pedidos de música com um player interno ou adicionar playlists inteiras. Além disso, o RewardEvents permite que você altere a cena ativa do OBS Studio, exiba ou oculte um filtro ou uma fonte no OBS Studio e pressione teclas de atalho ou uma única tecla com 3 diferentes modos. Você também pode executar sorteios utilizando uma recompensa como bilhete de entrada, criar clipes utilizando uma recompensa, comando e um botão na própria interface e criar enquetes e palpites diretamente na interface. Com o RewardEvents, você tem todas as funções de um bot simples e muito mais. Então, se você quer transformar a sua stream em algo ainda mais incrível, experimente o RewardEvents hoje mesmo!</p><p>O OBS Studio é um software gratuito e de código aberto para gravação e transmissão de vídeo ao vivo. Ele é amplamente utilizado por streamers em todo o mundo para transmitir jogos, eventos ao vivo e muito mais.</p><p>O Discord é um aplicativo de comunicação por voz e texto para gamers. Ele permite que você crie servidores privados ou públicos para se comunicar com amigos ou seguidores durante as suas transmissões.</p><p>Um player interno é um recurso que permite que você reproduza músicas diretamente na sua stream sem precisar usar outro software. Isso pode ser útil para quem quer adicionar trilhas sonoras à sua transmissão sem precisar alternar entre diferentes programas.</p><p>Para criar enquetes com o RewardEvents, basta utilizar a interface do bot. Você pode criar enquetes e palpites diretamente na interface do RewardEvents e exibi-los na sua stream.</p>",
+        "post_date": "2023/05/05",
+        "post_content_preview": "<p>O Google anunciou que irá substituir ícone de cadeado ao lado dos endereços de sites; entenda o motivo da mudança </p> <p>Você pode nunca nem ter notado. Mas, na barra de pesquisa do Chrome, há um cadeado. Reparou agora? Bom, vai durar pouco. O Google anunciou nesta terça-feira (2) a...",
+        "post_thumb_url": "https://ggtec.netlify.app/assets/img/google-post/Chrome-HTTPS.png",
+        "post_image_url": "https://ggtec.netlify.app/assets/img/google-post/new-site-controls.png",
+        "post_title": "Chrome: ícone de cadeado que ninguém liga será desativado. O que ele significa?",
+        "post_content": "    <p>O Google anunciou que irá substituir ícone de cadeado ao lado dos endereços de sites; entenda o motivo da mudança\n    </p>\n    <p>Você pode nunca nem ter notado. Mas, na barra de pesquisa do Chrome, há um cadeado. Reparou agora? Bom, vai durar\n        pouco. O Google anunciou nesta terça-feira (2) a substituição do ícone de cadeado ao lado dos endereços de sites\n        na atualização Chrome 117, que será lançada em setembro deste ano. No lugar, será usado um ícone de “melodia”.\n    </p>\n    <h3>E o que é o tal cadeado?</h3>\n    <p> O atual ícone é usado para representar sites de conexões HTTPS desde os anos 90\n    A mudança considerou uma pesquisa realizada em 2021 pelo Google, que mostrou que a maioria dos usuários não entende\n    o que significa o ícone;</p>\n    <p>Mesmo contendo o ícone de cadeado, muitos sites não são totalmente seguros;</p>\n    <p>Mas, hoje, a realidade é diferente: cerca de 95% das páginas usam HTTPS. Desta forma, até mesmo sites maliciosos\n        usam essa conexão. “Sabemos que o ícone de cadeado não indica a confiabilidade do site”, diz o Google.</p>\n    <p>Uma pesquisa realizada pelo Google em 2021 mostrou que apenas 11% dos participantes entenderam que o significado\n        do cadeado. O levantamento também revelou que muitos não sabiam que, ao clicar no ícone, eram apresentadas\n        informações e controles de segurança importantes.</p>\n    <p>Com a mudança de logo, a empresa espera que os usuários não acreditem que ele significa que determinado site é\n        totalmente confiável.</p>\n    <p>O novo símbolo é uma variante de ícone de música usado para indicar controles e configurações.<br>\n        O novo ícone não implicará que os sites serão necessariamente “confiáveis”.</p>\n    <blockquote>\n        <p>“Acreditamos que o novo ícone ajuda a tornar os controles de permissão e as informações de segurança\n            adicionais mais acessíveis, evitando os mal-entendidos que afetam o ícone de cadeado.”</p>\n    </blockquote>\n    <p>De acordo com o Google, quando o ícone começou a ser usado, as páginas HTTPS (Hyper Text Transfer Protocol\n        Secure) ainda eram incomuns. O cadeado indicava ao usuário que a conexão de rede “era um canal seguro entre o\n        navegador e o site, e que a conexão de rede não pode ser adulterada ou espionada por terceiros”.</p>",
         "post_tags": [
-            "Stream",
-            "Bot",
-            "Lives"
+            "Internet",
+            " Web",
+            " Noticias"
         ]
     },
     {
@@ -35,6 +35,19 @@
         "post_tags": [
             "Games",
             "TFT"
+        ]
+    },
+    {
+        "post_date": "17/04/2023",
+        "post_content_preview": "Se você é um streamer e está procurando uma maneira de tornar a sua transmissão mais interativa e engajadora, o RewardEvents é a solução perfeita para você",
+        "post_thumb_url": "https://ggtec.netlify.app/assets/img/rew1.png",
+        "post_image_url": "https://ggtec.netlify.app/assets/img/rew1.png",
+        "post_title": "RewardEvents: o bot que vai transformar a sua stream",
+        "post_content": "<p>Se você é um streamer e está procurando uma maneira de tornar a sua transmissão mais interativa e engajadora, o RewardEvents é a solução perfeita para você. Com ele, você pode executar as mais diversas funções na sua stream, como reproduzir áudios com resgates de recompensas, enviar notificações no Discord via WebHook e processar pedidos de música com um player interno ou adicionar playlists inteiras. Além disso, o RewardEvents permite que você altere a cena ativa do OBS Studio, exiba ou oculte um filtro ou uma fonte no OBS Studio e pressione teclas de atalho ou uma única tecla com 3 diferentes modos. Você também pode executar sorteios utilizando uma recompensa como bilhete de entrada, criar clipes utilizando uma recompensa, comando e um botão na própria interface e criar enquetes e palpites diretamente na interface. Com o RewardEvents, você tem todas as funções de um bot simples e muito mais. Então, se você quer transformar a sua stream em algo ainda mais incrível, experimente o RewardEvents hoje mesmo!</p><p>O OBS Studio é um software gratuito e de código aberto para gravação e transmissão de vídeo ao vivo. Ele é amplamente utilizado por streamers em todo o mundo para transmitir jogos, eventos ao vivo e muito mais.</p><p>O Discord é um aplicativo de comunicação por voz e texto para gamers. Ele permite que você crie servidores privados ou públicos para se comunicar com amigos ou seguidores durante as suas transmissões.</p><p>Um player interno é um recurso que permite que você reproduza músicas diretamente na sua stream sem precisar usar outro software. Isso pode ser útil para quem quer adicionar trilhas sonoras à sua transmissão sem precisar alternar entre diferentes programas.</p><p>Para criar enquetes com o RewardEvents, basta utilizar a interface do bot. Você pode criar enquetes e palpites diretamente na interface do RewardEvents e exibi-los na sua stream.</p>",
+        "post_tags": [
+            "Stream",
+            "Bot",
+            "Lives"
         ]
     }
 ]
