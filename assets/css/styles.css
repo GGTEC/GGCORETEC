@@ -244,25 +244,15 @@ dd {
 }
 
 blockquote {
-  margin: 0 0 1rem;
+  border-left: #7f52a7 3px solid;
+  padding-left: 5%;
+  margin-bottom: 2rem;
+  font-size: 1.05rem;
+  margin-left: 2rem;
 }
 
-blockquote {
-  margin-bottom: 1rem;
-  font-size: 1.25rem;
-}
 blockquote > :last-child {
   margin-bottom: 0;
-}
-
-blockquote-footer {
-  margin-top: -1rem;
-  margin-bottom: 1rem;
-  font-size: 0.875em;
-  color: #6c757d;
-}
-blockquote-footer::before {
-  content: "— ";
 }
 
 
