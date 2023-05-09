@@ -245,6 +245,7 @@ fetch('https://ggtec.github.io/GGTECApps/posts/posts.json')
         });
         
         document.getElementById('post-content').innerHTML = post.post_content;
+        document.getElementById('post-source').innerHTML = post.post_source;
       
 
         articleContainer.classList.remove("d-none");

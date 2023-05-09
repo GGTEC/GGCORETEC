@@ -136,7 +136,10 @@ body {
   width: 6px;
   height: 6px;
 }
-
+::-webkit-scrollbar-corner {
+  background: #000000;
+  border: 0px none transparent;
+}
 hr {
   margin: 1rem 0;
   color: inherit;
@@ -10932,7 +10935,9 @@ textarea.form-control-lg {
   padding-bottom: 5.5rem;    /* Footer height */
 }
 
-
+.category {
+  overflow-y: scroll;
+}
 
 .category li {
   
