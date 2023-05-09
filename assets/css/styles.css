@@ -10934,7 +10934,17 @@ textarea.form-control-lg {
 .content-wrap {
   padding-bottom: 5.5rem;    /* Footer height */
 }
+.card-top-img {
+  width: 100%;
+  height: 20vw;
+  object-fit: cover;
+}
 
+.card-small-img{
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
 .category {
   overflow-y: scroll;
 }

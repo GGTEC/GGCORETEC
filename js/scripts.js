@@ -120,7 +120,7 @@ fetch('https://ggtec.github.io/GGTECApps/posts/posts.json')
     firstArticle.innerHTML = `
       <div class="card mb-4 post-card" data-tags="${firstPost.post_tags.join(', ')}" >
         <div class="overlay">${firstPost.post_tags.join(', ')}</div>
-        <img class="card-img-top card-img-isset-shadow" src="${firstPost.post_thumb_url}" alt="..." />
+        <img class="card-img-top card-img-isset-shadow card-top-img" src="${firstPost.post_thumb_url}" alt="..."/>
         <div class="card-body">
           <div class="small text-muted">${firstPost.post_date}</div>
           <h2 class="card-title">${firstPost.post_title}</h2>
@@ -139,7 +139,7 @@ fetch('https://ggtec.github.io/GGTECApps/posts/posts.json')
       const postHTML = `
         <div class="card mb-4 post-card" data-tags="${post.post_tags.join(', ')}" >
           <div class="overlay-small">${post.post_tags.join(', ')}</div>
-          <img class="card-img-top card-img-isset-shadow" src="${post.post_thumb_url}" alt="..." />
+          <img class="card-img-top card-img-isset-shadow card-small-img" src="${post.post_thumb_url}" alt="..." />
           <div class="card-body">
             <div class="small text-muted">${post.post_date}</div>
             <h2 class="card-title">${post.post_title}</h2>  
