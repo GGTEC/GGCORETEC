@@ -11017,11 +11017,12 @@ textarea.form-control-lg {
   transform: rotate(-22deg);
   border-radius: 100%;
   border: 4px solid white;
+  margin: 15%;
 }
 
-.profile-card{
+.profile-card {
   background: url("../img/profile_bg.png") repeat center center;
-  padding: 5%;
+  object-fit: cover;
 }
 
 .profile-name a{
@@ -11303,10 +11304,8 @@ textarea.form-control-lg {
 }
 
 .iframe-live {
-  margin-top: 5%;
   width: 100%;
   aspect-ratio: 16 / 9;
-
 }
 
 table{
