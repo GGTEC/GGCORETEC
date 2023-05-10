@@ -103,12 +103,12 @@ fetch('https://ggtec.github.io/GGTECApps/posts/posts.json')
     `;
 
     // create other articles HTML
-    let otherPostsColumn1 = '';
-    let otherPostsColumn2 = '';
+    let otherPostsColumn = '';
     for (let i = 1; i < posts.length; i++) {
       const post = posts[i];
 
       const postHTML = `
+      <div class="col">
         <div class="card mb-4 post-card" data-tags="${post.post_tags.join(', ')}" >
           <div class="overlay-small">${post.post_tags.join(', ')}</div>
           <img class="card-img-top card-img-isset-shadow card-small-img" src="${post.post_thumb_url}" alt="..." />
@@ -119,18 +119,13 @@ fetch('https://ggtec.github.io/GGTECApps/posts/posts.json')
             <a class="btn btn-purple" href="#" data-post-index="${i}">Leia mais <i class="fa-solid fa-right-long"></i></a>
           </div>
         </div>
-      `;
-      if (i % 2 === 0) {
-        otherPostsColumn2 += postHTML;
-      } else {
-        otherPostsColumn1 += postHTML;
-      }
-    }
-    othersArticles.innerHTML = `
-      <div class="row">
-        <div class="col-lg-6">${otherPostsColumn1}</div>
-        <div class="col-lg-6">${otherPostsColumn2}</div>
       </div>
+      `;
+
+      otherPostsColumn += postHTML;
+
+    }
+    othersArticles.innerHTML = `${otherPostsColumn}
     `;
     
     const readMoreButtons = document.querySelectorAll("[data-post-index]");
