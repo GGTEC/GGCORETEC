@@ -694,7 +694,7 @@ progress {
 
 @media (min-width: 320px) {
   .container-sm, .container {
-    max-width: 340px;
+    max-width: 360px;
   }
 }
 
