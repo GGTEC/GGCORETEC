@@ -692,6 +692,11 @@ progress {
   min-height: 100vh;
 }
 
+@media (min-width: 320px) {
+  .container-sm, .container {
+    max-width: 340px;
+  }
+}
 
 @media (min-width: 576px) {
   .container-sm, .container {
