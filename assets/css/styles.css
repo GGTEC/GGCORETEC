@@ -4801,9 +4801,9 @@ textarea.form-control-lg {
 }
 
 .alert-dark {
-  --bs-alert-color: #141619;
-  --bs-alert-bg: #d3d3d4;
-  --bs-alert-border-color: #bcbebf;
+  --bs-alert-color: #fff;
+  --bs-alert-bg: #000;
+  --bs-alert-border-color: #623f80;
 }
 .alert-dark .alert-link {
   color: #101214;
@@ -11371,3 +11371,6 @@ option {
   background: #000; 
   color: #fff
 }
+
+
+#cb-cookie-banner { position: fixed; bottom: 0; left: 0; width: 100%; z-index: 999; border-radius: 0; display: none; }

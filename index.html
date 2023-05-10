@@ -682,27 +682,17 @@
                       </div>
                   </div>
                 </div>
+
             </div>
-            <div class="fixed-bottom p-4">
-                <div class="toast modal-background text-white w-25" id="liveToast" role="alert" data-bs-autohide="false">
-                    <div class="toast-header modal-background-header d-flex justify-content-end">
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
-                    </div>
-                    <div class="toast-body">
-                        
-                        <h4>Cookies</h4>
-                        <p>Utilizando este site você concorda com a <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" >Politica de cookies.</a></p>
-                        <div class="ml-auto d-flex justify-content-end">
-                            <button type="button" class="btn m-1" id="btnDeny">
-                                Negar
-                            </button>
-                            <button type="button" class="btn m-1" id="btnAccept">
-                                Aceitar
-                            </button>
-                        </div>
-                    </div>
-                </div>
+
+            <div id="cb-cookie-banner" class="alert alert-dark text-center mb-0 alert-dismissible" role="alert">
+                🍪 Utilizando este site você concorda com a <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Politica de cookies.</a>
+                <button type="button" class="btn btn-purple btn-sm ms-3" onclick="window.hideCookieBanner()">
+                    Aceitar
+                </button>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert"></button>
             </div>
+
             <footer class="py-5 bg-black footer" id="footer">
                 <div class="container">
 

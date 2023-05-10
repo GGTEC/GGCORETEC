@@ -8,62 +8,34 @@ const blogheader = document.getElementById('blog-header');
 const searchInput = document.getElementById('search-input');
 const searchButton = document.getElementById('search-button');
 
-function setCookie(name,value,days) {
-  var expires = "";
-  if (days) {
-      var date = new Date();
-      date.setTime(date.getTime() + (days*24*60*60*1000));
-      expires = "; expires=" + date.toUTCString();
+
+function showCookieBanner(){
+  let cookieBanner = document.getElementById("cb-cookie-banner");
+  cookieBanner.style.display = "block";
+ }
+ 
+ /* Hides the Cookie banner and saves the value to localstorage */
+ function hideCookieBanner(){
+  localStorage.setItem("cb_isCookieAccepted", "yes");
+  let cookieBanner = document.getElementById("cb-cookie-banner");
+  cookieBanner.style.display = "none";
+ }
+ 
+ /* Checks the localstorage and shows Cookie banner based on it. */
+ function initializeCookieBanner(){
+  let isCookieAccepted = localStorage.getItem("cb_isCookieAccepted");
+  if(isCookieAccepted === null)
+  {
+   localStorage.setItem("cb_isCookieAccepted", "no");
+   showCookieBanner();
   }
-  document.cookie = name + "=" + (value || "")  + expires + "; path=/";
-}
-function getCookie(name) {
-  var nameEQ = name + "=";
-  var ca = document.cookie.split(';');
-  for(var i=0;i < ca.length;i++) {
-      var c = ca[i];
-      while (c.charAt(0)==' ') c = c.substring(1,c.length);
-      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+  if(isCookieAccepted === "no"){
+   showCookieBanner();
   }
-  return null;
-}
-
-function eraseCookie(name) {   
-  document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
-}
-
-function cookieConsent() {
-  const toastLiveExample = document.getElementById('liveToast')
-  if (!getCookie('allowCookies')) {
-
-    const toast = new bootstrap.Toast(toastLiveExample)
-    toast.show()
-  }
-}
-
-$('#btnDeny').click(()=>{
-  eraseCookie('allowCookies')
-  $('.toast').toast('hide')
-})
-
-$('#btnAccept').click(()=>{
-  setCookie('allowCookies','1',7)
-  $('.toast').toast('hide')
-})
-
-// load
-cookieConsent()
-
-// for demo / testing only
-$('#btnReset').click(()=>{
-  // clear cookie to show toast after acceptance
-  eraseCookie('allowCookies')
-  $('.toast').toast('show')
-})
-
+ }
 
 $(window).on("load", function(){
-
+  initializeCookieBanner()
 
   var repoOwner = 'GGTEC'
   var repoName = 'RewardEvents'
@@ -172,23 +144,23 @@ fetch('https://ggtec.github.io/GGTECApps/posts/posts.json')
 
     const categoriesContainer = document.createElement('ul');
 
-    // collect all tags
-    const tags = [];
+    var tags = [];
     posts.forEach(post => {
       post.post_tags.forEach(tag => {
-        if (!tags.includes(tag)) {
-          tags.push(tag);
+        var trimmedTag = tag.trim(); // remove espaços extras da tag
+        if (!tags.includes(trimmedTag)) {
+          tags.push(trimmedTag);
         }
       });
     });
-
+    
     // create categories HTML
-    tags.forEach(tag => {
+    tags.forEach(tag_item => {
       const category = document.createElement('li');
       category.classList.add('category');
-      category.textContent = tag;
+      category.textContent = tag_item;
       category.addEventListener('click', () => {
-        FilterByTag(tag);
+        FilterByTag(tag_item);
       });
       categoriesContainer.appendChild(category);
     });
