@@ -221,6 +221,7 @@ fetch('https://ggtec.github.io/GGTECApps/posts/posts.json')
 
       document.getElementById('post-content').innerHTML = post.post_content;
       document.getElementById('post-source').innerHTML = post.post_source;
+      document.getElementById('facebook-comments').dataset('href',`https://ggtec.netlify.app/${post.post_title.replace(/\s+/g, "+")}`) 
 
 
       articleContainer.classList.remove("d-none");
