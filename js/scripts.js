@@ -338,7 +338,9 @@ fetch('https://ggtec.github.io/GGTECApps/posts/posts.json')
     }
 
     const index = posts.findIndex(post => post.post_title === searchTerm);
-    console.log(`Index of post "${searchTerm}": ${index}`);
+    if (index != -1){
+      showArticle(index)
+    }
 
     // Adiciona o evento de click para o botão "Voltar"
     backButton.addEventListener('click', () => {
@@ -349,27 +351,6 @@ fetch('https://ggtec.github.io/GGTECApps/posts/posts.json')
 
 const posts_cards = document.querySelectorAll('.post-card');
 
-posts_cards.forEach(postCard => {
-  const title = postCard.querySelector('.post-title').textContent;
-  if (title.toLowerCase().includes(searchTerm.toLowerCase())) {
-    postCard.hidden = false;
-  } else {
-    postCard.hidden = true;
-  }
-});
-
-
-window.addEventListener('popstate', () => {
-  const searchTerm = urlParams.get('p');
-  posts.forEach(postCard => {
-    const title = postCard.querySelector('.post-title').textContent;
-    if (title.toLowerCase().includes(searchTerm.toLowerCase())) {
-      postCard.hidden = false;
-    } else {
-      postCard.hidden = true;
-    }
-  });
-});
 
 function start_table() {
   table = $('#table').DataTable({
