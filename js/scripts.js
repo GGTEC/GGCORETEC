@@ -119,7 +119,7 @@ fetch('https://ggtec.github.io/GGTECApps/posts/posts.json')
             <div class="small text-muted">${post.post_date}</div>
             <h2 class="card-title post-title">${post.post_title}</h2>  
             <p class="card-text">${post.post_content_preview}</p>
-            <a class="btn btn-purple" href="#" data-post-index="${i}">Leia mais <i class="fa-solid fa-right-long"></i></a>
+            <a class="btn btn-purple" href="#" onclick="showArticle(${i})">Leia mais <i class="fa-solid fa-right-long"></i></a>
           </div>
         </div>
       </div>
@@ -130,15 +130,6 @@ fetch('https://ggtec.github.io/GGTECApps/posts/posts.json')
     }
     othersArticles.innerHTML = `${otherPostsColumn}
     `;
-
-    const readMoreButtons = document.querySelectorAll("[data-post-index]");
-    for (const button of readMoreButtons) {
-      button.addEventListener("click", function (event) {
-        event.preventDefault();
-        const postIndex = this.dataset.postIndex;
-        showArticle(postIndex);
-      });
-    }
 
     const categoriesContainer = document.createElement('ul');
 
@@ -237,6 +228,11 @@ fetch('https://ggtec.github.io/GGTECApps/posts/posts.json')
 
       blogheader.classList.remove("d-block");
       blogheader.classList.add("d-none");
+
+      
+      post_title_url = post.post_title.replace(/\s+/g, "-");
+      var newUrl = window.location.href.replace(`?p=${searchTerm}`, `?p=${post_title_url}`);
+      history.pushState(null, null, newUrl);
 
     }
 
