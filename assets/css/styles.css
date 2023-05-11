@@ -11450,3 +11450,9 @@ option {
     object-fit: cover;
   }
 }
+
+.full-width {
+  width: 100%;
+  display: block;
+  clear: both;
+}
