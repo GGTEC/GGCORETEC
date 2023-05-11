@@ -337,7 +337,7 @@ fetch('https://ggtec.github.io/GGTECApps/posts/posts.json')
       articleContainer.classList.remove("fade-in-out");
     }
 
-    const index = posts.findIndex(post => post.post_title === postTitle);
+    const index = posts.findIndex(post => post.post_title === searchTerm);
     console.log(`Index of post "${postTitle}": ${index}`);
 
     // Adiciona o evento de click para o botão "Voltar"
