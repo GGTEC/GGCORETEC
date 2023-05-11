@@ -8,6 +8,10 @@ const blogheader = document.getElementById('blog-header');
 const searchInput = document.getElementById('search-input');
 const searchButton = document.getElementById('search-button');
 
+const urlParams = new URLSearchParams(window.location.search);
+const searchTerm = urlParams.get('p');
+
+
 
 function showCookieBanner() {
   let cookieBanner = document.getElementById("cb-cookie-banner");
@@ -94,7 +98,7 @@ fetch('https://ggtec.github.io/GGTECApps/posts/posts.json')
         <img class="card-img-top card-img-isset-shadow card-top-img" src="${firstPost.post_thumb_url}" alt="..."/>
         <div class="card-body">
           <div class="small text-muted">${firstPost.post_date}</div>
-          <h2 class="card-title">${firstPost.post_title}</h2>
+          <h2 class="card-title post-title">${firstPost.post_title}</h2>
           <p class="card-text">${firstPost.post_content_preview}</p>
           <a class="btn btn-purple" href="#" data-post-index="${0}">Leia mais <i class="fa-solid fa-right-long"></i></a>
         </div>
@@ -113,7 +117,7 @@ fetch('https://ggtec.github.io/GGTECApps/posts/posts.json')
           <img class="card-img-top card-img-isset-shadow card-small-img" src="${post.post_thumb_url}" alt="..." />
           <div class="card-body">
             <div class="small text-muted">${post.post_date}</div>
-            <h2 class="card-title">${post.post_title}</h2>  
+            <h2 class="card-title post-title">${post.post_title}</h2>  
             <p class="card-text">${post.post_content_preview}</p>
             <a class="btn btn-purple" href="#" data-post-index="${i}">Leia mais <i class="fa-solid fa-right-long"></i></a>
           </div>
@@ -297,6 +301,7 @@ fetch('https://ggtec.github.io/GGTECApps/posts/posts.json')
         resultsSection.appendChild(result);
       }
     }
+
     searchInput.addEventListener('input', searchPosts);
 
     const categoryLinks = categoriesContainer.querySelectorAll('a');
@@ -332,6 +337,8 @@ fetch('https://ggtec.github.io/GGTECApps/posts/posts.json')
       articleContainer.classList.remove("fade-in-out");
     }
 
+    const index = posts.findIndex(post => post.post_title === postTitle);
+    console.log(`Index of post "${postTitle}": ${index}`);
 
     // Adiciona o evento de click para o botão "Voltar"
     backButton.addEventListener('click', () => {
@@ -340,6 +347,29 @@ fetch('https://ggtec.github.io/GGTECApps/posts/posts.json')
   })
   .catch(error => console.error(error));
 
+const posts_cards = document.querySelectorAll('.post-card');
+
+posts_cards.forEach(postCard => {
+  const title = postCard.querySelector('.post-title').textContent;
+  if (title.toLowerCase().includes(searchTerm.toLowerCase())) {
+    postCard.hidden = false;
+  } else {
+    postCard.hidden = true;
+  }
+});
+
+
+window.addEventListener('popstate', () => {
+  const searchTerm = urlParams.get('p');
+  posts.forEach(postCard => {
+    const title = postCard.querySelector('.post-title').textContent;
+    if (title.toLowerCase().includes(searchTerm.toLowerCase())) {
+      postCard.hidden = false;
+    } else {
+      postCard.hidden = true;
+    }
+  });
+});
 
 function start_table() {
   table = $('#table').DataTable({
