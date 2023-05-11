@@ -229,6 +229,9 @@ fetch('https://ggtec.github.io/GGTECApps/posts/posts.json')
 
       blogheader.classList.remove("d-block");
       blogheader.classList.add("d-none");
+
+      var back_span = document.getElementById('back-span');
+      back_span.innerHTML = `${post.title}` 
       
     }
 
@@ -315,29 +318,12 @@ fetch('https://ggtec.github.io/GGTECApps/posts/posts.json')
       });
     }
 
-    function hideArticle() {
-
-      articleContainer.classList.remove("d-block");
-      articleContainer.classList.add("d-none", "fade-in-out");
-
-      articlesContainer.classList.remove("d-none");
-      articlesContainer.classList.add("d-block", "fade-in-out");
-
-      blogheader.classList.remove("d-none");
-      blogheader.classList.add("d-block");
-
-      articleContainer.classList.remove("fade-in-out");
-    }
-
     const index = posts.findIndex(post => post.post_title === searchTerm);
     if (index != -1){
       showArticle(index)
     }
 
-    // Adiciona o evento de click para o botão "Voltar"
-    backButton.addEventListener('click', () => {
-      hideArticle();
-    });
+
   })
   .catch(error => console.error(error));
 
