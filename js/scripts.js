@@ -231,7 +231,7 @@ fetch('https://ggtec.github.io/GGTECApps/posts/posts.json')
       blogheader.classList.add("d-none");
 
       var back_span = document.getElementById('back-span');
-      back_span.innerHTML = `${post.title}` 
+      back_span.innerHTML = `${post.post_title}` 
       
     }
 
