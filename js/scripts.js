@@ -119,7 +119,7 @@ fetch('https://ggtec.github.io/GGTECApps/posts/posts.json')
             <div class="small text-muted">${post.post_date}</div>
             <h2 class="card-title post-title">${post.post_title}</h2>  
             <p class="card-text">${post.post_content_preview}</p>
-            <a class="btn btn-purple" href="#" data-post-index="${i}">Leia mais <i class="fa-solid fa-right-long"></i></a>
+            <a class="btn btn-purple" href="https://ggtec.netlify.app/?p=${post_title_url = post.post_title.replace(/\s+/g, "-")}" data-post-index="${i}">Leia mais <i class="fa-solid fa-right-long"></i></a>
           </div>
         </div>
       </div>
@@ -130,15 +130,6 @@ fetch('https://ggtec.github.io/GGTECApps/posts/posts.json')
     }
     othersArticles.innerHTML = `${otherPostsColumn}
     `;
-
-    const readMoreButtons = document.querySelectorAll("[data-post-index]");
-    for (const button of readMoreButtons) {
-      button.addEventListener("click", function (event) {
-        event.preventDefault();
-        const postIndex = this.dataset.postIndex;
-        redirect_article(postIndex);
-      });
-    }
 
     const categoriesContainer = document.createElement('ul');
 
@@ -206,14 +197,6 @@ fetch('https://ggtec.github.io/GGTECApps/posts/posts.json')
       });
     }
 
-    function redirect_article(postIndex){
-
-      const post = posts[postIndex];
-
-      post_title_url = post.post_title.replace(/\s+/g, "-");
-      window.location.href= `${window.location.hostname}/?p=${post_title_url}`
-
-    }
 
     function showArticle(postIndex) {
       // Oculta a seção com as prévias dos artigos
