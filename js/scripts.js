@@ -338,7 +338,7 @@ fetch('https://ggtec.github.io/GGTECApps/posts/posts.json')
     }
 
     const index = posts.findIndex(post => post.post_title === searchTerm);
-    console.log(`Index of post "${postTitle}": ${index}`);
+    console.log(`Index of post "${searchTerm}": ${index}`);
 
     // Adiciona o evento de click para o botão "Voltar"
     backButton.addEventListener('click', () => {
