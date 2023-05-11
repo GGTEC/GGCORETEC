@@ -100,7 +100,7 @@ fetch('https://ggtec.github.io/GGTECApps/posts/posts.json')
           <div class="small text-muted">${firstPost.post_date}</div>
           <h2 class="card-title post-title">${firstPost.post_title}</h2>
           <p class="card-text">${firstPost.post_content_preview}</p>
-          <a class="btn btn-purple" href="https://ggtec.netlify.app/?p=${post_title_url = post.post_title.replace(/\s+/g, "+")}" data-post-index="${0}">Leia mais <i class="fa-solid fa-right-long"></i></a>
+          <a class="btn btn-purple" href="https://ggtec.netlify.app/?p=${post_title_url = firstPost.post_title.replace(/\s+/g, "+")}" data-post-index="${0}">Leia mais <i class="fa-solid fa-right-long"></i></a>
         </div>
       </div>
     `;
