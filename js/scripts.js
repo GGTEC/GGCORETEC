@@ -110,6 +110,8 @@ fetch('https://ggtec.github.io/GGTECApps/posts/posts.json')
     for (let i = 1; i < posts.length; i++) {
       const post = posts[i];
 
+
+
       const postHTML = `
       <div class="col post-card" data-tags="${post.post_tags.join(', ')}" >
         <div class="card mb-4">
@@ -231,7 +233,8 @@ fetch('https://ggtec.github.io/GGTECApps/posts/posts.json')
       blogheader.classList.add("d-none");
 
       var back_span = document.getElementById('back-span');
-      back_span.innerHTML = `${post.post_title}` 
+
+      back_span.innerHTML = `${post.post_title.substring(0, 40)}...` 
       
     }
 
