@@ -8,6 +8,11 @@ const blogheader = document.getElementById('blog-header');
 const searchInput = document.getElementById('search-input');
 const searchButton = document.getElementById('search-button');
 
+const ogImage = document.querySelector('meta[property="og:image"]');
+const ogTitle = document.querySelector('meta[property="og:title"]');
+const ogDescription = document.querySelector('meta[property="og:description"]');
+
+
 const urlParams = new URLSearchParams(window.location.search);
 const searchTerm = urlParams.get('p');
 
@@ -324,7 +329,13 @@ fetch('https://ggtec.github.io/GGTECApps/posts/posts.json')
 
     const index = posts.findIndex(post => post.post_title === searchTerm);
     if (index != -1){
+
       showArticle(index)
+
+      ogImage.content = post.post_thumb_url;
+      ogTitle.content = post.post_title;
+      ogDescription.content = post.post_content_preview;
+
     }
 
 
