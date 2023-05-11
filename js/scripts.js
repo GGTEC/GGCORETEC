@@ -136,7 +136,7 @@ fetch('https://ggtec.github.io/GGTECApps/posts/posts.json')
       button.addEventListener("click", function (event) {
         event.preventDefault();
         const postIndex = this.dataset.postIndex;
-        showArticle(postIndex);
+        redirect_article(postIndex);
       });
     }
 
@@ -206,6 +206,15 @@ fetch('https://ggtec.github.io/GGTECApps/posts/posts.json')
       });
     }
 
+    function redirect_article(postIndex){
+
+      const post = posts[postIndex];
+
+      post_title_url = post.post_title.replace(/\s+/g, "-");
+      window.location.href= `${window.location.hostname}/?p=${post_title_url}`
+
+    }
+
     function showArticle(postIndex) {
       // Oculta a seção com as prévias dos artigos
       articlesContainer.style.display = 'none';
@@ -237,12 +246,7 @@ fetch('https://ggtec.github.io/GGTECApps/posts/posts.json')
 
       blogheader.classList.remove("d-block");
       blogheader.classList.add("d-none");
-
       
-      post_title_url = post.post_title.replace(/\s+/g, "-");
-      var newUrl = window.location.href.replace(`?p=${searchTerm}`, `?p=${post_title_url}`);
-      history.pushState(null, null, newUrl);
-
     }
 
     var visiblePosts = [];
