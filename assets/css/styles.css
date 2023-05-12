@@ -10945,13 +10945,14 @@ textarea.form-control-lg {
 }
 
 .category {
+  max-height: 20%;
   overflow-y: scroll;
 }
 
 .category li {
   display:block;             /* primeiro passo, transformar o LI em bloco.                   */ 
   list-style-type: none;     /* depois, remoção dos bullets.                                 */
-  margin:0;                  /* nao queremos espaços ente os blocos.                         */
+  margin: 1%;                  /* nao queremos espaços ente os blocos.                         */
   padding: 1%;
   border: #6610f2 1px solid;
   border-radius: 3%;
@@ -10966,23 +10967,11 @@ textarea.form-control-lg {
   text-decoration: underline;
   background-color: #6610f2;
 }
-.category li:nth-child(odd) {          /* este css será aplicato nos LI impares (1, 3, 5... ).         */
-  clear:both;                /* forçamos a quebra de linha por segurança...                  */
-  float:left;                /* ... e o alinhamos à esquerda.                                */
-  width:50%;                 /* Aplicamos 50% na esquerda, os da direita "herdam" o resto.   */
-}
-
-.category li:nth-child(4n+2),          /* aqui pulamos de 4 em 4 itens começando do 2 ( 2, 6, ...).    */
-.category li:nth-child(4n+3) {         /* aqui de 4 em 4 começando do 3 ( 3, 7, ... )                  */
-  background-color:transparent;     /* e mudamos a cor, dando efeito de quadriculado                */
-}
-
 
 .search-result {
   margin: 5px;
   padding: 5px;
   border: #623f80 1px solid;
-
 }
 
 .overlay {
