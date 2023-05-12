@@ -10960,7 +10960,6 @@ textarea.form-control-lg {
   border-radius: 3%;
   background-color: transparent;     /* cor de fundo principal, o "grid" fazemos depois              */
   box-sizing: border-box;    /* medidas são de borda à borda, o padding não é acrescentado.  */
-  height:2%;                /* esta linha é pela estética do demo                           */
 }
 
 
