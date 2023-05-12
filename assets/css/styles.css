@@ -292,7 +292,7 @@ sup {
 
 a {
   color: var(--bs-link-color);
-  
+  text-decoration: none;
 }
 
 a:hover {
@@ -10947,12 +10947,12 @@ textarea.form-control-lg {
 }
 
 .category {
-  max-height: 20%;
+  max-height: 10vh;
   overflow-y: scroll;
 }
 
 .category li {
-  display:block;             /* primeiro passo, transformar o LI em bloco.                   */ 
+  display: block;             /* primeiro passo, transformar o LI em bloco.                   */ 
   list-style-type: none;     /* depois, remoção dos bullets.                                 */
   margin: 1%;                  /* nao queremos espaços ente os blocos.                         */
   padding: 1%;
