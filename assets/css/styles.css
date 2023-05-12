@@ -10949,18 +10949,22 @@ textarea.form-control-lg {
 }
 
 .category li {
-  
   display:block;             /* primeiro passo, transformar o LI em bloco.                   */ 
   list-style-type: none;     /* depois, remoção dos bullets.                                 */
   margin:0;                  /* nao queremos espaços ente os blocos.                         */
+  padding: 1%;
+  border: #6610f2 1px solid;
+  border-radius: 3%;
   background-color: transparent;     /* cor de fundo principal, o "grid" fazemos depois              */
   box-sizing: border-box;    /* medidas são de borda à borda, o padding não é acrescentado.  */
-  height:25%;                /* esta linha é pela estética do demo                           */
+  height:2%;                /* esta linha é pela estética do demo                           */
 }
+
 
 .category li:hover{
   cursor: pointer;
   text-decoration: underline;
+  background-color: #6610f2;
 }
 .category li:nth-child(odd) {          /* este css será aplicato nos LI impares (1, 3, 5... ).         */
   clear:both;                /* forçamos a quebra de linha por segurança...                  */
