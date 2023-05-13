@@ -8,15 +8,6 @@ const blogheader = document.getElementById('blog-header');
 const searchInput = document.getElementById('search-input');
 const searchButton = document.getElementById('search-button');
 
-const ogImage = document.querySelector('meta[property="og:image"]');
-const ogTitle = document.querySelector('meta[property="og:title"]');
-const ogDescription = document.querySelector('meta[property="og:description"]');
-
-
-const urlParams = new URLSearchParams(window.location.search);
-const searchTerm = urlParams.get('p');
-
-
 
 function showCookieBanner() {
   let cookieBanner = document.getElementById("cb-cookie-banner");
@@ -97,15 +88,18 @@ fetch('https://ggtec.github.io/GGTECApps/posts/posts.json')
     // create first article HTML
     const firstPost = posts[0];
 
+    
+    var date_dir = firstPost.post_date.replace(/\//g, "_");
+
     firstArticle.innerHTML = `
       <div class="card mb-4 post-card" data-tags="${firstPost.post_tags.join(', ')}" >
         <div class="overlay post-tags">${firstPost.post_tags.join(', ')}</div>
         <img class="card-img-top card-img-isset-shadow card-top-img" src="${firstPost.post_thumb_url}" alt="..."/>
         <div class="card-body">
           <div class="small text-muted">${firstPost.post_date}</div>
-          <h2 class="card-title post-title"><a href="https://ggtec.netlify.app/?p=${firstPost.post_id}" data-post-index="${0}">${firstPost.post_title}</a></h2>  
+          <h2 class="card-title post-title"><a href="https://ggtec.netlify.app/posts/${date_dir}/${firstPost.post_id}" data-post-index="${0}">${firstPost.post_title}</a></h2>  
           <p class="card-text">${firstPost.post_content_preview}</p>
-          <a class="btn btn-purple" href="https://ggtec.netlify.app/?p=${firstPost.post_id}" data-post-index="${0}">Leia mais <i class="fa-solid fa-right-long"></i></a>
+          <a class="btn btn-purple" href="https://ggtec.netlify.app/posts/${date_dir}/${firstPost.post_id}" data-post-index="${0}">Leia mais <i class="fa-solid fa-right-long"></i></a>
         </div>
       </div>
     `;
@@ -115,7 +109,7 @@ fetch('https://ggtec.github.io/GGTECApps/posts/posts.json')
     for (let i = 1; i < posts.length; i++) {
       const post = posts[i];
 
-
+      var date_dir = post.post_date.replace(/\//g, "_");
 
       const postHTML = `
       <div class="col post-card" data-tags="${post.post_tags.join(', ')}" >
@@ -124,9 +118,9 @@ fetch('https://ggtec.github.io/GGTECApps/posts/posts.json')
           <img class="card-img-top card-img-isset-shadow card-small-img" src="${post.post_thumb_url}" alt="..." />
           <div class="card-body">
             <div class="small text-muted">${post.post_date}</div>
-            <h2 class="card-title post-title"><a href="https://ggtec.netlify.app/?p=${post.post_id}" data-post-index="${i}">${post.post_title}</a></h2>  
+            <h2 class="card-title post-title"><a href="https://ggtec.netlify.app/posts/${date_dir}/${post.post_id}" data-post-index="${i}">${post.post_title}</a></h2>  
             <p class="card-text">${post.post_content_preview}</p>
-            <a class="btn btn-purple" href="https://ggtec.netlify.app/?p=${post.post_id}" data-post-index="${i}">Leia mais <i class="fa-solid fa-right-long"></i></a>
+            <a class="btn btn-purple" href="https://ggtec.netlify.app/posts/${date_dir}/${post.post_id}" data-post-index="${i}">Leia mais <i class="fa-solid fa-right-long"></i></a>
           </div>
         </div>
       </div>
@@ -326,19 +320,6 @@ fetch('https://ggtec.github.io/GGTECApps/posts/posts.json')
         }
       });
     }
-
-    const index = posts.findIndex(post => post.post_id === searchTerm);
-
-    if (index != -1){
-
-      showArticle(index)
-
-      ogImage.content = post.post_thumb_url;
-      ogTitle.content = post.post_title;
-      ogDescription.content = post.post_content_preview;
-
-    }
-
 
   })
   .catch(error => console.error(error));
