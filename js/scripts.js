@@ -163,7 +163,14 @@ fetch('https://ggtec.github.io/GGTECApps/posts/posts.json')
     // append categories to widget
     document.getElementById('categories-widget').appendChild(categoriesContainer);
 
+    
     function FilterByTag(tag) {
+
+      if (articlesContainer.classList.contains('d-none')) {
+        articlesContainer.classList.remove('d-none')
+        articleContainer.classList.add('d-none')
+      }
+
       // Obtém todos os elementos com a classe "badge" dentro do elemento com id "categories-widget"
       const tagElements = document.querySelectorAll('#categories-widget .badge');
 
@@ -203,45 +210,6 @@ fetch('https://ggtec.github.io/GGTECApps/posts/posts.json')
       });
     }
 
-
-    function showArticle(postIndex) {
-      // Oculta a seção com as prévias dos artigos
-      articlesContainer.style.display = 'none';
-
-      // Preenche o post completo
-      const post = posts[postIndex];
-      document.getElementById('header-post-title').textContent = post.post_title;
-      document.getElementById('header-post-date').textContent = post.post_date;
-      const categoriesContainer = document.getElementById('header-post-categories');
-      categoriesContainer.innerHTML = '';
-      post.post_tags.forEach(tag => {
-        const category = document.createElement('a');
-        category.classList.add('badge', 'bg-secondary', 'text-decoration-none', 'link-light');
-        category.href = '#!';
-        category.textContent = tag;
-        categoriesContainer.appendChild(category);
-        categoriesContainer.appendChild(document.createTextNode(' '));
-      });
-
-      document.getElementById('post-content').innerHTML = post.post_content;
-      document.getElementById('post-source').innerHTML = post.post_source;
-      document.getElementById('facebook-comments').setAttribute('href',`https://ggtec.netlify.app/${post.post_title.replace(/\s+/g, "+")}`) 
-
-
-      articleContainer.classList.remove("d-none");
-      articleContainer.classList.add("d-block", "fade-in-out");
-
-      articlesContainer.classList.remove("d-block", "fade-in-out");
-      articlesContainer.classList.add("d-none");
-
-      blogheader.classList.remove("d-block");
-      blogheader.classList.add("d-none");
-
-      var back_span = document.getElementById('back-span');
-
-      back_span.innerHTML = `${post.post_title.substring(0, 40)}...` 
-      
-    }
 
     var visiblePosts = [];
 
@@ -290,7 +258,14 @@ fetch('https://ggtec.github.io/GGTECApps/posts/posts.json')
         result.innerHTML = title;
     
         result.addEventListener('click', function () {
+                        
+          if (articlesContainer.classList.contains('d-none')) {
+            articlesContainer.classList.remove('d-none')
+            articleContainer.classList.add('d-none')
+          }
+
           for (var j = 0; j < visiblePosts.length; j++) {
+
             if (visiblePosts[j] !== this.post) {
               visiblePosts[j].setAttribute("hidden", "");
               visiblePosts[j].classList.remove("full-width");
@@ -310,11 +285,15 @@ fetch('https://ggtec.github.io/GGTECApps/posts/posts.json')
     const categoryLinks = categoriesContainer.querySelectorAll('a');
     for (const link of categoryLinks) {
       link.addEventListener('click', function (event) {
+        if (articlesContainer.classList.contains('d-none')) {
+          articlesContainer.classList.remove('d-none')
+          articleContainer.classList.add('d-none')
+        }
         event.preventDefault();
         const tag = this.textContent;
         const matchingPosts = posts.filter(post => post.post_tags.includes(tag));
         const matchingPostIndexes = matchingPosts.map(post => posts.indexOf(post));
-        showArticle(matchingPostIndexes[0]);
+
         const otherPostCards = document.querySelectorAll('[data-post-index]');
         for (const card of otherPostCards) {
           if (!matchingPostIndexes.includes(Number(card.dataset.postIndex))) {
