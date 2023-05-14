@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta property="og:type" content="blog" />
+    <meta property="description" />
+    <meta property="author" content="GGTEC" />
+    <meta property="og:site_name" content="GGTECApps" />
+    <meta property="og:description"
+        content="Fique sabendo das principais noticias sobre tecnologia e jogos, Baixe o RewardEvents para sua stream, Veja o perfil de GGTEC" />
+    <meta name="keywords" content="tecnologia, noticias, informação, jogos, IOT, windows, patch, notes" />
+    <meta property="og:image" content="/assets/img/about.png" />
+    <meta http-equiv="expires" content="3600" />
+    <title>GGTECApps - Politica de comentários</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png" />
+    <link href="./assets/css/styles.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/dataTables.bootstrap5.min.css">
+    <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.js"></script>
+    <script src="https://cdn.datatables.net/1.13.1/js/dataTables.bootstrap5.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.4.0/css/responsive.dataTables.min.css">
+    <script src="https://cdn.datatables.net/responsive/2.4.0/js/dataTables.responsive.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="./assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="./assets/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5312302938088623"
+        crossorigin="anonymous"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KLYE611VE7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-KLYE611VE7');
+    </script>
+
+</head>
+
+<body>
+    <!-- Responsive navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom">
+        <div class="container">
+            <a class="navbar-brand" href="https://ggtec.netlify.app/">
+                <img alt="brand" src="../../assets/img/about.png" style="width: 40px;" />
+                <span>
+                    GGTECApps
+                </span>
+            </a>
+            <a class="nav-link" href="https://ggtec.netlify.app/" type="button">
+                Inicio
+            </a>
+            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon">
+                </span>
+            </button>
+        </div>
+    </nav>
+    <div class="container-full">
+        <div class="content-wrap" id="blog-post">
+            <!-- Page header with logo and tagline-->
+            <header class="py-5 border-bottom mb-4 blog-header" id="blog-header">
+                <div class="container">
+                    <div class="text-center my-5 text-white">
+                        <h1 class="fw-bolder">
+                            Bem vindo ao Blog GGTECApps !
+                        </h1>
+                        <p class="lead mb-0">
+                            O seu blog para gamers!
+                        </p>
+                    </div>
+                </div>
+            </header>
+            <!-- Page content-->
+            <div class="container">
+                <div class="row">
+                    <!-- Blog entries-->
+                    <div class="col-lg-8 d-none" id="articles-container">
+                        <div id="first-article">
+                        </div>
+                        <div class="row row-cols-1 row-cols-md-2 g-4 align-self-center" id="others-articles">
+                            <div class="col-lg-6">
+                                <!-- Blog post-->
+                                <!-- Blog post-->
+                            </div>
+                            <div class="col-lg-6 pe-0">
+                                <!-- Blog post-->
+                                <!-- Blog post-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8" id="article">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <header class="mb-4">
+                                    <p>
+                                        <span class="text-muted font-italic mb-2" id="header-post-date">
+                                            05/2023
+                                        </span>
+                                        |
+                                        <a class="text-muted" href="https://ggtec.netlify.app/" id="back-button">
+                                            Inicio
+                                        </a>
+                                        &gt;
+                                        <span class="text-muted" id="back-span">
+                                        </span>
+                                    </p>
+                                    <h1 class="fw-bolder mt-1 mb-1" id="header-post-title">
+                                        Política de Comentários
+                                    </h1>
+                                </header>
+                            </div>
+                            <div class="card-body">
+                                <section class="mb-4" id="post-content">
+
+                                    <p>Agradecemos seu interesse em participar da nossa comunidade e compartilhar seus
+                                        pensamentos e opiniões por meio dos comentários. Queremos que todos os
+                                        visitantes se
+                                        sintam bem-vindos e seguros ao interagir conosco, e, para garantir uma
+                                        experiência
+                                        positiva para todos, estabelecemos algumas diretrizes que devem ser seguidas ao
+                                        deixar comentários em nosso site.</p>
+
+                                    <ul>
+                                        <li>
+                                            Respeito Mútuo: Encorajamos a expressão de opiniões e ideias diversas, desde
+                                            que
+                                            seja feito com respeito. Comentários ofensivos, discriminatórios,
+                                            difamatórios,
+                                            ameaçadores, obscenos ou de qualquer forma prejudiciais serão removidos.
+                                            Também não
+                                            serão tolerados ataques pessoais ou assédio contra outros comentaristas ou
+                                            indivíduos mencionados nos comentários.
+                                        </li>
+                                        <li>
+                                            Conteúdo Relevante: Pedimos que os comentários sejam relevantes para o
+                                            artigo ou
+                                            tópico em discussão. Evite desviar do assunto principal ou fazer spam.
+                                            Comentários
+                                            que sejam claramente promocionais, de autopromoção ou não relacionados ao
+                                            conteúdo
+                                            serão excluídos.
+                                        </li>
+                                        <li>
+                                            Linguagem Adequada: Solicitamos que você utilize uma linguagem apropriada e
+                                            evite
+                                            palavrões, linguagem vulgar ou linguagem ofensiva. Comentários com conteúdo
+                                            inapropriado serão removidos.
+                                        </li>
+                                        <li>
+                                            Privacidade: Não compartilhe informações pessoais suas ou de terceiros nos
+                                            comentários. Isso inclui, mas não se limita a, números de telefone,
+                                            endereços de
+                                            e-mail, endereços residenciais ou informações de identificação pessoal.
+                                            Comentários
+                                            que violem a privacidade de outras pessoas serão excluídos.
+                                        </li>
+                                        <li>
+                                            Veracidade e Responsabilidade: Ao deixar um comentário, você é responsável
+                                            pelo que
+                                            escreve. Certifique-se de fornecer informações precisas e baseadas em fatos.
+                                            Comentários enganosos, falsos ou difamatórios serão removidos.
+                                        </li>
+                                        <li>
+                                            Moderação: Reservamo-nos o direito de moderar os comentários e remover
+                                            qualquer
+                                            conteúdo que viole estas diretrizes. Nossa equipe revisará regularmente os
+                                            comentários para garantir que estejam em conformidade com nossa política.
+                                        </li>
+                                        <li>Feedback Construtivo: Valorizamos seu feedback e críticas construtivas. Se
+                                            você
+                                            tiver sugestões, perguntas ou problemas relacionados ao conteúdo ou ao site,
+                                            encorajamos você a nos informar por meio dos comentários. Faremos o possível
+                                            para
+                                            responder e resolver suas preocupações.
+                                        </li>
+                                    </ul>
+
+                                    <p>Ao enviar um comentário, você concorda com estas diretrizes e concede permissão
+                                        para
+                                        a publicação do seu comentário em nosso site. Reservamo-nos o direito de alterar
+                                        ou
+                                        atualizar esta política de comentários a qualquer momento, conforme necessário.
+                                    </p>
+
+                                    <p>Agradecemos sua contribuição e participação na nossa comunidade. Esperamos que
+                                        essas
+                                        diretrizes garantam um ambiente de interação respeitosa e enriquecedora para
+                                        todos.</p>
+
+                                    <h3>Disquis:</h3>
+                                    <p>O Disqus é uma plataforma de comentários amplamente utilizada por sites e blogs para
+                                        permitir que os visitantes interajam e deixem comentários em artigos ou postagens.
+                                        Ao fazer um comentário usando o Disqus, é importante estar ciente de que algumas
+                                        informações pessoais podem ser coletadas e processadas. Essas informações podem
+                                        incluir:</p> 
+                                    <ul>
+                                        <li>Nome de usuário: O Disqus geralmente solicita um nome de usuário ou pseudônimo para identificar o autor do comentário.</li>
+                                        <li>Endereço de e-mail: O endereço de e-mail é usado para verificar a identidade do autor do comentário e pode ser usado para notificar o autor sobre respostas ou novos comentários.</li>
+                                        <li>Conteúdo do comentário: O texto e o conteúdo do comentário que você escreve são armazenados e exibidos publicamente para outros leitores do site.</li>
+                                        <li>Endereço IP: O endereço IP do autor do comentário é coletado pelo Disqus para fins de segurança e moderação. Isso ajuda a identificar possíveis abusos ou atividades fraudulentas.</li>
+                                    </ul>
+
+                                    <p>Além disso, o Disqus pode usar cookies e tecnologias de rastreamento para melhorar a funcionalidade e a experiência do usuário, bem como para coletar dados estatísticos sobre o uso do sistema de comentários.</p>
+                                </section>
+                            </div>
+                            <div class="card-footer">
+                                <section class="mb-1" id="post-footer">
+                                    <!-- Post footer-->
+                                    <div id="disqus_thread"></div>
+                                    <script>
+                                        var p_url = window.location.href;
+                                        var disqus_config = function () {
+                                            this.page.url = p_url;  // Replace PAGE_URL with your page's canonical URL variable
+                                        };
+
+                                        (function () { // DON'T EDIT BELOW THIS LINE
+                                            var d = document, s = d.createElement('script');
+                                            s.src = 'https://ggtecapps.disqus.com/embed.js';
+                                            s.setAttribute('data-timestamp', +new Date());
+                                            (d.head || d.body).appendChild(s);
+                                        })();
+                                    </script>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Side widgets-->
+                    <div class="col-lg-4">
+                        <!-- Search widget-->
+                        <div class="card mb-4" id="sidebar">
+                            <div class="card-header">
+                                Procurar
+                            </div>
+                            <div class="card-body">
+                                <div class="input-group">
+                                    <input class="form-control" id="search-input"
+                                        placeholder="Digite um termo de pesquisa..." type="text" />
+                                    <button class="btn btn-purple" id="search-button" type="button">
+                                        Pesquisar!
+                                    </button>
+                                </div>
+                                <div id="search-results">
+                                    <!-- Aqui é onde os resultados da pesquisa serão exibidos -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Categories widget-->
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                Categorias
+                            </div>
+                            <div class="card-body">
+                                <div class="row category" id="categories-widget">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Side widget-->
+                        <div class="card mb-4">
+                            <div class="card-body p-0">
+                                <iframe allowfullscreen="true" class="iframe-live" frameborder="0" scrolling="no"
+                                    src="https://player.twitch.tv/?channel=gg_tec&amp;parent=ggtec.netlify.app"
+                                    width="100%">
+                                </iframe>
+                            </div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-body profile-card">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="avatar h-100 w-100 align-content-center">
+                                            <img alt="Avatar" src="../../assets/img/profile-image.jpg" width="100%">
+                                            </img>
+                                        </div>
+                                    </div>
+                                    <div class="col-8 text-center align-self-center profile-name">
+                                        <h3>
+                                            Jheferson Gambet
+                                        </h3>
+                                        <h5>
+                                            Stremer,Dev &amp; This/Web-Designer
+                                        </h5>
+                                        <a href="https://ggtec.netlify.app/social">
+                                            Página de perfis sociais
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal" tabindex="-1">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable modal-border">
+                <div class="modal-content modal-background">
+                    <div class="modal-header modal-background-header">
+                        <button aria-label="Close" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                            type="button">
+                        </button>
+                    </div>
+                    <div class="modal-body p-5">
+                        <h1>
+                            Politica de cookies
+                        </h1>
+                        Esta Política de Cookies foi atualizada pela última vez em 09 de outubro de 2022 e aplica-se aos
+                        cidadãos do Brasil de acordo com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018) e países
+                        que possuem leis sobre proteção de dados. A LGPD estabelece regras sobre coleta, armazenamento e
+                        compartilhamento de dados pessoais, atribuindo mais proteção aos titulares de tais dados.
+                        O site do GGTECApps usa cookies e outras tecnologias relacionadas (por conveniência, todas as
+                        tecnologias são chamadas de "cookies"). No documento abaixo informamos sobre o uso de cookies em
+                        nosso site.
+                        <h1>
+                            O que sã​​o cookies
+                        </h1>
+                        Cookies são arquivos-texto gerados pelo site e transferidos para seu computador, sendo
+                        armazenados pelos Navegadores como Google Chrome, Firefox, Internet Explorer, etc. Em geral, os
+                        Cookies são utilizados para uma otimização de sua experiência de navegação junto ao nosso site,
+                        quando permitido pelo nível de segurança configurado por você junto ao seu navegador. Sempre que
+                        o seu navegador estiver assim configurado, utilizaremos cookies conforme explicado.
+                        Os cookies utilizados no site têm como finalidade identificar as tendências de navegação do
+                        usuário, buscando aprimorar e personalizar seus acessos futuros, tais como, páginas navegadas ou
+                        links clicados. Quaisquer dos cookies utilizados não são usados para executar programas ou
+                        infectar seu computador com vírus ou programas maliciosos.
+                        Ao acessar este site pela primeira vez, você foi informado através de um aviso em popup
+                        referente a prática de cookies. Mesmo quando seu programa de navegação estiver configurado para
+                        permitir a instalação de cookies, mas você desejar removê-los ou impedir o armazenamento de
+                        novos cookies, pode fazê-lo imediatamente e sem qualquer impedimento, desativando este recurso
+                        em seu navegador e excluindo todos os eventuais cookies já implementados.
+                        Desta forma, recomendamos que você configure seu programa de navegação no nível de segurança
+                        desejado antes de navegar em nosso site, em todos os computadores e dispositivos que deseje
+                        utilizar.​
+                        <h1>
+                            COMO OS COOKIES SÃO USADOS
+                        </h1>
+                        Os cookies utilizados em nosso site atendem aos requisitos legais e são enquadrados nas
+                        seguintes categorias:
+
+                        Cookies Funcionais: Os Cookies Funcionais são usados para fornecer serviços ou para lembrar
+                        definições de navegações de forma a melhorar sua visita.
+                        Para o que nós os usamos: Lembrar eventualmente das configurações que você aplicou, como idioma,
+                        layout, tamanho do texto, preferências e cores.
+
+                        Cookies Estritamente Necessários: São aqueles cookies que permitem a você navegar pelo site e
+                        usar recursos essenciais, como formulários ou áreas seguras, por exemplo. Esses cookies não
+                        guardam quaisquer informações sobre você que possam ser usadas em ações de comunicação de
+                        produto ou serviço ou para lembrar as páginas navegadas no site.
+                        Para o que nós os usamos: Identificá-lo como um usuário conectado. Lembrar de informações que
+                        você digitou previamente em eventuais formulários de contato. Certificar-se de que você se
+                        conecta ao serviço correto em nosso site quando fizermos alguma mudança na forma como ele
+                        funciona.
+
+                        Cookies de Desempenho: Os cookies de "Desempenho" coletam informações sobre como você usa o
+                        nosso website, por exemplo, quais páginas você visita, se elas possuem erros, erros em
+                        formulários e etc. Esses cookies não coletam quaisquer informações que possam identificá-lo.
+                        Toda a informação coletada é realizada de forma codificada, anônima e somente usada para ajudar
+                        a melhorar a forma como o nosso site funciona, entender o que interessa aos nossos usuários e
+                        medir a eficácia da nossa comunicação.
+                        Para o que nós os usamos: Fornecer estatísticas sobre como nosso site é utilizado. Verificar a
+                        eficiência da nossa comunicação, não nos utilizando dessa informação para direcionamento de
+                        anúncios quando em visita a outros sites. Ajudar na melhoria de nosso site pela medição de erros
+                        que eventualmente possam ocorrer. Realizar melhorias e aperfeiçoamentos em nosso site
+                        decorrentes do comportamento de navegação de nossos usuários.
+
+                        Cookies de Segmentação: Os Cookies de Segmentação estão ligados aos serviços prestados por
+                        terceiros, tais como, por exemplo, feed de mídias sociais, botões de "Like" e botões de
+                        "Compartilhar" contidos em outros sites que não o nosso site. O terceiro fornece esses serviços
+                        por reconhecer que você visitou nosso site, mas de maneira nenhuma se confunde com o nosso site.
+                        Para o que nós os usamos: Para conectar-se as mídias sociais, que, por serem terceiros e pelos
+                        quais não termos controle, poderão, posteriormente, utilizar as informações sobre a sua visita
+                        para direcionar publicidade de seu interesse para você em outros sites. Em relação aos Cookies
+                        de Segmentação, você pode controlar se serão usados ou não (vide tópico abaixo "Como Desativar
+                        os Cookies"), mas seu bloqueio pode nos impedir de oferecer alguns serviços ou prejudicar a boa
+                        navegação junto ao nosso site.
+                        <h1>
+                            COMO DESATIVAR OS COOKIES
+                        </h1>
+                        Normalmente as configurações para desativar os cookies estão presentes nas "Opções" ou o menu
+                        "Preferências" do seu navegador. Para saber melhor consulte as opções de ajuda de seu navegador.
+                        Você pode desabilitá-los alterando as configurações do seu navegador, mas saiba que isso pode
+                        afetar o funcionamento do site.
+                        <a
+                            href="https://support.google.com/chrome/answer/95647?co=GENIE.Platform%3DDesktop&amp;hl=pt-BR">
+                            Chrome
+                        </a>
+                        <a href="https://support.mozilla.org/pt-BR/kb/desative-cookies-terceiros-impedir-rastreamento">
+                            Firefox
+                        </a>
+                        <a
+                            href="https://support.microsoft.com/pt-br/microsoft-edge/excluir-cookies-no-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09">
+                            Microsoft Edge
+                        </a>
+                        <a
+                            href="https://support.microsoft.com/pt-br/windows/excluir-e-gerenciar-cookies-168dab11-0753-043d-7c16-ede5947fc64d">
+                            Internet Explorer​
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="alert alert-dark text-center mb-0 alert-dismissible" id="cb-cookie-banner" role="alert">
+            🍪 Utilizando este site você concorda com a
+            <a data-bs-target="#exampleModal" data-bs-toggle="modal" href="#">
+                Politica de cookies.
+            </a>
+            <button class="btn btn-purple btn-sm ms-3" onclick="window.hideCookieBanner()" type="button">
+                Aceitar
+            </button>
+            <button class="btn-close btn-close-white" data-bs-dismiss="alert" type="button">
+            </button>
+        </div>
+        <footer class="bg-black text-center text-white">
+            <div class="container p-4 pb-0">
+                <!-- Section: Social media -->
+                <section class="mb-4">
+                    <!-- discord -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://discord.com/invite/utm5NZq"
+                        role="button">
+                        <i class="bx bxl-discord-alt">
+                        </i>
+                    </a>
+                    <!-- twitch -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://www.twitch.tv/gg_tec" role="button">
+                        <i class="bx bxl-twitch">
+                        </i>
+                    </a>
+                    <!-- Github -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/GGTEC/" role="button">
+                        <i class="fab fa-github">
+                        </i>
+                    </a>
+                </section>
+                <!-- Section: Social media -->
+            </div>
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                <p>
+                    Copyright © GGTEC 2023
+                </p>
+                <p>
+                    Page Dev By GGTEC
+                </p>
+            </div>
+            <!-- Copyright -->
+        </footer>
+    </div>
+    <div id="fb-root">
+    </div>
+    <script async="" crossorigin="anonymous" defer="" nonce="KZmrOndQ"
+        src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&amp;version=v16.0">
+        </script>
+    <script src="../../js/scripts.js">
+    </script>
+</body>
+
+</html>
