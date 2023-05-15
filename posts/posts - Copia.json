@@ -1,20 +1,4 @@
-[
-    {
-        "post_date": "15/05/2023",
-        "post_id": "13",
-        "post_content_preview": "<p>De acordo com o Techradar, a Microsoft vai encerrar o suporte para novas máquinas com Windows 10 32 bits a partir da grande atualização do sistema, agendada (supostamente) para o dia 28 de maio. Isso significa que as fabricantes de equipamentos OEM não poderão mais comercializar laptops ou PCs...",
-        "post_source": "<a href=\"https://www.tecmundo.com.br/software/153135-fabricantes-nao-vender-pcs-windows-10-32-bits.htm\">www.tecmundo.com.br</a>",
-        "post_thumb_url": "https://tm.ibxk.com.br/2020/05/14/14093959214338.jpg",
-        "post_image_url": "https://tm.ibxk.com.br/2020/05/14/14093959214338.jpg",
-        "post_title": "Fabricantes não poderão mais vender PCs com Windows 10 32 bits",
-        "post_content": "<p>De acordo com o Techradar, a Microsoft vai encerrar o suporte para novas máquinas com Windows 10 32 bits a partir da grande atualização do sistema, agendada (supostamente) para o dia 28 de maio. Isso significa que as fabricantes de equipamentos OEM não poderão mais comercializar laptops ou PCs desktop com a versão 32 bits do sistema operacional a partir daquela data.</p><h3>Máquinas em uso ainda terão suporte</h3><p>PCs rodando o Windows 10 32 bits formam uma parcela muito pequena do mercado. No entanto, a plataforma ainda é importante para usuários que tenham menos de 4 GB de RAM e não querem fazer upgrade. Em máquinas com essa limitação de memória, a versão de 32 bits é mais adequada por consumir menos recursos.<br></p><img src=\"https://img.ibxk.com.br/2020/05/14/14094020276341.jpg?ims=704x\" alt=\"Windows 10 32 bits. (Fonte: Canaltech/Reprodução)\" style=\"width: 100%; height: auto;\"><br><br><p>A Microsoft esclareceu que os dispositivos que já foram vendidos e estão em uso continuarão a receber atualizações de recursos e segurança normalmente, assim como as máquinas montadas, que usam o Windows 10 32 bits instalado a partir de uma ISO baixada pelo site oficial.</p><p>A medida será aplicada apenas em máquinas lançadas após o final de maio, ou seja, nenhuma fabricante poderá introduzir no mercado computadores que rodam o Windows 10 x86. Sendo assim, os novos PCs e notebooks deverão sair de fábrica já com o Windows 10 x86 64.<br></p>Esse fim do suporte para a plataforma de 32 bits em novas máquina dará início à extinção de PCs x86 com sistemas da Microsoft, já que o Windows 7 também já teve seu suporte encerrado.",
-        "post_tags": [
-            "Windows",
-            "OS",
-            "Noticias"
-        ]
-    },
-    {
+[   {
         "post_date": "14/05/2023",
         "post_id": "12",
         "post_content_preview": "<div style=\"text-align: left;\">O Discord pretende mudar a regra de uso dos nomes de usuário para facilitar a vida das pessoas. Com a troca, sairia de cena o complexo modelo antigo — composto por hashtag, quatro dígitos e nome de usuário — para uma combinação única de letras e...",
