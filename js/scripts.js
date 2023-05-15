@@ -86,7 +86,7 @@ $(window).on("load", function () {
 });
 
 // fetch posts.json
-fetch('https://ggtec.github.io/GGTECApps/posts/posts.json')
+fetch('https://ggtec.github.io/GGCORETEC/posts/posts.json')
   .then(response => response.json())
   .then(posts => {
 
