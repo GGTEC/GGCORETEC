@@ -11453,16 +11453,18 @@ option {
   clear: both;
 }
 
-#post-content  > figure {
+.card-body figure {
   display: inline-block;
 }
 
-#post-content > img {
+.card-body img {
   margin-bottom: 0.5rem;
   line-height: 1;
 }
 
-#post-content > figcaption {
-  font-size: 0.875em;
-  color: #6c757d;
+.card-body figcaption {
+  background-color: #08142b;
+  padding: 2%;
+  font-size: 0.95em;
+  color: #d1d2d4;
 }
