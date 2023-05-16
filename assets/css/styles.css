@@ -11453,16 +11453,16 @@ option {
   clear: both;
 }
 
-#post-content figure {
+#post-content  > figure {
   display: inline-block;
 }
 
-#post-content img {
+#post-content > img {
   margin-bottom: 0.5rem;
   line-height: 1;
 }
 
-#post-content figcaption {
+#post-content > figcaption {
   font-size: 0.875em;
   color: #6c757d;
 }
