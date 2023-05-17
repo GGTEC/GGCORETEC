@@ -1,727 +1,841 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
-  <meta content="blog" property="og:type"/>
-  <meta content="GGTEC" property="author"/>
-  <meta content="LoL: patch 13.8 chega com foco no MSI; confira as notas" property="og:site_name"/>
-  <meta content="&lt;p&gt; Com foco no 'Mid-Season Invitational' (MSI) 2023, a Riot Games divulgou nesta terça-feira as notas do patch 13.8 do League of Legends. A atualização traz buffs e nerfs para diversos campeões, além de mudança no item Impacto Cosmíco. Também será adicionada novas skins da linha Emissário da Luz..." property="og:description"/>
-  <meta content="tecnologia, noticias, informação, jogos, IOT, windows, patch, notes" name="keywords"/>
-  <meta content="../../assets/img/about.png" property="og:image"/>
-  <meta content="3600" http-equiv="expires"/>
-  <title>
-   GGCORETEC - O seu blog de tecnologia
-  </title>
-  <link href="../../assets/img/favicon.png" rel="icon" type="image/x-icon"/>
-  <link href="../../assets/css/styles.css" rel="stylesheet"/>
-  <script src="https://code.jquery.com/jquery-3.6.1.js">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js">
-  </script>
-  <link href="https://cdn.datatables.net/1.13.1/css/dataTables.bootstrap5.min.css" rel="stylesheet" type="text/css"/>
-  <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.js">
-  </script>
-  <script src="https://cdn.datatables.net/1.13.1/js/dataTables.bootstrap5.min.js">
-  </script>
-  <link href="https://cdn.datatables.net/responsive/2.4.0/css/responsive.dataTables.min.css" rel="stylesheet"/>
-  <script src="https://cdn.datatables.net/responsive/2.4.0/js/dataTables.responsive.min.js">
-  </script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet"/>
-  <link href="../../assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/>
-  <link href="../../assets/boxicons/css/boxicons.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet"/>
-  <meta content="{1553586024693308}" property="fb:admins"/>
-  <script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5312302938088623">
-  </script>
-  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-KLYE611VE7">
-  </script>
-  <script>
-   window.dataLayer = window.dataLayer || [];
-                  function gtag(){dataLayer.push(arguments);}
-                  gtag('js', new Date());
-      
-                  gtag('config', 'G-KLYE611VE7');
-  </script>
- </head>
- <body>
-  <!-- Responsive navbar-->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom">
-   <div class="container">
-    <a class="navbar-brand" href="https://ggtec.netlify.app/">
-     <img alt="brand" src="../../assets/img/about.png" style="width: 40px;"/>
-     <span>
-      GGCORETEC
-     </span>
-    </a>
-    <a class="nav-link" href="https://ggtec.netlify.app/" type="button">
-     Inicio
-    </a>
-    <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
-     <span class="navbar-toggler-icon">
-     </span>
-    </button>
-   </div>
-  </nav>
-  <div class="container-full">
-   <div class="content-wrap" id="blog-post">
-    <!-- Page header with logo and tagline-->
-    <header class="py-5 border-bottom mb-4 blog-header" id="blog-header">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
+    <meta content="blog" property="og:type" />
+    <meta content="GGTEC" property="author" />
+    <meta content="LoL: patch 13.8 chega com foco no MSI; confira as notas" property="og:site_name" />
+    <meta
+        content="&lt;p&gt; Com foco no 'Mid-Season Invitational' (MSI) 2023, a Riot Games divulgou nesta terça-feira as notas do patch 13.8 do League of Legends. A atualização traz buffs e nerfs para diversos campeões, além de mudança no item Impacto Cosmíco. Também será adicionada novas skins da linha Emissário da Luz..."
+        property="og:description" />
+    <meta content="tecnologia, noticias, informação, jogos, IOT, windows, patch, notes" name="keywords" />
+    <meta content="../../assets/img/about.png" property="og:image" />
+    <meta content="3600" http-equiv="expires" />
+    <title>
+        GGCORETEC - O seu blog de tecnologia
+    </title>
+    <link href="../../assets/img/favicon.png" rel="icon" type="image/x-icon" />
+    <link href="../../assets/css/styles.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.1.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+    <link href="https://cdn.datatables.net/1.13.1/css/dataTables.bootstrap5.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.js">
+    </script>
+    <script src="https://cdn.datatables.net/1.13.1/js/dataTables.bootstrap5.min.js">
+    </script>
+    <link href="https://cdn.datatables.net/responsive/2.4.0/css/responsive.dataTables.min.css" rel="stylesheet" />
+    <script src="https://cdn.datatables.net/responsive/2.4.0/js/dataTables.responsive.min.js">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet" />
+    <link href="../../assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="../../assets/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dragscroll/0.0.8/dragscroll.js"></script>
+    <script async="" crossorigin="anonymous"
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5312302938088623">
+        </script>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-KLYE611VE7">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-KLYE611VE7');
+    </script>
+</head>
+
+<body>
+    <!-- Responsive navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom">
         <div class="container">
-            <div class="text-center my-5 text-white">
-                <h1 class="fw-bolder">
-                    Bem vindo ao Blog GGCORETEC !
-                </h1>
-                <p class="lead mb-0">
-                    O seu blog para de tecnologia e informação!
-                </p>
+            <a class="navbar-brand" href="https://ggtec.netlify.app/">
+                <img alt="brand" src="../../assets/img/about.png" style="width: 40px;" />
+                <span>
+                    GGCORETEC
+                </span>
+            </a>
+            <a class="nav-link" href="https://ggtec.netlify.app/" type="button">
+                Inicio
+            </a>
+            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon">
+                </span>
+            </button>
+        </div>
+    </nav>
+    <div class="container-full">
+        <div class="content-wrap" id="blog-post">
+            <!-- Page header with logo and tagline-->
+            <header class="py-5 border-bottom mb-4 blog-header" id="blog-header">
+                <div class="container">
+                    <div class="text-center my-5 text-white">
+                        <h1 class="fw-bolder">
+                            Bem vindo ao Blog GGCORETEC !
+                        </h1>
+                        <p class="lead mb-0">
+                            O seu blog para de tecnologia e informação!
+                        </p>
+                    </div>
+                </div>
+            </header>
+            <!-- Page content-->
+            <div class="container">
+                <div class="row">
+                    <!-- Blog entries-->
+                    <div class="col-lg-8 d-none" id="articles-container">
+                        <div id="first-article">
+                        </div>
+                        <div class="row row-cols-1 row-cols-md-2 g-4 align-self-center" id="others-articles">
+                            <div class="col-lg-6">
+                                <!-- Blog post-->
+                                <!-- Blog post-->
+                            </div>
+                            <div class="col-lg-6 pe-0">
+                                <!-- Blog post-->
+                                <!-- Blog post-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8" id="article">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <header class="mb-4">
+                                    <p>
+                                        <span class="text-muted font-italic mb-2" id="header-post-date">
+                                            19/04/2023
+                                        </span>
+                                        |
+                                        <a class="text-muted" href="https://ggtec.netlify.app/" id="back-button">
+                                            Inicio
+                                        </a>
+                                        &gt;
+                                        <span class="text-muted" id="back-span">
+                                        </span>
+                                    </p>
+                                    <h1 class="fw-bolder mt-1 mb-1" id="header-post-title">
+                                        LoL: patch 13.8 chega com foco no MSI; confira as notas
+                                    </h1>
+                                    <div id="header-post-categories">
+                                        <a class="badge bg-secondary text-decoration-none link-light" href="#!">
+                                            Games
+                                        </a>
+                                        <a class="badge bg-secondary text-decoration-none link-light" href="#!">
+                                            LOL
+                                        </a>
+                                        <a class="badge bg-secondary text-decoration-none link-light" href="#!">
+                                            Moba
+                                        </a>
+                                    </div>
+                                </header>
+                            </div>
+                            <div class="card-body">
+                                <section class="mb-4" id="post-content">
+                                    <p>
+                                        Com foco no 'Mid-Season Invitational' (MSI) 2023, a Riot Games divulgou nesta
+                                        terça-feira as notas do patch 13.8 do League of Legends. A atualização traz
+                                        buffs e nerfs para diversos campeões, além de mudança no item Impacto Cosmíco.
+                                        Também será adicionada novas skins da linha Emissário da Luz e da Escuridão e
+                                        realizadas correções de bugs. Confira em detalhes as notas do patch 13.8 a
+                                        seguir.
+                                    </p>
+                                    <div>
+                                        <figure>
+                                            <img
+                                                src="https://ggtec.netlify.app/assets/img/leagueoflegendspatch13_8.png" />
+                                        </figure>
+                                    </div>
+                                    <p>
+                                    </p>
+                                    <h1>
+                                        Campeões
+                                    </h1>
+                                    <h2>
+                                        Nerfs
+                                    </h2>
+                                    <h3>
+                                        Aurelion Sol
+                                    </h3>
+                                    <p>
+                                        <strong>
+                                            Atributos base
+                                        </strong>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            Crescimento de Vida: 95 ⇒ 90
+                                        </li>
+                                        <li>
+                                            Crescimento de Armadura: 4,3 ⇒ 4
+                                        </li>
+                                    </ul>
+                                    <h3>
+                                        Jarvan IV
+                                    </h3>
+                                    <p>
+                                        <strong>
+                                            Atributos base
+                                        </strong>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            Crescimento de Dano de Ataque: 3,4 ⇒ 3
+                                        </li>
+                                    </ul>
+                                    <p>
+                                        <strong>
+                                            Ataque do Dragão (Q)
+                                        </strong>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            Dano Físico: 90/130/170/210/250 (+140% do DdA adicional) ⇒
+                                            80/120/160/200/240 (+140% do DdA adicional)
+                                        </li>
+                                    </ul>
+                                    <h3>
+                                        Kayn
+                                    </h3>
+                                    <p>
+                                        <strong>
+                                            Passo das Sombras (E)
+                                        </strong>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            Assassino das Sombras – Velocidade de Movimento adicional: 80% ⇒ 70%
+                                        </li>
+                                        <li>
+                                            Assassino das Sombras – Tempo de Recarga: 8s ⇒ 10s
+                                        </li>
+                                    </ul>
+                                    <h3>
+                                        Malphite
+                                    </h3>
+                                    <p>
+                                        <strong>
+                                            Trovoada (W)
+                                        </strong>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            Dano do ataque fortalecido: 30/45/60/75/90 (+20% de PdH) (+15% de Armadura)
+                                            ⇒ 30/40/50/60/70 (+20% de PdH) (+15% de Armadura)
+                                        </li>
+                                        <li>
+                                            Dano Físico de Fenda: 15/25/35/45/55 (+30% do PdH) (+20% da Armadura) ⇒
+                                            15/25/35/45/55 (+30% do PdH) (+15% da Armadura)
+                                        </li>
+                                    </ul>
+                                    <h3>
+                                        Rakan
+                                    </h3>
+                                    <p>
+                                        <strong>
+                                            Atributos base
+                                        </strong>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            Armadura base: 32 ⇒ 30
+                                        </li>
+                                        <li>
+                                            Crescimento de Armadura: 5,1 ⇒ 4,9
+                                        </li>
+                                    </ul>
+                                    <h2>
+                                        Buffs
+                                    </h2>
+                                    <h3>
+                                        Ezreal
+                                    </h3>
+                                    <p>
+                                        <strong>
+                                            Atributos base
+                                        </strong>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            Dano de Ataque base: 60 ⇒ 62
+                                        </li>
+                                    </ul>
+                                    <h3>
+                                        Garen
+                                    </h3>
+                                    <p>
+                                        <strong>
+                                            Atributos base
+                                        </strong>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            Dano de Ataque base: 66 ⇒ 69
+                                        </li>
+                                        <li>
+                                            Armadura base: 36 ⇒38
+                                        </li>
+                                    </ul>
+                                    <h3>
+                                        Janna
+                                    </h3>
+                                    <p>
+                                    </p>
+                                    <p>
+                                        <strong>
+                                            Zéfiro (W)
+                                        </strong>
+                                    </p>
+                                    <p>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            Dano Mágico:70/100/130/160/190(+50% do PdH)⇒80/110/140/170/200(+60% do PdH)
+                                        </li>
+                                    </ul>
+                                    <p>
+                                    </p>
+                                    <p>
+                                        <strong>
+                                            Olho da Tempestade (E)
+                                        </strong>
+                                    </p>
+                                    <p>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            Tempo de decaimento do Escudo:1,25s⇒2,5s
+                                        </li>
+                                    </ul>
+                                    <h3>
+                                        Kha'Zix
+                                    </h3>
+                                    <p>
+                                    </p>
+                                    <p>
+                                        <strong>
+                                            Sabor de Medo (Q)
+                                        </strong>
+                                    </p>
+                                    <p>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            Dano Físico:60/85/110/135/160(+115% de DdA
+                                            adicional)⇒70/95/120/145/170(+115% de DdA adicional)
+                                        </li>
+                                    </ul>
+                                    <h3>
+                                        Kog'Maw
+                                    </h3>
+                                    <p>
+                                    </p>
+                                    <p>
+                                        <strong>
+                                            Surpresa Icathiana (passiva)
+                                        </strong>
+                                    </p>
+                                    <p>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            [NOVO] Corre, Kog! Corre!: Kog’Maw agora recebe efeito Fantasma durante a
+                                            Passiva.
+                                        </li>
+                                        <li>
+                                            Dano Verdadeiro: 125 - 550 (com base no nível) ⇒ 140 - 650 (com base no
+                                            nível)
+                                        </li>
+                                    </ul>
+                                    <p>
+                                        <strong>
+                                            Cusparada Caustica (Q)
+                                        </strong>
+                                    </p>
+                                    <p>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            Tempo de Recarga: 8s ⇒ 7s
+                                        </li>
+                                    </ul>
+                                    <p>
+                                        <strong>
+                                            Gosma do Vazio (E)
+                                        </strong>
+                                    </p>
+                                    <p>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            Custo de Mana: 60/70/80/90/100 ⇒ 40/55/70/85/100
+                                            Lentidão: 20/28/36/44/52% ⇒ 30/35/40/45/50%
+                                        </li>
+                                    </ul>
+                                    <h3>
+                                        Leona
+                                    </h3>
+                                    <p>
+                                        <strong>
+                                            Eclipse (W)
+                                        </strong>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            Armadura adicional: 15/20/25/30/35 (+20% de Armadura adicional) ⇒
+                                            20/25/30/35/40 (+20% de Armadura adicional)
+                                        </li>
+                                        <li>
+                                            Resistência Mágica adicional: 15/20/25/30/35 (+20% de Resistência Mágica
+                                            adicional) ⇒ 20/25/30/35/40 (+20% de Resistência Mágica adicional)
+                                        </li>
+                                        <li>
+                                            Dano Mágico: 45/80/115/150/185 (+40% de PdH) ⇒ 55/90/125/160/195 (+40% de
+                                            PdH)
+                                        </li>
+                                    </ul>
+                                    <h3>
+                                        Lilia
+                                    </h3>
+                                    <p>
+                                        <strong>
+                                            Ramo Onírico (passiva)
+                                        </strong>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            Limite de dano contra monstros: 50 - 150 (com base no nível) ⇒ 70 - 150 (com
+                                            base no nível) (esse valor chega até 40% a mais de dano no nível 1 contra
+                                            monstros com mais de 1.328 de Vida, diminuindo para 0% em aproximadamente
+                                            949 de Vida. A Acuâmina tem 1.100, mas o Rubrivira, Azuporã, Grompe, Krugue
+                                            e o Lobo chegam ao novo limite de Vida máxima.)
+                                        </li>
+                                        <li>
+                                            Cura contra monstros: 24 - 75 (com base no nível) (+5,4% de PdH) ⇒ 39 - 54
+                                            (com base no nível) (+15% de PdH)
+                                        </li>
+                                        <li>
+                                            Cura contra Campeões: 6 - 120 (com base no nível) (+18% de PdH) ⇒ 6 - 90
+                                            (com base no nível) (+30% de PdH)
+                                        </li>
+                                    </ul>
+                                    <h3>
+                                        Nidalee
+                                    </h3>
+                                    <p>
+                                        <strong>
+                                            Atributos base
+                                        </strong>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            Armadura base:28⇒32
+                                        </li>
+                                        <li>
+                                            Crescimento de Armadura:4,7⇒5
+                                        </li>
+                                    </ul>
+                                    <h3>
+                                        Poppy
+                                    </h3>
+                                    <p>
+                                    </p>
+                                    <p>
+                                        <strong>
+                                            Choque do Martelo (Q)
+                                        </strong>
+                                    </p>
+                                    <p>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            Dano com base na Vida do alvo:8%⇒9%
+                                        </li>
+                                    </ul>
+                                    <p>
+                                    </p>
+                                    <p>
+                                        <strong>
+                                            Presença Inabalável (W)
+                                        </strong>
+                                    </p>
+                                    <p>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            Resistências adicionais:10%⇒12%(Obs.: esse valor será dobrado para24%
+                                            enquanto Poppy estiver com menos de40%de Vida máxima.)
+                                        </li>
+                                    </ul>
+                                    <h2>
+                                        Itens
+                                    </h2>
+                                    <h3>
+                                        Ímpeto Cósmico
+                                    </h3>
+                                    <ul>
+                                        <li>
+                                            Poder de Habilidade:90⇒100
+                                        </li>
+                                        <li>
+                                            [NOVO] Passivo ÚNICO – Dança Enfeitiçada: causar dano a um Campeão (exceto
+                                            dano ao longo do tempo) gera um acúmulo de 2,5% de Velocidade de Movimento a
+                                            cada 1,5s pelos próximos 5s, acumulando até 4 vezes (10% de Velocidade de
+                                            Movimento). Com 4 acúmulos, recebe 10% de Velocidade de Movimento adicional
+                                            (20% da Velocidade de Movimento total). Causar dano redefine este efeito.
+                                            (Obs.: é necessário causar 1 instância de dano para continuar adicionando
+                                            acúmulos sozinho periodicamente. Depois, é necessário atingir o inimigo
+                                            apenas uma vez depois do intervalo para alcançar o máximo de acúmulos. Não é
+                                            necessário atingir 4 vezes com intervalos de 1,5s. O objetivo aqui é fazer
+                                            com que uma habilidade não acumule o efeito passivo totalmente.)
+                                        </li>
+                                        <li>
+                                            Correções de bugs
+                                        </li>
+                                        <ul>
+                                            <li>
+                                                O jogo não trava mais quando Milio enfrenta Ahri, Viego ou Sylas na
+                                                equipe inimiga.
+                                            </li>
+                                            <li>
+                                                O alcance do Q da Diana não é mais alterado se conjurado durante o
+                                                Flash.
+                                            </li>
+                                            <li>
+                                                Usar o botão de "Desfazer" com Biscoitos no inventário não reduz/aumenta
+                                                o Mana total em uma quantidade maior do que a concedida pelo item.
+                                            </li>
+                                            <li>
+                                                O efeito em área de ação do R do Twitch voltou a causar dano ao Campeão
+                                                e aos inimigos quando influenciado pelo R da Renata.
+                                            </li>
+                                            <li>
+                                                O placar de fim de partida voltou o cálculo de acúmulo de ouro para os
+                                                monstros neutros abatidos em ambas as selvas.
+                                            </li>
+                                            <li>
+                                                Não é mais possível reconjurar o R do Vel'Koz para interromper a
+                                                habilidade pressionando a tecla rapidamente.
+                                            </li>
+                                            <li>
+                                                Tropas não recebem mais crédito por abater dragões caso tenham sido
+                                                abatidos pelo clone do Shaco.
+                                            </li>
+                                            <li>
+                                                Os aliados da Yuumi voltaram a obter acúmulos de Amizade ao abater
+                                                Campeões com a Campeã Conectada.
+                                            </li>
+                                            <li>
+                                                Os efeitos sonoros de expiração do Q da Yuumi não podem mais ser ouvidos
+                                                na Névoa de Guerra.
+                                            </li>
+                                            <li>
+                                                Enraizamentos voltaram a impedir Retornos.
+                                            </li>
+                                            <li>
+                                                A Passiva da Sona não é mais duplicada se comandos específicos forem
+                                                realizados ao mesmo tempo.
+                                            </li>
+                                            <li>
+                                                A onda de choque do R fortalecido do Aurelion Sol voltou a causar dano.
+                                            </li>
+                                            <li>
+                                                O R do Draven não executa mais alvos atravessando Escudos de Feitiço,
+                                                como o E da Sivir. Caçadoras de recompensas deviam saber desviar de
+                                                machados, hein...
+                                            </li>
+                                            <li>
+                                                O R do Draven voltou a executar inimigos mesmo se estiverem próximos ao
+                                                Campeão durante a conjuração inicial da habilidade.
+                                            </li>
+                                            <li>
+                                                Os arremessos ao ar do E e R do Ornn não podem mais ser Purificados.
+                                            </li>
+                                            <li>
+                                                Algumas das gloriosas falas do Aurelion Sol foram restauradas.
+                                            </li>
+                                            <li>
+                                                O Q da Xayah voltou a recalcular o tempo de conjuração, mesmo se ela
+                                                vender um item enquanto morta e a Velocidade de Ataque da habilidade
+                                                aumentar.
+                                            </li>
+                                            <li>
+                                                A Kai'Sa não pode mais usar o R para escapar do Reino da Morte do
+                                                Mordekaiser.
+                                            </li>
+                                            <li>
+                                                O efeito Inquebrável da Placa Gargolítica não é mais reduzido por cura e
+                                                Resistência do Escudo.
+                                            </li>
+                                            <li>
+                                                Não é mais possível copiar e vender repetidamente a Pedra-vigia
+                                                Observadora.
+                                            </li>
+                                        </ul>
+                                    </ul>
+                                </section>
+                                <p>
+                                    Fonte :
+                                    <span id="post-source">
+                                        <a
+                                            href="https://ge.globo.com/esports/lol/noticia/2023/04/18/c-lol-patch-138-chega-com-foco-no-msi-confira-as-notas.ghtml">
+                                            ge.globo.com
+                                        </a>
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <section class="mb-1" id="post-footer">
+                                    <!-- Post footer-->
+                                    <div id="disqus_thread"></div>
+                                    <script>
+                                        var p_url = window.location.href;
+                                        var disqus_config = function () {
+                                            this.page.url = p_url;  // Replace PAGE_URL with your page's canonical URL variable
+                                        };
+
+                                        (function () { // DON'T EDIT BELOW THIS LINE
+                                            var d = document, s = d.createElement('script');
+                                            s.src = 'https://ggtecapps.disqus.com/embed.js';
+                                            s.setAttribute('data-timestamp', +new Date());
+                                            (d.head || d.body).appendChild(s);
+                                        })();
+                                    </script>
+                                </section>
+                            </div>
+                        </div>
+                        <div id="gallery" class="border-purple dragscroll gallery d-flex flex-row flex-nowrap overflow-scroll">
+                        </div>
+                    </div>
+                    <!-- Side widgets-->
+                    <div class="col-lg-4">
+                        <!-- Search widget-->
+                        <div class="card mb-4" id="sidebar">
+                            <div class="card-header">
+                                Procurar
+                            </div>
+                            <div class="card-body">
+                                <div class="input-group">
+                                    <input class="form-control" id="search-input"
+                                        placeholder="Digite um termo de pesquisa..." type="text" />
+                                    <button class="btn btn-purple" id="search-button" type="button">
+                                        Pesquisar!
+                                    </button>
+                                </div>
+                                <div id="search-results">
+                                    <!-- Aqui é onde os resultados da pesquisa serão exibidos -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Categories widget-->
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                Categorias
+                            </div>
+                            <div class="card-body">
+                                <div class="row category" id="categories-widget">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Side widget-->
+                        <div class="card mb-4">
+                            <div class="card-body p-0">
+                                <iframe allowfullscreen="true" class="iframe-live" frameborder="0" scrolling="no"
+                                    src="https://player.twitch.tv/?channel=gg_tec&amp;parent=ggtec.netlify.app"
+                                    width="100%">
+                                </iframe>
+                            </div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-body profile-card">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="avatar h-100 w-100 align-content-center">
+                                            <img alt="Avatar" src="../../assets/img/profile-image.jpg" width="100%">
+                                        </div>
+                                    </div>
+                                    <div class="col-8 text-center align-self-center profile-name">
+                                        <h3>
+                                            Jheferson Gambet
+                                        </h3>
+                                        <h5>
+                                            Stremer,Dev &amp; This/Web-Designer
+                                        </h5>
+                                        <a href="https://ggtec.netlify.app/social">
+                                            Página de perfis sociais
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </header>
-    <!-- Page content-->
-    <div class="container">
-     <div class="row">
-      <!-- Blog entries-->
-      <div class="col-lg-8 d-none" id="articles-container">
-       <div id="first-article">
-       </div>
-       <div class="row row-cols-1 row-cols-md-2 g-4 align-self-center" id="others-articles">
-        <div class="col-lg-6">
-         <!-- Blog post-->
-         <!-- Blog post-->
+        <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal" tabindex="-1">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable modal-border">
+                <div class="modal-content modal-background">
+                    <div class="modal-header modal-background-header">
+                        <button aria-label="Close" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                            type="button">
+                        </button>
+                    </div>
+                    <div class="modal-body p-5">
+                        <h1>
+                            Politica de cookies
+                        </h1>
+                        Esta Política de Cookies foi atualizada pela última vez em 09 de outubro de 2022 e aplica-se aos
+                        cidadãos do Brasil de acordo com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018) e países
+                        que possuem leis sobre proteção de dados. A LGPD estabelece regras sobre coleta, armazenamento e
+                        compartilhamento de dados pessoais, atribuindo mais proteção aos titulares de tais dados.
+                        O site GGCORETEC usa cookies e outras tecnologias relacionadas (por conveniência, todas as
+                        tecnologias são chamadas de "cookies"). No documento abaixo informamos sobre o uso de cookies em
+                        nosso site.
+                        <h1>
+                            O que sã​​o cookies
+                        </h1>
+                        Cookies são arquivos-texto gerados pelo site e transferidos para seu computador, sendo
+                        armazenados pelos Navegadores como Google Chrome, Firefox, Internet Explorer, etc. Em geral, os
+                        Cookies são utilizados para uma otimização de sua experiência de navegação junto ao nosso site,
+                        quando permitido pelo nível de segurança configurado por você junto ao seu navegador. Sempre que
+                        o seu navegador estiver assim configurado, utilizaremos cookies conforme explicado.
+                        Os cookies utilizados no site têm como finalidade identificar as tendências de navegação do
+                        usuário, buscando aprimorar e personalizar seus acessos futuros, tais como, páginas navegadas ou
+                        links clicados. Quaisquer dos cookies utilizados não são usados para executar programas ou
+                        infectar seu computador com vírus ou programas maliciosos.
+                        Ao acessar este site pela primeira vez, você foi informado através de um aviso em popup
+                        referente a prática de cookies. Mesmo quando seu programa de navegação estiver configurado para
+                        permitir a instalação de cookies, mas você desejar removê-los ou impedir o armazenamento de
+                        novos cookies, pode fazê-lo imediatamente e sem qualquer impedimento, desativando este recurso
+                        em seu navegador e excluindo todos os eventuais cookies já implementados.
+                        Desta forma, recomendamos que você configure seu programa de navegação no nível de segurança
+                        desejado antes de navegar em nosso site, em todos os computadores e dispositivos que deseje
+                        utilizar.​
+                        <h1>
+                            COMO OS COOKIES SÃO USADOS
+                        </h1>
+                        Os cookies utilizados em nosso site atendem aos requisitos legais e são enquadrados nas
+                        seguintes categorias:
+
+                        Cookies Funcionais: Os Cookies Funcionais são usados para fornecer serviços ou para lembrar
+                        definições de navegações de forma a melhorar sua visita.
+                        Para o que nós os usamos: Lembrar eventualmente das configurações que você aplicou, como idioma,
+                        layout, tamanho do texto, preferências e cores.
+
+                        Cookies Estritamente Necessários: São aqueles cookies que permitem a você navegar pelo site e
+                        usar recursos essenciais, como formulários ou áreas seguras, por exemplo. Esses cookies não
+                        guardam quaisquer informações sobre você que possam ser usadas em ações de comunicação de
+                        produto ou serviço ou para lembrar as páginas navegadas no site.
+                        Para o que nós os usamos: Identificá-lo como um usuário conectado. Lembrar de informações que
+                        você digitou previamente em eventuais formulários de contato. Certificar-se de que você se
+                        conecta ao serviço correto em nosso site quando fizermos alguma mudança na forma como ele
+                        funciona.
+
+                        Cookies de Desempenho: Os cookies de "Desempenho" coletam informações sobre como você usa o
+                        nosso website, por exemplo, quais páginas você visita, se elas possuem erros, erros em
+                        formulários e etc. Esses cookies não coletam quaisquer informações que possam identificá-lo.
+                        Toda a informação coletada é realizada de forma codificada, anônima e somente usada para ajudar
+                        a melhorar a forma como o nosso site funciona, entender o que interessa aos nossos usuários e
+                        medir a eficácia da nossa comunicação.
+                        Para o que nós os usamos: Fornecer estatísticas sobre como nosso site é utilizado. Verificar a
+                        eficiência da nossa comunicação, não nos utilizando dessa informação para direcionamento de
+                        anúncios quando em visita a outros sites. Ajudar na melhoria de nosso site pela medição de erros
+                        que eventualmente possam ocorrer. Realizar melhorias e aperfeiçoamentos em nosso site
+                        decorrentes do comportamento de navegação de nossos usuários.
+
+                        Cookies de Segmentação: Os Cookies de Segmentação estão ligados aos serviços prestados por
+                        terceiros, tais como, por exemplo, feed de mídias sociais, botões de "Like" e botões de
+                        "Compartilhar" contidos em outros sites que não o nosso site. O terceiro fornece esses serviços
+                        por reconhecer que você visitou nosso site, mas de maneira nenhuma se confunde com o nosso site.
+                        Para o que nós os usamos: Para conectar-se as mídias sociais, que, por serem terceiros e pelos
+                        quais não termos controle, poderão, posteriormente, utilizar as informações sobre a sua visita
+                        para direcionar publicidade de seu interesse para você em outros sites. Em relação aos Cookies
+                        de Segmentação, você pode controlar se serão usados ou não (vide tópico abaixo "Como Desativar
+                        os Cookies"), mas seu bloqueio pode nos impedir de oferecer alguns serviços ou prejudicar a boa
+                        navegação junto ao nosso site.
+                        <h1>
+                            COMO DESATIVAR OS COOKIES
+                        </h1>
+                        Normalmente as configurações para desativar os cookies estão presentes nas "Opções" ou o menu
+                        "Preferências" do seu navegador. Para saber melhor consulte as opções de ajuda de seu navegador.
+                        Você pode desabilitá-los alterando as configurações do seu navegador, mas saiba que isso pode
+                        afetar o funcionamento do site.
+                        <a
+                            href="https://support.google.com/chrome/answer/95647?co=GENIE.Platform%3DDesktop&amp;hl=pt-BR">
+                            Chrome
+                        </a>
+                        <a href="https://support.mozilla.org/pt-BR/kb/desative-cookies-terceiros-impedir-rastreamento">
+                            Firefox
+                        </a>
+                        <a
+                            href="https://support.microsoft.com/pt-br/microsoft-edge/excluir-cookies-no-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09">
+                            Microsoft Edge
+                        </a>
+                        <a
+                            href="https://support.microsoft.com/pt-br/windows/excluir-e-gerenciar-cookies-168dab11-0753-043d-7c16-ede5947fc64d">
+                            Internet Explorer​
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-lg-6 pe-0">
-         <!-- Blog post-->
-         <!-- Blog post-->
+        <div class="alert alert-dark text-center mb-0 alert-dismissible" id="cb-cookie-banner" role="alert">
+            🍪 Utilizando este site você concorda com a
+            <a data-bs-target="#exampleModal" data-bs-toggle="modal" href="#">
+                Politica de cookies.
+            </a>
+            <button class="btn btn-purple btn-sm ms-3" onclick="window.hideCookieBanner()" type="button">
+                Aceitar
+            </button>
+            <button class="btn-close btn-close-white" data-bs-dismiss="alert" type="button">
+            </button>
         </div>
-       </div>
-      </div>
-      <div class="col-lg-8" id="article">
-       <div class="card mb-4">
-        <div class="card-header">
-         <header class="mb-4">
-          <p>
-           <span class="text-muted font-italic mb-2" id="header-post-date">
-            19/04/2023
-           </span>
-           |
-           <a class="text-muted" href="https://ggtec.netlify.app/" id="back-button">
-            Inicio
-           </a>
-           &gt;
-           <span class="text-muted" id="back-span">
-           </span>
-          </p>
-          <h1 class="fw-bolder mt-1 mb-1" id="header-post-title">
-           LoL: patch 13.8 chega com foco no MSI; confira as notas
-          </h1>
-          <div id="header-post-categories">
-           <a class="badge bg-secondary text-decoration-none link-light" href="#!">
-            Games
-           </a>
-           <a class="badge bg-secondary text-decoration-none link-light" href="#!">
-            LOL
-           </a>
-           <a class="badge bg-secondary text-decoration-none link-light" href="#!">
-            Moba
-           </a>
-          </div>
-         </header>
-        </div>
-        <div class="card-body">
-         <section class="mb-4" id="post-content">
-          <p>
-           Com foco no 'Mid-Season Invitational' (MSI) 2023, a Riot Games divulgou nesta terça-feira as notas do patch 13.8 do League of Legends. A atualização traz buffs e nerfs para diversos campeões, além de mudança no item Impacto Cosmíco. Também será adicionada novas skins da linha Emissário da Luz e da Escuridão e realizadas correções de bugs. Confira em detalhes as notas do patch 13.8 a seguir.
-          </p>
-          <div>
-           <figure>
-             <img src="https://ggtec.netlify.app/assets/img/leagueoflegendspatch13_8.png"/>
-           </figure>
-          </div>
-          <p>
-          </p>
-          <h1>
-           Campeões
-          </h1>
-          <h2>
-           Nerfs
-          </h2>
-          <h3>
-           Aurelion Sol
-          </h3>
-          <p>
-           <strong>
-            Atributos base
-           </strong>
-          </p>
-          <ul>
-           <li>
-            Crescimento de Vida: 95 ⇒ 90
-           </li>
-           <li>
-            Crescimento de Armadura: 4,3 ⇒ 4
-           </li>
-          </ul>
-          <h3>
-           Jarvan IV
-          </h3>
-          <p>
-           <strong>
-            Atributos base
-           </strong>
-          </p>
-          <ul>
-           <li>
-            Crescimento de Dano de Ataque: 3,4 ⇒ 3
-           </li>
-          </ul>
-          <p>
-           <strong>
-            Ataque do Dragão (Q)
-           </strong>
-          </p>
-          <ul>
-           <li>
-            Dano Físico: 90/130/170/210/250 (+140% do DdA adicional) ⇒ 80/120/160/200/240 (+140% do DdA adicional)
-           </li>
-          </ul>
-          <h3>
-           Kayn
-          </h3>
-          <p>
-           <strong>
-            Passo das Sombras (E)
-           </strong>
-          </p>
-          <ul>
-           <li>
-            Assassino das Sombras – Velocidade de Movimento adicional: 80% ⇒ 70%
-           </li>
-           <li>
-            Assassino das Sombras – Tempo de Recarga: 8s ⇒ 10s
-           </li>
-          </ul>
-          <h3>
-           Malphite
-          </h3>
-          <p>
-           <strong>
-            Trovoada (W)
-           </strong>
-          </p>
-          <ul>
-           <li>
-            Dano do ataque fortalecido: 30/45/60/75/90 (+20% de PdH) (+15% de Armadura) ⇒ 30/40/50/60/70 (+20% de PdH) (+15% de Armadura)
-           </li>
-           <li>
-            Dano Físico de Fenda: 15/25/35/45/55 (+30% do PdH) (+20% da Armadura) ⇒ 15/25/35/45/55 (+30% do PdH) (+15% da Armadura)
-           </li>
-          </ul>
-          <h3>
-           Rakan
-          </h3>
-          <p>
-           <strong>
-            Atributos base
-           </strong>
-          </p>
-          <ul>
-           <li>
-            Armadura base: 32 ⇒ 30
-           </li>
-           <li>
-            Crescimento de Armadura: 5,1 ⇒ 4,9
-           </li>
-          </ul>
-          <h2>
-           Buffs
-          </h2>
-          <h3>
-           Ezreal
-          </h3>
-          <p>
-           <strong>
-            Atributos base
-           </strong>
-          </p>
-          <ul>
-           <li>
-            Dano de Ataque base: 60 ⇒ 62
-           </li>
-          </ul>
-          <h3>
-           Garen
-          </h3>
-          <p>
-           <strong>
-            Atributos base
-           </strong>
-          </p>
-          <ul>
-           <li>
-            Dano de Ataque base: 66 ⇒ 69
-           </li>
-           <li>
-            Armadura base: 36 ⇒38
-           </li>
-          </ul>
-          <h3>
-           Janna
-          </h3>
-          <p>
-          </p>
-          <p>
-           <strong>
-            Zéfiro (W)
-           </strong>
-          </p>
-          <p>
-          </p>
-          <ul>
-           <li>
-            Dano Mágico:70/100/130/160/190(+50% do PdH)⇒80/110/140/170/200(+60% do PdH)
-           </li>
-          </ul>
-          <p>
-          </p>
-          <p>
-           <strong>
-            Olho da Tempestade (E)
-           </strong>
-          </p>
-          <p>
-          </p>
-          <ul>
-           <li>
-            Tempo de decaimento do Escudo:1,25s⇒2,5s
-           </li>
-          </ul>
-          <h3>
-           Kha'Zix
-          </h3>
-          <p>
-          </p>
-          <p>
-           <strong>
-            Sabor de Medo (Q)
-           </strong>
-          </p>
-          <p>
-          </p>
-          <ul>
-           <li>
-            Dano Físico:60/85/110/135/160(+115% de DdA adicional)⇒70/95/120/145/170(+115% de DdA adicional)
-           </li>
-          </ul>
-          <h3>
-           Kog'Maw
-          </h3>
-          <p>
-          </p>
-          <p>
-           <strong>
-            Surpresa Icathiana (passiva)
-           </strong>
-          </p>
-          <p>
-          </p>
-          <ul>
-           <li>
-            [NOVO] Corre, Kog! Corre!: Kog’Maw agora recebe efeito Fantasma durante a Passiva.
-           </li>
-           <li>
-            Dano Verdadeiro: 125 - 550 (com base no nível) ⇒ 140 - 650 (com base no nível)
-           </li>
-          </ul>
-          <p>
-           <strong>
-            Cusparada Caustica (Q)
-           </strong>
-          </p>
-          <p>
-          </p>
-          <ul>
-           <li>
-            Tempo de Recarga: 8s ⇒ 7s
-           </li>
-          </ul>
-          <p>
-           <strong>
-            Gosma do Vazio (E)
-           </strong>
-          </p>
-          <p>
-          </p>
-          <ul>
-           <li>
-            Custo de Mana: 60/70/80/90/100 ⇒ 40/55/70/85/100
-Lentidão: 20/28/36/44/52% ⇒ 30/35/40/45/50%
-           </li>
-          </ul>
-          <h3>
-           Leona
-          </h3>
-          <p>
-           <strong>
-            Eclipse (W)
-           </strong>
-          </p>
-          <ul>
-           <li>
-            Armadura adicional: 15/20/25/30/35 (+20% de Armadura adicional) ⇒ 20/25/30/35/40 (+20% de Armadura adicional)
-           </li>
-           <li>
-            Resistência Mágica adicional: 15/20/25/30/35 (+20% de Resistência Mágica adicional) ⇒ 20/25/30/35/40 (+20% de Resistência Mágica adicional)
-           </li>
-           <li>
-            Dano Mágico: 45/80/115/150/185 (+40% de PdH) ⇒ 55/90/125/160/195 (+40% de PdH)
-           </li>
-          </ul>
-          <h3>
-           Lilia
-          </h3>
-          <p>
-           <strong>
-            Ramo Onírico (passiva)
-           </strong>
-          </p>
-          <ul>
-           <li>
-            Limite de dano contra monstros: 50 - 150 (com base no nível) ⇒ 70 - 150 (com base no nível) (esse valor chega até 40% a mais de dano no nível 1 contra monstros com mais de 1.328 de Vida, diminuindo para 0% em aproximadamente 949 de Vida. A Acuâmina tem 1.100, mas o Rubrivira, Azuporã, Grompe, Krugue e o Lobo chegam ao novo limite de Vida máxima.)
-           </li>
-           <li>
-            Cura contra monstros: 24 - 75 (com base no nível) (+5,4% de PdH) ⇒ 39 - 54 (com base no nível) (+15% de PdH)
-           </li>
-           <li>
-            Cura contra Campeões: 6 - 120 (com base no nível) (+18% de PdH) ⇒ 6 - 90 (com base no nível) (+30% de PdH)
-           </li>
-          </ul>
-          <h3>
-           Nidalee
-          </h3>
-          <p>
-           <strong>
-            Atributos base
-           </strong>
-          </p>
-          <ul>
-           <li>
-            Armadura base:28⇒32
-           </li>
-           <li>
-            Crescimento de Armadura:4,7⇒5
-           </li>
-          </ul>
-          <h3>
-           Poppy
-          </h3>
-          <p>
-          </p>
-          <p>
-           <strong>
-            Choque do Martelo (Q)
-           </strong>
-          </p>
-          <p>
-          </p>
-          <ul>
-           <li>
-            Dano com base na Vida do alvo:8%⇒9%
-           </li>
-          </ul>
-          <p>
-          </p>
-          <p>
-           <strong>
-            Presença Inabalável (W)
-           </strong>
-          </p>
-          <p>
-          </p>
-          <ul>
-           <li>
-            Resistências adicionais:10%⇒12%(Obs.: esse valor será dobrado para24% enquanto Poppy estiver com menos de40%de Vida máxima.)
-           </li>
-          </ul>
-          <h2>
-           Itens
-          </h2>
-          <h3>
-           Ímpeto Cósmico
-          </h3>
-          <ul>
-           <li>
-            Poder de Habilidade:90⇒100
-           </li>
-           <li>
-            [NOVO] Passivo ÚNICO – Dança Enfeitiçada: causar dano a um Campeão (exceto dano ao longo do tempo) gera um acúmulo de 2,5% de Velocidade de Movimento a cada 1,5s pelos próximos 5s, acumulando até 4 vezes (10% de Velocidade de Movimento). Com 4 acúmulos, recebe 10% de Velocidade de Movimento adicional (20% da Velocidade de Movimento total). Causar dano redefine este efeito. (Obs.: é necessário causar 1 instância de dano para continuar adicionando acúmulos sozinho periodicamente. Depois, é necessário atingir o inimigo apenas uma vez depois do intervalo para alcançar o máximo de acúmulos. Não é necessário atingir 4 vezes com intervalos de 1,5s. O objetivo aqui é fazer com que uma habilidade não acumule o efeito passivo totalmente.)
-           </li>
-           <li>
-            Correções de bugs
-           </li>
-           <ul>
-            <li>
-             O jogo não trava mais quando Milio enfrenta Ahri, Viego ou Sylas na equipe inimiga.
-            </li>
-            <li>
-             O alcance do Q da Diana não é mais alterado se conjurado durante o Flash.
-            </li>
-            <li>
-             Usar o botão de "Desfazer" com Biscoitos no inventário não reduz/aumenta o Mana total em uma quantidade maior do que a concedida pelo item.
-            </li>
-            <li>
-             O efeito em área de ação do R do Twitch voltou a causar dano ao Campeão e aos inimigos quando influenciado pelo R da Renata.
-            </li>
-            <li>
-             O placar de fim de partida voltou o cálculo de acúmulo de ouro para os monstros neutros abatidos em ambas as selvas.
-            </li>
-            <li>
-             Não é mais possível reconjurar o R do Vel'Koz para interromper a habilidade pressionando a tecla rapidamente.
-            </li>
-            <li>
-             Tropas não recebem mais crédito por abater dragões caso tenham sido abatidos pelo clone do Shaco.
-            </li>
-            <li>
-             Os aliados da Yuumi voltaram a obter acúmulos de Amizade ao abater Campeões com a Campeã Conectada.
-            </li>
-            <li>
-             Os efeitos sonoros de expiração do Q da Yuumi não podem mais ser ouvidos na Névoa de Guerra.
-            </li>
-            <li>
-             Enraizamentos voltaram a impedir Retornos.
-            </li>
-            <li>
-             A Passiva da Sona não é mais duplicada se comandos específicos forem realizados ao mesmo tempo.
-            </li>
-            <li>
-             A onda de choque do R fortalecido do Aurelion Sol voltou a causar dano.
-            </li>
-            <li>
-             O R do Draven não executa mais alvos atravessando Escudos de Feitiço, como o E da Sivir. Caçadoras de recompensas deviam saber desviar de machados, hein...
-            </li>
-            <li>
-             O R do Draven voltou a executar inimigos mesmo se estiverem próximos ao Campeão durante a conjuração inicial da habilidade.
-            </li>
-            <li>
-             Os arremessos ao ar do E e R do Ornn não podem mais ser Purificados.
-            </li>
-            <li>
-             Algumas das gloriosas falas do Aurelion Sol foram restauradas.
-            </li>
-            <li>
-             O Q da Xayah voltou a recalcular o tempo de conjuração, mesmo se ela vender um item enquanto morta e a Velocidade de Ataque da habilidade aumentar.
-            </li>
-            <li>
-             A Kai'Sa não pode mais usar o R para escapar do Reino da Morte do Mordekaiser.
-            </li>
-            <li>
-             O efeito Inquebrável da Placa Gargolítica não é mais reduzido por cura e Resistência do Escudo.
-            </li>
-            <li>
-             Não é mais possível copiar e vender repetidamente a Pedra-vigia Observadora.
-            </li>
-           </ul>
-          </ul>
-         </section>
-         <p>
-          Fonte :
-          <span id="post-source">
-           <a href="https://ge.globo.com/esports/lol/noticia/2023/04/18/c-lol-patch-138-chega-com-foco-no-msi-confira-as-notas.ghtml">
-            ge.globo.com
-           </a>
-          </span>
-         </p>
-        </div>
-        <div class="card-footer">
-            <section class="mb-1" id="post-footer">
-                <!-- Post footer-->
-                <div id="disqus_thread"></div>
-                <script>
-                    var p_url = window.location.href;
-                    var disqus_config = function () {
-                    this.page.url = p_url;  // Replace PAGE_URL with your page's canonical URL variable
-                    };
-                    
-                    (function() { // DON'T EDIT BELOW THIS LINE
-                    var d = document, s = d.createElement('script');
-                    s.src = 'https://ggtecapps.disqus.com/embed.js';
-                    s.setAttribute('data-timestamp', +new Date());
-                    (d.head || d.body).appendChild(s);
-                    })();
-                </script>
-            </section>
-        </div>
-       </div>
-      </div>
-      <!-- Side widgets-->
-      <div class="col-lg-4">
-       <!-- Search widget-->
-       <div class="card mb-4" id="sidebar">
-        <div class="card-header">
-         Procurar
-        </div>
-        <div class="card-body">
-         <div class="input-group">
-          <input class="form-control" id="search-input" placeholder="Digite um termo de pesquisa..." type="text"/>
-          <button class="btn btn-purple" id="search-button" type="button">
-           Pesquisar!
-          </button>
-         </div>
-         <div id="search-results">
-          <!-- Aqui é onde os resultados da pesquisa serão exibidos -->
-         </div>
-        </div>
-       </div>
-       <!-- Categories widget-->
-       <div class="card mb-4">
-        <div class="card-header">
-         Categorias
-        </div>
-        <div class="card-body">
-         <div class="row category" id="categories-widget">
-         </div>
-        </div>
-       </div>
-       <!-- Side widget-->
-       <div class="card mb-4">
-        <div class="card-body p-0">
-         <iframe allowfullscreen="true" class="iframe-live" frameborder="0" scrolling="no" src="https://player.twitch.tv/?channel=gg_tec&amp;parent=ggtec.netlify.app" width="100%">
-         </iframe>
-        </div>
-       </div>
-       <div class="card mb-4">
-        <div class="card-body profile-card">
-         <div class="row">
-          <div class="col-4">
-           <div class="avatar h-100 w-100 align-content-center">
-            <img alt="Avatar" src="../../assets/img/profile-image.jpg" width="100%">
-           </div>
-          </div>
-          <div class="col-8 text-center align-self-center profile-name">
-           <h3>
-            Jheferson Gambet
-           </h3>
-           <h5>
-            Stremer,Dev &amp; This/Web-Designer
-           </h5>
-           <a href="https://ggtec.netlify.app/social">
-            Página de perfis sociais
-           </a>
-          </div>
-         </div>
-        </div>
-       </div>
-      </div>
-     </div>
+        <footer class="bg-black text-center text-white">
+            <div class="container p-4 pb-0">
+                <!-- Section: Social media -->
+                <section class="mb-4">
+                    <!-- discord -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://discord.com/invite/utm5NZq"
+                        role="button">
+                        <i class="bx bxl-discord-alt">
+                        </i>
+                    </a>
+                    <!-- twitch -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://www.twitch.tv/gg_tec" role="button">
+                        <i class="bx bxl-twitch">
+                        </i>
+                    </a>
+                    <!-- Github -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/GGTEC/" role="button">
+                        <i class="fab fa-github">
+                        </i>
+                    </a>
+                </section>
+                <!-- Section: Social media -->
+            </div>
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                <p>
+                    Copyright © GGTEC 2023
+                </p>
+                <p>
+                    Page Dev By GGTEC
+                </p>
+            </div>
+            <!-- Copyright -->
+        </footer>
     </div>
-   </div>
-   <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal" tabindex="-1">
-    <div class="modal-dialog modal-xl modal-dialog-scrollable modal-border">
-     <div class="modal-content modal-background">
-      <div class="modal-header modal-background-header">
-       <button aria-label="Close" class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
-       </button>
-      </div>
-      <div class="modal-body p-5">
-       <h1>
-        Politica de cookies
-       </h1>
-       Esta Política de Cookies foi atualizada pela última vez em 09 de outubro de 2022 e aplica-se aos cidadãos do Brasil de acordo com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018) e países que possuem leis sobre proteção de dados. A LGPD estabelece regras sobre coleta, armazenamento e compartilhamento de dados pessoais, atribuindo mais proteção aos titulares de tais dados.
-                        O site GGCORETEC usa cookies e outras tecnologias relacionadas (por conveniência, todas as tecnologias são chamadas de "cookies"). No documento abaixo informamos sobre o uso de cookies em nosso site.
-       <h1>
-        O que sã​​o cookies
-       </h1>
-       Cookies são arquivos-texto gerados pelo site e transferidos para seu computador, sendo armazenados pelos Navegadores como Google Chrome, Firefox, Internet Explorer, etc. Em geral, os Cookies são utilizados para uma otimização de sua experiência de navegação junto ao nosso site, quando permitido pelo nível de segurança configurado por você junto ao seu navegador. Sempre que o seu navegador estiver assim configurado, utilizaremos cookies conforme explicado.
-                        Os cookies utilizados no site têm como finalidade identificar as tendências de navegação do usuário, buscando aprimorar e personalizar seus acessos futuros, tais como, páginas navegadas ou links clicados. Quaisquer dos cookies utilizados não são usados para executar programas ou infectar seu computador com vírus ou programas maliciosos.
-                        Ao acessar este site pela primeira vez, você foi informado através de um aviso em popup referente a prática de cookies. Mesmo quando seu programa de navegação estiver configurado para permitir a instalação de cookies, mas você desejar removê-los ou impedir o armazenamento de novos cookies, pode fazê-lo imediatamente e sem qualquer impedimento, desativando este recurso em seu navegador e excluindo todos os eventuais cookies já implementados.
-                        Desta forma, recomendamos que você configure seu programa de navegação no nível de segurança desejado antes de navegar em nosso site, em todos os computadores e dispositivos que deseje utilizar.​
-       <h1>
-        COMO OS COOKIES SÃO USADOS
-       </h1>
-       Os cookies utilizados em nosso site atendem aos requisitos legais e são enquadrados nas seguintes categorias:
-                        
-                        Cookies Funcionais: Os Cookies Funcionais são usados para fornecer serviços ou para lembrar definições de navegações de forma a melhorar sua visita.
-                        Para o que nós os usamos: Lembrar eventualmente das configurações que você aplicou, como idioma, layout, tamanho do texto, preferências e cores.
-                        
-                        Cookies Estritamente Necessários: São aqueles cookies que permitem a você navegar pelo site e usar recursos essenciais, como formulários ou áreas seguras, por exemplo. Esses cookies não guardam quaisquer informações sobre você que possam ser usadas em ações de comunicação de produto ou serviço ou para lembrar as páginas navegadas no site.
-                        Para o que nós os usamos: Identificá-lo como um usuário conectado. Lembrar de informações que você digitou previamente em eventuais formulários de contato. Certificar-se de que você se conecta ao serviço correto em nosso site quando fizermos alguma mudança na forma como ele funciona.
-                        
-                        Cookies de Desempenho: Os cookies de "Desempenho" coletam informações sobre como você usa o nosso website, por exemplo, quais páginas você visita, se elas possuem erros, erros em formulários e etc. Esses cookies não coletam quaisquer informações que possam identificá-lo. Toda a informação coletada é realizada de forma codificada, anônima e somente usada para ajudar a melhorar a forma como o nosso site funciona, entender o que interessa aos nossos usuários e medir a eficácia da nossa comunicação.
-                        Para o que nós os usamos: Fornecer estatísticas sobre como nosso site é utilizado. Verificar a eficiência da nossa comunicação, não nos utilizando dessa informação para direcionamento de anúncios quando em visita a outros sites. Ajudar na melhoria de nosso site pela medição de erros que eventualmente possam ocorrer. Realizar melhorias e aperfeiçoamentos em nosso site decorrentes do comportamento de navegação de nossos usuários.
-                        
-                        Cookies de Segmentação: Os Cookies de Segmentação estão ligados aos serviços prestados por terceiros, tais como, por exemplo, feed de mídias sociais, botões de "Like" e botões de "Compartilhar" contidos em outros sites que não o nosso site. O terceiro fornece esses serviços por reconhecer que você visitou nosso site, mas de maneira nenhuma se confunde com o nosso site.
-                        Para o que nós os usamos: Para conectar-se as mídias sociais, que, por serem terceiros e pelos quais não termos controle, poderão, posteriormente, utilizar as informações sobre a sua visita para direcionar publicidade de seu interesse para você em outros sites. Em relação aos Cookies de Segmentação, você pode controlar se serão usados ou não (vide tópico abaixo "Como Desativar os Cookies"), mas seu bloqueio pode nos impedir de oferecer alguns serviços ou prejudicar a boa navegação junto ao nosso site.
-       <h1>
-        COMO DESATIVAR OS COOKIES
-       </h1>
-       Normalmente as configurações para desativar os cookies estão presentes nas "Opções" ou o menu "Preferências" do seu navegador. Para saber melhor consulte as opções de ajuda de seu navegador.
-                        Você pode desabilitá-los alterando as configurações do seu navegador, mas saiba que isso pode afetar o funcionamento do site.
-       <a href="https://support.google.com/chrome/answer/95647?co=GENIE.Platform%3DDesktop&amp;hl=pt-BR">
-        Chrome
-       </a>
-       <a href="https://support.mozilla.org/pt-BR/kb/desative-cookies-terceiros-impedir-rastreamento">
-        Firefox
-       </a>
-       <a href="https://support.microsoft.com/pt-br/microsoft-edge/excluir-cookies-no-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09">
-        Microsoft Edge
-       </a>
-       <a href="https://support.microsoft.com/pt-br/windows/excluir-e-gerenciar-cookies-168dab11-0753-043d-7c16-ede5947fc64d">
-        Internet Explorer​
-       </a>
-      </div>
-     </div>
+    <div id="fb-root">
     </div>
-   </div>
-   <div class="alert alert-dark text-center mb-0 alert-dismissible" id="cb-cookie-banner" role="alert">
-    🍪 Utilizando este site você concorda com a
-    <a data-bs-target="#exampleModal" data-bs-toggle="modal" href="#">
-     Politica de cookies.
-    </a>
-    <button class="btn btn-purple btn-sm ms-3" onclick="window.hideCookieBanner()" type="button">
-     Aceitar
-    </button>
-    <button class="btn-close btn-close-white" data-bs-dismiss="alert" type="button">
-    </button>
-   </div>
-   <footer class="bg-black text-center text-white">
-    <div class="container p-4 pb-0">
-     <!-- Section: Social media -->
-     <section class="mb-4">
-      <!-- discord -->
-      <a class="btn btn-outline-light btn-floating m-1" href="https://discord.com/invite/utm5NZq" role="button">
-       <i class="bx bxl-discord-alt">
-       </i>
-      </a>
-      <!-- twitch -->
-      <a class="btn btn-outline-light btn-floating m-1" href="https://www.twitch.tv/gg_tec" role="button">
-       <i class="bx bxl-twitch">
-       </i>
-      </a>
-      <!-- Github -->
-      <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/GGTEC/" role="button">
-       <i class="fab fa-github">
-       </i>
-      </a>
-     </section>
-     <!-- Section: Social media -->
-    </div>
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-     <p>
-      Copyright © GGTEC 2023
-     </p>
-     <p>
-      Page Dev By GGTEC
-     </p>
-    </div>
-    <!-- Copyright -->
-   </footer>
-  </div>
-  <div id="fb-root">
-  </div>
-  <script async="" crossorigin="anonymous" defer="" nonce="KZmrOndQ" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&amp;version=v16.0">
-  </script>
-  <script src="../../js/scripts.js">
-  </script>
- </body>
+    <script async="" crossorigin="anonymous" defer="" nonce="KZmrOndQ"
+        src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&amp;version=v16.0">
+        </script>
+    <script src="../../js/scripts.js">
+    </script>
+</body>
+
 </html>

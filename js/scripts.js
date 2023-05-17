@@ -7,6 +7,7 @@ const backButton = document.getElementById('back-button');
 const blogheader = document.getElementById('blog-header');
 const searchInput = document.getElementById('search-input');
 const searchButton = document.getElementById('search-button');
+const galery_posts = document.getElementById('gallery');
 
 
 function showCookieBanner() {
@@ -31,6 +32,13 @@ function initializeCookieBanner() {
   if (isCookieAccepted === "no") {
     showCookieBanner();
   }
+}
+
+function truncateText(text, limit) {
+  if (text.length > limit) {
+    return text.substring(0, limit) + "...";
+  }
+  return text;
 }
 
 $(window).on("load", function () {
@@ -75,14 +83,6 @@ $(window).on("load", function () {
     })
     .catch(error => console.error(error));
 
-  function truncateText(text, limit) {
-    if (text.length > limit) {
-      return text.substring(0, limit) + "...";
-    }
-    return text;
-  }
-
-
 });
 
 // fetch posts.json
@@ -95,6 +95,7 @@ fetch('https://ggtec.github.io/GGCORETEC/posts/posts.json')
 
     
     var date_dir = firstPost.post_date.replace(/\//g, "_");
+
 
     firstArticle.innerHTML = `
       <div class="card mb-4 post-card" data-tags="${firstPost.post_tags.join(', ')}" >
@@ -111,6 +112,7 @@ fetch('https://ggtec.github.io/GGCORETEC/posts/posts.json')
 
     // create other articles HTML
     let otherPostsColumn = '';
+
     for (let i = 1; i < posts.length; i++) {
       const post = posts[i];
 
@@ -134,8 +136,37 @@ fetch('https://ggtec.github.io/GGCORETEC/posts/posts.json')
       otherPostsColumn += postHTML;
 
     }
-    othersArticles.innerHTML = `${otherPostsColumn}
-    `;
+
+    let posts_galery = '';
+
+    for (let i = 1; i < posts.length; i++) {
+
+      const post_g = posts[i];
+
+      var date_dir = post_g.post_date.replace(/\//g, "_");
+      var text_trunc = truncateText(post_g.post_title,50)
+
+      const postHTML_g = `
+      <div class="post-card me-2" data-tags="${post_g.post_tags.join(', ')}" >
+        <div class="card">
+          <img class="card-img" src="${post_g.post_thumb_url}" alt="..." />
+          <div class="card-body text-white">
+            <h2 class="card-title post-title"><a href="https://ggtec.netlify.app/posts/${date_dir}/${post_g.post_id}" title="${post_g.post_title}" data-post-index="${i}">${text_trunc}</a></h2>  
+            <p class="card-subtitle">${post_g.post_date}</p>
+            </div>
+        </div>
+      </div>
+      `;
+
+      posts_galery += postHTML_g;
+    }
+
+    othersArticles.innerHTML = `${otherPostsColumn}`;
+
+    if (galery_posts != undefined){
+      galery_posts.innerHTML = `${posts_galery}`;
+    }
+
 
     const categoriesContainer = document.createElement('ul');
 
