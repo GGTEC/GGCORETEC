@@ -80,7 +80,7 @@
     "event_live_start": "Stream Iniciada",
     "event_live_end": "Stream Finalizada",
     "event_sub": "Novo sub {username}",
-    "event_giftsub": "Usuário {username} enviou uma inscrição de presente",
+    "event_giftsub": "Usuário {username} enviou uma inscrição de presente para a comunidade",
     "event_subend": "Fim da inscrição {username}",
     "event_resub": "Usuário {username} renovou a inscrição",
     "event_raid": "Raid recebida de {username} com {specs}",
@@ -96,6 +96,14 @@
     "event_goal_end": "Meta de {type} finalizada",
     "event_join": "O usuário {username} entrou no chat",
     "event_leave": "O usuário {username} saiu do chat",
+    "event_shield_start": "O moderador {moderator} ativou o modo escudo",
+    "event_shield_end": "O moderador {moderator} desativou o modo escudo",
+    "event_shoutout_start": "O moderador {moderator} enviou um ShotOut para o canal {to_broadcaster} com {viewer_count} specs assistindo a live agora !!!",
+    "event_shoutout_receive": "O streamer {from_broadcaster} enviou um ShoTout pro canal !!!",
+    "event_charity_campaign_start": "Uma campanha para {charity_name} foi iniciada.",
+    "event_charity_campaign_donate": "O usuário {username} Enviou um donate para a campanha {charity_name} !!!",
+    "event_charity_campaign_progress": "O Progresso da campanha {charity_name} foi atualizado",
+    "event_charity_campaign_stop": "A campanha {charity_name} foi finalizada.",
     "update_stream_error": "Erro ao atualizar as informações da stream = {error}",
     "update_game_error": "Erro ao atualizar as informações da stream = {error}",
     "update_game_notfound": "Erro ao atualizar as informações da stream = {error}",
@@ -106,5 +114,8 @@
     "response_rem_queue": "/me Nome {value} removido da fila",
     "response_noname_queue": "/me O Nome {value} não está na fila",
     "response_get_queue": "/me {username} --> Estes valores estão na lista {queue-3}",
-    "emote_disabled": "/me O sistema de emotes está desativado"
+    "emote_disabled": "/me O sistema de emotes está desativado",
+    "skip_votes": "/me {username} --> Voto de skip adicionado, votos necessários = {votes}/{minimum}",
+    "command_skip_inlist": "/me {username} --> Você já votou para pular, espere mais votos ou a musica acabar.",
+    "command_skip_noplaying": "/me {username} --> Nenhuma musica em reprodução no momento.."
 }

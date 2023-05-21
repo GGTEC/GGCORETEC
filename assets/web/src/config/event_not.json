@@ -1,156 +1,83 @@
 {
       "sub": {
             "status": 1,
-            "text_over_image": 1,
-            "image": "",
-            "image_px": "700",
-            "audio": "",
-            "audio_volume": "6",
-            "tts": 1,
-            "response": "{username} se inscreveu no canal por {months} meses <br> com {type} no nível {plan}, ele já é inscrito á {cumulative} mes(es) <br>",
-            "response_chat": "{username} se inscreveu no canal com {type} ",
-            "response_px": "20",
-            "response_weight" : "100",
-            "response_color" : "white"
+            "response_chat": "/me {username} se inscreveu no canal com {type} "
       },
       "resub": {
             "status": 1,
-            "text_over_image": 1,
-            "image": "",
-            "image_px": "300",
-            "audio": "",
-            "audio_volume": "6",
-            "tts": 1,
-            "response": "{username} se re-inscreveu no canal no nível {tier}, ele já é inscrito á {total_months} mes(es)",
-            "response_chat": "{username} se re-inscreveu no canal {user_mesage}",
-            "response_px": "20",
-            "response_weight" : "100",
-            "response_color" : "white"
+            "response_chat": "/me {username} se re-inscreveu no canal {user_mesage}"
+
       },
       "giftsub": {
             "status": 1,
-            "text_over_image": 1,
-            "image": "",
-            "image_px": "300",
-            "audio": "",
-            "audio_volume": "50",
-            "tts": 1,
-            "response": "{username} Presenteou {rec_username} com uma inscrição {plan} por {months} mes(es)",
-            "response_chat": "{username} Presenteou {rec_username} com sub",
-            "response_px": "20px",
-            "response_weight" : "100",
-            "response_color" : "white"
+            "response_chat": "/me {username} Presenteou {rec_username} com sub"
       },
       "mysterygift": {
             "status": 1,
-            "text_over_image": 1,
-            "image": "",
-            "image_px": "300",
-            "audio": "",
-            "audio_volume": "6",
-            "tts": 1,
-            "response": "{username} Presenteou a comunidade com {count} inscrição(ões) Nível {plan} ",
-            "response_chat": "{username} Presenteou a comunidade com {count} inscrição(ões",
-            "response_px": "20",
-            "response_weight" : "100",
-            "response_color" : "white"
+            "response_chat": "/me {username} Presenteou a comunidade com {count} inscrição(ões)"
       },
       "re-mysterygift": {
             "status": 1,
-            "text_over_image": 1,
-            "image": "",
-            "image_px": "300",
-            "audio": "",
-            "audio_volume": "6",
-            "tts": 1,
-            "response": "{username} Renovou o sub que recebeu de presente !! ",
-            "response_chat": "{username} Renovou o sub que recebeu de presente !! ",
-            "response_px": "20",
-            "response_weight" : "100",
-            "response_color" : "white"
+            "response_chat": "/me {username} Renovou o sub que recebeu de presente !! "
       },
       "raid": {
             "status": 1,
-            "text_over_image": "1",
-            "image": "",
-            "image_px": "300",
-            "audio": "",
-            "audio_volume": "50",
-            "tts": 1,
-            "response": "{username} Invadiu o canal e trouxe {specs} com ele!",
-            "response_chat": "",
-            "response_px": "20",
-            "response_weight" : "100",
-            "response_color" : "white"
+            "response_chat": "/me {username} Invadiu o canal e trouxe {specs} com ele!"
       },
       "follow": {
             "status": 1,
-            "text_over_image": 1,
-            "image": "",
-            "image_px": "300",
-            "audio": "",
-            "audio_volume": "50",
-            "tts": 0,
-            "response": "{username} deu follow no canal !!!",
-            "response_chat": "{username} deu follow no canal !!!",
-            "response_px": "20",
-            "response_weight" : "100",
-            "response_color" : "white"
+            "response_chat": "/me {username} deu follow no canal !!!"
       },
-      "bits1": {
+      "bits": {
             "status": 1,
-            "text_over_image": 1,
-            "image": "",
-            "image_px": "300",
-            "audio": "",
-            "audio_volume": "6",
-            "tts": 1,
-            "response": "{username} Doou {amount} Bits",
-            "response_chat": "",
-            "response_px": "40",
-            "response_weight" : "100",
-            "response_color" : "white"
+            "response_chat": "/me {username} Doou {amount} Bits"
       },
-      "bits100": {
+      "shield_start": {
             "status": 1,
-            "text_over_image": 1,
-            "image": "",
-            "image_px": "300",
-            "audio": "",
-            "audio_volume": "6",
-            "tts": 1,
-            "response": "{username} Doou {amount} Bits",
-            "response_chat": "",
-            "response_px": "40",
-            "response_weight" : "100",
-            "response_color" : "white"
+            "response_chat": "/me O moderador {moderator} ativou o modo escudo"
       },
-      "bits1000": {
+      "shield_end": {
             "status": 1,
-            "text_over_image": 1,
-            "image": "",
-            "image_px": "300",
-            "audio": "",
-            "audio_volume": "6",
-            "tts": 1,
-            "response": "{username} Doou {amount} Bits",
-            "response_chat": "",
-            "response_px": "40",
-            "response_weight" : "100",
-            "response_color" : "white"
+            "response_chat": "/me O moderador {moderator} desativou o modo escudo"
       },
-      "bits5000": {
+      "charity_campaign_donate": {
             "status": 1,
-            "text_over_image": 1,
-            "image": "",
-            "image_px": "300",
-            "audio": "",
-            "audio_volume": "6",
-            "tts": 1,
-            "response": "{username} Doou {amount} Bits",
-            "response_chat": "",
-            "response_px": "40",
-            "response_weight" : "100",
-            "response_color" : "white"
+            "response_chat": "/me O usuário {username} Enviou um donate para a campanha {charity_name} !!!"
+      },
+      "charity_campaign_progress": {
+            "status": 1,
+            "response_chat": "/me O Progresso da campanha {charity_name} foi atualizado"
+      },
+      "charity_campaign_start": {
+            "status": 1,
+            "response_chat": "/me Uma campanha para {charity_name} foi iniciada"
+      },
+      "charity_campaign_stop": {
+            "status": 1,
+            "response_chat": "/me A campanha {charity_name} foi finalizada"
+      },
+      "ban": {
+            "status": 1,
+            "response_chat": "/me O usuário {username} foi banido por tempo {time} pelo(a) {moderator}, motivo {reason}"
+      },
+      "live_start": {
+            "status": 1,
+            "response_chat": "/me O streamer iniciou uma live"
+      },
+      "live_cat": {
+            "status": 1,
+            "response_chat": "/me O streamer finalizou a live"
+      },
+      "live_end": {
+            "status": 1,
+            "response_chat": "/me O streamer finalizou a live"
+      },
+      "goal_start": {
+            "status": 1,
+            "response_chat": "/me Uma meta para {current}/{target} {type} foi iniciada"
+      },
+      "goal_end": {
+            "status": 1,
+            "response_chat": "/me A meta para {current}/{target }{type} foi finalizada"
       }
 }
