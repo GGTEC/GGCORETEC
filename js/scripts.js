@@ -46,6 +46,7 @@ $(window).on("load", function () {
 
   var repoOwner = 'GGTEC'
   var repoName = 'RewardEvents'
+  
   fetch(`https://api.github.com/repos/${repoOwner}/${repoName}/releases`)
     .then(response => response.json())
     .then(data => {
