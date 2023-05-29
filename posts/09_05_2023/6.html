@@ -1,113 +1,119 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
 
+<html lang="pt-BR">
 <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
-    <meta content="blog" property="og:type" />
-    <meta content="GGTEC" property="author" />
-    <meta content="Substituição do NTFS pelo ReFS no Windows 11" property="og:site_name" />
-    <meta
-        content="&lt;p&gt;O Windows 11 é o novo sistema operacional da Microsoft que promete trazer mais segurança, desempenho e recursos para os usuários. Uma das novidades que pode chegar em breve é a substituição do sistema de arquivos NTFS pelo ReFS, que oferece mais resiliência contra corrupção de dados e outras..."
-        property="og:description" />
-    <meta content="tecnologia, noticias, informação, jogos, IOT, windows, patch, notes" name="keywords" />
-    <meta content="../../assets/img/about.png" property="og:image" />
-    <meta content="3600" http-equiv="expires" />
-    <title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<meta content="blog" property="og:type"/>
+<meta content="GGTEC" property="author"/>
+<meta content="Substituição do NTFS pelo ReFS no Windows 11" property="og:site_name"/>
+<meta content="&lt;p&gt;O Windows 11 é o novo sistema operacional da Microsoft que promete trazer mais segurança, desempenho e recursos para os usuários. Uma das novidades que pode chegar em breve é a substituição do sistema de arquivos NTFS pelo ReFS, que oferece mais resiliência contra corrupção de dados e outras..." property="og:description"/>
+<meta content="tecnologia, noticias, informação, jogos, IOT, windows, patch, notes" name="keywords"/>
+<meta content="../../assets/img/about.png" property="og:image"/>
+<meta content="3600" http-equiv="expires"/>
+<title>
         Substituição do NTFS pelo ReFS no Windows 11
     </title>
-    <link href="../../assets/img/favicon.png" rel="icon" type="image/x-icon" />
-    <link href="../../assets/css/styles.css" rel="stylesheet" />
-    <script src="https://code.jquery.com/jquery-3.6.1.js">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js">
-    </script>
-    <link href="https://cdn.datatables.net/1.13.1/css/dataTables.bootstrap5.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.js">
-    </script>
-    <script src="https://cdn.datatables.net/1.13.1/js/dataTables.bootstrap5.min.js">
-    </script>
-    <link href="https://cdn.datatables.net/responsive/2.4.0/css/responsive.dataTables.min.css" rel="stylesheet" />
-    <script src="https://cdn.datatables.net/responsive/2.4.0/js/dataTables.responsive.min.js">
-    </script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet" />
-    <link href="../../assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-    <link href="../../assets/boxicons/css/boxicons.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dragscroll/0.0.8/dragscroll.js"></script>
-    <script async="" crossorigin="anonymous"
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5312302938088623">
-        </script>
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-KLYE611VE7">
-    </script>
-    <script>
+<link href="../../assets/img/favicon.png" rel="icon" type="image/x-icon"/>
+<link href="../../assets/css/styles.css" rel="stylesheet"/>
+<script src="https://code.jquery.com/jquery-3.6.1.js">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js">
+</script>
+<link href="https://cdn.datatables.net/1.13.1/css/dataTables.bootstrap5.min.css" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.js">
+</script>
+<script src="https://cdn.datatables.net/1.13.1/js/dataTables.bootstrap5.min.js">
+</script>
+<link href="https://cdn.datatables.net/responsive/2.4.0/css/responsive.dataTables.min.css" rel="stylesheet"/>
+<script src="https://cdn.datatables.net/responsive/2.4.0/js/dataTables.responsive.min.js">
+</script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet"/>
+<link href="../../assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/>
+<link href="../../assets/boxicons/css/boxicons.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dragscroll/0.0.8/dragscroll.js"></script>
+<script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5312302938088623">
+</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-KLYE611VE7">
+</script>
+<script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'G-KLYE611VE7');
     </script>
-</head>
-
+<link href="https://cdn.jsdelivr.net/npm/shareon@2/dist/shareon.min.css" rel="stylesheet"/><script defer="True" init="" src="https://cdn.jsdelivr.net/npm/shareon@2/dist/shareon.iife.js"></script></head>
 <body>
-    <!-- Responsive navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom">
-        <div class="container">
-            <a class="navbar-brand" href="https://ggtec.netlify.app/">
-                <img alt="brand" src="../../assets/img/about.png" style="width: 40px;" />
-                <span>
+<!-- Responsive navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom">
+<div class="container">
+<a class="navbar-brand" href="https://ggtec.netlify.app/">
+<img alt="brand" src="../../assets/img/about.png" style="width: 40px;"/>
+<span>
                     GGCORETEC
                 </span>
-            </a>
-            <a class="nav-link" href="https://ggtec.netlify.app/" type="button">
+</a>
+<a class="nav-link" href="https://ggtec.netlify.app/" type="button">
                 Inicio
             </a>
-            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
-                class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
-                <span class="navbar-toggler-icon">
-                </span>
-            </button>
-        </div>
-    </nav>
-    <div class="container-full">
-        <div class="content-wrap" id="blog-post">
-            <!-- Page header with logo and tagline-->
-            <header class="py-5 border-bottom mb-4 blog-header" id="blog-header">
-                <div class="container">
-                    <div class="text-center my-5 text-white">
-                        <h1 class="fw-bolder">
+<button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon">
+</span>
+</button>
+</div>
+</nav>
+<div class="container-full">
+<div class="content-wrap" id="blog-post">
+<div class="share-sidebar">
+<div class="shareon">
+<a class="facebook"></a>
+<a class="reddit"></a>
+<a class="telegram"></a>
+<a class="twitter"></a>
+<a class="whatsapp"></a>
+<a class="copy-url"></a>
+</div>
+</div>
+
+<!-- Page header with logo and tagline-->
+<header class="py-5 border-bottom mb-4 blog-header" id="blog-header">
+<div class="container">
+<div class="text-center my-5 text-white">
+<h1 class="fw-bolder">
                             Bem vindo ao Blog GGCORETEC !
                         </h1>
-                        <p class="lead mb-0">
+<p class="lead mb-0">
                             O seu blog para de tecnologia e informação!
                         </p>
-                    </div>
-                </div>
-            </header>
-            <!-- Page content-->
-            <div class="container">
-                <div class="row">
-                    <!-- Blog entries-->
-                    <div class="col-lg-8 d-none" id="articles-container">
-                        <div id="first-article">
-                        </div>
-                        <div class="row row-cols-1 row-cols-md-2 g-4 align-self-center" id="others-articles">
-                            <div class="col-lg-6">
-                                <!-- Blog post-->
-                                <!-- Blog post-->
-                            </div>
-                            <div class="col-lg-6 pe-0">
-                                <!-- Blog post-->
-                                <!-- Blog post-->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-8" id="article">
-                        <div class="card mb-4">
-                            <div class="card-header">
-                                <header class="mb-4">
-                                    <p>
-                                        <span class="text-muted font-italic mb-2" id="header-post-date">
+</div>
+</div>
+</header>
+<!-- Page content-->
+<div class="container">
+<div class="row">
+<!-- Blog entries-->
+<div class="col-lg-8 d-none" id="articles-container">
+<div id="first-article">
+</div>
+<div class="row row-cols-1 row-cols-md-2 g-4 align-self-center" id="others-articles">
+<div class="col-lg-6">
+<!-- Blog post-->
+<!-- Blog post-->
+</div>
+<div class="col-lg-6 pe-0">
+<!-- Blog post-->
+<!-- Blog post-->
+</div>
+</div>
+</div>
+<div class="col-lg-8" id="article">
+<div class="card mb-4">
+<div class="card-header">
+<header class="mb-4">
+<p>
+<span class="text-muted font-italic mb-2" id="header-post-date">
                                             09/05/2023
                                         </span>
                                         |
@@ -116,51 +122,51 @@
                                         </a>
                                         &gt;
                                         <span class="text-muted" id="back-span">
-                                        </span>
-                                    </p>
-                                    <h1 class="fw-bolder mt-1 mb-1" id="header-post-title">
+</span>
+</p>
+<h1 class="fw-bolder mt-1 mb-1" id="header-post-title">
                                         Substituição do NTFS pelo ReFS no Windows 11
                                     </h1>
-                                    <div id="header-post-categories">
-                                        <a class="badge bg-secondary text-decoration-none link-light" href="#!">
+<div id="header-post-categories">
+<a class="badge bg-secondary text-decoration-none link-light" href="#!">
                                             Windows
                                         </a>
-                                        <a class="badge bg-secondary text-decoration-none link-light" href="#!">
+<a class="badge bg-secondary text-decoration-none link-light" href="#!">
                                             OS
                                         </a>
-                                        <a class="badge bg-secondary text-decoration-none link-light" href="#!">
+<a class="badge bg-secondary text-decoration-none link-light" href="#!">
                                             Noticias
                                         </a>
-                                    </div>
-                                </header>
-                            </div>
-                            <div class="card-body">
-                                <section class="mb-4" id="post-content">
-                                    <p>
+</div>
+</header>
+</div>
+<div class="card-body">
+<section class="mb-4" id="post-content">
+<p>
                                         O Windows 11 é o novo sistema operacional da Microsoft que promete trazer mais
                                         segurança, desempenho e recursos para os usuários. Uma das novidades que pode
                                         chegar em breve é a substituição do sistema de arquivos NTFS pelo ReFS, que
                                         oferece mais resiliência contra corrupção de dados e outras vantagens.
                                     </p>
-                                    <h3>
+<h3>
                                         O que é o ReFS?
                                     </h3>
-                                    <p>
+<p>
                                         O ReFS (Resilient File System) é um sistema de arquivos desenvolvido pela
                                         Microsoft para superar as limitações do NTFS (New Technology File System), que é
                                         usado desde o Windows NT 3.1. O ReFS foi introduzido pela primeira vez na versão
                                         de servidor do Windows 8.1 e estava disponível apenas para algumas edições do
                                         Windows 10.
                                     </p>
-                                    <p>
+<p>
                                         O ReFS tem como objetivo oferecer mais confiabilidade, escalabilidade e
                                         eficiência para o armazenamento de dados. Algumas das características do ReFS
                                         são:
-                                        <br />
-                                        <br />
-                                    </p>
-                                    <ul>
-                                        <li>
+                                        <br/>
+<br/>
+</p>
+<ul>
+<li>
                                             - Proteção contra corrupção de dados: o ReFS usa um mecanismo chamado
                                             "integridade de metadados" que detecta e corrige erros nos metadados
                                             (informações sobre os arquivos) sem afetar os dados em si. Além disso, o
@@ -168,37 +174,37 @@
                                             com espelhamento ou paridade, que podem recuperar dados em caso de falha de
                                             um disco.
                                         </li>
-                                        <li>
+<li>
                                             - Otimização para grandes volumes: o ReFS pode lidar com volumes de até 1
                                             yottabyte (10^24 bytes) e arquivos de até 16 exabytes (10^18 bytes),
                                             superando os limites do NTFS. O ReFS também usa um sistema de alocação
                                             dinâmica que reduz a fragmentação e melhora o desempenho.
                                         </li>
-                                        <li>
+<li>
                                             - Suporte a snapshots: o ReFS permite criar snapshots (cópias instantâneas)
                                             dos volumes, que podem ser usados para restaurar dados em um estado anterior
                                             ou para fazer backup. Os snapshots são criados usando a tecnologia Volume
                                             Shadow Copy Service (VSS) e podem ser gerenciados pelo PowerShell ou pelo
                                             Gerenciador de Servidor.
                                         </li>
-                                        <li>
+<li>
                                             - Compatibilidade com o NTFS: o ReFS mantém a compatibilidade com a maioria
                                             dos recursos do NTFS, como permissões, criptografia, compactação e links
                                             simbólicos. No entanto, alguns recursos não são suportados pelo ReFS, como
                                             deduplicação de dados, transações e pontos de restauração.
                                         </li>
-                                    </ul>
-                                    <h3>
+</ul>
+<h3>
                                         Como usar o ReFS no Windows 11?
                                     </h3>
-                                    <p>
+<p>
                                         Atualmente, as edições de consumidor do Windows 11 não permitem instalar o
                                         sistema operacional no ReFS, mas apenas formatar discos externos ou secundários
                                         com esse sistema de arquivos. No entanto, há indícios de que a Microsoft está
                                         trabalhando para tornar o ReFS o sistema de arquivos padrão nas novas
                                         instalações do Windows 11.
                                     </p>
-                                    <p>
+<p>
                                         Um usuário do Twitter descobriu que é possível ativar uma opção oculta (ID
                                         42189933) na última prévia do Windows 11 disponível no Dev Channel para instalar
                                         uma cópia limpa do Windows 11 usando ReFS. Segundo ele, a instalação não
@@ -209,33 +215,33 @@
                                         a partir de uma partição ReFS sem dificuldades. Essa mudança pode trazer mais
                                         segurança e robustez para o sistema operacional, além de aproveitar melhor os
                                         recursos dos discos modernos.
-                                        <br />
-                                    </p>
-                                    <h3>
+                                        <br/>
+</p>
+<h3>
                                         Conclusão
                                     </h3>
-                                    <p>
+<p>
                                         ​O ReFS é um sistema de arquivos que pode substituir o NTFS nas novas
                                         instalações do Windows 11, trazendo mais resiliência contra corrupção de dados e
                                         outras vantagens. O ReFS já está presente na versão de servidor do Windows e
                                         pode ser ativado manualmente na versão desktop. A Microsoft está trabalhando
                                         para tornar o ReFS o sistema de arquivos padrão no Windows 11 em breve.
                                     </p>
-                                </section>
-                                <p>
+</section>
+<p>
                                     Fonte :
                                     <span id="post-source">
-                                        <a href="https://ggtec.netlify.app/">
+<a href="https://ggtec.netlify.app/">
                                             ggtec.netlify.app
                                         </a>
-                                    </span>
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <section class="mb-1" id="post-footer">
-                                    <!-- Post footer-->
-                                    <div id="disqus_thread"></div>
-                                    <script>
+</span>
+</p>
+</div>
+<div class="card-footer">
+<section class="mb-1" id="post-footer">
+<!-- Post footer-->
+<div id="disqus_thread"></div>
+<script>
                                         var p_url = window.location.href;
                                         var disqus_config = function () {
                                             this.page.url = p_url;  // Replace PAGE_URL with your page's canonical URL variable
@@ -248,87 +254,83 @@
                                             (d.head || d.body).appendChild(s);
                                         })();
                                     </script>
-                                </section>
-                            </div>
-                        </div>
-                        <div id="gallery" class="border-purple dragscroll gallery d-flex flex-row flex-nowrap overflow-scroll">
-                        </div>
-                    </div>
-                    <!-- Side widgets-->
-                    <div class="col-lg-4">
-                        <!-- Search widget-->
-                        <div class="card mb-4" id="sidebar">
-                            <div class="card-header">
+</section>
+</div>
+</div>
+<div class="border-purple dragscroll gallery d-flex flex-row flex-nowrap overflow-scroll" id="gallery">
+</div>
+</div>
+<!-- Side widgets-->
+<div class="col-lg-4">
+<!-- Search widget-->
+<div class="card mb-4" id="sidebar">
+<div class="card-header">
                                 Procurar
                             </div>
-                            <div class="card-body">
-                                <div class="input-group">
-                                    <input class="form-control" id="search-input"
-                                        placeholder="Digite um termo de pesquisa..." type="text" />
-                                    <button class="btn btn-purple" id="search-button" type="button">
+<div class="card-body">
+<div class="input-group">
+<input class="form-control" id="search-input" placeholder="Digite um termo de pesquisa..." type="text"/>
+<button class="btn btn-purple" id="search-button" type="button">
                                         Pesquisar!
                                     </button>
-                                </div>
-                                <div id="search-results">
-                                    <!-- Aqui é onde os resultados da pesquisa serão exibidos -->
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Categories widget-->
-                        <div class="card mb-4">
-                            <div class="card-header">
+</div>
+<div id="search-results">
+<!-- Aqui é onde os resultados da pesquisa serão exibidos -->
+</div>
+</div>
+</div>
+<!-- Categories widget-->
+<div class="card mb-4">
+<div class="card-header">
                                 Categorias
                             </div>
-                            <div class="card-body">
-                                <div class="row category" id="categories-widget">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Side widget-->
-                        <div class="card mb-4">
-                            <div class="card-body p-0">
-                                <iframe allowfullscreen="true" class="iframe-live" frameborder="0" scrolling="no"
-                                    src="https://player.twitch.tv/?channel=gg_tec&amp;parent=ggtec.netlify.app"
-                                    width="100%">
-                                </iframe>
-                            </div>
-                        </div>
-                        <div class="card mb-4">
-                            <div class="card-body profile-card">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <div class="avatar h-100 w-100 align-content-center">
-                                            <img alt="Avatar" src="../../assets/img/profile-image.jpg" width="100%">
-                                        </div>
-                                    </div>
-                                    <div class="col-8 text-center align-self-center profile-name">
-                                        <h3>
+<div class="card-body">
+<div class="row category" id="categories-widget">
+</div>
+</div>
+</div>
+<!-- Side widget-->
+<div class="card mb-4">
+<div class="card-body p-0">
+<iframe allowfullscreen="true" class="iframe-live" frameborder="0" scrolling="no" src="https://player.twitch.tv/?channel=gg_tec&amp;parent=ggtec.netlify.app" width="100%">
+</iframe>
+</div>
+</div>
+<div class="card mb-4">
+<div class="card-body profile-card">
+<div class="row">
+<div class="col-4">
+<div class="avatar h-100 w-100 align-content-center">
+<img alt="Avatar" src="../../assets/img/profile-image.jpg" width="100%"/>
+</div>
+</div>
+<div class="col-8 text-center align-self-center profile-name">
+<h3>
                                             Jheferson Gambet
                                         </h3>
-                                        <h5>
+<h5>
                                             Stremer,Dev &amp; This/Web-Designer
                                         </h5>
-                                        <a href="https://ggtec.netlify.app/social">
+<a href="https://ggtec.netlify.app/social">
                                             Página de perfis sociais
                                         </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal" tabindex="-1">
-            <div class="modal-dialog modal-xl modal-dialog-scrollable modal-border">
-                <div class="modal-content modal-background">
-                    <div class="modal-header modal-background-header">
-                        <button aria-label="Close" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                            type="button">
-                        </button>
-                    </div>
-                    <div class="modal-body p-5">
-                        <h1>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal" tabindex="-1">
+<div class="modal-dialog modal-xl modal-dialog-scrollable modal-border">
+<div class="modal-content modal-background">
+<div class="modal-header modal-background-header">
+<button aria-label="Close" class="btn-close btn-close-white" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body p-5">
+<h1>
                             Politica de cookies
                         </h1>
                         Esta Política de Cookies foi atualizada pela última vez em 09 de outubro de 2022 e aplica-se aos
@@ -407,78 +409,71 @@
                         "Preferências" do seu navegador. Para saber melhor consulte as opções de ajuda de seu navegador.
                         Você pode desabilitá-los alterando as configurações do seu navegador, mas saiba que isso pode
                         afetar o funcionamento do site.
-                        <a
-                            href="https://support.google.com/chrome/answer/95647?co=GENIE.Platform%3DDesktop&amp;hl=pt-BR">
+                        <a href="https://support.google.com/chrome/answer/95647?co=GENIE.Platform%3DDesktop&amp;hl=pt-BR">
                             Chrome
                         </a>
-                        <a href="https://support.mozilla.org/pt-BR/kb/desative-cookies-terceiros-impedir-rastreamento">
+<a href="https://support.mozilla.org/pt-BR/kb/desative-cookies-terceiros-impedir-rastreamento">
                             Firefox
                         </a>
-                        <a
-                            href="https://support.microsoft.com/pt-br/microsoft-edge/excluir-cookies-no-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09">
+<a href="https://support.microsoft.com/pt-br/microsoft-edge/excluir-cookies-no-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09">
                             Microsoft Edge
                         </a>
-                        <a
-                            href="https://support.microsoft.com/pt-br/windows/excluir-e-gerenciar-cookies-168dab11-0753-043d-7c16-ede5947fc64d">
+<a href="https://support.microsoft.com/pt-br/windows/excluir-e-gerenciar-cookies-168dab11-0753-043d-7c16-ede5947fc64d">
                             Internet Explorer​
                         </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="alert alert-dark text-center mb-0 alert-dismissible" id="cb-cookie-banner" role="alert">
+</div>
+</div>
+</div>
+</div>
+<div class="alert alert-dark text-center mb-0 alert-dismissible" id="cb-cookie-banner" role="alert">
             🍪 Utilizando este site você concorda com a
             <a data-bs-target="#exampleModal" data-bs-toggle="modal" href="#">
                 Politica de cookies.
             </a>
-            <button class="btn btn-purple btn-sm ms-3" onclick="window.hideCookieBanner()" type="button">
+<button class="btn btn-purple btn-sm ms-3" onclick="window.hideCookieBanner()" type="button">
                 Aceitar
             </button>
-            <button class="btn-close btn-close-white" data-bs-dismiss="alert" type="button">
-            </button>
-        </div>
-        <footer class="bg-black text-center text-white">
-            <div class="container p-4 pb-0">
-                <!-- Section: Social media -->
-                <section class="mb-4">
-                    <!-- discord -->
-                    <a class="btn btn-outline-light btn-floating m-1" href="https://discord.com/invite/utm5NZq"
-                        role="button">
-                        <i class="bx bxl-discord-alt">
-                        </i>
-                    </a>
-                    <!-- twitch -->
-                    <a class="btn btn-outline-light btn-floating m-1" href="https://www.twitch.tv/gg_tec" role="button">
-                        <i class="bx bxl-twitch">
-                        </i>
-                    </a>
-                    <!-- Github -->
-                    <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/GGTEC/" role="button">
-                        <i class="fab fa-github">
-                        </i>
-                    </a>
-                </section>
-                <!-- Section: Social media -->
-            </div>
-            <!-- Copyright -->
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-                <p>
+<button class="btn-close btn-close-white" data-bs-dismiss="alert" type="button">
+</button>
+</div>
+<footer class="bg-black text-center text-white">
+<div class="container p-4 pb-0">
+<!-- Section: Social media -->
+<section class="mb-4">
+<!-- discord -->
+<a class="btn btn-outline-light btn-floating m-1" href="https://discord.com/invite/utm5NZq" role="button">
+<i class="bx bxl-discord-alt">
+</i>
+</a>
+<!-- twitch -->
+<a class="btn btn-outline-light btn-floating m-1" href="https://www.twitch.tv/gg_tec" role="button">
+<i class="bx bxl-twitch">
+</i>
+</a>
+<!-- Github -->
+<a class="btn btn-outline-light btn-floating m-1" href="https://github.com/GGTEC/" role="button">
+<i class="fab fa-github">
+</i>
+</a>
+</section>
+<!-- Section: Social media -->
+</div>
+<!-- Copyright -->
+<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+<p>
                     Copyright © GGTEC 2023
                 </p>
-                <p>
+<p>
                     Page Dev By GGTEC
                 </p>
-            </div>
-            <!-- Copyright -->
-        </footer>
-    </div>
-    <div id="fb-root">
-    </div>
-    <script async="" crossorigin="anonymous" defer="" nonce="KZmrOndQ"
-        src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&amp;version=v16.0">
-        </script>
-    <script src="../../js/scripts.js">
-    </script>
-</body>
+</div>
+<!-- Copyright -->
+</footer>
+</div>
 
+<script async="" crossorigin="anonymous" defer="" nonce="KZmrOndQ" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&amp;version=v16.0">
+</script>
+<script src="../../js/scripts.js">
+</script>
+</body>
 </html>
