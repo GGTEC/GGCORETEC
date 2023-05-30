@@ -11382,6 +11382,15 @@ option {
     object-fit: cover;
   }
 
+  .share-footer-mobile {
+    display: block;
+  }
+
+  .share-sidebar {
+    display: none;
+  }
+
+
 }
 
 /* iPads, Tablets (481px - 768px) */
@@ -11397,6 +11406,14 @@ option {
     width: 100%;
     height: 30vw;
     object-fit: cover;
+  }
+
+  .share-footer-mobile {
+    display: block;
+  }
+
+  .share-sidebar {
+    display: none;
   }
 
 }
@@ -11415,6 +11432,20 @@ option {
     height: 20vw;
     object-fit: cover;
   }
+
+  .share-footer-mobile {
+    display: none;
+  }
+
+  .share-sidebar {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 45%;
+    width: 0px;
+    height: 0px;
+    z-index: 1;
+  }
 }
 
 /* Desktops, large screens (1025px - 1200px) */
@@ -11430,6 +11461,20 @@ option {
     height: 25vw;
     object-fit: cover;
   }
+
+  .share-footer-mobile {
+    display: none;
+  }
+
+  .share-sidebar {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 45%;
+    width: 0px;
+    height: 0px;
+    z-index: 1;
+  }
 }
 
 /* Extra large screens, TV (1201px e mais) */
@@ -11444,6 +11489,20 @@ option {
     width: 100%;
     height: 15vw;
     object-fit: cover;
+  }
+
+  .share-footer-mobile {
+    display: none;
+  }
+
+  .share-sidebar {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 45%;
+    width: 0px;
+    height: 0px;
+    z-index: 1;
   }
 }
 
@@ -11493,13 +11552,4 @@ option {
   object-fit: cover;
   width: 100%;
   height: 150px;
-}
-
-.share-sidebar {
-  display: flex;
-  flex-direction: column;
-  position: sticky;
-  top: 45%;
-  width: 0px;
-  height: 0px;
 }
