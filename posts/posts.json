@@ -1,6 +1,20 @@
 [
     {
         "post_date": "30/05/2023",
+        "post_id": "30",
+        "post_content_preview": "A Microsoft compartilhou várias novidades para o Windows 11 em ARM, estrutura utilizada por desenvolvedores. De acordo com a empresa, a Build 2023 oferecerá melhor experiência em dispositivos como Surface Pro 9 (ARM), Surface Pro X e o Dell Inspiron 14 com processador Snapdragon 8cx 2.A principal...",
+        "post_source": "<a href=\"https://www.tudocelular.com/mercado/noticias/n206536/windows-em-arm-microsoft-disponibiliza-unity-e-melhora-visual-studio.html\">www.tudocelular.com</a>",
+        "post_thumb_url": "https://t2.tudocdn.net/663427?w=646&h=284",
+        "post_image_url": "https://t2.tudocdn.net/663427?w=646&h=284",
+        "post_title": "Windows em ARM: Microsoft disponibiliza Unity e melhora Visual Studio",
+        "post_content": "<p>A Microsoft compartilhou várias novidades para o Windows 11 em ARM, estrutura utilizada por desenvolvedores. De acordo com a empresa, a Build 2023 oferecerá melhor experiência em dispositivos como Surface Pro 9 (ARM), Surface Pro X e o Dell Inspiron 14 com processador Snapdragon 8cx 2.</p><p><br>A principal novidade é o lançamento da Unity, plataforma de desenvolvimento de jogos, com Windows nativo em suporte ARM que estará disponível no início de junho. Uma vez lançada, a ferramenta permitirá que os desenvolvedores direcionem o Windows em dispositivos ARM para jogos atuais e futuros, resultando em melhor desempenho.<br><figure><img src=\"https://t2.tudocdn.net/662982?w=660&amp;h=370\" alt=\"Windows\" style=\"width: 100%; height: auto;\"><figcaption></figcaption></figure><br><br><p><br>Entre as novidades do Arm anunciadas pela Microsoft, estão:<br><br></p><p><ul><li>Visual Studio: o Visual Studio 17.6 será fornecido com suporte MAUI para Arm.</li><li>O Visual Studio 17.71 Preview 1 agora vem com suporte para desenvolvimento Linux com C++.</li><li>LLVM v12.0 e posteriores para opções de compilação cruzada e compilação nativa para Arm.</li><li>Nó 20.0.0 com suporte nativo Arm.</li><li>O instalador WiX v4.0 está disponível para criar instaladores nativos para Arm.</li><li>Luminar Neo: Skylum está lançando sua versão Arm nativa do software AI de edição de fotos, Luminar Neo, que pode ser instalado na Microsoft Store no Windows.</li><li>Além disso, o Unity Player estará disponível no início de junho para Windows on Arm nativamente. Os desenvolvedores que usam o mecanismo de middleware podem facilmente direcionar o Windows em dispositivos Arm para obter desempenho nativo em títulos atuais e futuros.<br></li></ul><div><br></div><p>Vale ressaltar que, com o Multi-platform App UI (MAUI), os desenvolvedores vão conseguir trabalhar com diferentes sistemas operacionais: Android, iOS, macOS, Windows 10 e Windows 11. Além disso, o Visual Studio com suporte MAUI para Arm dará aos desenvolvedores outra maneira de direcionar o Windows em PCs ARM. Por fim, com o editor de fotos Luminar Neo, o desempenho para criação de aplicativos será acentuado.</p></p></p>",
+        "post_tags": [
+            "Windows",
+            "Noticia"
+        ]
+    },
+    {
+        "post_date": "30/05/2023",
         "post_id": "29",
         "post_content_preview": "ZapGPT: A revolução da inteligência artificial no WhatsApp!Sim, é possível integrar o GPT-3.5 (ChatGPT) ao WhatsApp, aproveitando os avanços contínuos da inteligência artificial. A IA tem demonstrado um impacto significativo em diversas áreas nos últimos dias. Além de gerar textos e redações, ela...",
         "post_source": "<a href=\"https://multiversonoticias.com.br/zapgpt-traz-ia-para-o-whatsapp/\">multiversonoticias.com.br</a>",
