@@ -12,11 +12,13 @@
     <!-- Favicons -->
     <link href="../../assets/img/favicon.png" rel="icon">
     <link href="../../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="../../assets/css/styles.css" rel="stylesheet">
     <link href="../../assets/css/style.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" ></script>
-    <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="../../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="../../assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../../assets/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5312302938088623" crossorigin="anonymous"></script>
     <!-- Google tag (gtag.js) -->
@@ -28,7 +30,6 @@
 
     gtag('config', 'G-6T1WP18QKQ');
     </script>
-    <meta name="a.validate.02" content="rtcP5kQbEC7WeIwNYhvRvn9GtPjreuRL_kQq" />
 </head>
 <body>
     
@@ -159,9 +160,6 @@
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link w-100" id="pills-confighigh-tab" data-bs-toggle="pill" data-bs-target="#pills-confighigh" type="button" role="tab" aria-controls="pills-confighigh" aria-selected="false">Configurar mensagem destacada</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link w-100" id="pills-confignotifc-tab" data-bs-toggle="pill" data-bs-target="#pills-confignotifc" type="button" role="tab" aria-controls="pills-configmusicmodule" aria-selected="false">Configurar alertas</button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link w-100" id="pills-configresponses-tab" data-bs-toggle="pill" data-bs-target="#pills-configresponses" type="button" role="tab" aria-controls="pills-configresponses" aria-selected="false">Editar respostas</button>
@@ -608,9 +606,20 @@
                             <h4>Limpar Playlist:</h4> Limpa as músicas na playlist
                         </div>
                         <div class="tab-pane fade" id="pills-configdiscord" role="tabpanel" aria-labelledby="pills-configdiscord-tab">
-                            <h2 class="mt-5">Configurar notificações no Discord</h2>
+                            <h2 class="mt-5">Configurar Alertas no Discord/Chat</h2>
+                            <h3 class="mb-2">Foto e nome de perfil para o discord</h3>
+                            <h4>Url da imagem do perfil:</h4>
+                            <p>Insira a  url para ser a foto de perfil para o bloco embed do discord (somente .png).</p>
+                            <h4>Nome de perfil para o bloco Webhook:</h4>
+                            <p>Nome de perfil que será exibido no bloco embed do Webhook.</p>
+                            <h3 class="mb-2">Tipos de notificações</h3>
                             <h4>Selecione o tipo de notificação Webhook para editar</h4>
                             <p>As notificações não podem ser adicionadas nem excluidas, somente ativadas ou desativadas .</p>
+                            <h3 class="mb-2">Discord</h3>
+                            <h4>Pseudonimos/Aliases</h4>
+                            <p>Lista de palavras que podem ser utilizadas para enviar informações adicionais sobre o tipo de notificação em questão.</p>
+                            <h4>Ativar/Desativar a notificação</h4>
+                            <p>Selecione se deseja enviar ou não a notificação no discord.</p>
                             <h4>Url Webhook:</h4>
                             <p>Insira a URL do Webhook do seu canal do Discord que deverá receber a notificação.</p>
                             <h4>Cor:</h4>
@@ -623,8 +632,9 @@
                             <p>Texto principal que deve aparecer no bloco embed.</p>
                             <h4>Descrição:</h4>
                             <p>Texto que deve aparecer na descrição do bloco embed.</p>
-                            <h4>Ativar Webhook:</h4>
-                            <p>Status do Webhook.</p>
+                            <h3 class="mb-2 mt-3">Notificações no Chat</h3>
+                            <h4>Mensagem no chat:</h4>
+                            <p>Texto que será enviado no chat, os pseudonimos também são suportados.</p>
                         </div>
                         <div class="tab-pane fade" id="pills-configchatmessage" role="tabpanel" aria-labelledby="pills-configchatmessage-tab">
                             <h2 class="mb-5">Configurar Mensagens/Módulos Habilitados</h2>
@@ -738,40 +748,6 @@
                             <h4>Duração da animação CSS</h4>
                             <p>Digite a duração em segundos que irá durar a animação de fade de entrada/saida.</p>
                         </div>
-                        <div class="tab-pane fade" id="pills-confignotifc" role="tabpanel" aria-labelledby="pills-confignotifc-tab">
-                            <h2 class="mb-5">Configure exibição de alertas</h2>
-
-                            <h4>Selecione o tipo de notificação para editar</h4>
-                            <p>Selecione qual alerta deseja editar ou configurar o HTML para alertas</p>
-
-                            <h4>Ativar notificações:</h4>
-                            <p>Ative/desative o status para receber a notificação</p>
-                            <h4>Ativar texto-falado para mensagens:</h4>
-                            <p>Ative para um TTS com a mensagem que o usuário digitou ou que será enviada no chat dependendo do tipo de notificação.</p>
-                            <h4>Som para notificações:</h4>
-                            <p>Selecione o arquivo .mp3 para ser reproduzido</p>
-                            <h4>Volume do audio:</h4>
-                            <p>Altere o volume do audio</p>
-                            <h4>Imagem para notificações:</h4>
-                            <p>Selecione a imagem para ser exbida na notificação do OBS studio</p>
-                            <h4>Exibir texto sobre imagem:</h4>
-                            <p>Ativado = exibe o texto da notificação sobre a imagem</p>
-                            <p>Desativado = exibe o texto da notificação abaixo da imagem</p>
-                            <h4>Tamanho da imagem em pixels:</h4>
-                            <p>Digite qual deve ser o tamanho da imagem em pixels, não é necessário utilizar "PX" no final</p>
-                            <h4>Mensagem no HTML</h4>
-                            <p>Digite a mensagem que deverá ser exibida somente na notificação do OBS Studio</p>
-                            <h4>Pseudonimos (Aliases) uteis</h4>
-                            <p>Aliases que podem ser utilizadas nas notificações</p>
-                            <h4>Mensagem no chat</h4>
-                            <p>Digite a mensagem que deverá ser enviada no chat quando o evento for notificado</p>
-                            <h4>Tamanho do texto em pixels</h4>
-                            <p>Altere qual será o tamanho do texto da mensagem exibida no alerta do OBS studio</p>
-                            <h4>Peso (Expessura) da fonte do texto destacado (nome de usuário)</h4>
-                            <p>Altere qual será a expessura do texto do nome de usuário exibido no alerta do OBS studio</p>
-                            <h4>Cor do do texto destacado (nome de usuário)</h4>
-                            <p>Altere qual será a cor do texto do nome de usuário exibido no alerta do OBS studio</p>
-                        </div>
                     </div>
                 </div>
             </div> 
@@ -785,19 +761,33 @@
 
 
 
-        <div class="footer">
-            <div class="row">
-                <div class="col-10">
-                    <p>Copyright GGTEC</p> 
-                    <p>Page Dev By GGTEC</p>
-                </div>
-                <div class="col-2 social-links d-flex flex-column justify-content-end align-content-end">
-                    <button class="btn btn-light m-1 discord" onclick="location.href='https://discord.com/invite/utm5NZq'" title="discord"><i class="bx bxl-discord-alt m-1"></i>Discord</button>
-                    <button class="btn btn-light m-1 github" onclick="location.href='https://github.com/GGTEC/'"  title="github"><i class="bx bxl-github m-1"></i>Github</button>
-                    <button class="btn btn-light m-1 twitch" onclick="location.href='https://www.twitch.tv/gg_tec'"  title="twitch"><i class="bx bxl-twitch m-1"></i>Twitch</button>
-                </div>
+        <footer class="bg-black text-center text-white">
+            <div class="container p-4 pb-0">
+                <!-- Section: Social media -->
+                <section class="mb-4">
+                    <!-- discord -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://discord.com/invite/utm5NZq"
+                        role="button"><i class="bx bxl-discord-alt"></i></a>
+
+                    <!-- twitch -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://www.twitch.tv/gg_tec"
+                        role="button"><i class="bx bxl-twitch"></i></a>
+
+
+                    <!-- Github -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/GGTEC/" role="button">
+                        <i class="fab fa-github"></i></a>
+                </section>
+                <!-- Section: Social media -->
             </div>
-        </div>
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                <p>Copyright &copy; GGTEC 2023</p>
+                <p>Page Dev By GGTEC</p>
+            </div>
+            <!-- Copyright -->
+        </footer>
     </div>
     <div  class="mobile">
         <div class="d-flex flex-column justify-content-center vh-100">
