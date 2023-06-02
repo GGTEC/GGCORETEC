@@ -1,5 +1,20 @@
 [
     {
+        "post_date": "02/06/2023",
+        "post_id": "36",
+        "post_content_preview": "Se você atualizou seu computador para o Windows 11 e percebeu que o desempenho da sua placa de vídeo AMD caiu, você não está sozinho. Muitos usuários relataram que o novo sistema operacional da Microsoft desatualiza os drivers das GPUs AMD, causando problemas de compatibilidade e queda de FPS nos...",
+        "post_source": "<a href=\"https://ggtec.netlify.app/\">ggtec.netlify.app</a>",
+        "post_thumb_url": "https://mundoconectado.com.br/uploads/chamadas/windows-11-logo-oficial-chamada_4.jpg",
+        "post_image_url": "https://mundoconectado.com.br/uploads/chamadas/windows-11-logo-oficial-chamada_4.jpg",
+        "post_title": "Windows 11 desatualiza drivers AMD de GPUS ,como resolver ?",
+        "post_content": "<p>Se você atualizou seu computador para o Windows 11 e percebeu que o desempenho da sua placa de vídeo AMD caiu, você não está sozinho. Muitos usuários relataram que o novo sistema operacional da Microsoft desatualiza os drivers das GPUs AMD, causando problemas de compatibilidade e queda de FPS nos jogos. Neste post, vamos explicar por que isso acontece e como resolver esse problema.</p><p>O Windows 11 é a versão mais recente do sistema operacional da Microsoft, lançada em outubro de 2021. O Windows 11 traz várias novidades e melhorias em relação ao Windows 10, como um novo design, um novo menu Iniciar, um novo centro de ações, uma nova loja de aplicativos e uma integração com o Android. No entanto, nem tudo são flores no Windows 11, especialmente para os usuários de placas de vídeo da AMD.</p><figure>&nbsp; <img alt=\"Windows 11 logo\" src=\"https://mundoconectado.com.br/uploads/chamadas/windows-11-logo-oficial-chamada_4.jpg\"><figcaption>Windows 11 logo</figcaption></figure><p>O que acontece é que o Windows 11 não reconhece os drivers mais recentes das GPUs AMD, que são os drivers Adrenalin. Em vez disso, o Windows 11 instala automaticamente os drivers antigos da AMD, que são os drivers Crimson. Esses drivers são incompatíveis com as GPUs mais novas da AMD, como as séries RX 5000 e RX 6000, e causam vários problemas de desempenho e estabilidade nos jogos.</p><figure>&nbsp; <img alt=\"AMD Radeon RX 6000 Series logo\" src=\"https://www.notebookcheck.info/fileadmin/Notebooks/News/_nc3/AMDrx6000.jpeg\"><figcaption>AMD Radeon RX 6000 Series logo</figcaption></figure><p>A solução para esse problema é simples: desinstalar os drivers Crimson e reinstalar os drivers Adrenalin manualmente. Para isso, siga os passos abaixo:</p><ol>&nbsp; <li>Abra o Painel de Controle do Windows e clique em Programas e Recursos.</li>&nbsp; <li>Procure por AMD Catalyst Install Manager ou AMD Software na lista de programas instalados e clique em Desinstalar.</li>&nbsp; <li>Siga as instruções na tela para remover completamente os drivers Crimson do seu computador.</li>&nbsp; <li>Reinicie o seu computador.</li>&nbsp; <li>Acesse o site oficial da AMD e baixe os drivers Adrenalin mais recentes para a sua GPU.</li>&nbsp; <li>Execute o arquivo baixado e siga as instruções na tela para instalar os drivers Adrenalin no seu computador.</li>&nbsp; <li>Reinicie o seu computador novamente.</li></ol><p>Pronto! Agora você deve ter os drivers mais atualizados e compatíveis com a sua GPU AMD no Windows 11. Você deve notar uma melhora significativa no desempenho e na qualidade dos seus jogos. Esperamos que este post tenha sido útil para você. Se você tiver alguma dúvida ou sugestão, deixe um comentário abaixo. Obrigado pela leitura!</p>",
+        "post_tags": [
+            "Windows",
+            "AMD",
+            "Update"
+        ]
+    },
+    {
         "post_date": "01/06/2023",
         "post_id": "35",
         "post_content_preview": "O Windows Copilot é uma nova funcionalidade do Windows 11 que promete trazer a inteligência artificial para o seu computador. Com o Windows Copilot, você pode contar com um assistente pessoal que entende o seu contexto e oferece ações e sugestões relevantes para o que você está fazendo na tela. O...",
