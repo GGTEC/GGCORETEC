@@ -343,17 +343,3 @@ fetch('https://ggtec.github.io/GGCORETEC/posts/posts.json')
   .catch(error => console.error(error));
 
 const posts_cards = document.querySelectorAll('.post-card');
-
-
-function start_table() {
-  table = $('#table').DataTable({
-    scrollX: true,
-    ordering: true,
-    retrieve: false,
-    processing: true,
-    responsive: false,
-    language: {
-      url: 'https://cdn.datatables.net/plug-ins/1.13.1/i18n/pt-BR.json'
-    }
-  });
-}
