@@ -103,16 +103,20 @@ body {
   font-family: 'Kanit';
   background-repeat: no-repeat;
   background-size: cover;
-  background: linear-gradient(170deg, 
-  rgba(63, 45, 80, 0.8) 20%, 
-  rgba(30, 11, 48, 0.5) 20%, 
-  rgba(0, 0, 0, 0.5) 35%, 
-  rgba(27, 30, 38, 0.5) 75%), 
-  linear-gradient(45deg, 
-  rgba(4, 4, 5, 0.8) 0%, 
-  rgba(34, 1, 41, 0.8) 50%, 
-  rgba(36, 8, 47, 0.8) 50%, 
-  rgba(48, 2, 59, 0.8) 100%) #260137;
+  background-image: linear-gradient(
+  35deg,
+  hsl(276deg 73% 7%) 0%,
+  hsl(266deg 63% 12%) 12%,
+  hsl(266deg 70% 16%) 22%,
+  hsl(267deg 77% 20%) 31%,
+  hsl(269deg 87% 24%) 40%,
+  hsl(271deg 100% 26%) 47%,
+  hsl(279deg 97% 31%) 55%,
+  hsl(285deg 95% 35%) 62%,
+  hsl(291deg 93% 40%) 70%,
+  hsl(296deg 93% 44%) 79%,
+  hsl(301deg 94% 48%) 100%
+);
 }
 
 
