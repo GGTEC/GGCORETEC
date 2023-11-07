@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GGCORETEC - VibesBot Wiki</title>
+    <meta property="og:site_name" content="GGCORETEC" />
+    <meta property="og:description" content="Execute eventos personalizados utilizando as recompensas do canal" />
+    <meta name="keywords" content="VibesBot Software" />
+    <meta property="og:image" content="/assets/img/about.png" />
+
+    <!-- Favicons -->
+    <link href="../../assets/img/favicon.png" rel="icon">
+    <link href="../../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="../../assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../../assets/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">g
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
+    <link href="../../assets/css/style.css" rel="stylesheet">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5312302938088623"
+        crossorigin="anonymous"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6T1WP18QKQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-6T1WP18QKQ');
+    </script>
+</head>
+
+<body>
+
+    <div class="desktop">
+        
+        <div class="background">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="header">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-md-3">
+                <!-- Container wrapper -->
+                <div class="container-fluid">
+
+                    <!-- Navbar brand -->
+                    <a class="navbar-brand" href=".">
+                        <img src="../../assets/img/about.png" alt="..." style="width: 40px;">
+                        <span>GGCORETEC</span>
+                    </a>
+
+                    <!-- Collapsible wrapper -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                            <!-- Link -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="/.">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/./social/">Contato</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://github.com/GGTEC/VibesBot/releases">Download</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <!-- Container wrapper -->
+            </nav>
+            <!-- Navbar -->
+        </div>
+        <div class="container">
+
+            <div class="top-box w-100 p-5 mt-5">
+                <div class="row ps-5">
+                    <div class="col-1">
+                        <img src="../../assets/img/about.png" alt="..." style="width: 120px;">
+                    </div>
+                    <div class="col-10">
+                        <h1>VibesBot Wiki</h1>
+                        <h4>Siga o guia de configuração abaixo para configurar todas as funções do programa
+                            corretamente.</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row wiki-box w-100">
+                <div class="col-3 p-0 nav-buttons">
+                    <ul class="nav flex-column nav-pills" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active w-100 " id="pills-download-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-download" type="button" role="tab" aria-controls="pills-download"
+                                aria-selected="true">Download</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="pills-authstreamer-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-authstreamer" type="button" role="tab"
+                                aria-controls="pills-authstreamer" aria-selected="false">Autenticar Conta</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="pills-commands-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-commands" type="button" role="tab" aria-controls="pills-commands"
+                                aria-selected="false">Comandos</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="pills-goal-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-goal" type="button" role="tab" aria-controls="pills-goal"
+                                aria-selected="false">Metas</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="pills-giftalert-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-giftalert" type="button" role="tab" aria-controls="pills-giftalert"
+                                aria-selected="false">Alertas Para presentes</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="pills-configgiveway-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-configgiveway" type="button" role="tab"
+                                aria-controls="pills-configgiveway" aria-selected="false">Sorteio</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="pills-configqueue-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-configqueue" type="button" role="tab"
+                                aria-controls="pills-configqueue" aria-selected="false">Fila de espera</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="pills-player-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-player" type="button" role="tab" aria-controls="pills-player"
+                                aria-selected="false">Player</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="pills-configchat-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-configchat" type="button" role="tab"
+                                aria-controls="pills-configchat" aria-selected="false">Configurar Chat</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="pills-configdiscord-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-configdiscord" type="button" role="tab"
+                                aria-controls="pills-configdiscord" aria-selected="false">Configurar discord</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="pills-configmusicmodule-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-configmusicmodule" type="button" role="tab"
+                                aria-controls="pills-configmusicmodule" aria-selected="false">Configurar Player</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="pills-configevents-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-configevents" type="button" role="tab"
+                                aria-controls="pills-configevents" aria-selected="false">Configurar chat</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="pills-configresponses-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-configresponses" type="button" role="tab"
+                                aria-controls="pills-configresponses" aria-selected="false">Editar respostas</button>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col p-5">
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-download" role="tabpanel"
+                            aria-labelledby="pills-download-tab">
+                            <h2 class="mb-5">Instruções de Download</h2>
+                            <h4>Passo 1: Acesse o Link</h4>
+                            <p>Acesse o seguinte link para efetuar o download do programa: <a
+                                    href="https://github.com/GGTEC/VibesBot/releases">https://github.com/GGTEC/RewardEvents/releases</a>
+                            </p>
+
+                            <h4>Passo 2: Baixe o Arquivo</h4>
+                            <p>Baixe o arquivo "VibesBot.exe".</p>
+
+                            <h4>Passo 3: Efetue uma Atualização (opcional)</h4>
+                            <p>Se estiver efetuando uma atualização, será necessário apenas baixar o arquivo
+                                "VibesBot.exe".</p>
+
+                            <h4>Passo 4: Armazenamento</h4>
+                            <p>Não é necessário instalação. Armazene o programa em uma pasta separada para melhor
+                                organização.</p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-authstreamer" role="tabpanel" aria-labelledby="pills-authstreamer-tab">
+                            <h2 class="mb-5">Autenticação de Conta Streamer</h2>
+                            <h4>Passo 1 - Avisos e Termos</h4>
+                                <p>Leia atentamente todo o conteúdo da página inicial e página de termos de uso.</p>
+                            <h4>Passo 2 - Iniciando autenticação</h4>
+                                <p>Após ler e aceitar os termos será necessário inserir o seu nome de usuário e sessionID</p>
+                                <p> Digite o nome da sua conta no campo especificado. Ele deve ser o mesmo que o usado na URL, por exemplo, https://www.tiktok.com/@gg_tec = gg_tec.</p>
+                            <h4>Passo 3 - Obtendo o sessionID</h4>
+                                <p>Para obter o sessionID siga os passos abaixo.</p>
+                            <ul>
+                                <li class="mt-4">
+                                    <p>1. Abra o navegador EDGE, faça o login na sua conta do tiktok e permaneceça na
+                                        página inicial da sua conta.</p>
+                                    <div>
+                                        <img src="../../assets/img/VibesBot/1.png" alt="" width="100%">
+                                    </div>
+                                </li>
+                                <li class="mt-4">
+                                    <p>2. No canto superior esquerdo antes da barra de endereços clique no cadeado.</p>
+                                    <div>
+                                        <img src="../../assets/img/VibesBot/2.png" alt="" width="100%">
+                                    </div>
+                                </li>
+                                <li class="mt-4">
+                                    <p>3. Após abrir a janela de informações de segurança sobre o site, clique em
+                                        "cookies (5 em uso), após clicar será aberta uma janela central de informações
+                                        sobre os cookies do site"</p>
+                                    <div>
+                                        <img src="../../assets/img/VibesBot/3.png" alt="" width="auto">
+                                    </div>
+                                </li>
+                                <li class="mt-4">
+                                    <p>4. Na janela que se abriu procure por "tiktok.com" e abra a subpasta cookies."
+                                    </p>
+                                    <div>
+                                        <img src="../../assets/img/VibesBot/4.png" alt="" width="auto">
+                                    </div>
+                                </li>
+                                <li class="mt-5">
+                                    <p>5. Agora já na pasta, procure por "sessionid", e copie todo o valor do campo
+                                        conteúdo."</p>
+                                    <div>
+                                        <img src="../../assets/img/VibesBot/5.png" alt="" width="auto">
+                                    </div>
+                                </li>
+                                <li class="mt-5">
+                                    <p>6. Após inseridas as informações clique em login e a tela inicial do aplicativo
+                                        deve ser exibida.</p>
+                                    <div>
+                                        <img src="../../assets/img/VibesBot/6.png" alt="" width="auto">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="pills-commands" role="tabpanel" aria-labelledby="pills-commands-tab">
+                            <h2 class="mb-5">Criar um comando/Editar um comando</h2>
+                            <h4>Comando:</h4>
+                            <p>Qual mensagem deverá ser enviada no chat para executar o comando,se preferir não é necessário o uso
+                                de prefix ex = !comando, ?comando $comando, #comando</p>
+                                
+                            <h4>Tempo de recarga:</h4>
+                            <p>Tempo necessário para esperar entre um comando e outro;</p>
+                            <h4>Selecione o nível de usuário para utilizar o comando:</h4>
+                            <p>Selecione o nível de permissão que o usuário deve ter para utilizar o comando;</p>
+                            <h4>Ativar custo do comando:</h4>
+                            <p>Ativar custo de likes, presentes ou compartilhamentos para o usuário utilizar o comando;</p>
+                            <h4>Tipo de custo do comando:</h4>
+                            <p>Selecione likes, presentes ou compartilhamentos para o usuário utilizar o comando;</p>
+                            <h4>Custo do comando:</h4>
+                            <p>Quantos likes, presentes ou compartilhamentos o usuário deve ter para utilizar o comando</p>
+                            <h4>Resposta no chat (em breve):</h4>
+                            <p>Envia a mensagem no chat do canal quando o comando for executado  (em breve);</p>
+                            <h4>Comando para audio:</h4>
+                            <p>Ativa a reprodução de um audio ao executar o comando (não é recomendado a utilização de audios grandes).</p>
+
+                            <h2 class="mt-5">Excluir um comando</h2>
+                            <h4>Comando:</h4>
+                            <p>Selecione o comando para Excluir, é possivel excluir apenas comandos criados.</p>
+
+                            <h2 class="mt-5">Comandos padrão</h2>
+                            <h4>Comandos atuais = Texto Faldo, Saldo</h4>
+                            <p>Texto falado: Usuário pode enviar mensagens de voz com um custo se configurado</p>
+                            <p>Saldo: Usuário pode saber o seu saldo em likes, presentes, compartilhamentos.</p>
+                            <p>Comandos de padrão não podem ser excluidos, somente desativados.</p>
+
+                            <h4>Comando:</h4>
+                            <p>Qual mensagem deverá ser enviada no chat para executar o comando,se preferir não é necessário o uso de prefix ex = !comando, ?comando $comando, #comando</p>
+                                
+                            <h4>Tempo de recarga:</h4>
+                            <p>Tempo necessário para esperar entre um comando e outro;</p>
+                            <h4>Selecione o nível de usuário para utilizar o comando:</h4>
+                            <p>Selecione o nível de permissão que o usuário deve ter para utilizar o comando;</p>
+                            <h4>Ativar custo do comando:</h4>
+                            <p>Ativar custo de likes, presentes ou compartilhamentos para o usuário utilizar o comando;</p>
+                            <h4>Tipo de custo do comando:</h4>
+                            <p>Selecione likes, presentes ou compartilhamentos para o usuário utilizar o comando;</p>
+                            <h4>Custo do comando:</h4>
+                            <p>Quantos likes, presentes ou compartilhamentos o usuário deve ter para utilizar o comando</p>
+                            <h4>Resposta no chat (em breve):</h4>
+                            <p>Envia a mensagem no chat do canal quando o comando for executado  (em breve);</p>
+                            <h4>Comando para audio:</h4>
+                            <p>Ativa a reprodução de um audio ao executar o comando (não é recomendado a utilização de audios grandes).</p>
+
+                            <h2 class="mt-5">Comandos de música</h2>
+                            <h4>Selecione o comando para configurar:</h4>
+                            <p>Selecione o comando para exibir a sessão de edição do comando, comandos de música não podem ser excluidos, somente desativados.</p>
+
+                            <h4>Comando:</h4>
+                            <p>Qual mensagem deverá ser enviada no chat para executar o comando, não é necessário o uso de prefix ex = !comando, ?comando $comando, #comando</p>
+                            
+                            <h4>Status do comando:</h4>
+                            <p>Altere o status do comando se deseja desativa-lo ou ativa-lo:</p>
+                            
+                            <h4>Tempo de recarga do comando:</h4>
+                            <p>Quanto tempo em segundos será necessário esperar antes de utilizar o comando novamente</p>
+                            
+                            <h4>Permissão:</h4>
+                            <p>Selecione quais permissões que o usuário deve ter para utilizar o comando (será necessário ter apenas uma das permissões para executar);</p>
+                            <p><i>Nota: As respostas para comandos de música podem ser configuradas a partir da aba Configurações/respostas</i></p>
+                            
+                            <h4>Ativar custo do comando:</h4>
+                            <p>Ativar custo de likes, presentes ou compartilhamentos para o usuário utilizar o comando;</p>
+                            
+                            <h4>Tipo de custo do comando:</h4>
+                            <p>Selecione likes, presentes ou compartilhamentos para o usuário utilizar o comando;</p>
+                            
+                            <h4>Custo do comando:</h4>
+                            <p>Quantos likes, presentes ou compartilhamentos o usuário deve ter para utilizar o comando</p>
+
+                            <h2 class="mt-5">Comandos da fila de espera</h2>
+                            <h4>Selecione o comando para configurar:</h4>
+                            <p>Selecione o comando para exibir a sessão de edição do comando, comandos da fila de espera não podem ser excluidos, somente desativados.</p>
+
+                            <h4>Comando:</h4>
+                            <p>Qual mensagem deverá ser enviada no chat para executar o comando, não é necessário o uso de prefix ex = !comando, ?comando $comando, #comando</p>
+                            <h4>Status do comando:</h4>
+                            <p>Altere o status do comando se deseja desativa-lo ou ativa-lo:</p>
+
+                            <h4>Tempo de recarga do comando:</h4>
+                            <p>Quanto tempo em segundos será necessário esperar antes de utilizar o comando novamente</p>
+
+                            <h4>Permissão:</h4>
+                            <p>Selecione quais permissões que o usuário deve ter para utilizar o comando (será necessário ter apenas uma das permissões para executar);</p>
+                            <p><i>Nota: As respostas para comandos da fila de espera podem ser configuradas a partir da aba configurações/respostas</i></p>
+                            
+                            <h4>Ativar custo do comando:</h4>
+                            <p>Ativar custo de likes, presentes ou compartilhamentos para o usuário utilizar o comando;</p>
+                            
+                            <h4>Tipo de custo do comando:</h4>
+                            <p>Selecione likes, presentes ou compartilhamentos para o usuário utilizar o comando;</p>
+                            
+                            <h4>Custo do comando:</h4>
+                            <p>Quantos likes, presentes ou compartilhamentos o usuário deve ter para utilizar o comando</p>
+
+                            <h2 class="mt-5">Comandos de sorteio</h2>
+
+                            <h4>Selecione o comando para configurar:</h4>
+                            <p>Selecione o comando para exibir a sessão de edição do comando, comandos de sorteio não podem ser excluidos, somente desativados.</p>
+
+                            <h4>Comando:</h4>
+                            <p>Qual mensagem deverá ser enviada no chat para executar o comando, não é necessário o uso de prefix ex = !comando, ?comando $comando, #comando</p>
+                            
+                            <h4>Status do comando:</h4>
+                            <p>Altere o status do comando se deseja desativa-lo ou ativa-lo:</p>
+                            
+                            <h4>Tempo de recarga do comando:</h4>
+                            <p>Quanto tempo em segundos será necessário esperar antes de utilizar o comando novamente</p>
+                            
+                            <h4>Selecione o nível de usuário para utilizar o comando:</h4>
+                            <p>Selecione o nível de permissão que o usuário deve ter para utilizar o comando;</p>
+                            <p><i>Nota: As respostas para comandos da fila de espera podem ser configuradas a partir da aba configurações/respostas</i></p>
+
+                            <h2 class="mt-5">Lista de comandos</h2>
+                            <p>Exibe uma tabela com todos os comandos configurados no RewardEvents, seja um comando padrão ou um comando criado.</p>
+
+                        </div>
+                        <div class="tab-pane fade" id="pills-goal" role="tabpanel" aria-labelledby="pills-goal-tab">
+                            <h2 class="mb-5">Configuração da meta</h2>
+                            <h4>Selecione o tipo de meta</h4>
+                            <p>Qual meta será configurada.</p>
+                            <h4>Status da meta</h4>
+                            <p>Ao desativar o html no overlay continuará sendo exibido, porém estático ou seja mesmo ao receber os eventos correspondentes a barra ou a numeração não serão atualizadas</p>
+                            <h4>Meta</h4>
+                            <p>Qual é o valor final da meta.</p>
+                            <h4>Ao completar a meta</h4>
+                            <p>Adicionar valor: ao completar a meta o valor especificado no campo abaixo será adicionado ao valor final da meta, assim atualizando o valor final da meta automaticamente.</p>
+                            <p>Multiplicar valor: o valor final da meta será multiplicado pelo valor espeficiado no campo abaixo, ex. 2, a meta irá ser multiplicada por dois</p>
+                            <p>Dobrar: O valor da meta será automaticamente dobrado ao chegar no final.</p>
+                            <h4>Executar som ao completar a meta</h4>
+                            <p>Quando o valor da meta for atingido será executado um som sinalizando a conclusão da meta.</p>
+
+                            <h3>Configuração da barra de progresso da meta</h3>
+                            <h4>Selecione o tipo de meta</h4>
+                            <p>Qual meta será configurada.</p>
+                            <h4>Texto da meta</h4>
+                            <p>Qual será o texto exibido na barra de progresso da meta configurada.</p>
+                            <small>Restantes dos itens auto explicativos, teste para verificar as alterações.</small>
+                            <h4>Link para vincular o overlay para metas.</h4>
+                            <p>Copie o link e no TikTok live studio adicione uma nova fonte de navegador e cole o endereço</p>
+                            <small>Recomendado iniciar o VibesBot antes do TikTok live studio para melhor funcionamento do overlay, caso contrário o overlay pode não funcionar, e nesse caso apenas altere a cena atual para outra cena e retorne.</small>
+
+                        </div>
+                        <div class="tab-pane fade" id="pills-giftalert" role="tabpanel" aria-labelledby="pills-giftalert-tab">
+                            <h2 class="mb-5">Configurar notificações para presentes.</h2>
+                            <h4>Notificações globais</h4>
+                            <p>A notificação global é executada ao receber um presente se o presente recebido não tiver um audio configurado.</p>
+                            <h4>notificação por presente</h4>
+                            <p>Procure o presente na tabela e clique em configurar, Obs: Configurando a notificação do presente especifico a notificação global não será reproduzida.</p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-configgiveway" role="tabpanel" aria-labelledby="pills-configgiveway-tab">
+                            <h2 class="mb-5">Configuração do Sistema de Sorteios</h2>
+
+                            <h4>Nome do Sorteio:</h4>
+                            <p>Insira o nome que será anunciado no chat quando o sorteio for habilitado.</p>
+
+                            <h4>Nível de Usuário para Entrar no Sorteio:</h4>
+                            <p>Selecione o nível de usuário permitido para entrar no sorteio.</p>
+
+                            <h4>Limpar Nomes ao Sortear:</h4>
+                            <p>Quando o sorteio for executado, os nomes da lista são limpos. Manter esta opção
+                                desmarcada é útil para mostrar os participantes em caso de reclamações ou objetivos. Um
+                                arquivo de backup dos nomes sorteados é guardado na pasta src/sorteio/.</p>
+
+                            <h4>Ativar Entrada no Sorteio:</h4>
+                            <p>Permite a entrada de usuários no sorteio e envia uma mensagem no chat anunciando que o
+                                sorteio foi habilitado.</p>
+
+                            <h4>Permitir Várias Entradas por Usuário:</h4>
+                            <p>Ativando esta opção, permite que o usuário entre mais de uma vez no sorteio, aumentando
+                                suas chances de ganhar.</p>
+
+                            <h2 class="mt-5">Adicionar Usuário ao Sorteio</h2>
+                            <h4>Nome do Usuário:</h4>
+                            <p>Insira o nome do usuário que será adicionado manualmente ao sorteio (não é necessário ser um nickname do TikTok).</p>
+                            <h4>Executar Sorteio:</h4>
+                            <p>Executa o sorteio.</p>
+                            <h4>Exibir Lista de Participantes:</h4>
+                            <p>Exibe uma lista com os nomes dos participantes do sorteio.</p>
+                            <h4>Limpar Lista de Participantes:</h4>
+                            <p>Limpa os nomes da lista do sorteio antes de executar.</p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-configqueue" role="tabpanel" aria-labelledby="pills-configqueue-tab">
+                            <h2 class="mb-5">Configurar fila de espera</h2>
+
+                            <p><i>Nota: Respostas da fila de espera podem ser configuradas a partir da aba configurações/respostas</i></p>
+                            <h2 class="mt-5">Adicionar usuário da lista de espera</h2>
+                            <h4>Nome do usuário:</h4>
+                            <p>Insira o nome do usuário/valor que deverá ser adicionado.</p>
+                            <h4>Fila de espera:</h4>
+                            <p>Tabela com os nomes/valores adicionados na fila.</p>
+                            <p><i>Nota: remoção de usuário é possivel via interface ou comando configurado na aba comandos.</i></p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-player" role="tabpanel" aria-labelledby="pills-player-tab">
+                            <h2 class="mb-5">Player para Pedidos de Música</h2>
+                            <h4>Texto 1:</h4> Nome da música atual
+                            <h4>Texto 2:</h4> Artista da música atual (quando disponível)
+                            <h4>Botão Play/Pause:</h4> Se pausado na metade ou fim da música, não será possívelreproduzir a próxima música.
+                            <h4>Botão Playlist:</h4> Configurações para a playlist
+                            <h4>Botão Lista:</h4> Exibe as músicas na fila (playlist e pedidos)
+                            <h2 class="mt-2">Playlist</h2>
+                            <h4>Reproduzir Playlist:</h4> Permite a execução das músicas na lista de playlist (se houver)
+                            <h4>URL da Playlist:</h4> URL para ser adicionada às músicas da playlist (somente youtube)
+                            <h4>Limpar Playlist:</h4> Limpa as músicas na playlist
+                        </div>
+                        <div class="tab-pane fade" id="pills-configdiscord" role="tabpanel" aria-labelledby="pills-configdiscord-tab">
+                            <h2 class="mb-5">Configurar Alertas no Discord/Chat</h2>
+                            <h3 class="mb-2">Foto e nome de perfil para o discord</h3>
+                            <h4>Url da imagem do perfil:</h4>
+                            <p>Insira a url para ser a foto de perfil para o bloco embed do discord (somente .png).</p>
+                            <h4>Nome de perfil para o bloco Webhook:</h4>
+                            <p>Nome de perfil que será exibido no bloco embed do Webhook.</p>
+                            <h3 class="mb-2">Tipos de notificações</h3>
+                            <h4>Selecione o tipo de notificação Webhook para editar</h4>
+                            <p>As notificações não podem ser adicionadas nem excluidas, somente ativadas ou desativadas
+                                .</p>
+                            <h3 class="mb-2">Discord</h3>
+                            <h4>Pseudonimos/Aliases</h4>
+                            <p>Lista de palavras que podem ser utilizadas para enviar informações adicionais sobre o
+                                tipo de notificação em questão.</p>
+                            <h4>Ativar/Desativar a notificação</h4>
+                            <p>Selecione se deseja enviar ou não a notificação no discord.</p>
+                            <h4>Url Webhook:</h4>
+                            <p>Insira a URL do Webhook do seu canal do Discord que deverá receber a notificação.</p>
+                            <h4>Cor:</h4>
+                            <p>Insira a cor do bloco da mensagem embed que será enviada no Discord (Código HEX, não é
+                                necessário '#').</p>
+                            <h4>Pseudonimos (aliases) úteis:</h4>
+                            <p>Pseudonimos ou aliáses que podem ser utilizados no Webhook.</p>
+                            <h4>Conteúdo</h4>
+                            <p>Conteúdo em formato simples que será exibido antes do bloco Embed</p>
+                            <h4>Título:</h4>
+                            <p>Texto principal que deve aparecer no bloco embed.</p>
+                            <h4>Descrição:</h4>
+                            <p>Texto que deve aparecer na descrição do bloco embed.</p>
+                            <h3 class="mb-2 mt-3">Notificações no Chat</h3>
+                            <h4>Mensagem no chat:</h4>
+                            <p>Texto que será enviado no chat, os pseudonimos também são suportados.</p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-configchat" role="tabpanel" aria-labelledby="pills-configchat-tab">
+                            <h2 class="mb-5">Configuração do chat</h2>
+                            <h4>Tamanho da letra no chat</h4>
+                            <p>Altera a exibição em pixels da letra no chat.</p>
+                            <h4>Aplicar Cor dos nomes do chat</h4>
+                            <p>Se preferir é possivel aplicar uma cor aos nomes dos usuários no chat.</p>
+                            <h4>Cor dos nomes.</h4>
+                            <p>Qual cor será exibida nos nomes dos usuários.</p>
+                            <h4>Aplicar cor a borda do chat.</h4>
+                            <p>Se preferir é possivel aplicar uma cor á borda das mensagens no chat.</p>
+                            <h4>Cor da borda.</h4>
+                            <p>Qual cor será exibida na borda das mensagens no chat.</p>
+                            <h4>Exibir horário nas mensagens enviadas no chat   </h4>
+                            <p>Exibir antes da mensagem o horário que ela foi enviada.</p>
+                            <h4>Selecione o tipo de tempo exibido na mensagem enviada.</h4>
+                            <p>Tempo decorrdio desde o envio ou Horario de envio</p>
+                            <h4>Formato de horario exibido na mensagem enviada</h4>
+                            <p>Formato que será utilizado na exibição da data e hora nas mensagens.</p>
+                            <h4>Presentes necessários para o usuário ter o cargo presenteador.</h4>
+                            <h3>Cargps</h3>
+                            <p>Ao atingir o numero especificado o usuário receberá o cargo presenteador</p>
+                            <h4>Compartilhamentos necessários para o usuário receber o cargo Compartilhou</h4>
+                            <p>Ao atingir o numero especificado o usuário receberá o cargo Compartilhou</p>
+                            <h4>Likes necessárias para o usuário receber o cargo Likes</h4>
+                            <p>Ao atingir o numero especificado o usuário receberá o cargo Likes</p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-configmusicmodule" role="tabpanel" aria-labelledby="pills-configmusicmodule-tab">
+                            <h2 class="mb-5">Configuração do Módulo de Pedido de Música</h2>
+                            <h4>Permitir Pedidos de Música:</h4>
+                            <p> Ativa ou desativa o módulo de pedido de música.</p>
+                            <h4>Duração maxima da musica permitida para pedidos</h4>
+                            <p>Valor maximo em segundos que uma musica pode ter para entrar na fila de pedidos, caso a musica seja maior que este numero o usuário irá ter os seus pontos descontados e a musica não será reproduzida.</p>
+                            
+                            <h4>Votos de skip necessários para pular a musica.</h4>
+                            <p>As musicas podem ser puladas caso o seu chat queira, mas é necessairo ter um numero de votos para isso.</p>
+                            
+                            <h4>Moderadores ignoram votos de skip.</h4>
+                            <p>Se um moderador usar o comando de skip a musica será skipada sem que seja necessário mais votos.</p>
+                            <h4>Termos ou nomes bloqueados</h4>
+                            <p>Se a musica conter um nome ou algum termo que esteja nesta lista ela não será reproduzida, isso inibe algumas musicas, mas não todas, caso o usuário peça alguma musica que esteja nesta lista a musica não será reproduzida e os pontos do usuário serão descontados.</p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-configresponses" role="tabpanel" aria-labelledby="pills-configresponses-tab">
+                            <h2 class="mb-5">Configure as respostas padrão do programa</h2>
+                            <p><b>Resposta : </b>Selecione o tipo de resposta para editar</p>
+                            <h4>Pseudonimos (aliases) úteis:</h4>
+                            <p>Pseudonimos ou aliáses que podem ser utilizados na mensagem selecionada.</p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-configevents" role="tabpanel" aria-labelledby="pills-configevents-tab">
+                            <h2 class="mb-5">Registro de eventos.</h2>
+                            <h4>Tamanho da fonte do registro de eventos.</h4>
+                            <p>Qual o tamanho da fonte que será exibida no campo e janela exclusivos para registro de eventos.</p>
+                            <h4>Cor da mensagem do registro de eventos.</h4>
+                            <p>Cor que será exibido para eventos, tanto no chat quanto mo campo e janela exclusivos</p>
+                            <h4>Exibir data e hora das mensagens.</h4>
+                            <p>Exibe antes do evento a data e hora que foi enviado, a configuração do formato é a mesma para o chat.</p>
+                            <h4>Configurar exibição das mensagens no registro de eventos.</h4>
+                            <p>Permite configurar quais mensagens e onde serão exibidas (Chat, registro e overlay)</p>
+                            <h4>Link para vincular o Overlay para eventos.</h4>
+                            <p>Copie o link e no TikTok live studio adicione uma nova fonte de navegador e cole o endereço</p>
+                            <small>Recomendado iniciar o VibesBot antes do TikTok live studio para melhor funcionamento do overlay, caso contrário o overlay pode não funcionar, e nesse caso apenas altere a cena atual para outra cena e retorne.</small>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="top-box w-100 p-5 mt-5">
+
+                <div class="ps-5">
+                    <h4>Dúvidas e contato</h4>
+                    <p>Para tirar dúvidas sobre o funcionamento, desenvolvimento, sugestões ou qualquer pedido de ajuda
+                        com a configuração entre em contato utilizando uma de minhas redes sociais clicando no botão
+                        abaixo.</p>
+                    <button type="button" class="btn btn-lg btn-dark btn-outline-light button-topbox mt-2"
+                        onclick="location.href='social'">CONTATO</button>
+
+                </div>
+
+            </div>
+        </div>
+
+        <footer class="bg-black text-center text-white">
+            <div class="container p-4 pb-0">
+                <!-- Section: Social media -->
+                <section class="mb-4">
+                    <!-- discord -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://discord.com/invite/utm5NZq"
+                        role="button"><i class="bx bxl-discord-alt"></i></a>
+
+                    <!-- twitch -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://www.twitch.tv/gg_tec"
+                        role="button"><i class="bx bxl-twitch"></i></a>
+
+
+                    <!-- Github -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/GGTEC/" role="button">
+                        <i class="fab fa-github"></i></a>
+                </section>
+                <!-- Section: Social media -->
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                <p>Copyright &copy; GGTEC 2023</p>
+                <p>Page Dev By GGTEC</p>
+            </div>
+            <!-- Copyright -->
+        </footer>
+
+    </div>
+
+    <div class="mobile">
+        <div class="d-flex flex-column justify-content-center vh-100">
+            <div class="text-center top-box p-5 m-3">
+                <h1>Desculpe!</h1>
+                <h3>O VibesBot não é compatível com dispositivos móveis, por tanto não exibiremos a página para evitar
+                    confusões, por favor abra o link em um navegador desktop.</h3>
+                <h3>Para quaquer duvida entre em contato utilizando qualquer rede social no link abaixo.</h3>
+                <button type="button" class="btn btn-dark btn-outline-light button-topbox m-4"
+                    onclick="location.href='social'">CONTATO</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
