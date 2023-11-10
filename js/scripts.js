@@ -27,8 +27,6 @@ $(window).on("load", function () {
 
   initializeCookieBanner()
 
-  Shareon.init();
-
   var repoOwner = 'GGTEC'
   var repoName = 'RewardEvents'
   

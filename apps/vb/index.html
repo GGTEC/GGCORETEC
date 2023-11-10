@@ -51,18 +51,16 @@
             <span></span>
         </div>
         <div class="header">
-            <!-- Navbar -->
+
             <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-md-3">
-                <!-- Container wrapper -->
+
                 <div class="container-fluid">
 
-                    <!-- Navbar brand -->
                     <a class="navbar-brand" href=".">
                         <img src="../../assets/img/about.png" alt="..." style="width: 40px;">
                         <span>GGCORETEC</span>
                     </a>
 
-                    <!-- Collapsible wrapper -->
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
@@ -80,9 +78,8 @@
 
                     </div>
                 </div>
-                <!-- Container wrapper -->
             </nav>
-            <!-- Navbar -->
+
         </div>
         <div class="container">
 
@@ -120,6 +117,11 @@
                             <button class="nav-link w-100" id="pills-goal-tab" data-bs-toggle="pill"
                                 data-bs-target="#pills-goal" type="button" role="tab" aria-controls="pills-goal"
                                 aria-selected="false">Metas</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="pills-alerts-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-alerts" type="button" role="tab" aria-controls="pills-alerts"
+                                aria-selected="false">Alertas</button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link w-100" id="pills-giftalert-tab" data-bs-toggle="pill"
@@ -187,21 +189,20 @@
                                 "VibesBot.exe".</p>
 
                             <h4>Passo 4: Armazenamento</h4>
-                            <p>Não é necessário instalação. Armazene o programa em uma pasta separada para melhor
-                                organização.</p>
+                            <p>Não é necessário instalação. Armazene o programa em uma pasta separada para melhor organização.</p>
                         </div>
                         <div class="tab-pane fade" id="pills-authstreamer" role="tabpanel" aria-labelledby="pills-authstreamer-tab">
                             <h2 class="mb-5">Autenticação de Conta Streamer</h2>
-                            <h4>Passo 1 - Avisos e Termos</h4>
+                            <h4>Passo 1 - Avisos e termos</h4>
                                 <p>Leia atentamente todo o conteúdo da página inicial e página de termos de uso.</p>
                             <h4>Passo 2 - Iniciando autenticação</h4>
-                                <p>Após ler e aceitar os termos será necessário inserir o seu nome de usuário e sessionID</p>
+                                <p>Após ler e aceitar os termos será necessário inserir o seu nome de usuário e sessionId</p>
                                 <p> Digite o nome da sua conta no campo especificado. Ele deve ser o mesmo que o usado na URL, por exemplo, https://www.tiktok.com/@gg_tec = gg_tec.</p>
-                            <h4>Passo 3 - Obtendo o sessionID</h4>
-                                <p>Para obter o sessionID siga os passos abaixo.</p>
+                            <h4>Passo 3 - Obtendo o sessionId</h4>
+                                <p>Para obter o sessionId siga os passos abaixo.</p>
                             <ul>
                                 <li class="mt-4">
-                                    <p>1. Abra o navegador EDGE, faça o login na sua conta do tiktok e permaneceça na
+                                    <p>1. Abra o navegador EDGE, faça o login na sua conta do tiktok e permaneça na
                                         página inicial da sua conta.</p>
                                     <div>
                                         <img src="../../assets/img/VibesBot/1.png" alt="" width="100%">
@@ -252,50 +253,59 @@
                                 
                             <h4>Tempo de recarga:</h4>
                             <p>Tempo necessário para esperar entre um comando e outro;</p>
+                            
                             <h4>Selecione o nível de usuário para utilizar o comando:</h4>
-                            <p>Selecione o nível de permissão que o usuário deve ter para utilizar o comando;</p>
+                            <p>Selecione o cargo de permissão que o usuário deve ter para utilizar o comando;</p>
+                            
                             <h4>Ativar custo do comando:</h4>
-                            <p>Ativar custo de likes, presentes ou compartilhamentos para o usuário utilizar o comando;</p>
-                            <h4>Tipo de custo do comando:</h4>
-                            <p>Selecione likes, presentes ou compartilhamentos para o usuário utilizar o comando;</p>
+                            <p>Ativar custo em pontos para o usuário utilizar o comando;</p>
+                            
                             <h4>Custo do comando:</h4>
-                            <p>Quantos likes, presentes ou compartilhamentos o usuário deve ter para utilizar o comando</p>
+                            <p>Quantos pontos o usuário deve ter para utilizar o comando</p>
+                            
                             <h4>Resposta no chat (em breve):</h4>
                             <p>Envia a mensagem no chat do canal quando o comando for executado  (em breve);</p>
+                            
                             <h4>Comando para audio:</h4>
                             <p>Ativa a reprodução de um audio ao executar o comando (não é recomendado a utilização de audios grandes).</p>
+                            
+                            <h4>Arquivo de audio .mp3</h4>
+                            <p>Audio que será reproduzido.</p>
 
                             <h2 class="mt-5">Excluir um comando</h2>
                             <h4>Comando:</h4>
-                            <p>Selecione o comando para Excluir, é possivel excluir apenas comandos criados.</p>
+                            <p>Selecione o comando para Excluir, é possível excluir apenas comandos criados.</p>
 
                             <h2 class="mt-5">Comandos padrão</h2>
-                            <h4>Comandos atuais = Texto Faldo, Saldo</h4>
+                            <h4>Comandos atuais: Texto Falado, Saldo</h4>
                             <p>Texto falado: Usuário pode enviar mensagens de voz com um custo se configurado</p>
                             <p>Saldo: Usuário pode saber o seu saldo em likes, presentes, compartilhamentos.</p>
-                            <p>Comandos de padrão não podem ser excluidos, somente desativados.</p>
+                            <p>Comandos de padrão não podem ser excluídos, somente desativados.</p>
 
                             <h4>Comando:</h4>
                             <p>Qual mensagem deverá ser enviada no chat para executar o comando,se preferir não é necessário o uso de prefix ex = !comando, ?comando $comando, #comando</p>
                                 
                             <h4>Tempo de recarga:</h4>
                             <p>Tempo necessário para esperar entre um comando e outro;</p>
-                            <h4>Selecione o nível de usuário para utilizar o comando:</h4>
+
+                            <h4>Permissão :</h4>
                             <p>Selecione o nível de permissão que o usuário deve ter para utilizar o comando;</p>
+
                             <h4>Ativar custo do comando:</h4>
-                            <p>Ativar custo de likes, presentes ou compartilhamentos para o usuário utilizar o comando;</p>
-                            <h4>Tipo de custo do comando:</h4>
-                            <p>Selecione likes, presentes ou compartilhamentos para o usuário utilizar o comando;</p>
+                            <p>Ativar custo em pontos para o usuário utilizar o comando;</p>
+                            
                             <h4>Custo do comando:</h4>
-                            <p>Quantos likes, presentes ou compartilhamentos o usuário deve ter para utilizar o comando</p>
-                            <h4>Resposta no chat (em breve):</h4>
+                            <p>Quantos pontos o usuário deve ter para utilizar o comando</p>
+
+                            <h4>Resposta no chat (em breve) :</h4>
                             <p>Envia a mensagem no chat do canal quando o comando for executado  (em breve);</p>
-                            <h4>Comando para audio:</h4>
+
+                            <h4>Comando para audio :</h4>
                             <p>Ativa a reprodução de um audio ao executar o comando (não é recomendado a utilização de audios grandes).</p>
 
                             <h2 class="mt-5">Comandos de música</h2>
                             <h4>Selecione o comando para configurar:</h4>
-                            <p>Selecione o comando para exibir a sessão de edição do comando, comandos de música não podem ser excluidos, somente desativados.</p>
+                            <p>Selecione o comando para exibir a sessão de edição do comando, comandos de música não podem ser excluídos, somente desativados.</p>
 
                             <h4>Comando:</h4>
                             <p>Qual mensagem deverá ser enviada no chat para executar o comando, não é necessário o uso de prefix ex = !comando, ?comando $comando, #comando</p>
@@ -307,47 +317,43 @@
                             <p>Quanto tempo em segundos será necessário esperar antes de utilizar o comando novamente</p>
                             
                             <h4>Permissão:</h4>
-                            <p>Selecione quais permissões que o usuário deve ter para utilizar o comando (será necessário ter apenas uma das permissões para executar);</p>
+
+                            <p>Selecione quais permissões podem utilizar o comando. (será necessário ter apenas uma das permissões para executar);</p>
                             <p><i>Nota: As respostas para comandos de música podem ser configuradas a partir da aba Configurações/respostas</i></p>
                             
                             <h4>Ativar custo do comando:</h4>
-                            <p>Ativar custo de likes, presentes ou compartilhamentos para o usuário utilizar o comando;</p>
-                            
-                            <h4>Tipo de custo do comando:</h4>
-                            <p>Selecione likes, presentes ou compartilhamentos para o usuário utilizar o comando;</p>
+                            <p>Ativar custo em pontos para o usuário utilizar o comando;</p>
                             
                             <h4>Custo do comando:</h4>
-                            <p>Quantos likes, presentes ou compartilhamentos o usuário deve ter para utilizar o comando</p>
+                            <p>Quantos pontos o usuário deve ter para utilizar o comando</p>
 
                             <h2 class="mt-5">Comandos da fila de espera</h2>
                             <h4>Selecione o comando para configurar:</h4>
-                            <p>Selecione o comando para exibir a sessão de edição do comando, comandos da fila de espera não podem ser excluidos, somente desativados.</p>
+                            <p>Selecione o comando para exibir a sessão de edição do comando, comandos da fila de espera não podem ser excluídos, somente desativados.</p>
 
                             <h4>Comando:</h4>
                             <p>Qual mensagem deverá ser enviada no chat para executar o comando, não é necessário o uso de prefix ex = !comando, ?comando $comando, #comando</p>
+                            
                             <h4>Status do comando:</h4>
                             <p>Altere o status do comando se deseja desativa-lo ou ativa-lo:</p>
 
                             <h4>Tempo de recarga do comando:</h4>
                             <p>Quanto tempo em segundos será necessário esperar antes de utilizar o comando novamente</p>
 
-                            <h4>Permissão:</h4>
-                            <p>Selecione quais permissões que o usuário deve ter para utilizar o comando (será necessário ter apenas uma das permissões para executar);</p>
+                            <h4>Permissão :</h4>
+                            <p>Selecione quais permissões podem utilizar o comando. (será necessário ter apenas uma das permissões para executar);</p>
                             <p><i>Nota: As respostas para comandos da fila de espera podem ser configuradas a partir da aba configurações/respostas</i></p>
                             
                             <h4>Ativar custo do comando:</h4>
-                            <p>Ativar custo de likes, presentes ou compartilhamentos para o usuário utilizar o comando;</p>
-                            
-                            <h4>Tipo de custo do comando:</h4>
-                            <p>Selecione likes, presentes ou compartilhamentos para o usuário utilizar o comando;</p>
+                            <p>Ativar custo em pontos para o usuário utilizar o comando;</p>
                             
                             <h4>Custo do comando:</h4>
-                            <p>Quantos likes, presentes ou compartilhamentos o usuário deve ter para utilizar o comando</p>
+                            <p>Quantos pontos o usuário deve ter para utilizar o comando</p>
 
                             <h2 class="mt-5">Comandos de sorteio</h2>
 
                             <h4>Selecione o comando para configurar:</h4>
-                            <p>Selecione o comando para exibir a sessão de edição do comando, comandos de sorteio não podem ser excluidos, somente desativados.</p>
+                            <p>Selecione o comando para exibir a sessão de edição do comando, comandos de sorteio não podem ser excluídos, somente desativados.</p>
 
                             <h4>Comando:</h4>
                             <p>Qual mensagem deverá ser enviada no chat para executar o comando, não é necessário o uso de prefix ex = !comando, ?comando $comando, #comando</p>
@@ -358,13 +364,41 @@
                             <h4>Tempo de recarga do comando:</h4>
                             <p>Quanto tempo em segundos será necessário esperar antes de utilizar o comando novamente</p>
                             
-                            <h4>Selecione o nível de usuário para utilizar o comando:</h4>
-                            <p>Selecione o nível de permissão que o usuário deve ter para utilizar o comando;</p>
+                            <h4>Permissão :</h4>
+
+                            <p>Selecione quais permissões podem utilizar o comando. (será necessário ter apenas uma das permissões para executar);</p>
                             <p><i>Nota: As respostas para comandos da fila de espera podem ser configuradas a partir da aba configurações/respostas</i></p>
 
                             <h2 class="mt-5">Lista de comandos</h2>
                             <p>Exibe uma tabela com todos os comandos configurados no RewardEvents, seja um comando padrão ou um comando criado.</p>
 
+                        </div>
+                        <div class="tab-pane fade" id="pills-alerts" role="tabpanel" aria-labelledby="pills-alerts-tab">
+                            <h3>Notificações para follow</h3>
+                            <h4>Ativar notificação</h4>
+                            <p>Alterna a notificação sonora quando o usuário seguir o canal.</p>
+                            <h4>Arquivo de audio .mp3</h4>
+                            <p>Audio que será reproduzido na notificação.</p>
+                            <h4>Volume</h4>
+                            <p>Volume da notificação</p>
+                            <h3>Notificações para likes</h3>
+                            <h4>Ativar notificação</h4>
+                            <p>Alterna a notificação sonora quando o usuário enviar um like.</p>
+                            <h4>Delay em segundos</h4>
+                            <p>Tempo de delay que será enviada a notificação para cada like, necessário para evitar flood sonoro.</p>
+                            <h4>Arquivo de audio .mp3</h4>
+                            <p>Audio que será reproduzido na notificação</p>
+                            <h4>Volume</h4>
+                            <p>Volume da notificação</p>
+                            <h3>Notificações para Compartilhamentos</h3>
+                            <h4>Ativar notificação</h4>
+                            <p>Alterna a notificação sonora quando o usuário compartilhar o link da live.</p>
+                            <h4>Delay em segundos</h4>
+                            <p>Tempo de delay que será enviada a notificação para cada like, necessário para evitar flood sonoro.</p>
+                            <h4>Arquivo de audio .mp3</h4>
+                            <p>Audio que será reproduzido na notificação.</p>
+                            <h4>Volume</h4>
+                            <p>Volume da notificação</p>
                         </div>
                         <div class="tab-pane fade" id="pills-goal" role="tabpanel" aria-labelledby="pills-goal-tab">
                             <h2 class="mb-5">Configuração da meta</h2>
@@ -376,10 +410,14 @@
                             <p>Qual é o valor final da meta.</p>
                             <h4>Ao completar a meta</h4>
                             <p>Adicionar valor: ao completar a meta o valor especificado no campo abaixo será adicionado ao valor final da meta, assim atualizando o valor final da meta automaticamente.</p>
-                            <p>Multiplicar valor: o valor final da meta será multiplicado pelo valor espeficiado no campo abaixo, ex. 2, a meta irá ser multiplicada por dois</p>
+                            <p>Multiplicar valor: o valor final da meta será multiplicado pelo valor especificado no campo abaixo, ex. 2, a meta irá ser multiplicada por dois</p>
                             <p>Dobrar: O valor da meta será automaticamente dobrado ao chegar no final.</p>
                             <h4>Executar som ao completar a meta</h4>
                             <p>Quando o valor da meta for atingido será executado um som sinalizando a conclusão da meta.</p>
+                            <h4>Arquivo de audio .mp3</h4>
+                            <p>Audio que será reproduzido ao atingir a meta</p>
+                            <h4>Volume</h4>
+                            <p>Volume da notificação</p>
 
                             <h3>Configuração da barra de progresso da meta</h3>
                             <h4>Selecione o tipo de meta</h4>
@@ -396,8 +434,17 @@
                             <h2 class="mb-5">Configurar notificações para presentes.</h2>
                             <h4>Notificações globais</h4>
                             <p>A notificação global é executada ao receber um presente se o presente recebido não tiver um audio configurado.</p>
-                            <h4>notificação por presente</h4>
+                            <h4>Notificação por presente</h4>
                             <p>Procure o presente na tabela e clique em configurar, Obs: Configurando a notificação do presente especifico a notificação global não será reproduzida.</p>
+                            <h3>Configuração do presente</h3>
+                            <h4>Nome de exibição do presente</h4>
+                            <p>Nome que será exibido no registro de eventos ao receber um presente.</p>
+                            <h4>Ativar notificação</h4>
+                            <p>Alterna a notificação sonora ao receber um presente</p>
+                            <h4>Arquivo de audio .mp3</h4>
+                            <p>Audio que será reproduzido ao receber um presente</p>
+                            <h4>Volume</h4>
+                            <p>Volume da notificação</p>
                         </div>
                         <div class="tab-pane fade" id="pills-configgiveway" role="tabpanel" aria-labelledby="pills-configgiveway-tab">
                             <h2 class="mb-5">Configuração do Sistema de Sorteios</h2>
@@ -440,13 +487,13 @@
                             <p>Insira o nome do usuário/valor que deverá ser adicionado.</p>
                             <h4>Fila de espera:</h4>
                             <p>Tabela com os nomes/valores adicionados na fila.</p>
-                            <p><i>Nota: remoção de usuário é possivel via interface ou comando configurado na aba comandos.</i></p>
+                            <p><i>Nota: remoção de usuário é possível via interface ou comando configurado na aba comandos.</i></p>
                         </div>
                         <div class="tab-pane fade" id="pills-player" role="tabpanel" aria-labelledby="pills-player-tab">
                             <h2 class="mb-5">Player para Pedidos de Música</h2>
                             <h4>Texto 1:</h4> Nome da música atual
                             <h4>Texto 2:</h4> Artista da música atual (quando disponível)
-                            <h4>Botão Play/Pause:</h4> Se pausado na metade ou fim da música, não será possívelreproduzir a próxima música.
+                            <h4>Botão Play/Pause:</h4> Se pausado na metade ou fim da música, não será possível reproduzir a próxima música.
                             <h4>Botão Playlist:</h4> Configurações para a playlist
                             <h4>Botão Lista:</h4> Exibe as músicas na fila (playlist e pedidos)
                             <h2 class="mt-2">Playlist</h2>
@@ -463,10 +510,10 @@
                             <p>Nome de perfil que será exibido no bloco embed do Webhook.</p>
                             <h3 class="mb-2">Tipos de notificações</h3>
                             <h4>Selecione o tipo de notificação Webhook para editar</h4>
-                            <p>As notificações não podem ser adicionadas nem excluidas, somente ativadas ou desativadas
+                            <p>As notificações não podem ser adicionadas nem excluídas, somente ativadas ou desativadas
                                 .</p>
                             <h3 class="mb-2">Discord</h3>
-                            <h4>Pseudonimos/Aliases</h4>
+                            <h4>Pseudônimos/Aliases</h4>
                             <p>Lista de palavras que podem ser utilizadas para enviar informações adicionais sobre o
                                 tipo de notificação em questão.</p>
                             <h4>Ativar/Desativar a notificação</h4>
@@ -476,8 +523,8 @@
                             <h4>Cor:</h4>
                             <p>Insira a cor do bloco da mensagem embed que será enviada no Discord (Código HEX, não é
                                 necessário '#').</p>
-                            <h4>Pseudonimos (aliases) úteis:</h4>
-                            <p>Pseudonimos ou aliáses que podem ser utilizados no Webhook.</p>
+                            <h4>Pseudônimos (aliases) úteis:</h4>
+                            <p>Pseudônimos ou aliases que podem ser utilizados no Webhook.</p>
                             <h4>Conteúdo</h4>
                             <p>Conteúdo em formato simples que será exibido antes do bloco Embed</p>
                             <h4>Título:</h4>
@@ -486,54 +533,67 @@
                             <p>Texto que deve aparecer na descrição do bloco embed.</p>
                             <h3 class="mb-2 mt-3">Notificações no Chat</h3>
                             <h4>Mensagem no chat:</h4>
-                            <p>Texto que será enviado no chat, os pseudonimos também são suportados.</p>
+                            <p>Texto que será enviado no chat, os pseudônimos também são suportados.</p>
                         </div>
                         <div class="tab-pane fade" id="pills-configchat" role="tabpanel" aria-labelledby="pills-configchat-tab">
                             <h2 class="mb-5">Configuração do chat</h2>
                             <h4>Tamanho da letra no chat</h4>
-                            <p>Altera a exibição em pixels da letra no chat.</p>
+                            <p>Alterna a exibição em pixels da letra no chat.</p>
+                            <h4>Exibir foto de usuário no chat</h4>
+                            <p>Alterna a exibição da foto de perfil do usuário.</p>
                             <h4>Aplicar Cor dos nomes do chat</h4>
-                            <p>Se preferir é possivel aplicar uma cor aos nomes dos usuários no chat.</p>
+                            <p>Se preferir é possível aplicar uma cor aos nomes dos usuários no chat.</p>
                             <h4>Cor dos nomes.</h4>
                             <p>Qual cor será exibida nos nomes dos usuários.</p>
                             <h4>Aplicar cor a borda do chat.</h4>
-                            <p>Se preferir é possivel aplicar uma cor á borda das mensagens no chat.</p>
+                            <p>Se preferir é possível aplicar uma cor á borda das mensagens no chat.</p>
                             <h4>Cor da borda.</h4>
                             <p>Qual cor será exibida na borda das mensagens no chat.</p>
                             <h4>Exibir horário nas mensagens enviadas no chat   </h4>
                             <p>Exibir antes da mensagem o horário que ela foi enviada.</p>
                             <h4>Selecione o tipo de tempo exibido na mensagem enviada.</h4>
-                            <p>Tempo decorrdio desde o envio ou Horario de envio</p>
-                            <h4>Formato de horario exibido na mensagem enviada</h4>
+                            <p>Tempo decorrido desde o envio ou Horário de envio</p>
+                            <h4>Formato de horário exibido na mensagem enviada</h4>
                             <p>Formato que será utilizado na exibição da data e hora nas mensagens.</p>
                             <h4>Presentes necessários para o usuário ter o cargo presenteador.</h4>
-                            <h3>Cargps</h3>
+                            <h3>Cargos</h3>
                             <p>Ao atingir o numero especificado o usuário receberá o cargo presenteador</p>
                             <h4>Compartilhamentos necessários para o usuário receber o cargo Compartilhou</h4>
                             <p>Ao atingir o numero especificado o usuário receberá o cargo Compartilhou</p>
                             <h4>Likes necessárias para o usuário receber o cargo Likes</h4>
                             <p>Ao atingir o numero especificado o usuário receberá o cargo Likes</p>
-                        </div>
+                            <h3>Pontuação</h3>
+                            <h4>Pontos por compartilhamento</h4>
+                            <p>Insira o valor de pontos que o usuário irá ganhar ao compartilhar a live.</p>
+                            <h4>Pontos por curtida</h4>
+                            <p>Insira o valor de pontos que o usuário irá ganhar por cada curtida na live.</p>
+                            <h4>Pontos por seguir</h4>
+                            <p>Insira o valor de pontos que o usuário irá ganhar ao seguir o canal.</p>
+                            <h4>Pontos por presente</h4>
+                            <p>Insira o valor de pontos que o usuário irá ganhar por cada presente enviado.</p>
+                            <h4>Tabela de presentes</h4>
+                            <p>Configure os pontos que o usuário irá ganhar ao enviar um presente especifico.</p>
+                        </div> 
                         <div class="tab-pane fade" id="pills-configmusicmodule" role="tabpanel" aria-labelledby="pills-configmusicmodule-tab">
                             <h2 class="mb-5">Configuração do Módulo de Pedido de Música</h2>
                             <h4>Permitir Pedidos de Música:</h4>
                             <p> Ativa ou desativa o módulo de pedido de música.</p>
                             <h4>Duração maxima da musica permitida para pedidos</h4>
-                            <p>Valor maximo em segundos que uma musica pode ter para entrar na fila de pedidos, caso a musica seja maior que este numero o usuário irá ter os seus pontos descontados e a musica não será reproduzida.</p>
+                            <p>Valor máximo em segundos que uma musica pode ter para entrar na fila de pedidos, caso a musica seja maior que este numero o usuário irá ter os seus pontos descontados e a musica não será reproduzida.</p>
                             
                             <h4>Votos de skip necessários para pular a musica.</h4>
-                            <p>As musicas podem ser puladas caso o seu chat queira, mas é necessairo ter um numero de votos para isso.</p>
+                            <p>As musicas podem ser puladas caso o seu chat queira, mas é necessário ter um numero de votos para isso.</p>
                             
                             <h4>Moderadores ignoram votos de skip.</h4>
-                            <p>Se um moderador usar o comando de skip a musica será skipada sem que seja necessário mais votos.</p>
+                            <p>Se um moderador usar o comando de skip a musica será pulada sem que seja necessário mais votos.</p>
                             <h4>Termos ou nomes bloqueados</h4>
                             <p>Se a musica conter um nome ou algum termo que esteja nesta lista ela não será reproduzida, isso inibe algumas musicas, mas não todas, caso o usuário peça alguma musica que esteja nesta lista a musica não será reproduzida e os pontos do usuário serão descontados.</p>
                         </div>
                         <div class="tab-pane fade" id="pills-configresponses" role="tabpanel" aria-labelledby="pills-configresponses-tab">
                             <h2 class="mb-5">Configure as respostas padrão do programa</h2>
                             <p><b>Resposta : </b>Selecione o tipo de resposta para editar</p>
-                            <h4>Pseudonimos (aliases) úteis:</h4>
-                            <p>Pseudonimos ou aliáses que podem ser utilizados na mensagem selecionada.</p>
+                            <h4>Pseudônimos (aliases) úteis:</h4>
+                            <p>Pseudônimos ou aliases que podem ser utilizados na mensagem selecionada.</p>
                         </div>
                         <div class="tab-pane fade" id="pills-configevents" role="tabpanel" aria-labelledby="pills-configevents-tab">
                             <h2 class="mb-5">Registro de eventos.</h2>
@@ -604,7 +664,7 @@
                 <h1>Desculpe!</h1>
                 <h3>O VibesBot não é compatível com dispositivos móveis, por tanto não exibiremos a página para evitar
                     confusões, por favor abra o link em um navegador desktop.</h3>
-                <h3>Para quaquer duvida entre em contato utilizando qualquer rede social no link abaixo.</h3>
+                <h3>Para qualquer duvida entre em contato utilizando qualquer rede social no link abaixo.</h3>
                 <button type="button" class="btn btn-dark btn-outline-light button-topbox m-4"
                     onclick="location.href='social'">CONTATO</button>
             </div>
