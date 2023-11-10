@@ -6968,6 +6968,14 @@ fieldset:disabled .btn {
     transition: opacity 0.15s ease;
 }
 
+.carousel-control-prev:active,
+.carousel-control-next:active,
+.carousel-control-prev:focus,
+.carousel-control-next:focus {
+    border-color: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
 @media (prefers-reduced-motion: reduce) {
 
     .carousel-control-prev,
