@@ -389,7 +389,11 @@ ol ol,
 ul ul,
 ol ul,
 ul ol {
-    margin-bottom: 0;
+    margin-bottom: 20px;
+}
+
+ul li {
+    margin-bottom: 20px;
 }
 
 dt {
