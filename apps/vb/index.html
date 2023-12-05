@@ -137,6 +137,16 @@
                             <button class="nav-link w-100" id="pills-configqueue-tab" data-bs-toggle="pill"
                                 data-bs-target="#pills-configqueue" type="button" role="tab"
                                 aria-controls="pills-configqueue" aria-selected="false">Fila de espera</button>
+                        </li>                        
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="pills-configrank-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-configrank" type="button" role="tab"
+                                aria-controls="pills-configrank" aria-selected="false">Ranks</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link w-100" id="pills-configcamp-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-configcamp" type="button" role="tab"
+                                aria-controls="pills-configcamp" aria-selected="false">Campeonato</button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link w-100" id="pills-player-tab" data-bs-toggle="pill"
@@ -425,7 +435,7 @@
                             <p>Qual meta será configurada.</p>
                             <h4>Texto da meta</h4>
                             <p>Qual será o texto exibido na barra de progresso da meta configurada.</p>
-                            <small>Restantes dos itens auto explicativos, teste para verificar as alterações.</small>
+                            <small>*Restante dos itens auto explicativos, teste para verificar as alterações.</small>
                             <h4>Link para vincular o overlay para metas.</h4>
                             <p>Copie o link e no TikTok live studio adicione uma nova fonte de navegador e cole o endereço</p>
                             <small>Recomendado iniciar o VibesBot antes do TikTok live studio para melhor funcionamento do overlay, caso contrário o overlay pode não funcionar, e nesse caso apenas altere a cena atual para outra cena e retorne.</small>
@@ -480,15 +490,67 @@
                             <p>Limpa os nomes da lista do sorteio antes de executar.</p>
                         </div>
                         <div class="tab-pane fade" id="pills-configqueue" role="tabpanel" aria-labelledby="pills-configqueue-tab">
-                            <h2 class="mb-5">Configurar fila de espera</h2>
-
+                            <h2 class="mb-5">Fila de espera</h2>
                             <p><i>Nota: Respostas da fila de espera podem ser configuradas a partir da aba configurações/respostas</i></p>
+                            <h2 class="mt-5">Configurações de fila prioritária</h2>
+                            <h4>Ativar fila prioritária para cargos especificos:</h4>
+                            <p>Ativando esta opção os usuários com um dos cargos especificados abaixo irão entrar na fila prioritária.</p>
+                            <h4>Seprara fila prioritária:</h4>
+                            <p>Ativando esta opção a fila de espera prioritária ficara separada da fila de espera comum.</p>
+                            <h4>Cargos da fila prioritária:</h4>
+                            <p>Selecione os cargos que irão entrar na fila prioritáriam o usuário precisa ter apenas um dos cargos.</p>
                             <h2 class="mt-5">Adicionar usuário da lista de espera</h2>
                             <h4>Nome do usuário:</h4>
                             <p>Insira o nome do usuário/valor que deverá ser adicionado.</p>
-                            <h4>Fila de espera:</h4>
-                            <p>Tabela com os nomes/valores adicionados na fila.</p>
-                            <p><i>Nota: remoção de usuário é possível via interface ou comando configurado na aba comandos.</i></p>
+                            <h2 class="mt-5">Filas de espera</h2>
+                            <h4>Fila de espera comum:</h4>
+                            <p>Usuários com permissão padrão do comando entram normalmente</p>
+                            <h4>Fila de espera prioritária:</h4>
+                            <p>Somente entrarão usuários com permissão configurada para fila de espera prioritária</p>
+                            <p>A fila de espera prioritária pode ser separada ou em conjunto com a fila de espera comum, conforme configuração</p>
+                        
+                            <p class="mt-3"><i>Nota: remoção de usuário é possível via interface ou comando configurado na aba comandos.</i></p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-configcamp" role="tabpanel" aria-labelledby="pills-configcamp-tab">
+                            <h2 class="mb-5">Sistema de campeonato</h2>
+
+                            <p><i>Nota: Respostas do campeonato podem ser configuradas a partir da aba configurações/respostas</i></p>
+                            <p><i>Nota: Comando para usuário entrar no campeonato pode ser configurado na aba comandos/comandos padrão</i></p>
+                            <h2 class="mt-5">Funcionamento</h2>
+                            <h4>Participantes</h4>
+                            <p>Espere os usuários entrarem no campeonato utilizando o comando previamente configurado.</p>
+                            <p>Após todos os participantes entrarem desative o comando nas configurações do comando.</p>
+                            <h4>Campeonato:</h4>
+                            <p>Após clicar no botão para criar o campeonato os nomes serão sortiados aleatoriamente e as partidas exibidas.</p>
+                            <p>O sistema é composto por chaveamento, mas com uma visualização diferente para facilitar a leitura e organização.</p>
+                            <p>Em caso de partidas com numero impar de participantes, o ultimo participante sempre irá lutar contra o perdedor da primeira partida.</p>
+                            <p>Na semi-final, para definir o terceiro lugar são duas ocasiões/situações diferentes</p>
+                            <p>1. Caso tiver 4 participantes diferentes no inicio da faze, será criada uma terceira partida com os perdedores da primeira e segunda partida,
+                                e assim o ganhador da terceira partida será definido como terceiro lugar e os ganhadores da primeira e segunda partida serão alocados para a final.
+                            </p>
+                            <p>
+                                2. Caso tiver apenas 3 participantes e 2 partidas na semi-final, após a primeira partida, o perdedor será alocado para "repescagem" lutando contra o jogador da segunda partida
+                                e o ganhador da segunda partida será alocado para a final juntamente com o ganhador da primeira, e o perdedor da segunda partida será definido como terceiro lugar.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-configrank" role="tabpanel" aria-labelledby="pills-configrank-tab">
+                            <h2 class="mb-5">Sistema de Ranking</h2>
+                            <h4>Funcionamento</h4>
+                            <p>O sistema de rank é apenas visual e não existem comandos para serem utilizados até o presente momento.</p>
+                            <h2>Configurações</h2>
+                            <h4>Atualizar os ranks:</h4>
+                            <p>Ativa a atualização periodica dos ranks</p>
+                            <h4>Tempo de intervalo entre as atualizações de rank</h4>
+                            <p>Insira o tempo em segundos que os ranks devem ser atualizados, *Valores menores que 10 segundos são ignorados</p>
+                            <h2>Aparencia do bloco de rank para cada usuário</h2>
+                            <h4>Selecione o tipo de rank</h4>
+                            <p>Selecione um dos ranks para alterar a sua aparência</p>
+                            <h4>Cor do bloco para o rank</h4>
+                            <p>Selecione a cor de fundo para o bloco de rank</p>
+                            <h4>Transparenica de fundo do bloco para o rank</h4>
+                            <p>Utilize o seletor para alterar a aparencia do bloco para o rank, onde 0 é sem transparencia e 1 é totalmente transparente.</p>
+                            <h4>Link para vincular o overlay para o Rank</h4>
+                            <p>Link para vincular o overlay no TikTokLive Studio</p>
                         </div>
                         <div class="tab-pane fade" id="pills-player" role="tabpanel" aria-labelledby="pills-player-tab">
                             <h2 class="mb-5">Player para Pedidos de Música</h2>
