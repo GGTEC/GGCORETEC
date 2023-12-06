@@ -37,14 +37,14 @@ $(window).on("load", function () {
   var repoOwner = 'GGTEC'
   var repoName = 'RewardEvents'
   var repoNameVB = 'VibesBot'
-  
+
   fetch(`https://api.github.com/repos/${repoOwner}/${repoName}/releases`)
     .then(response => response.json())
     .then(data => {
 
       let releasesList = document.querySelector("#releases-list");
 
-      if (releasesList != undefined){
+      if (releasesList != undefined) {
         let counter = 0;
         let totalDownloads = 0;
         data.forEach(release => {
@@ -71,17 +71,17 @@ $(window).on("load", function () {
         <h2>Total de Downloads: ${totalDownloads}</h2>
       `;
       }
-      
+
     })
     .catch(error => console.error(error));
 
-    fetch(`https://api.github.com/repos/${repoOwner}/${repoNameVB}/releases`)
+  fetch(`https://api.github.com/repos/${repoOwner}/${repoNameVB}/releases`)
     .then(response => response.json())
     .then(data => {
 
       let releasesList = document.querySelector("#releases-list-vb");
 
-      if (releasesList != undefined){
+      if (releasesList != undefined) {
         let counter = 0;
         let totalDownloads = 0;
         data.forEach(release => {
@@ -108,10 +108,37 @@ $(window).on("load", function () {
         <h2>Total de Downloads: ${totalDownloads}</h2>
       `;
       }
-      
+
     })
     .catch(error => console.error(error));
 
 });
 
 
+function start_table() {
+
+  if ($.fn.DataTable.isDataTable("#table_commands")) {
+    $('#table_commands').DataTable().clear().draw();
+    $('#table_commands').DataTable().destroy();
+  }
+
+
+  var table = $('#table_commands').DataTable({
+    pageLength: 8,
+    autoWidth: true,
+    destroy: true,
+    scrollX: true,
+    paging: true,
+    ordering: true,
+    retrieve: false,
+    processing: true,
+    responsive: true,
+    lengthMenu: [
+      [10, 25, 50, -1],
+      [10, 25, 50, 'All'],
+    ],
+    language: {
+      url: 'https://cdn.datatables.net/plug-ins/1.13.1/i18n/pt-BR.json'
+    }
+  });
+}
