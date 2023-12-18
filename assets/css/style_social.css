@@ -132,11 +132,20 @@ body {
 }
 
 .links-list {
+  margin-bottom: 1%;
+  padding: 0.5rem;
+  padding-bottom: 0.5rem;
   width: 100%;
   max-width: 100%;
   padding-right: calc(var(--bs-gutter-x) * .5);
   padding-left: calc(var(--bs-gutter-x) * .5);
   margin-top: var(--bs-gutter-y);
+  background: rgba(8, 5, 10, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(16, 20, 72, 0.37);
+}
+
+.links-list button p{
+  color: #c3b4d2;
 }
 
 .top-box {
@@ -153,15 +162,11 @@ body {
 }
 
 .top-box-desktop {
-  background: rgba( 83, 59, 108, 0.6 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 9px );
-  -webkit-backdrop-filter: blur( 9px );
-  border-radius: 10px;
+  background: rgba(9, 6, 11, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(15, 18, 65, 0.37);
   border: 1px solid rgba( 255, 255, 255, 0.18 );
   margin-bottom: 5%;
   color: #fff;
-  border-radius: 5%;
   font-family: 'Kanit';
 }
 

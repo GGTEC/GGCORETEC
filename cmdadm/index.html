@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Comandos</title>
+    <title>Comandos ADM</title>
     <link href="../assets/img/favicon.png" rel="icon">
     <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
     <link href="../assets/css/style_social.css" rel="stylesheet">
@@ -12,7 +12,8 @@
     <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5312302938088623" crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5312302938088623"
+        crossorigin="anonymous"></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-6T1WP18QKQ"></script>
     <script>
@@ -26,7 +27,7 @@
 
 <body class="vh-100">
     <div class="mobile">
-        <div class="container " >
+        <div class="container">
             <div class="text-center">
                 <div class="top-box p-3">
                     <img src="../assets/img/about.png" alt="" width="100px">
@@ -46,93 +47,81 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>!saldo</td>
-                                    <td>Exibe o seu saldo na tela.</td>
+                                    <td>!baluser</td>
+                                    <td>Nome de usuário | Verifica o saldo do usuário.</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>!baltake</td>
+                                    <td>Nome de usuário 100 | Tira os pontos do usuário.</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>!balgive</td>
+                                    <td>Nome de usuário 100 | Dá pontos ao usuário.</td>
                                     <td>-</td>
                                 </tr>
                                 <tr>
                                     <td>!fila</td>
-                                    <td>Entra na fila de próximo.</td>
+                                    <td>Nome de usuário | Se o usuário tiver os pontos, ele é adicionado à fila de
+                                        próximo.
+                                    </td>
                                     <td>-</td>
                                 </tr>
                                 <tr>
-                                    <td>!verfila</td>
-                                    <td>Exibe os nomes dos 5 primeiros da fila de próximo.</td>
+                                    <td>!rfila</td>
+                                    <td>Nome de usuário | Remove o usuário da fila.</td>
                                     <td>-</td>
                                 </tr>
                                 <tr>
-                                    <td>!verfilasub</td>
-                                    <td>Exibe os nomes dos 5 primeiros da fila de próximo para subs.</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <td>!camp</td>
-                                    <td>Entra na lista do campeonato se estiver acontecendo um.</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <td>!sorteio</td>
-                                    <td>Entra na lista de sorteio.</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <td>!eusorteio</td>
-                                    <td>Verifica se o próprio nome está na lista de sorteio.</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <td>!atual</td>
-                                    <td>Mostra o nome da música tocando atualmente.</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <td>!next</td>
-                                    <td>Mostra o nome da próxima música que vai ser tocada.</td>
+                                    <td>!sr</td>
+                                    <td>Nome da música | Comando provisório para moderadores, analisando como adicionar
+                                        pedidos de música sem prejudicar as transmissões.</td>
                                     <td>-</td>
                                 </tr>
                                 <tr>
                                     <td>!skip</td>
-                                    <td>Vota para pular a música conforme configuração.</td>
+                                    <td>Pula a música atual.</td>
                                     <td>-</td>
                                 </tr>
                                 <tr>
-                                    <td>!voz mensagem</td>
-                                    <td>Reproduz um texto falado com a mensagem.</td>
-                                    <td>100</td>
+                                    <td>!volume VALOR</td>
+                                    <td>Ajusta o volume de acordo com o valor digitado. Se não digitar nada, exibe
+                                        somente o
+                                        volume atual na tela.</td>
+                                    <td>-</td>
                                 </tr>
                                 <tr>
-                                    <td>!cavalo</td>
-                                    <td>Reproduz o áudio do meme Cavalo.</td>
-                                    <td>100</td>
+                                    <td>!esorteio</td>
+                                    <td>Executa o sorteio e exibe o ganhador na tela, se houver algum sorteio no
+                                        momento.
+                                    </td>
+                                    <td>-</td>
                                 </tr>
                                 <tr>
-                                    <td>!manga</td>
-                                    <td>Reproduz o áudio do meme "Ain zé da manga".</td>
-                                    <td>100</td>
+                                    <td>!lsorteio</td>
+                                    <td>Limpa a lista de participantes do sorteio.</td>
+                                    <td>-</td>
                                 </tr>
                                 <tr>
-                                    <td>!rapaz</td>
-                                    <td>Reproduz o áudio do meme Rapaz do ratinho.</td>
-                                    <td>100</td>
+                                    <td>!csorteio Nome de usuário</td>
+                                    <td>Verifica o nome de usuário na lista de sorteio.</td>
+                                    <td>-</td>
                                 </tr>
                                 <tr>
-                                    <td>!coco</td>
-                                    <td>Reproduz o áudio do meme "Muito bom, parabéns viu seu coco".</td>
-                                    <td>100</td>
-                                </tr>
-                                <tr>
-                                    <td>!lindo</td>
-                                    <td>Fala com audio do goole o quão feio você está.</td>
-                                    <td>100</td>
+                                    <td>!addsorteio Nome de usuário</td>
+                                    <td>Adiciona o nome de usuário no sorteio.</td>
+                                    <td>-</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
-    
+
             </div>
         </div>
     </div>
+
     <div class="desktop">
         <div class="container d-flex flex-column pb-5">
             <div class="row top-box-desktop w-100 d-flex align-items-center">
@@ -145,7 +134,7 @@
                 </div>
             </div>
             <div class="bg-dark text-white p-3">
-                <h4>Comandos públicos</h4>
+                <h4>Comandos Para moderadores</h4>
             </div>
             <div class="bg-dark text-white p-3 mt-3">
                 <div class="w-100" style="max-height: 60vh;overflow-y: scroll;">
@@ -157,84 +146,68 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>!saldo</td>
-                                <td>Exibe o seu saldo na tela.</td>
+                                <td>!baluser</td>
+                                <td>Nome de usuário | Verifica o saldo do usuário.</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>!baltake</td>
+                                <td>Nome de usuário 100 | Tira os pontos do usuário.</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>!balgive</td>
+                                <td>Nome de usuário 100 | Dá pontos ao usuário.</td>
                                 <td>-</td>
                             </tr>
                             <tr>
                                 <td>!fila</td>
-                                <td>Entra na fila de próximo.</td>
+                                <td>Nome de usuário | Se o usuário tiver os pontos, ele é adicionado à fila de próximo.
+                                </td>
                                 <td>-</td>
                             </tr>
                             <tr>
-                                <td>!verfila</td>
-                                <td>Exibe os nomes dos 5 primeiros da fila de próximo.</td>
+                                <td>!rfila</td>
+                                <td>Nome de usuário | Remove o usuário da fila.</td>
                                 <td>-</td>
                             </tr>
                             <tr>
-                                <td>!verfilasub</td>
-                                <td>Exibe os nomes dos 5 primeiros da fila de próximo para subs.</td>
-                                <td>-</td>
-                            </tr>
-                            <tr>
-                                <td>!camp</td>
-                                <td>Entra na lista do campeonato se estiver acontecendo um.</td>
-                                <td>-</td>
-                            </tr>
-                            <tr>
-                                <td>!sorteio</td>
-                                <td>Entra na lista de sorteio.</td>
-                                <td>-</td>
-                            </tr>
-                            <tr>
-                                <td>!eusorteio</td>
-                                <td>Verifica se o próprio nome está na lista de sorteio.</td>
-                                <td>-</td>
-                            </tr>
-                            <tr>
-                                <td>!atual</td>
-                                <td>Mostra o nome da música tocando atualmente.</td>
-                                <td>-</td>
-                            </tr>
-                            <tr>
-                                <td>!next</td>
-                                <td>Mostra o nome da próxima música que vai ser tocada.</td>
+                                <td>!sr</td>
+                                <td>Nome da música | Comando provisório para moderadores, analisando como adicionar
+                                    pedidos de música sem prejudicar as transmissões.</td>
                                 <td>-</td>
                             </tr>
                             <tr>
                                 <td>!skip</td>
-                                <td>Vota para pular a música conforme configuração.</td>
+                                <td>Pula a música atual.</td>
                                 <td>-</td>
                             </tr>
                             <tr>
-                                <td>!voz mensagem</td>
-                                <td>Reproduz um texto falado com a mensagem.</td>
-                                <td>100</td>
+                                <td>!volume VALOR</td>
+                                <td>Ajusta o volume de acordo com o valor digitado. Se não digitar nada, exibe somente o
+                                    volume atual na tela.</td>
+                                <td>-</td>
                             </tr>
                             <tr>
-                                <td>!cavalo</td>
-                                <td>Reproduz o áudio do meme Cavalo.</td>
-                                <td>100</td>
+                                <td>!esorteio</td>
+                                <td>Executa o sorteio e exibe o ganhador na tela, se houver algum sorteio no momento.
+                                </td>
+                                <td>-</td>
                             </tr>
                             <tr>
-                                <td>!manga</td>
-                                <td>Reproduz o áudio do meme "Ain zé da manga".</td>
-                                <td>100</td>
+                                <td>!lsorteio</td>
+                                <td>Limpa a lista de participantes do sorteio.</td>
+                                <td>-</td>
                             </tr>
                             <tr>
-                                <td>!rapaz</td>
-                                <td>Reproduz o áudio do meme Rapaz do ratinho.</td>
-                                <td>100</td>
+                                <td>!csorteio Nome de usuário</td>
+                                <td>Verifica o nome de usuário na lista de sorteio.</td>
+                                <td>-</td>
                             </tr>
                             <tr>
-                                <td>!coco</td>
-                                <td>Reproduz o áudio do meme "Muito bom, parabéns viu seu coco".</td>
-                                <td>100</td>
-                            </tr>
-                            <tr>
-                                <td>!lindo</td>
-                                <td>Fala com audio do goole o quão feio você está.</td>
-                                <td>100</td>
+                                <td>!addsorteio Nome de usuário</td>
+                                <td>Adiciona o nome de usuário no sorteio.</td>
+                                <td>-</td>
                             </tr>
                         </tbody>
                     </table>
