@@ -57,8 +57,6 @@ $(window).on("load", function () {
           let releaseEl = document.createElement("div");
           let truncatedBody = truncateText(release.body, 100);
           releaseEl.classList.add('version_block')
-          releaseEl.setAttribute('title', `Abrir pagina da versão`)
-          releaseEl.setAttribute('onclick', `window.open("${release.html_url}")`)
           releaseEl.innerHTML = `
           <p>Versão: ${release.tag_name}</p>
           <p class='version_text'>${truncatedBody}</p>
@@ -94,8 +92,6 @@ $(window).on("load", function () {
           let releaseEl = document.createElement("div");
           let truncatedBody = truncateText(release.body, 100);
           releaseEl.classList.add('version_block')
-          releaseEl.setAttribute('title', `Abrir pagina da versão`)
-          releaseEl.setAttribute('onclick', `window.open("${release.html_url}")`)
           releaseEl.innerHTML = `
           <p>Versão: ${release.tag_name}</p>
           <p class='version_text'>${truncatedBody}</p>

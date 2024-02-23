@@ -12962,16 +12962,8 @@ fieldset:disabled .btn {
     color: #0d6efd;
 }
 
-.version_block:hover {
-    cursor: pointer;
-}
-
 .version_block .version_text {
     color: rgb(199, 199, 199);
-}
-
-.version_block .version_text:hover {
-    color: rgb(228, 227, 227);
 }
 
 .carousel-item img {
